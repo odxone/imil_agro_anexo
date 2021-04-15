@@ -1,0 +1,13 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: intro
+- file: DS_session_cover
+  chapters:
+    - file: nbs/nb_00-preprocessing
+    - file: nbs/nb_01-pandas_profiling
+    - file: nbs/nb_02-scaling_encoding
+    - file: nbs/nb_03-logistic_regression
+    - file: nbs/nb_04-ridge_classification
+    - file: nbs/nb_05-random_forest_classification
+    - file: nbs/nb_06-neural_network_classification
