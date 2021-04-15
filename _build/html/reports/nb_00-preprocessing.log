@@ -22,12 +22,13 @@ import yaml
 with open('../_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
-X = pd.read_pickle(paths['X'])
+GINI_DATA_PATH = paths['GINI_DATA_PATH']
+CENSO_AGRO_DATA_PATH = paths['CENSO_AGRO_DATA_PATH']
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m<ipython-input-2-0d3f667f5ee0>[0m in [0;36m<module>[0;34m[0m
+[0;32m<ipython-input-2-372abc5ba680>[0m in [0;36m<module>[0;34m[0m
 [1;32m      1[0m [0;32mimport[0m [0myaml[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      2[0m [0;34m[0m[0m
 [0;32m----> 3[0;31m [0;32mwith[0m [0mopen[0m[0;34m([0m[0;34m'../_local_paths.yml'[0m[0;34m)[0m [0;32mas[0m [0mf[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m

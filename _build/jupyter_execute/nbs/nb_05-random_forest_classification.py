@@ -2,7 +2,9 @@
 
 ## Resumo dos resultados dessa etapa
 
-Os dados são transformados e codificados para adequação com os algorítimos de apredizagem computacional utilizados em seguida.
+Foi ajustado um modelo do tipo Floresta Aleatória aos dados.
+
+Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 90%.
 
 ## Breve explicação e referências sobre o método
 
@@ -28,7 +30,7 @@ shap.initjs()
 
 import yaml
 
-with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
+with open('../_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 x_scaler = joblib.load(paths['x_scaler'])

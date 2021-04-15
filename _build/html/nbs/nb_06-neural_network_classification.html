@@ -45,8 +45,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -96,7 +94,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../DS_session_cover.html">
-   Data Science
+   Estudo sobre desigualdade e variáveis da agropecuária
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
@@ -284,7 +282,9 @@
 <h1>Rede Neural<a class="headerlink" href="#rede-neural" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="resumo-dos-resultados-dessa-etapa">
 <h2>Resumo dos resultados dessa etapa<a class="headerlink" href="#resumo-dos-resultados-dessa-etapa" title="Permalink to this headline">¶</a></h2>
-<p>Os dados são transformados e codificados para adequação com os algorítimos de apredizagem computacional utilizados em seguida.</p>
+<p>Uma rede neural simples foi ajustada aos modelos.</p>
+<p>A escolha do formato simples foi motivada pelo numero relativamente baixo de observações para esse tipo de modelo.</p>
+<p>O modelo atingiu uma acurácia média de 82%.</p>
 </div>
 <div class="section" id="breve-explicacao-e-referencias-sobre-o-metodo">
 <h2>Breve explicação e referências sobre o método<a class="headerlink" href="#breve-explicacao-e-referencias-sobre-o-metodo" title="Permalink to this headline">¶</a></h2>
@@ -295,7 +295,7 @@
 <h3>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -359,7 +359,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Definição da Rede<a class="headerlink" href="#definicao-da-rede" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">baseline_model</span><span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">baseline_model</span><span class="p">():</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span>
                     <span class="n">input_dim</span><span class="o">=</span><span class="mi">39</span><span class="p">,</span>
@@ -380,7 +380,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -406,7 +406,7 @@ _________________________________________________________________
 <h2>Treinamento Rede<a class="headerlink" href="#treinamento-rede" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">baseline_model</span><span class="p">,</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">baseline_model</span><span class="p">,</span>
                            <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
                            <span class="n">batch_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                            <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -416,7 +416,7 @@ _________________________________________________________________
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -428,7 +428,7 @@ _________________________________________________________________
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ann_viz(baseline_model(), filename=&#39;rede_2_categs.gv&#39;, title=&#39;Rede Neural - 2 categorias&#39;)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#ann_viz(baseline_model(), filename=&#39;rede_2_categs.gv&#39;, title=&#39;Rede Neural - 2 categorias&#39;)</span>
 </pre></div>
 </div>
 </div>
@@ -438,7 +438,7 @@ _________________________________________________________________
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prediction</span> <span class="o">=</span> <span class="n">nn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prediction</span> <span class="o">=</span> <span class="n">nn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -450,7 +450,7 @@ _________________________________________________________________
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
     <span class="n">classification_report</span><span class="p">(</span>
         <span class="n">scaled_y</span><span class="p">,</span>
         <span class="n">prediction</span><span class="p">,</span> 
@@ -488,13 +488,13 @@ weighted avg       0.82      0.82      0.82      5563
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85",
             path: "./nbs"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85'</script>
 
               </div>
               
@@ -511,7 +511,7 @@ weighted avg       0.82      0.82      0.82      5563
     <div class="container">
       <p>
         
-          By Felício Visnardi<br/>
+          By Octahedron Data Experts<br/>
         
             &copy; Copyright 2020.<br/>
       </p>

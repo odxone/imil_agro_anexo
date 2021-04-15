@@ -2,13 +2,16 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Estudo sobre a Agropecuária no Brasil
-author: Felício Visnardi
+author: Octahedron Data Experts
 logo: LOGO_ODX_PRETO.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
+  cache: '.'
+  exclude_paterns: [nb_06]
+  timeout: 600
 
 # Define the name of the latex output file for PDF builds
 latex:

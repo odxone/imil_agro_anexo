@@ -20,7 +20,7 @@ import geopandas as gpd
 
 import yaml
 
-with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
+with open('../_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 GINI_DATA_PATH = paths['GINI_DATA_PATH']

@@ -34,7 +34,7 @@ shap.initjs()
 
 import yaml
 
-with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
+with open('../_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 x_scaler = joblib.load(paths['x_scaler'])

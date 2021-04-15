@@ -19,7 +19,7 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 ------------------
 import yaml
 
-with open('../_local_paths.yml') as f:
+with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 X = pd.read_pickle(paths['X'])
@@ -27,13 +27,13 @@ X = pd.read_pickle(paths['X'])
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m<ipython-input-2-0d3f667f5ee0>[0m in [0;36m<module>[0;34m[0m
+[0;32m<ipython-input-2-b5683268393d>[0m in [0;36m<module>[0;34m[0m
 [1;32m      1[0m [0;32mimport[0m [0myaml[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      2[0m [0;34m[0m[0m
-[0;32m----> 3[0;31m [0;32mwith[0m [0mopen[0m[0;34m([0m[0;34m'../_local_paths.yml'[0m[0;34m)[0m [0;32mas[0m [0mf[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 3[0;31m [0;32mwith[0m [0mopen[0m[0;34m([0m[0;34m'/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml'[0m[0;34m)[0m [0;32mas[0m [0mf[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      4[0m     [0mpaths[0m [0;34m=[0m [0myaml[0m[0;34m.[0m[0mload[0m[0;34m([0m[0mf[0m[0;34m,[0m [0mLoader[0m[0;34m=[0m[0myaml[0m[0;34m.[0m[0mFullLoader[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      5[0m [0;34m[0m[0m
 
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '../_local_paths.yml'
-FileNotFoundError: [Errno 2] No such file or directory: '../_local_paths.yml'
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml'
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml'
 

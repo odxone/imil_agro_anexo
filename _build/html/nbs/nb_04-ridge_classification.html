@@ -45,8 +45,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -97,7 +95,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../DS_session_cover.html">
-   Data Science
+   Estudo sobre desigualdade e variáveis da agropecuária
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
@@ -280,7 +278,8 @@
 <h1>Classificação Ridge<a class="headerlink" href="#classificacao-ridge" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="resumo-dos-resultados-dessa-etapa">
 <h2>Resumo dos resultados dessa etapa<a class="headerlink" href="#resumo-dos-resultados-dessa-etapa" title="Permalink to this headline">¶</a></h2>
-<p>Os dados são transformados e codificados para adequação com os algorítimos de apredizagem computacional utilizados em seguida.</p>
+<p>O modelo Ridge foi ajustado aos dados.</p>
+<p>Após o refinamento dos hiperparâmetros, a acurácia média atingida pelo modelo ridge foi de 73%.</p>
 </div>
 <div class="section" id="breve-explicacao-e-referencias-sobre-o-metodo">
 <h2>Breve explicação e referências sobre o método<a class="headerlink" href="#breve-explicacao-e-referencias-sobre-o-metodo" title="Permalink to this headline">¶</a></h2>
@@ -291,7 +290,7 @@
 <h3>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 
@@ -347,14 +346,14 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h3>Tunning<a class="headerlink" href="#tunning" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge</span> <span class="o">=</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge</span> <span class="o">=</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_params</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;alpha&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
     <span class="s1">&#39;fit_intercept&#39;</span><span class="p">:[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
     <span class="s1">&#39;tol&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
@@ -365,14 +364,14 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span> <span class="n">ridge_params</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span> <span class="n">ridge_params</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -400,14 +399,14 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Modelo<a class="headerlink" href="#modelo" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span> <span class="o">=</span> <span class="n">ridge_gs</span><span class="o">.</span><span class="n">best_estimator_</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span> <span class="o">=</span> <span class="n">ridge_gs</span><span class="o">.</span><span class="n">best_estimator_</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -430,7 +429,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
     <span class="n">classification_report</span><span class="p">(</span>
         <span class="n">scaled_y</span><span class="p">,</span>
         <span class="n">ridge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">),</span>
@@ -467,13 +466,13 @@ weighted avg       0.73      0.73      0.73      5563
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85",
             path: "./nbs"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85'</script>
 
               </div>
               
@@ -491,7 +490,7 @@ weighted avg       0.73      0.73      0.73      5563
     <div class="container">
       <p>
         
-          By Felício Visnardi<br/>
+          By Octahedron Data Experts<br/>
         
             &copy; Copyright 2020.<br/>
       </p>

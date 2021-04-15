@@ -14,7 +14,7 @@ from pandas_profiling import ProfileReport
 
 import yaml
 
-with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
+with open('../_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 X = pd.read_pickle(paths['X'])

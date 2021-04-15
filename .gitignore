@@ -1,1 +1,2 @@
-/data
+/data/*
+/nbs/_local_paths.yml
