@@ -10,7 +10,7 @@ logo: LOGO_ODX_PRETO.png
 execute:
   execute_notebooks: cache
   cache: '.'
-  exclude_paterns: [nb_06]
+  exclude_paterns: [nb_06-neural_network_classification.ipynb]
   timeout: 600
 
 # Define the name of the latex output file for PDF builds
@@ -33,3 +33,13 @@ bibtex_bibfiles:
 #html:
   #use_issues_button: true
   #use_repository_button: true
+
+sphinx:
+    config:
+      html_theme_options:
+        use_download_button: false
+        home_page_in_toc: true
+        repository_url: https://example.com/thing
+        use_issues_button: true
+        use_repository_button: true
+        use_edit_page_button: true
