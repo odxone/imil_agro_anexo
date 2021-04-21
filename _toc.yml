@@ -2,18 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
 - file: covers/intro
-- file: covers/var
-  chapters:
-    - file: nbs/nb_20-VAR
-- file: covers/comex
-  chapters:
-    - file: nbs/nb_30-COMEX
-- file: covers/caged
-  chapters:
-    - file: nbs/nb_40-emprego_formal_caged
-- file: covers/produtividade
-  chapters:
-    - file: nbs/nb_50-tratamento_produtividade
+- file: nbs/nb_20-VAR
+- file: nbs/nb_30-COMEX
+- file: nbs/nb_40-emprego_formal_caged
+- file: nbs/nb_50-tratamento_produtividade
 - file: covers/desigualdade
   chapters:
     - file: nbs/nb_60-preprocessing
