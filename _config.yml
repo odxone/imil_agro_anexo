@@ -10,8 +10,18 @@ logo: LOGO_IML_ODX.png
 execute:
   execute_notebooks: cache
   cache: .
-  exclude_paterns: 
-    - 'nb_66-neural_network_classification'
+  exclude_paterns:
+    nbs/nb_20-VAR
+    nbs/nb_30-COMEX
+    nbs/nb_40-emprego_formal_caged
+    nbs/nb_50-tratamento_produtividade
+    nbs/nb_60-preprocessing
+    nbs/nb_61-pandas_profiling
+    nbs/nb_62-scaling_encoding
+    nbs/nb_63-logistic_regression
+    nbs/nb_64-ridge_classification
+    nbs/nb_65-random_forest_classification
+    nbs/nb_66-neural_network_classification
   timeout: 600
 
 # Define the name of the latex output file for PDF builds

@@ -6,9 +6,11 @@ Os dados são importados de diferentes fontes e unidos em uma única base.
 A cada variável é dado um nome informativo, a base é limpada de inconsitências e ausências e, por fim, a desigualdade (medida como um índice Gini) é classificada em duas categorias: alto e baixo.
 
 Fonte dados:
-https://mapasinterativos.ibge.gov.br/agrocompara/
+[Censo Agro 2017 - IBGE](https://mapasinterativos.ibge.gov.br/agrocompara/)
 
 Fonte Gini:
+
+http://www.atlasbrasil.org.br/acervo/biblioteca
 
 ## Detalhamento da etapa
 
@@ -20,7 +22,7 @@ import geopandas as gpd
 
 import yaml
 
-with open('../_local_paths.yml') as f:
+with open('_local_paths.yml') as f:
     paths = yaml.load(f, Loader=yaml.FullLoader)
 
 GINI_DATA_PATH = paths['GINI_DATA_PATH']
@@ -28,6 +30,16 @@ CENSO_AGRO_DATA_PATH = paths['CENSO_AGRO_DATA_PATH']
 
 y = pd.read_excel(GINI_DATA_PATH)
 df = gpd.read_file(CENSO_AGRO_DATA_PATH)
+
+from zipfile import ZipFile
+from io import BytesIO
+
+zf =ZipFile('/mnt/c/Users/felic/Downloads/Bases Censo-1.zip')
+
+teste = pd.read_excel(
+    BytesIO(zf.read('Atlas 2013_municipal, estadual e Brasil.xlsx')),
+    sheet_name='MUN 91-00-10', usecols=['ANO', 'Codmun7', 'Município', 'GINI']
+)
 
 df.head()
 
@@ -110,6 +122,8 @@ variaveis_relevantes = [
 df = df[variaveis_relevantes]
 
 Com os dados do censo agropecuário melhor formatados, seguimos para processamento dos dados da FONTE
+
+teste.head()
 
 print(y.shape)
 y.head()

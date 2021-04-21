@@ -58,7 +58,7 @@ fig = (
                (df_exp['NO_ISIC_SECAO'] == "Agropecuária")]
         .groupby(['CO_ANO', 'NO_BLOCO'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('NO_BLOCO', title='Bloco de Países'),
@@ -76,7 +76,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'NO_VIA'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('NO_VIA', title='Via de escoamento'),
@@ -93,7 +93,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'SG_UF_NCM'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('SG_UF_NCM', title='Estado Origem'),
@@ -111,7 +111,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'SG_UF_NCM'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('SG_UF_NCM', title='Estado Origem'),
@@ -129,7 +129,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'NO_CUCI_GRUPO'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('NO_CUCI_GRUPO', title='Categoria CUCI'),
@@ -165,7 +165,7 @@ fig = (
                (df_imp['NO_ISIC_SECAO'] == "Agropecuária")]
         .groupby(['CO_ANO', 'NO_BLOCO'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('NO_BLOCO', title='Bloco de Países'),
@@ -182,7 +182,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'SG_UF_NCM'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('SG_UF_NCM', title='Estado Origem'),
@@ -218,7 +218,7 @@ fig = (
         .merge(df_vias, on='CO_VIA')
         .groupby(['CO_ANO', 'NO_CUCI_GRUPO'])['VL_FOB'].sum()
         .reset_index()
-    ).mark_line().encode(
+    ).mark_line(point=True).encode(
         alt.X('CO_ANO:N', title='Ano'),
         alt.Y('FOB:Q', title='milhões de US$'),
         alt.Color('NO_CUCI_GRUPO', title='Categoria CUCI'),

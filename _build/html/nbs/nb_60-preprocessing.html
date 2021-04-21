@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pré-Processamento - Leitura e Limpeza &#8212; Estudo sobre a Agropecuária no Brasil</title>
+    <title>Pré-Processamento - Leitura e Limpeza &#8212; Anexo ao Estudo sobre a Agropecuária no Brasil</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -77,7 +77,7 @@
   <img src="../_static/LOGO_IML_ODX.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Estudo sobre a Agropecuária no Brasil</h1>
+  <h1 class="site-logo" id="site-title">Anexo ao Estudo sobre a Agropecuária no Brasil</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -93,61 +93,25 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../covers/var.html">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_20-VAR.html">
    Vetor Auto Regressivo
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="nb_20-VAR.html">
-     Vetor Auto Regressivo
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../covers/comex.html">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_30-COMEX.html">
    Balança Comercial
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="nb_30-COMEX.html">
-     Balança Comercial
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../covers/caged.html">
-   Emprego Formal
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_40-emprego_formal_caged.html">
+   Análise dos empregos formais
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="nb_40-emprego_formal_caged.html">
-     Análise dos empregos formais
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../covers/produtividade.html">
-   Produtividade Agro
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_50-tratamento_produtividade.html">
+   Produtividade na Agricultura
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="nb_50-tratamento_produtividade.html">
-     Produtividade na Agricultura
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../covers/desigualdade.html">
@@ -311,8 +275,9 @@
 <p>Os dados são importados de diferentes fontes e unidos em uma única base.
 A cada variável é dado um nome informativo, a base é limpada de inconsitências e ausências e, por fim, a desigualdade (medida como um índice Gini) é classificada em duas categorias: alto e baixo.</p>
 <p>Fonte dados:
-<a class="reference external" href="https://mapasinterativos.ibge.gov.br/agrocompara/">https://mapasinterativos.ibge.gov.br/agrocompara/</a></p>
+<a class="reference external" href="https://mapasinterativos.ibge.gov.br/agrocompara/">Censo Agro 2017 - IBGE</a></p>
 <p>Fonte Gini:</p>
+<p><a class="reference external" href="http://www.atlasbrasil.org.br/acervo/biblioteca">http://www.atlasbrasil.org.br/acervo/biblioteca</a></p>
 </div>
 <div class="section" id="detalhamento-da-etapa">
 <h2>Detalhamento da etapa<a class="headerlink" href="#detalhamento-da-etapa" title="Permalink to this headline">¶</a></h2>
@@ -333,6 +298,31 @@ A cada variável é dado um nome informativo, a base é limpada de inconsitênci
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">GINI_DATA_PATH</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">CENSO_AGRO_DATA_PATH</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">zipfile</span> <span class="kn">import</span> <span class="n">ZipFile</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zf</span> <span class="o">=</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">&#39;/mnt/c/Users/felic/Downloads/Bases Censo-1.zip&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teste</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span>
+    <span class="n">BytesIO</span><span class="p">(</span><span class="n">zf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;Atlas 2013_municipal, estadual e Brasil.xlsx&#39;</span><span class="p">)),</span>
+    <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;MUN 91-00-10&#39;</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ANO&#39;</span><span class="p">,</span> <span class="s1">&#39;Codmun7&#39;</span><span class="p">,</span> <span class="s1">&#39;Município&#39;</span><span class="p">,</span> <span class="s1">&#39;GINI&#39;</span><span class="p">]</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -668,6 +658,77 @@ Abaixo, selecionamos as que não foram julgadas relevantes.</p>
 </div>
 </div>
 <p>Com os dados do censo agropecuário melhor formatados, seguimos para processamento dos dados da FONTE</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teste</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ANO</th>
+      <th>Codmun7</th>
+      <th>Município</th>
+      <th>GINI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1991</td>
+      <td>1100015</td>
+      <td>ALTA FLORESTA D'OESTE</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1991</td>
+      <td>1100023</td>
+      <td>ARIQUEMES</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1991</td>
+      <td>1100031</td>
+      <td>CABIXI</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1991</td>
+      <td>1100049</td>
+      <td>CACOAL</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1991</td>
+      <td>1100056</td>
+      <td>CEREJEIRAS</td>
+      <td>0.60</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>

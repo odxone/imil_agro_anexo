@@ -22,4 +22,4 @@ X = pd.read_pickle(paths['X'])
 report = ProfileReport(X, minimal=True)
 report
 
-A análise apontou não apontou características graves nos dados (como alta correlação entre features). Prosseguimos para o próximo passo.
+A análise não apontou características graves nos dados (como alta correlação entre features). Prosseguimos para o próximo passo.

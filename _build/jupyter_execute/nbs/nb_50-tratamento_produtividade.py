@@ -75,7 +75,7 @@ produtos_dropados = [
 
 lspa = lspa[~lspa['Produto das lavouras'].isin(produtos_dropados)]
 
-## Preparação do painel interativo
+## Preparação dos Gráficos
 
 def plot_producao(df, produto):
     dataf = df[
@@ -119,7 +119,29 @@ def plot_rendimento(df, produto):
     ).properties(
         title=f"{produto} - Rendimento médio"
     )
+
+
+def plot_produto(df, produto):
+    graph_prod = plot_producao(df, produto)
+    graph_areas = plot_areas(df, produto)
+    graph_rendimento = plot_rendimento(df, produto)
     
+    return alt.hconcat(graph_prod, graph_areas, graph_rendimento)
+
+## Gráficos
+
+lspa['Produto das lavouras'].unique()
+# lista de opções de produtos na base carregada
+
+plot_produto(lspa, '11 Cana-de-açúcar')
+
+plot_produto(lspa, '1.15 Soja')
+
+plot_produto(lspa, '1.4 Arroz')
+
+## Preparação do painel interativo
+
+O código a seguir foi escrito para execução em um kernel ativo. Sem esse kernel (que é o caso de quem está visualizando esse notebook no GitHub Pages) o painel não funciona.
 
 def plot_grafico_produto(tipo_grafico, Produto, dados=lspa):
     tipos = {
@@ -147,3 +169,4 @@ panel = pn.interact(
 ## Painel Interativo
 
 pn.Row(panel[0], panel[1])
+
