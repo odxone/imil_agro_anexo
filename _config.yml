@@ -9,8 +9,9 @@ logo: LOGO_IML_ODX.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
-  cache: '.'
-  exclude_paterns: [nb_06-neural_network_classification.ipynb]
+  cache: .
+  exclude_paterns: 
+    - 'nb_66-neural_network_classification'
   timeout: 600
 
 # Define the name of the latex output file for PDF builds

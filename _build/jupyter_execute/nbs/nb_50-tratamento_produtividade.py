@@ -18,7 +18,7 @@ import panel as pn
 #utilidades
 from datetime import datetime
 
-pn.extension()
+pn.extension('vega')
 
 ## Carregamento e tratamento dos dados
 

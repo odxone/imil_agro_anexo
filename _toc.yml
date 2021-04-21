@@ -10,7 +10,7 @@
     - file: nbs/nb_30-COMEX
 - file: covers/caged
   chapters:
-    - file: nbs/nb_40-emprego_formal
+    - file: nbs/nb_40-emprego_formal_caged
 - file: covers/produtividade
   chapters:
     - file: nbs/nb_50-tratamento_produtividade
