@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Science &#8212; Estudo sobre a Agropecuária no Brasil</title>
+    <title>Estudo sobre desigualdade e variáveis da agropecuária &#8212; Estudo sobre a Agropecuária no Brasil</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -45,8 +45,6 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -84,7 +82,7 @@
 </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="nav sidenav_l1">
@@ -97,7 +95,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
-   Data Science
+   Estudo sobre desigualdade e variáveis da agropecuária
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -144,7 +142,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
 </div>
 
 </div>
@@ -171,24 +169,25 @@
             </button>
             
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+            <!-- Source interaction buttons -->
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/DS_session_cover.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://example.com/thing"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://example.com/thing/issues/new?title=Issue%20on%20page%20%2FDS_session_cover.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/example.com/thing/edit/master/DS_session_cover.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
-
-            <!-- Source interaction buttons -->
 
 
             <!-- Full screen (wrap in <a> to have style consistency -->
@@ -212,10 +211,11 @@
         
               <div>
                 
-  <div class="section" id="data-science">
-<h1>Data Science<a class="headerlink" href="#data-science" title="Permalink to this headline">¶</a></h1>
-<p>There are many ways to write content in Jupyter Book. This short section
-covers a few tips for how to do so.</p>
+  <div class="section" id="estudo-sobre-desigualdade-e-variaveis-da-agropecuaria">
+<h1>Estudo sobre desigualdade e variáveis da agropecuária<a class="headerlink" href="#estudo-sobre-desigualdade-e-variaveis-da-agropecuaria" title="Permalink to this headline">¶</a></h1>
+<p>Durante o estudo, nos perguntamos se havia alguma relação entre a desigualdade de renda e algumas das variáveis que coletamos.</p>
+<p>Durante a exploração desse tópico, analisamos estatísticas básicas sobre as variáveis e ajustamos modelos de complexidade crescente e, através dos resultados, buscamos entender se tal relação existe e, caso exista, qual a sua natureza.</p>
+<p>Nos esforçamos em tornar cada notebook claro e didático, mas reconhecemos que não foi possível abordar cada tema com a profundidade que gostaríamos. Quaisquer dúvidas, críticas ou sugestões são bem vindas, especialmente pela ferramenta própria do git-hub. Pull-requests são profundamente apreciados e, após nossa apreciação, poderão ser incorporados nesse estudo.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -256,7 +256,7 @@ covers a few tips for how to do so.</p>
     <div class="container">
       <p>
         
-          By Felício Visnardi<br/>
+          By Octahedron Data Experts<br/>
         
             &copy; Copyright 2020.<br/>
       </p>
