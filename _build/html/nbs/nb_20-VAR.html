@@ -1,0 +1,966 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vetor Auto Regressivo &#8212; Estudo sobre a Agropecuária no Brasil</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Balança Comercial" href="../covers/comex.html" />
+    <link rel="prev" title="Vetor Auto Regressivo" href="../covers/var.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/LOGO_IML_ODX.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Estudo sobre a Agropecuária no Brasil</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../covers/intro.html">
+   Estudo sobre a Agropecuária no Brasil
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../covers/var.html">
+   Vetor Auto Regressivo
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Vetor Auto Regressivo
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/comex.html">
+   Balança Comercial
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_30-COMEX.html">
+     Balança Comercial
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/caged.html">
+   Emprego Formal
+  </a>
+  <ul class="simple collapse-ul">
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/produtividade.html">
+   Produtividade Agro
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_50-tratamento_produtividade.html">
+     Produtividade na Agricultura
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/desigualdade.html">
+   Estudo sobre desigualdade e variáveis da agropecuária
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_60-preprocessing.html">
+     Pré-Processamento - Leitura e Limpeza
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_61-pandas_profiling.html">
+     Pré-Processamento - Análise das variáveis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_62-scaling_encoding.html">
+     Pré-Processamento - Padronização e Codificação
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_63-logistic_regression.html">
+     Regressão Logística
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_64-ridge_classification.html">
+     Classificação Ridge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_65-random_forest_classification.html">
+     Floresta Aleatória
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_66-neural_network_classification.html">
+     Rede Neural
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://example.com/thing"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://example.com/thing/issues/new?title=Issue%20on%20page%20%2Fnbs/nb_20-VAR.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/example.com/thing/edit/master/nbs/nb_20-VAR.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-dados">
+   Download dados
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analise-de-series-temporais">
+   Análise de séries temporais
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#var">
+   VAR
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sumario-dos-resultados-do-modelo">
+     Sumário dos resultados do modelo
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funcao-de-impulso-resposta">
+   Função de Impulso Resposta
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="vetor-auto-regressivo">
+<h1>Vetor Auto Regressivo<a class="headerlink" href="#vetor-auto-regressivo" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># dados</span>
+<span class="kn">import</span> <span class="nn">sgs</span>
+
+<span class="c1"># manipulacao basica dos dados</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># analise de series temporais</span>
+<span class="kn">from</span> <span class="nn">statsmodels.stats</span> <span class="kn">import</span> <span class="n">api</span> <span class="k">as</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">statsmodels.tsa</span> <span class="kn">import</span> <span class="n">api</span> <span class="k">as</span> <span class="n">tsa</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="download-dados">
+<h2>Download dados<a class="headerlink" href="#download-dados" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">series</span> <span class="o">=</span> <span class="p">[</span><span class="mi">22105</span><span class="p">,</span> <span class="mi">22106</span><span class="p">,</span> <span class="mi">22107</span><span class="p">,</span> <span class="mi">22110</span><span class="p">]</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">,</span> <span class="s1">&#39;Indústria&#39;</span><span class="p">,</span> <span class="s1">&#39;Serviços&#39;</span><span class="p">,</span> <span class="s1">&#39;Famílias&#39;</span><span class="p">]</span>
+
+<span class="n">data_inicial</span> <span class="o">=</span> <span class="s1">&#39;01-01-1996&#39;</span>
+<span class="n">data_final</span> <span class="o">=</span> <span class="s1">&#39;01-01-2021&#39;</span>
+
+<span class="n">dataf</span> <span class="o">=</span> <span class="n">sgs</span><span class="o">.</span><span class="n">dataframe</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span> <span class="n">data_inicial</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">data_final</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataf</span> <span class="o">=</span> <span class="n">dataf</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">s</span><span class="p">:</span><span class="n">l</span> <span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">labels</span><span class="p">)})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Agropecuária</th>
+      <th>Indústria</th>
+      <th>Serviços</th>
+      <th>Famílias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1996-01-01</th>
+      <td>95.12</td>
+      <td>100.69</td>
+      <td>100.80</td>
+      <td>98.86</td>
+    </tr>
+    <tr>
+      <th>1996-04-01</th>
+      <td>96.59</td>
+      <td>97.05</td>
+      <td>102.31</td>
+      <td>100.93</td>
+    </tr>
+    <tr>
+      <th>1996-07-01</th>
+      <td>101.69</td>
+      <td>105.99</td>
+      <td>103.69</td>
+      <td>103.70</td>
+    </tr>
+    <tr>
+      <th>1996-10-01</th>
+      <td>126.16</td>
+      <td>99.54</td>
+      <td>101.56</td>
+      <td>109.13</td>
+    </tr>
+    <tr>
+      <th>1997-01-01</th>
+      <td>101.74</td>
+      <td>104.25</td>
+      <td>103.86</td>
+      <td>106.65</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="analise-de-series-temporais">
+<h2>Análise de séries temporais<a class="headerlink" href="#analise-de-series-temporais" title="Permalink to this headline">¶</a></h2>
+<p>Estacionariedade das séries individuais</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-0.30598564380234483,
+ 0.924652297332135,
+ 4,
+ 95,
+ {&#39;1%&#39;: -3.5011373281819504,
+  &#39;5%&#39;: -2.8924800524857854,
+  &#39;10%&#39;: -2.5832749307479226},
+ 573.8979732839358)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_7_1.png" src="../_images/nb_20-VAR_7_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Indústria&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Indústria&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-1.5447604445847587,
+ 0.5112643490359825,
+ 0,
+ 99,
+ {&#39;1%&#39;: -3.498198082189098,
+  &#39;5%&#39;: -2.891208211860468,
+  &#39;10%&#39;: -2.5825959973472097},
+ 479.28370884037497)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_8_1.png" src="../_images/nb_20-VAR_8_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Serviços&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Serviços&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-1.261678098049159,
+ 0.6465172835577605,
+ 0,
+ 99,
+ {&#39;1%&#39;: -3.498198082189098,
+  &#39;5%&#39;: -2.891208211860468,
+  &#39;10%&#39;: -2.5825959973472097},
+ 403.8357908936755)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_9_1.png" src="../_images/nb_20-VAR_9_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Famílias&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">dataf</span><span class="p">[</span><span class="s1">&#39;Famílias&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-0.9295096263819744,
+ 0.7780992296553246,
+ 0,
+ 99,
+ {&#39;1%&#39;: -3.498198082189098,
+  &#39;5%&#39;: -2.891208211860468,
+  &#39;10%&#39;: -2.5825959973472097},
+ 448.24804731458056)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_10_1.png" src="../_images/nb_20-VAR_10_1.png" />
+</div>
+</div>
+<p>Como os gráficos das ACFs pareciam indicar, o teste ADF para cada uma das séries não pode rejeitar a presença de raiz unitária.</p>
+<p>Prosseguimos para diferenciação e, em seguida, testagem ADF</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># diferenciação 1</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">dataf</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-7.18299686598927,
+ 2.620236817509198e-10,
+ 3,
+ 95,
+ {&#39;1%&#39;: -3.5011373281819504,
+  &#39;5%&#39;: -2.8924800524857854,
+  &#39;10%&#39;: -2.5832749307479226},
+ 566.7963178635749)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_13_1.png" src="../_images/nb_20-VAR_13_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Indústria&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Indústria&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-11.68048282560224,
+ 1.746213681992402e-21,
+ 0,
+ 98,
+ {&#39;1%&#39;: -3.4989097606014496,
+  &#39;5%&#39;: -2.891516256916761,
+  &#39;10%&#39;: -2.5827604414827157},
+ 477.2798344119583)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_14_1.png" src="../_images/nb_20-VAR_14_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Serviços&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Serviços&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-9.70148691125719,
+ 1.0692636480542159e-16,
+ 0,
+ 98,
+ {&#39;1%&#39;: -3.4989097606014496,
+  &#39;5%&#39;: -2.891516256916761,
+  &#39;10%&#39;: -2.5827604414827157},
+ 402.55970210462493)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_15_1.png" src="../_images/nb_20-VAR_15_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acf</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Famílias&#39;</span><span class="p">])</span>
+<span class="n">tsa</span><span class="o">.</span><span class="n">adfuller</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Famílias&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-9.68146656985568,
+ 1.2014770267262538e-16,
+ 0,
+ 98,
+ {&#39;1%&#39;: -3.4989097606014496,
+  &#39;5%&#39;: -2.891516256916761,
+  &#39;10%&#39;: -2.5827604414827157},
+ 445.3816574177117)
+</pre></div>
+</div>
+<img alt="../_images/nb_20-VAR_16_1.png" src="../_images/nb_20-VAR_16_1.png" />
+</div>
+</div>
+<p>Os testes indicam que as séries diferenciadas são estacionárias.</p>
+<p>Podemos proseguir para modelagem do VAR</p>
+</div>
+<div class="section" id="var">
+<h2>VAR<a class="headerlink" href="#var" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">tsa</span><span class="o">.</span><span class="n">VAR</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">dates</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;QS-OCT&#39;</span><span class="p">)</span>
+<span class="n">fit</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">maxlags</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Acima, o modelo é criado e ajustado com ordem arbitrária.
+Em seguida, é possível identificar a ordem ideal para o VAR, utilizando critérios de informação.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">select_order</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="simpletable">
+<caption>VAR Order Selection (* highlights the minimums)</caption>
+<tr>
+   <td></td>      <th>AIC</th>         <th>BIC</th>         <th>FPE</th>        <th>HQIC</th>    
+</tr>
+<tr>
+  <th>0</th>  <td>     7.541</td>  <td>     7.653*</td> <td>     1884.</td>  <td>     7.586*</td>
+</tr>
+<tr>
+  <th>1</th>  <td>     7.570</td>  <td>     8.129</td>  <td>     1939.</td>  <td>     7.795</td> 
+</tr>
+<tr>
+  <th>2</th>  <td>     7.512*</td> <td>     8.519</td>  <td>     1836.*</td> <td>     7.918</td> 
+</tr>
+<tr>
+  <th>3</th>  <td>     7.750</td>  <td>     9.204</td>  <td>     2341.</td>  <td>     8.336</td> 
+</tr>
+<tr>
+  <th>4</th>  <td>     7.869</td>  <td>     9.770</td>  <td>     2664.</td>  <td>     8.635</td> 
+</tr>
+<tr>
+  <th>5</th>  <td>     8.031</td>  <td>     10.38</td>  <td>     3190.</td>  <td>     8.978</td> 
+</tr>
+<tr>
+  <th>6</th>  <td>     8.261</td>  <td>     11.06</td>  <td>     4117.</td>  <td>     9.388</td> 
+</tr>
+<tr>
+  <th>7</th>  <td>     8.300</td>  <td>     11.54</td>  <td>     4440.</td>  <td>     9.607</td> 
+</tr>
+<tr>
+  <th>8</th>  <td>     8.510</td>  <td>     12.20</td>  <td>     5759.</td>  <td>     9.998</td> 
+</tr>
+<tr>
+  <th>9</th>  <td>     8.661</td>  <td>     12.80</td>  <td>     7151.</td>  <td>     10.33</td> 
+</tr>
+<tr>
+  <th>10</th> <td>     8.830</td>  <td>     13.42</td>  <td>     9228.</td>  <td>     10.68</td> 
+</tr>
+</table></div></div>
+</div>
+<p>Seguimos o critério AIC, que sugere fitar o modelo com ordem 2.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fit</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">maxlags</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sumario-dos-resultados-do-modelo">
+<h3>Sumário dos resultados do modelo<a class="headerlink" href="#sumario-dos-resultados-do-modelo" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fit</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           qua, 21, abr, 2021
+Time:                     11:50:52
+--------------------------------------------------------------------
+No. of Equations:         4.00000    BIC:                    9.21499
+Nobs:                     97.0000    HQIC:                   8.64581
+Log likelihood:          -915.130    FPE:                    3872.17
+AIC:                      8.25943    Det(Omega_mle):         2715.30
+--------------------------------------------------------------------
+Results for equation Agropecuária
+==================================================================================
+                     coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------
+const                   2.114745         0.852484            2.481           0.013
+L1.Agropecuária        -0.372413         0.095160           -3.914           0.000
+L1.Indústria            0.599387         0.316042            1.897           0.058
+L1.Serviços            -0.224442         0.755883           -0.297           0.767
+L1.Famílias            -0.266578         0.507680           -0.525           0.600
+L2.Agropecuária        -0.434218         0.095582           -4.543           0.000
+L2.Indústria           -0.162631         0.316086           -0.515           0.607
+L2.Serviços             0.238508         0.749878            0.318           0.750
+L2.Famílias             0.546182         0.503921            1.084           0.278
+==================================================================================
+
+Results for equation Indústria
+==================================================================================
+                     coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------
+const                   0.575504         0.449930            1.279           0.201
+L1.Agropecuária         0.011469         0.050224            0.228           0.819
+L1.Indústria           -0.160471         0.166803           -0.962           0.336
+L1.Serviços             0.214968         0.398946            0.539           0.590
+L1.Famílias            -0.137210         0.267947           -0.512           0.609
+L2.Agropecuária        -0.037279         0.050447           -0.739           0.460
+L2.Indústria            0.113894         0.166826            0.683           0.495
+L2.Serviços            -0.695459         0.395776           -1.757           0.079
+L2.Famílias             0.278470         0.265963            1.047           0.295
+==================================================================================
+
+Results for equation Serviços
+==================================================================================
+                     coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------
+const                   0.879598         0.293118            3.001           0.003
+L1.Agropecuária        -0.023511         0.032720           -0.719           0.472
+L1.Indústria           -0.017561         0.108668           -0.162           0.872
+L1.Serviços             0.053732         0.259902            0.207           0.836
+L1.Famílias            -0.027843         0.174560           -0.160           0.873
+L2.Agropecuária        -0.004987         0.032865           -0.152           0.879
+L2.Indústria            0.081349         0.108683            0.749           0.454
+L2.Serviços            -0.239149         0.257838           -0.928           0.354
+L2.Famílias             0.032123         0.173268            0.185           0.853
+==================================================================================
+
+Results for equation Famílias
+==================================================================================
+                     coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------
+const                   0.674989         0.374811            1.801           0.072
+L1.Agropecuária         0.006075         0.041839            0.145           0.885
+L1.Indústria           -0.059007         0.138954           -0.425           0.671
+L1.Serviços             0.472352         0.332339            1.421           0.155
+L1.Famílias            -0.278588         0.223212           -1.248           0.212
+L2.Agropecuária         0.016573         0.042025            0.394           0.693
+L2.Indústria           -0.116506         0.138973           -0.838           0.402
+L2.Serviços             0.013351         0.329699            0.040           0.968
+L2.Famílias            -0.047576         0.221559           -0.215           0.830
+==================================================================================
+
+Correlation matrix of residuals
+                Agropecuária  Indústria  Serviços  Famílias
+Agropecuária        1.000000   0.020935  0.058292  0.091797
+Indústria           0.020935   1.000000  0.805539  0.730560
+Serviços            0.058292   0.805539  1.000000  0.896678
+Famílias            0.091797   0.730560  0.896678  1.000000
+</pre></div>
+</div>
+</div>
+</div>
+<p>Os elementos fora da diagonal principal não são nulos, indicando existencia de efeitos contemporâneos</p>
+<p>Os valores relacionados a Agropecuária são significativamente menores que os demais, indicando certa independencia do setor em relação aos demais</p>
+<p>Abaixo, é feita análise dos resíduos e, em seguida, são plotadas as IRFs</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">fit</span><span class="o">.</span><span class="n">plot_acorr</span><span class="p">(</span><span class="n">resid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_20-VAR_27_0.png" src="../_images/nb_20-VAR_27_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">acorr_ljungbox</span><span class="p">(</span><span class="n">fit</span><span class="o">.</span><span class="n">resid</span><span class="p">[</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">],</span> <span class="n">return_df</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lags</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lb_stat</th>
+      <th>lb_pvalue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.179126</td>
+      <td>0.672126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.364446</td>
+      <td>0.505492</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3.381717</td>
+      <td>0.336430</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.305108</td>
+      <td>0.257399</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5.632617</td>
+      <td>0.343623</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7.941692</td>
+      <td>0.242406</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8.588434</td>
+      <td>0.283570</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8.590566</td>
+      <td>0.378003</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>8.590744</td>
+      <td>0.475876</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>8.600364</td>
+      <td>0.570403</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>9.447506</td>
+      <td>0.580658</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>9.841795</td>
+      <td>0.629838</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Os p-valores para os 12 primeiros lags não são significantes e, portanto, não podemos rejeitar a hipótese nula de que os resíduos não são autocorrelacionados.</p>
+</div>
+</div>
+<div class="section" id="funcao-de-impulso-resposta">
+<h2>Função de Impulso Resposta<a class="headerlink" href="#funcao-de-impulso-resposta" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">irf</span> <span class="o">=</span> <span class="n">fit</span><span class="o">.</span><span class="n">irf</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="c1"># numero de lags arbitrariamente escolhido</span>
+<span class="n">irf_plot</span> <span class="o">=</span> <span class="n">irf</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_20-VAR_31_0.png" src="../_images/nb_20-VAR_31_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">irf_plot</span> <span class="o">=</span> <span class="n">irf</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">orth</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># IRF Ortogonalizada</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_20-VAR_32_0.png" src="../_images/nb_20-VAR_32_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cum_responses</span> <span class="o">=</span> <span class="n">irf</span><span class="o">.</span><span class="n">plot_cum_effects</span><span class="p">()</span> <span class="c1"># IRF efeitos cumulativos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_20-VAR_33_0.png" src="../_images/nb_20-VAR_33_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cum_responses</span> <span class="o">=</span> <span class="n">irf</span><span class="o">.</span><span class="n">plot_cum_effects</span><span class="p">(</span><span class="n">orth</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># IRF ortogonalizada efeitos cumulativos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_20-VAR_34_0.png" src="../_images/nb_20-VAR_34_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./nbs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../covers/var.html" title="previous page">Vetor Auto Regressivo</a>
+    <a class='right-next' id="next-link" href="../covers/comex.html" title="next page">Balança Comercial</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Octahedron Data Experts<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

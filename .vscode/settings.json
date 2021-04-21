@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/felicio/.local/share/virtualenvs/odx-pb6_5LxA/bin/python"
+    "python.pythonPath": "/home/felicio/.local/share/virtualenvs/odx-pb6_5LxA/bin/python",
+    "jupyter.jupyterServerType": "local"
 }

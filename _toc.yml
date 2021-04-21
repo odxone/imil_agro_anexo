@@ -1,13 +1,25 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file: intro
-- file: DS_session_cover
+- file: covers/intro
+- file: covers/var
   chapters:
-    - file: nbs/nb_00-preprocessing
-    - file: nbs/nb_01-pandas_profiling
-    - file: nbs/nb_02-scaling_encoding
-    - file: nbs/nb_03-logistic_regression
-    - file: nbs/nb_04-ridge_classification
-    - file: nbs/nb_05-random_forest_classification
-    - file: nbs/nb_06-neural_network_classification
+    - file: nbs/nb_20-VAR
+- file: covers/comex
+  chapters:
+    - file: nbs/nb_30-COMEX
+- file: covers/caged
+  chapters:
+    - file: nbs/nb_40-emprego_formal
+- file: covers/produtividade
+  chapters:
+    - file: nbs/nb_50-tratamento_produtividade
+- file: covers/desigualdade
+  chapters:
+    - file: nbs/nb_60-preprocessing
+    - file: nbs/nb_61-pandas_profiling
+    - file: nbs/nb_62-scaling_encoding
+    - file: nbs/nb_63-logistic_regression
+    - file: nbs/nb_64-ridge_classification
+    - file: nbs/nb_65-random_forest_classification
+    - file: nbs/nb_66-neural_network_classification
