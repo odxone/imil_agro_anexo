@@ -245,6 +245,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leitura-e-limpesa-das-bases-de-dados">
+     Leitura e Limpesa das bases de dados
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#criacao-das-categorias">
      Criação das categorias
     </a>
@@ -274,10 +279,10 @@
 <h2>Resumo do alcance dessa etapa<a class="headerlink" href="#resumo-do-alcance-dessa-etapa" title="Permalink to this headline">¶</a></h2>
 <p>Os dados são importados de diferentes fontes e unidos em uma única base.
 A cada variável é dado um nome informativo, a base é limpada de inconsitências e ausências e, por fim, a desigualdade (medida como um índice Gini) é classificada em duas categorias: alto e baixo.</p>
-<p>Fonte dados:
-<a class="reference external" href="https://mapasinterativos.ibge.gov.br/agrocompara/">Censo Agro 2017 - IBGE</a></p>
-<p>Fonte Gini:</p>
-<p><a class="reference external" href="http://www.atlasbrasil.org.br/acervo/biblioteca">http://www.atlasbrasil.org.br/acervo/biblioteca</a></p>
+<p>Fontes dados:</p>
+<p><a class="reference external" href="https://mapasinterativos.ibge.gov.br/agrocompara/">Censo Agro 2017 Mapa Interativo - IBGE</a></p>
+<p><a class="reference external" href="http://tabnet.datasus.gov.br/cgi/ibge/censo/cnv/ginibr.def">Datasus - Min Saúde</a></p>
+<p>O mapa Interativo não disponibiliza o link para download direto. Subimos o <a class="reference external" href="https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip">arquivo</a> (baixado no dia XX/XX/XXXX) em nosso repositório.</p>
 </div>
 <div class="section" id="detalhamento-da-etapa">
 <h2>Detalhamento da etapa<a class="headerlink" href="#detalhamento-da-etapa" title="Permalink to this headline">¶</a></h2>
@@ -287,41 +292,33 @@ A cada variável é dado um nome informativo, a base é limpada de inconsitênci
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># carregamento de dados armazenado em shapefile</span>
 <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell tag_remove-input docutils container">
 </div>
+<div class="section" id="leitura-e-limpesa-das-bases-de-dados">
+<h3>Leitura e Limpesa das bases de dados<a class="headerlink" href="#leitura-e-limpesa-das-bases-de-dados" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">GINI_DATA_PATH</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">CENSO_AGRO_DATA_PATH</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">zipfile</span> <span class="kn">import</span> <span class="n">ZipFile</span>
-<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zf</span> <span class="o">=</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">&#39;/mnt/c/Users/felic/Downloads/Bases Censo-1.zip&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teste</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span>
-    <span class="n">BytesIO</span><span class="p">(</span><span class="n">zf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;Atlas 2013_municipal, estadual e Brasil.xlsx&#39;</span><span class="p">)),</span>
-    <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;MUN 91-00-10&#39;</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ANO&#39;</span><span class="p">,</span> <span class="s1">&#39;Codmun7&#39;</span><span class="p">,</span> <span class="s1">&#39;Município&#39;</span><span class="p">,</span> <span class="s1">&#39;GINI&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;http://tabnet.datasus.gov.br/cgi/ibge/censo/bases/ginibr.csv&quot;</span><span class="p">,</span>
+    <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin1&#39;</span><span class="p">,</span>
+    <span class="n">decimal</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span>
+    <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">,</span>
+    <span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">skipfooter</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -657,77 +654,22 @@ Abaixo, selecionamos as que não foram julgadas relevantes.</p>
 </div>
 </div>
 </div>
-<p>Com os dados do censo agropecuário melhor formatados, seguimos para processamento dos dados da FONTE</p>
+<p>A base do Datasus utilizou o código IBGE sem o dígito verificador. Criando coluna com essa informação para usar de chave na união entre as bases.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teste</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;COD_MUN&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">GEO</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ANO</th>
-      <th>Codmun7</th>
-      <th>Município</th>
-      <th>GINI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1991</td>
-      <td>1100015</td>
-      <td>ALTA FLORESTA D'OESTE</td>
-      <td>0.63</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1991</td>
-      <td>1100023</td>
-      <td>ARIQUEMES</td>
-      <td>0.57</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1991</td>
-      <td>1100031</td>
-      <td>CABIXI</td>
-      <td>0.70</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1991</td>
-      <td>1100049</td>
-      <td>CACOAL</td>
-      <td>0.66</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1991</td>
-      <td>1100056</td>
-      <td>CEREJEIRAS</td>
-      <td>0.60</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+</div>
+<p>Com os dados do censo agropecuário melhor formatados, seguimos para processamento dos dados da FONTE</p>
+<p>Primeira etapa é separar o código do município do nome.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="p">[[</span><span class="s1">&#39;COD_MUN&#39;</span><span class="p">,</span> <span class="s1">&#39;NOME_MUN&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="s1">&#39;Município&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -737,7 +679,7 @@ Abaixo, selecionamos as que não foram julgadas relevantes.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5563, 6)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5565, 6)
 </pre></div>
 </div>
 <div class="output text_html"><div>
@@ -758,59 +700,59 @@ Abaixo, selecionamos as que não foram julgadas relevantes.</p>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>COD_UF</th>
-      <th>NOME_UF</th>
+      <th>Município</th>
+      <th>1991</th>
+      <th>2000</th>
+      <th>2010</th>
       <th>COD_MUN</th>
-      <th>NOM_MUN</th>
-      <th>AREAMED</th>
-      <th>gini</th>
+      <th>NOME_MUN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>11</td>
-      <td>RONDONIA</td>
-      <td>1100015</td>
-      <td>ALTA FLORESTA DOESTE</td>
-      <td>129.156672</td>
-      <td>0.836474</td>
+      <td>110001 Alta Floresta D'Oeste</td>
+      <td>0.5983</td>
+      <td>0.5868</td>
+      <td>0.5893</td>
+      <td>110001</td>
+      <td>Alta Floresta D'Oeste</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>11</td>
-      <td>RONDONIA</td>
-      <td>1100023</td>
-      <td>ARIQUEMES</td>
-      <td>114.15835</td>
-      <td>0.73279</td>
+      <td>110037 Alto Alegre dos Parecis</td>
+      <td>...</td>
+      <td>0.508</td>
+      <td>0.5491</td>
+      <td>110037</td>
+      <td>Alto Alegre dos Parecis</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>11</td>
-      <td>RONDONIA</td>
-      <td>1100031</td>
-      <td>CABIXI</td>
-      <td>105.194995</td>
-      <td>0.744177</td>
+      <td>110040 Alto Paraíso</td>
+      <td>...</td>
+      <td>0.6256</td>
+      <td>0.5417</td>
+      <td>110040</td>
+      <td>Alto Paraíso</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>11</td>
-      <td>RONDONIA</td>
-      <td>1100049</td>
-      <td>CACOAL</td>
-      <td>58.046611</td>
-      <td>0.695199</td>
+      <td>110034 Alvorada D'Oeste</td>
+      <td>0.569</td>
+      <td>0.6534</td>
+      <td>0.5355</td>
+      <td>110034</td>
+      <td>Alvorada D'Oeste</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>11</td>
-      <td>RONDONIA</td>
-      <td>1100056</td>
-      <td>CEREJEIRAS</td>
-      <td>176.197346</td>
-      <td>0.827577</td>
+      <td>110002 Ariquemes</td>
+      <td>0.5827</td>
+      <td>0.5927</td>
+      <td>0.5496</td>
+      <td>110002</td>
+      <td>Ariquemes</td>
     </tr>
   </tbody>
 </table>
@@ -824,30 +766,31 @@ Abaixo, selecionamos as que não foram julgadas relevantes.</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 5563 entries, 0 to 5562
+RangeIndex: 5565 entries, 0 to 5564
 Data columns (total 6 columns):
- #   Column   Non-Null Count  Dtype 
----  ------   --------------  ----- 
- 0   COD_UF   5563 non-null   int64 
- 1   NOME_UF  5563 non-null   object
- 2   COD_MUN  5563 non-null   int64 
- 3   NOM_MUN  5563 non-null   object
- 4   AREAMED  5563 non-null   object
- 5   gini     5563 non-null   object
-dtypes: int64(2), object(4)
-memory usage: 260.9+ KB
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   Município  5565 non-null   object 
+ 1   1991       5565 non-null   object 
+ 2   2000       5565 non-null   object 
+ 3   2010       5565 non-null   float64
+ 4   COD_MUN    5565 non-null   object 
+ 5   NOME_MUN   5565 non-null   object 
+dtypes: float64(1), object(5)
+memory usage: 261.0+ KB
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="o">.</span><span class="n">gini</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">gini</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">[[</span><span class="s1">&#39;COD_MUN&#39;</span><span class="p">,</span> <span class="s1">&#39;2010&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;2010&#39;</span><span class="p">:</span><span class="s1">&#39;gini&#39;</span>
+<span class="p">})</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Nem todas as variáveis são relevantes, mas a limpeza será feita após o merge</p>
 </div>
 <div class="section" id="criacao-das-categorias">
 <h3>Criação das categorias<a class="headerlink" href="#criacao-das-categorias" title="Permalink to this headline">¶</a></h3>
@@ -860,7 +803,7 @@ memory usage: 260.9+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7450668545258983
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5025
 </pre></div>
 </div>
 </div>
@@ -880,7 +823,7 @@ memory usage: 260.9+ KB
 <h3>Merge<a class="headerlink" href="#merge" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;GEO&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;COD_MUN&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;COD_MUN&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -892,7 +835,7 @@ memory usage: 260.9+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5563, 47)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5565, 43)
 </pre></div>
 </div>
 </div>
@@ -904,7 +847,7 @@ memory usage: 260.9+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5563, 47)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5565, 43)
 </pre></div>
 </div>
 </div>
@@ -912,10 +855,367 @@ memory usage: 260.9+ KB
 <p>Em seguida, separamos os labels dos municípios e as variáveis de interesse.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GEO</th>
+      <th>MUNICIPIO</th>
+      <th>Estabelecimento Agropecuário (N)</th>
+      <th>Área média (ha)</th>
+      <th>Pessoal Ocupado / Estabelecimento (Pessoa)</th>
+      <th>Área lavoura/ Adubadeira (ha)</th>
+      <th>Área lavoura/ Colheitadeira(ha)</th>
+      <th>Área lavoura/ Semeadeira(ha)</th>
+      <th>Área lavoura/ Trator(ha)</th>
+      <th>Atividade-Lavoura Temporária (%)</th>
+      <th>...</th>
+      <th>Carga de Bovinos (n/ha)</th>
+      <th>Cisterna (%)</th>
+      <th>Utilização de Agrotóxicos (%)</th>
+      <th>Despesa com Agrotóxicos (%)</th>
+      <th>Uso de irrigação (%)</th>
+      <th>Assistência Técnica (%)</th>
+      <th>Agricultura familiar (%)</th>
+      <th>Produtor com escolaridade até Ensino Fundamental(%)</th>
+      <th>COD_MUN</th>
+      <th>gini</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4113809.0</td>
+      <td>Lupionópolis - PR</td>
+      <td>173.0</td>
+      <td>59.7001</td>
+      <td>3.23121</td>
+      <td>165.7380</td>
+      <td>852.3680</td>
+      <td>124.3040</td>
+      <td>53.27300</td>
+      <td>25.43350</td>
+      <td>...</td>
+      <td>2.457880</td>
+      <td>1.156070</td>
+      <td>48.55490</td>
+      <td>8.586240</td>
+      <td>8.09249</td>
+      <td>68.78610</td>
+      <td>71.0983</td>
+      <td>36.9942</td>
+      <td>411380</td>
+      <td>gini_baixo</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3500501.0</td>
+      <td>Águas de Lindóia - SP</td>
+      <td>69.0</td>
+      <td>28.4016</td>
+      <td>3.42029</td>
+      <td>36.3902</td>
+      <td>80.0584</td>
+      <td>133.4310</td>
+      <td>8.00584</td>
+      <td>8.69565</td>
+      <td>...</td>
+      <td>2.185360</td>
+      <td>5.797100</td>
+      <td>39.13040</td>
+      <td>2.435280</td>
+      <td>13.04350</td>
+      <td>49.27540</td>
+      <td>60.8696</td>
+      <td>46.3768</td>
+      <td>350050</td>
+      <td>gini_baixo</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1508159.0</td>
+      <td>Uruará - PA</td>
+      <td>3993.0</td>
+      <td>137.3820</td>
+      <td>3.05109</td>
+      <td>1556.9600</td>
+      <td>4003.6200</td>
+      <td>800.7230</td>
+      <td>114.85800</td>
+      <td>10.09270</td>
+      <td>...</td>
+      <td>0.947595</td>
+      <td>0.075132</td>
+      <td>30.12770</td>
+      <td>3.377250</td>
+      <td>2.17881</td>
+      <td>5.76008</td>
+      <td>84.0471</td>
+      <td>64.1122</td>
+      <td>150815</td>
+      <td>gini_alto</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4318705.0</td>
+      <td>São Leopoldo - RS</td>
+      <td>65.0</td>
+      <td>26.7850</td>
+      <td>3.44615</td>
+      <td>85.3800</td>
+      <td>85.3800</td>
+      <td>18.9733</td>
+      <td>4.61514</td>
+      <td>27.69230</td>
+      <td>...</td>
+      <td>1.906410</td>
+      <td>1.538460</td>
+      <td>9.23077</td>
+      <td>0.754856</td>
+      <td>20.00000</td>
+      <td>26.15380</td>
+      <td>53.8462</td>
+      <td>40.0000</td>
+      <td>431870</td>
+      <td>gini_alto</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3556354.0</td>
+      <td>Vargem - SP</td>
+      <td>228.0</td>
+      <td>31.9352</td>
+      <td>3.11404</td>
+      <td>52.0186</td>
+      <td>127.1570</td>
+      <td>54.4957</td>
+      <td>8.05922</td>
+      <td>11.84210</td>
+      <td>...</td>
+      <td>1.693530</td>
+      <td>0.877193</td>
+      <td>12.71930</td>
+      <td>2.231690</td>
+      <td>14.03510</td>
+      <td>55.26320</td>
+      <td>54.8246</td>
+      <td>51.7544</td>
+      <td>355635</td>
+      <td>gini_baixo</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 43 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">municipios</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MUNICIPIO&#39;</span><span class="p">]</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span>
-    <span class="s1">&#39;COD_UF&#39;</span><span class="p">,</span> <span class="s1">&#39;NOME_UF&#39;</span><span class="p">,</span> <span class="s1">&#39;COD_MUN&#39;</span><span class="p">,</span> <span class="s1">&#39;NOM_MUN&#39;</span><span class="p">,</span> <span class="s1">&#39;AREAMED&#39;</span><span class="p">,</span> <span class="s1">&#39;GEO&#39;</span><span class="p">,</span> <span class="s1">&#39;MUNICIPIO&#39;</span>
+    <span class="s1">&#39;COD_MUN&#39;</span><span class="p">,</span> <span class="s1">&#39;GEO&#39;</span><span class="p">,</span> <span class="s1">&#39;MUNICIPIO&#39;</span>
 <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">X</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GEO</th>
+      <th>MUNICIPIO</th>
+      <th>Estabelecimento Agropecuário (N)</th>
+      <th>Área média (ha)</th>
+      <th>Pessoal Ocupado / Estabelecimento (Pessoa)</th>
+      <th>Área lavoura/ Adubadeira (ha)</th>
+      <th>Área lavoura/ Colheitadeira(ha)</th>
+      <th>Área lavoura/ Semeadeira(ha)</th>
+      <th>Área lavoura/ Trator(ha)</th>
+      <th>Atividade-Lavoura Temporária (%)</th>
+      <th>...</th>
+      <th>Carga de Bovinos (n/ha)</th>
+      <th>Cisterna (%)</th>
+      <th>Utilização de Agrotóxicos (%)</th>
+      <th>Despesa com Agrotóxicos (%)</th>
+      <th>Uso de irrigação (%)</th>
+      <th>Assistência Técnica (%)</th>
+      <th>Agricultura familiar (%)</th>
+      <th>Produtor com escolaridade até Ensino Fundamental(%)</th>
+      <th>COD_MUN</th>
+      <th>gini</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1407</th>
+      <td>3510609.0</td>
+      <td>Carapicuíba - SP</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>351060</td>
+      <td>gini_baixo</td>
+    </tr>
+    <tr>
+      <th>2626</th>
+      <td>3303203.0</td>
+      <td>Nilópolis - RJ</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>330320</td>
+      <td>gini_baixo</td>
+    </tr>
+    <tr>
+      <th>3227</th>
+      <td>3505708.0</td>
+      <td>Barueri - SP</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>350570</td>
+      <td>gini_alto</td>
+    </tr>
+    <tr>
+      <th>3890</th>
+      <td>3500600.0</td>
+      <td>Águas de São Pedro - SP</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>350060</td>
+      <td>gini_alto</td>
+    </tr>
+    <tr>
+      <th>5473</th>
+      <td>2919926.0</td>
+      <td>Madre de Deus - BA</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>291992</td>
+      <td>gini_alto</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 43 columns</p>
+</div></div></div>
+</div>
+<p>Os 5 municípios não tem dados do censo agro e serão removidos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">municipios</span><span class="o">=</span> <span class="n">municipios</span><span class="p">[</span><span class="o">~</span><span class="n">X</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="o">~</span><span class="n">X</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span>
 </pre></div>
 </div>
 </div>

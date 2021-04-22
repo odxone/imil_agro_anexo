@@ -299,7 +299,9 @@
 <h3>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -363,7 +365,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Definição da Rede<a class="headerlink" href="#definicao-da-rede" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">baseline_model</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">baseline_model</span><span class="p">():</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span>
                     <span class="n">input_dim</span><span class="o">=</span><span class="mi">39</span><span class="p">,</span>
@@ -384,7 +386,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baseline_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -410,7 +412,7 @@ _________________________________________________________________
 <h2>Treinamento Rede<a class="headerlink" href="#treinamento-rede" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">baseline_model</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">baseline_model</span><span class="p">,</span>
                            <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
                            <span class="n">batch_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                            <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -420,19 +422,19 @@ _________________________________________________________________
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;tensorflow.python.keras.callbacks.History at 0x7f848c31feb0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;tensorflow.python.keras.callbacks.History at 0x7f3d880b54c0&gt;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#ann_viz(baseline_model(), filename=&#39;rede_2_categs.gv&#39;, title=&#39;Rede Neural - 2 categorias&#39;)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ann_viz(baseline_model(), filename=&#39;rede_2_categs.gv&#39;, title=&#39;Rede Neural - 2 categorias&#39;)</span>
 </pre></div>
 </div>
 </div>
@@ -442,7 +444,7 @@ _________________________________________________________________
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prediction</span> <span class="o">=</span> <span class="n">nn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prediction</span> <span class="o">=</span> <span class="n">nn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -454,7 +456,7 @@ _________________________________________________________________
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
     <span class="n">classification_report</span><span class="p">(</span>
         <span class="n">scaled_y</span><span class="p">,</span>
         <span class="n">prediction</span><span class="p">,</span> 
@@ -492,13 +494,13 @@ weighted avg       0.82      0.82      0.82      5563
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85",
+            kernelName: "python3",
             path: "./nbs"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

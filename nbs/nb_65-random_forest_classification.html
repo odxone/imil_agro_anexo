@@ -283,7 +283,7 @@
 <div class="section" id="resumo-dos-resultados-dessa-etapa">
 <h2>Resumo dos resultados dessa etapa<a class="headerlink" href="#resumo-dos-resultados-dessa-etapa" title="Permalink to this headline">¶</a></h2>
 <p>Foi ajustado um modelo do tipo Floresta Aleatória aos dados.</p>
-<p>Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 90%.</p>
+<p>Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 74%.</p>
 </div>
 <div class="section" id="breve-explicacao-e-referencias-sobre-o-metodo">
 <h2>Breve explicação e referências sobre o método<a class="headerlink" href="#breve-explicacao-e-referencias-sobre-o-metodo" title="Permalink to this headline">¶</a></h2>
@@ -294,9 +294,10 @@
 <h3>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
 
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">RandomizedSearchCV</span>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -431,16 +432,16 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
  &#39;ccp_alpha&#39;: 0.0,
  &#39;class_weight&#39;: None,
  &#39;criterion&#39;: &#39;gini&#39;,
- &#39;max_depth&#39;: 10,
+ &#39;max_depth&#39;: 3,
  &#39;max_features&#39;: &#39;auto&#39;,
  &#39;max_leaf_nodes&#39;: None,
  &#39;max_samples&#39;: None,
  &#39;min_impurity_decrease&#39;: 0.0,
  &#39;min_impurity_split&#39;: None,
- &#39;min_samples_leaf&#39;: 8,
+ &#39;min_samples_leaf&#39;: 2,
  &#39;min_samples_split&#39;: 16,
  &#39;min_weight_fraction_leaf&#39;: 0.0,
- &#39;n_estimators&#39;: 500,
+ &#39;n_estimators&#39;: 700,
  &#39;n_jobs&#39;: None,
  &#39;oob_score&#39;: False,
  &#39;random_state&#39;: None,
@@ -466,12 +467,12 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-   gini_alto       0.87      0.94      0.90      2784
-  gini_baixo       0.93      0.86      0.90      2779
+   gini_alto       0.75      0.70      0.73      2779
+  gini_baixo       0.72      0.77      0.75      2781
 
-    accuracy                           0.90      5563
-   macro avg       0.90      0.90      0.90      5563
-weighted avg       0.90      0.90      0.90      5563
+    accuracy                           0.74      5560
+   macro avg       0.74      0.74      0.74      5560
+weighted avg       0.74      0.74      0.74      5560
 </pre></div>
 </div>
 </div>

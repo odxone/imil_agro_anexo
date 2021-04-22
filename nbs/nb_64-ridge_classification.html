@@ -266,6 +266,21 @@
    Performance
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eli5">
+   ELI5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lime">
+   LIME
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shap">
+   SHAP
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -294,7 +309,9 @@
 <h3>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 
@@ -350,14 +367,14 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h3>Tunning<a class="headerlink" href="#tunning" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge</span> <span class="o">=</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge</span> <span class="o">=</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_params</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;alpha&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
     <span class="s1">&#39;fit_intercept&#39;</span><span class="p">:[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
     <span class="s1">&#39;tol&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
@@ -368,14 +385,14 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span> <span class="n">ridge_params</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span> <span class="n">ridge_params</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_gs</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">scaled_y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -403,22 +420,22 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Modelo<a class="headerlink" href="#modelo" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span> <span class="o">=</span> <span class="n">ridge_gs</span><span class="o">.</span><span class="n">best_estimator_</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span> <span class="o">=</span> <span class="n">ridge_gs</span><span class="o">.</span><span class="n">best_estimator_</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_model</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;alpha&#39;: 0.1,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;alpha&#39;: 9.8,
  &#39;class_weight&#39;: None,
  &#39;copy_X&#39;: True,
- &#39;fit_intercept&#39;: True,
+ &#39;fit_intercept&#39;: False,
  &#39;max_iter&#39;: None,
  &#39;normalize&#39;: False,
  &#39;random_state&#39;: 42,
@@ -433,7 +450,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
     <span class="n">classification_report</span><span class="p">(</span>
         <span class="n">scaled_y</span><span class="p">,</span>
         <span class="n">ridge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">),</span>
@@ -445,16 +462,25 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-   gini_alto       0.71      0.76      0.73      2784
-  gini_baixo       0.74      0.69      0.72      2779
+   gini_alto       0.74      0.71      0.73      2779
+  gini_baixo       0.72      0.76      0.74      2781
 
-    accuracy                           0.73      5563
-   macro avg       0.73      0.73      0.73      5563
-weighted avg       0.73      0.73      0.73      5563
+    accuracy                           0.73      5560
+   macro avg       0.73      0.73      0.73      5560
+weighted avg       0.73      0.73      0.73      5560
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="eli5">
+<h2>ELI5<a class="headerlink" href="#eli5" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="lime">
+<h2>LIME<a class="headerlink" href="#lime" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="shap">
+<h2>SHAP<a class="headerlink" href="#shap" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -470,13 +496,13 @@ weighted avg       0.73      0.73      0.73      5563
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85",
+            kernelName: "python3",
             path: "./nbs"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python385jvsc74a57bd00bfc05bafc344aea53c273091d80dddfc48040724b1326fcba5dbf95eda70d85'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
