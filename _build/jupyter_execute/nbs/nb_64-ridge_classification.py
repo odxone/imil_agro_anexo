@@ -1,10 +1,10 @@
-# Floresta Aleatória
+# Classificação Ridge
 
 ## Resumo dos resultados dessa etapa
 
-Foi ajustado um modelo do tipo Floresta Aleatória aos dados.
+O modelo Ridge foi ajustado aos dados.
 
-Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 74%.
+Após o refinamento dos hiperparâmetros, a acurácia média atingida pelo modelo ridge foi de 73%.
 
 ## Breve explicação e referências sobre o método
 
@@ -17,8 +17,9 @@ from io import BytesIO
 import joblib
 import numpy as np
 
-from sklearn.model_selection import RandomizedSearchCV
-from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import RidgeClassifier
 
 from sklearn.metrics import classification_report
 
@@ -49,49 +50,44 @@ categories = load_remote_joblib("https://github.com/feliciov/agro_online/raw/mai
 
 ### Tunning
 
-O número de parâmetros para tunar aqui é bem maior do que os anteriores
+ridge = RidgeClassifier(random_state=42)
 
-Usando RandomSearchCV para busca de hiperparâmetros
-
-max_depth = [int(x) for x in np.arange(1, 11)]
-max_features = ['auto', 'sqrt']
-min_samples_leaf = [int(2**x) for x in np.arange(0, 4)]
-min_samples_slit = [int(2**x) for x in np.arange(4, 8)]
-n_estimators = [int(x) * 100 for x in np.arange(1, 8)]
-
-param_grid ={
-    'max_depth':max_depth,
-    'max_features':max_features,
-    'min_samples_leaf':min_samples_leaf,
-    'min_samples_split':min_samples_slit,
-    'n_estimators':n_estimators,
+ridge_params = {
+    'alpha':np.arange(0.1, 10.1, 0.1),
+    'fit_intercept':[True, False],
+    'tol': [1/10**(i) for i in np.arange(3, 6)]
 }
 
-rfr = RandomForestClassifier()
+ridge_gs = GridSearchCV(ridge, ridge_params, n_jobs=-1, cv=4)
 
-rfr_rs = RandomizedSearchCV(
-    estimator=rfr,
-    param_distributions=param_grid,
-    n_iter=30,
-    cv=3,
-    random_state=42
-)
-
-rfr_rs.fit(scaled_X, scaled_y.ravel())
+ridge_gs.fit(scaled_X, scaled_y.ravel())
 
 ## Modelo
 
-rf_model = rfr_rs.best_estimator_
+ridge_model = ridge_gs.best_estimator_
 
-rf_model.get_params()
+ridge_model.get_params()
 
 ## Performance
 
-print(classification_report(
-    scaled_y,
-    rf_model.predict(scaled_X),
-    target_names=categories
-))
+print(
+    classification_report(
+        scaled_y,
+        ridge_model.predict(scaled_X),
+        target_names=categories
+    ))
 
-joblib.dump(rf_model, 'data_gini/rf_model.joblib')
+joblib.dump(ridge_model, 'data_gini/ridge_model.joblib')
+
+## ELI5
+
+
+
+## LIME
+
+
+
+## SHAP
+
+
 

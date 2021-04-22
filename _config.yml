@@ -8,8 +8,8 @@ logo: LOGO_IML_ODX.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: cache
-  cache: .
+  execute_notebooks: "off"
+  #cache: .
   exclude_paterns:
     nbs/nb_20-VAR
     nbs/nb_30-COMEX

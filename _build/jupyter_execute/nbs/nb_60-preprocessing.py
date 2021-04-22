@@ -5,12 +5,13 @@
 Os dados são importados de diferentes fontes e unidos em uma única base.
 A cada variável é dado um nome informativo, a base é limpada de inconsitências e ausências e, por fim, a desigualdade (medida como um índice Gini) é classificada em duas categorias: alto e baixo.
 
-Fonte dados:
-[Censo Agro 2017 - IBGE](https://mapasinterativos.ibge.gov.br/agrocompara/)
+Fontes dados:
 
-Fonte Gini:
+[Censo Agro 2017 Mapa Interativo - IBGE](https://mapasinterativos.ibge.gov.br/agrocompara/)
 
-http://www.atlasbrasil.org.br/acervo/biblioteca
+[Datasus - Min Saúde](http://tabnet.datasus.gov.br/cgi/ibge/censo/cnv/ginibr.def)
+
+O mapa Interativo não disponibiliza o link para download direto. Subimos o [arquivo](https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip) (baixado no dia XX/XX/XXXX) em nosso repositório.
 
 ## Detalhamento da etapa
 
@@ -18,27 +19,22 @@ http://www.atlasbrasil.org.br/acervo/biblioteca
 
 import pandas as pd
 import numpy as np
+
+# carregamento de dados armazenado em shapefile
 import geopandas as gpd
 
-import yaml
+### Leitura e Limpesa das bases de dados
 
-with open('_local_paths.yml') as f:
-    paths = yaml.load(f, Loader=yaml.FullLoader)
+df = gpd.read_file("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip")
 
-GINI_DATA_PATH = paths['GINI_DATA_PATH']
-CENSO_AGRO_DATA_PATH = paths['CENSO_AGRO_DATA_PATH']
-
-y = pd.read_excel(GINI_DATA_PATH)
-df = gpd.read_file(CENSO_AGRO_DATA_PATH)
-
-from zipfile import ZipFile
-from io import BytesIO
-
-zf =ZipFile('/mnt/c/Users/felic/Downloads/Bases Censo-1.zip')
-
-teste = pd.read_excel(
-    BytesIO(zf.read('Atlas 2013_municipal, estadual e Brasil.xlsx')),
-    sheet_name='MUN 91-00-10', usecols=['ANO', 'Codmun7', 'Município', 'GINI']
+y = pd.read_csv(
+    "http://tabnet.datasus.gov.br/cgi/ibge/censo/bases/ginibr.csv",
+    encoding='latin1',
+    decimal=',',
+    sep=";",
+    skiprows=2,
+    skipfooter=2,
+    engine="python",
 )
 
 df.head()
@@ -121,18 +117,24 @@ variaveis_relevantes = [
 
 df = df[variaveis_relevantes]
 
+A base do Datasus utilizou o código IBGE sem o dígito verificador. Criando coluna com essa informação para usar de chave na união entre as bases.
+
+df['COD_MUN'] = df.GEO.astype(int).astype(str).str[:-1]
+
 Com os dados do censo agropecuário melhor formatados, seguimos para processamento dos dados da FONTE
 
-teste.head()
+Primeira etapa é separar o código do município do nome.
+
+y[['COD_MUN', 'NOME_MUN']] = y['Município'].str.split(' ', n=1, expand=True)
 
 print(y.shape)
 y.head()
 
 y.info()
 
-y.gini = pd.to_numeric(y.gini, errors='coerce')
-
-Nem todas as variáveis são relevantes, mas a limpeza será feita após o merge
+y = y[['COD_MUN', '2010']].rename(columns={
+    '2010':'gini'
+})
 
 ### Criação das categorias
 
@@ -148,7 +150,7 @@ y.gini = np.select(
 
 ### Merge
 
-df = df.merge(y, left_on='GEO', right_on='COD_MUN')
+df = df.merge(y, on='COD_MUN')
 
 df.shape
 
@@ -156,16 +158,25 @@ df.dropna().shape #inefetivo, o merge foi do tipo 'inner_join', não haviam NAs 
 
 Em seguida, separamos os labels dos municípios e as variáveis de interesse.
 
+df.head()
+
 municipios = df['MUNICIPIO']
 X = df.drop(columns=[
-    'COD_UF', 'NOME_UF', 'COD_MUN', 'NOM_MUN', 'AREAMED', 'GEO', 'MUNICIPIO'
+    'COD_MUN', 'GEO', 'MUNICIPIO'
 ])
+
+df[X.duplicated()]
+
+Os 5 municípios não tem dados do censo agro e serão removidos
+
+municipios= municipios[~X.duplicated()]
+X = X[~X.duplicated()]
 
 A próxima etapa é escalar e codificar as features conforme necessário.
 
 # editar metadata
 # tags ['remove-input']
 
-municipios.to_pickle(paths['municipios'])
-X.to_pickle(paths['X'])
+municipios.to_pickle('data_gini/municipios.pkl.xz')
+X.to_pickle('data_gini/X.pkl.xz')
 

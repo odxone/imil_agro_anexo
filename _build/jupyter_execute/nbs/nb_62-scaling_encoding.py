@@ -15,12 +15,7 @@ from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 
 import joblib
 
-import yaml
-
-with open('/mnt/d/Clientes/ODX/agro/online_book/_local_paths.yml') as f:
-    paths = yaml.load(f, Loader=yaml.FullLoader)
-
-X = pd.read_pickle(paths['X'])
+X = pd.read_pickle("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/X.pkl.xz")
 
 y = X['gini']
 X = X.drop(columns=['gini'])
@@ -47,11 +42,11 @@ categories = y_scaler.categories_[0].tolist()
 
 Em seguida, prosseguimos para as modelagens.
 
-joblib.dump(x_scaler, paths['x_scaler'])
-joblib.dump(scaled_X, paths['scaled_X'])
+joblib.dump(x_scaler, 'data_gini/x_scaler.joblib')
+joblib.dump(scaled_X, 'data_gini/scaled_X.joblib')
 
-joblib.dump(y_scaler, paths['y_scaler'])
-joblib.dump(scaled_y, paths['scaled_y'])
+joblib.dump(y_scaler, 'data_gini/y_scaler.joblib')
+joblib.dump(scaled_y, 'data_gini/scaled_y.joblib')
 
-joblib.dump(categories, paths['categories'])
+joblib.dump(categories, 'data_gini/categories.joblib')
 

@@ -12,14 +12,14 @@ import pandas as pd
 
 from pandas_profiling import ProfileReport
 
-import yaml
-
-with open('../_local_paths.yml') as f:
-    paths = yaml.load(f, Loader=yaml.FullLoader)
-
-X = pd.read_pickle(paths['X'])
+X = pd.read_pickle('data_gini/X.pkl.xz')
 
 report = ProfileReport(X, minimal=True)
 report
 
-A análise não apontou características graves nos dados (como alta correlação entre features). Prosseguimos para o próximo passo.
+A análise não apontou características graves nos dados (como alta correlação entre features).
+
+O índice foi apontado como 100% de valores únicos, mas ele será removido para modelagem.
+
+Prosseguimos para o próximo passo.
+
