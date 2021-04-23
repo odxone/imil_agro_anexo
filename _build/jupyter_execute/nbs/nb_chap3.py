@@ -17,7 +17,7 @@ import cufflinks as cf
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-py.init_notebook_mode(connected=True)
+py.init_notebook_mode(connected=False)
 cf.go_offline()
 
 pib_agro2 = ipea.timeseries(
@@ -117,4 +117,3 @@ Valor_adicionado_por_setor = Valor_adicionado_por_setor.rename(columns={s:l for 
 Valor_adicionado_por_setor.head()
 
 Valor_adicionado_por_setor.iplot(title= 'PIB Trimestral por Setor- Dados dessazonalizados')
-

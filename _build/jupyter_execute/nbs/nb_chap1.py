@@ -17,7 +17,7 @@ import plotly.graph_objs as go
 import plotly.offline as py
 import cufflinks as cf
 
-py.init_notebook_mode(connected=True)
+py.init_notebook_mode(connected=False)
 cf.go_offline()
 
 series = [7326]
