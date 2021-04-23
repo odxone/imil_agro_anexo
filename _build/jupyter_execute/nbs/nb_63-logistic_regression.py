@@ -44,14 +44,14 @@ def load_remote_joblib(url):
     return joblib.load(BytesIO(content))
     
 
-x_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/x_scaler.joblib")
-scaled_X = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_X.joblib")
+x_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/x_scaler.joblib")
+scaled_X = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_X.joblib")
 
-y_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/y_scaler.joblib")
-scaled_y = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_y.joblib")
+y_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/y_scaler.joblib")
+scaled_y = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_y.joblib")
 
-feature_names = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/features.joblib")
-categories = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/categories.joblib")
+feature_names = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/features.joblib")
+categories = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/categories.joblib")
 
 ### Tunning
 
@@ -126,11 +126,17 @@ shap_rl_expainer = shap.KernelExplainer(
 
 shap_rl_values = shap_rl_expainer.shap_values(shap.sample(scaled_X, random_state=42))
 
+O código abaixo gera um gráfico bastante interessante, porém pesado, e foi omitido para melhorar a navegação nesse anexo.
+
+```python
 shap.force_plot(
     shap_rl_expainer.expected_value[0],
     shap_rl_values[0],
     feature_names=feature_names
 )
+```
+
+Com pequenas modificações, o mesmo método também pode ser utilizado para os outros modelos.
 
 shap.decision_plot(
     shap_rl_expainer.expected_value[0],

@@ -23,6 +23,8 @@ from sklearn.linear_model import RidgeClassifier
 
 from sklearn.metrics import classification_report
 
+from random import seed, choice
+
 import lime
 import lime.lime_tabular
 
@@ -32,7 +34,7 @@ shap.initjs()
 
 def load_remote_joblib(url):
     """função utilizada para carregar joblib de fonte remota
-    ESSA FUNCAO É PERIGOSA
+    ESSAfeature_namesCAO É PERIGOSA
     a função joblib.load pode executar código arbitrário durante sua execuççao
     não utilize essa parte do código se você não tiver certeza do que está fazendo
     """
@@ -40,13 +42,14 @@ def load_remote_joblib(url):
     return joblib.load(BytesIO(content))
     
 
-x_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/x_scaler.joblib")
-scaled_X = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_X.joblib")
+x_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/x_scaler.joblib")
+scaled_X = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_X.joblib")
 
-y_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/y_scaler.joblib")
-scaled_y = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_y.joblib")
+y_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/y_scaler.joblib")
+scaled_y = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_y.joblib")
 
-categories = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/categories.joblib")
+feature_names = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/features.joblib")
+categories = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/categories.joblib")
 
 ### Tunning
 
@@ -79,15 +82,41 @@ print(
 
 joblib.dump(ridge_model, 'data_gini/ridge_model.joblib')
 
-## ELI5
+## Interpretabilidade
 
+Sorteio de uma observação para ser utilizada nos algorítimos de interpretabilidade
 
+seed(42)
 
-## LIME
+random_obs_idx = choice(range(len(scaled_X)))
 
+random_obs = scaled_X[random_obs_idx]
 
+### ELI5
 
-## SHAP
+eli5.show_weights(ridge_model, feature_names=feature_names)
 
+eli5.explain_prediction_sklearn(ridge_model, random_obs,feature_names=feature_names)
 
+### LIME
 
+### SHAP
+
+shap_ridge_expainer = shap.KernelExplainer(
+    ridge_model.predict,
+    shap.sample(scaled_X, random_state=42)
+)
+
+shap_ridge_values = shap_ridge_expainer.shap_values(shap.sample(scaled_X, random_state=42))
+
+shap.decision_plot(
+    shap_ridge_expainer.expected_value,
+    shap_ridge_values,
+    feature_names=feature_names
+)
+
+shap.summary_plot(
+    shap_ridge_values,
+    features=shap.sample(scaled_X, random_state=42),
+    feature_names=feature_names
+)

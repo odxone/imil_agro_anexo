@@ -4,7 +4,7 @@
 
 Foi ajustado um modelo do tipo Floresta Aleatória aos dados.
 
-Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 74%.
+Após exploração aleatória dos hiperparâmetros, a acurácia média atingida pelo modelo foi de 75%.
 
 ## Breve explicação e referências sobre o método
 
@@ -21,6 +21,8 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.ensemble import RandomForestClassifier
 
 from sklearn.metrics import classification_report
+
+from random import seed, choice
 
 import lime
 import lime.lime_tabular
@@ -39,13 +41,14 @@ def load_remote_joblib(url):
     return joblib.load(BytesIO(content))
     
 
-x_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/x_scaler.joblib")
-scaled_X = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_X.joblib")
+x_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/x_scaler.joblib")
+scaled_X = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_X.joblib")
 
-y_scaler = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/y_scaler.joblib")
-scaled_y = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/scaled_y.joblib")
+y_scaler = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/y_scaler.joblib")
+scaled_y = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/scaled_y.joblib")
 
-categories = load_remote_joblib("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/categories.joblib")
+feature_names = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/features.joblib")
+categories = load_remote_joblib("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/categories.joblib")
 
 ### Tunning
 
@@ -95,3 +98,67 @@ print(classification_report(
 
 joblib.dump(rf_model, 'data_gini/rf_model.joblib')
 
+## Interpretabilidade
+
+Sorteio de uma observação para ser utilizada nos algorítimos de interpretabilidade
+
+seed(42)
+
+random_obs_idx = choice(range(len(scaled_X)))
+
+random_obs = scaled_X[random_obs_idx]
+
+### ELI5
+
+eli5.show_weights(rf_model, feature_names=feature_names)
+
+eli5.explain_prediction_sklearn(rf_model, random_obs,feature_names=feature_names)
+
+### LIME
+
+explainer = lime.lime_tabular.LimeTabularExplainer(
+    training_data=scaled_X,
+    feature_names=feature_names,
+    class_names=categories,
+    mode='classification'
+)
+
+lime_exp_rl = explainer.explain_instance(
+    random_obs,
+    rf_model.predict_proba,
+)
+
+lime_exp_rl.show_in_notebook()
+
+### SHAP
+
+shap_rl_expainer = shap.KernelExplainer(
+    rf_model.predict_proba,
+    shap.sample(scaled_X, random_state=42)
+)
+
+shap_rl_values = shap_rl_expainer.shap_values(shap.sample(scaled_X, random_state=42))
+
+O código abaixo gera um gráfico bastante interessante, porém pesado, e foi omitido para melhorar a navegação nesse anexo.
+
+```python
+shap.force_plot(
+    shap_rl_expainer.expected_value[0],
+    shap_rl_values[0],
+    feature_names=feature_names
+)
+```
+
+Com pequenas modificações, o mesmo método também pode ser utilizado para os outros modelos.
+
+shap.decision_plot(
+    shap_rl_expainer.expected_value[0],
+    shap_rl_values[0],
+    feature_names=feature_names
+)
+
+shap.summary_plot(
+    shap_rl_values[0],
+    features=shap.sample(scaled_X, random_state=42),
+    feature_names=feature_names
+)

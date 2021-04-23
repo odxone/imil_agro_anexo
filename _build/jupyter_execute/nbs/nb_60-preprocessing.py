@@ -25,7 +25,7 @@ import geopandas as gpd
 
 ### Leitura e Limpesa das bases de dados
 
-df = gpd.read_file("https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip")
+df = gpd.read_file("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/mun_agro.zip")
 
 y = pd.read_csv(
     "http://tabnet.datasus.gov.br/cgi/ibge/censo/bases/ginibr.csv",

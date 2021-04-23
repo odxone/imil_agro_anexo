@@ -12,7 +12,7 @@ import pandas as pd
 
 from pandas_profiling import ProfileReport
 
-X = pd.read_pickle('data_gini/X.pkl.xz')
+X = pd.read_pickle('https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/X.pkl.xz')
 
 report = ProfileReport(X, minimal=True)
 report

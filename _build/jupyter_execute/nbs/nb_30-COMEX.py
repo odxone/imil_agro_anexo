@@ -20,8 +20,8 @@ from io import BytesIO
 
 ## Carregamento dos dados
 
-df_exp = pd.read_pickle("https://github.com/feliciov/agro_online/raw/main/nbs/data_comex/grouped_exp.pkl.xz")
-df_imp = pd.read_pickle("https://github.com/feliciov/agro_online/raw/main/nbs/data_comex/grouped_imp.pkl.xz")
+df_exp = pd.read_pickle("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_comex/grouped_exp.pkl.xz")
+df_imp = pd.read_pickle("https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_comex/grouped_imp.pkl.xz")
 
 caminho_tabelas_conversao = "https://balanca.economia.gov.br/balanca/bd/tabelas/TABELAS_AUXILIARES.xlsx"
 

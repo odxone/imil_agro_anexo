@@ -267,19 +267,26 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eli5">
-   ELI5
+  <a class="reference internal nav-link" href="#interpretabilidade">
+   Interpretabilidade
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lime">
-   LIME
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shap">
-   SHAP
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eli5">
+     ELI5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lime">
+     LIME
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shap">
+     SHAP
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -319,6 +326,8 @@
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">RidgeClassifier</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">seed</span><span class="p">,</span> <span class="n">choice</span>
 
 <span class="kn">import</span> <span class="nn">lime</span>
 <span class="kn">import</span> <span class="nn">lime.lime_tabular</span>
@@ -473,14 +482,884 @@ weighted avg       0.73      0.73      0.73      5560
 </div>
 </div>
 </div>
+<div class="section" id="interpretabilidade">
+<h2>Interpretabilidade<a class="headerlink" href="#interpretabilidade" title="Permalink to this headline">¶</a></h2>
+<p>Sorteio de uma observação para ser utilizada nos algorítimos de interpretabilidade</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">random_obs_idx</span> <span class="o">=</span> <span class="n">choice</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random_obs</span> <span class="o">=</span> <span class="n">scaled_X</span><span class="p">[</span><span class="n">random_obs_idx</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="eli5">
-<h2>ELI5<a class="headerlink" href="#eli5" title="Permalink to this headline">¶</a></h2>
+<h3>ELI5<a class="headerlink" href="#eli5" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eli5</span><span class="o">.</span><span class="n">show_weights</span><span class="p">(</span><span class="n">ridge_model</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+    <style>
+    table.eli5-weights tr:hover {
+        filter: brightness(85%);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p style="margin-bottom: 0.5em; margin-top: 0em">
+            <b>
+
+        y=1.0
+
+</b>
+
+top features
+        </p>
+
+    <table class="eli5-weights"
+           style="border-collapse: collapse; border: none; margin-top: 0em; table-layout: auto; margin-bottom: 2em;">
+        <thead>
+        <tr style="border: none;">
+
+                <th style="padding: 0 1em 0 0.5em; text-align: right; border: none;" title="Feature weights. Note that weights do not account for feature value scales, so if feature values have different scales, features with highest weights might not be the most important.">
+                    Weight<sup>?</sup>
+                </th>
+
+            <th style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">Feature</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr style="background-color: hsl(120, 100.00%, 88.90%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.788
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Assistência Técnica (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 91.35%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.552
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Cana (kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 92.18%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.478
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Bovinos-Leite(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 92.19%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.477
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Uso das terras-Lavoura(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 93.99%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.328
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Produtor com escolaridade até Ensino Fundamental(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 94.16%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.315
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Uva(kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.25%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.234
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Utilização de Agrotóxicos (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.41%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.223
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Bovinos-Corte (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.41%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.223
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Laranja(kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.84%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.194
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Milho (kg/ha)
+    </td>
+
+</tr>
+
+
+            <tr style="background-color: hsl(120, 100.00%, 95.84%); border: none;">
+                <td colspan="2" style="padding: 0 0.5em 0 0.5em; text-align: center; border: none; white-space: nowrap;">
+                    <i>&hellip; 5 more positive &hellip;</i>
+                </td>
+            </tr>
+
+
+
+            <tr style="background-color: hsl(0, 100.00%, 95.69%); border: none;">
+                <td colspan="2" style="padding: 0 0.5em 0 0.5em; text-align: center; border: none; white-space: nowrap;">
+                    <i>&hellip; 14 more negative &hellip;</i>
+                </td>
+            </tr>
+
+
+            <tr style="background-color: hsl(0, 100.00%, 95.69%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.204
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Pessoal Ocupado / Estabelecimento (Pessoa)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 94.78%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.268
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área lavoura/ Adubadeira (ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 94.53%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.287
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Agricultura familiar (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 92.90%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.416
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Aves-Corte (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 91.48%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.540
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Pesca(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 91.20%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.565
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área lavoura/ Trator(ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 89.61%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.717
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área média (ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 88.70%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.809
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Lavoura Temporária (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 86.67%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -1.024
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Despesa com Agrotóxicos (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 80.00%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -1.828
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Estabelecimento Agropecuário (N)
+    </td>
+
+</tr>
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eli5</span><span class="o">.</span><span class="n">explain_prediction_sklearn</span><span class="p">(</span><span class="n">ridge_model</span><span class="p">,</span> <span class="n">random_obs</span><span class="p">,</span><span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+    <style>
+    table.eli5-weights tr:hover {
+        filter: brightness(85%);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p style="margin-bottom: 0.5em; margin-top: 0em">
+            <b>
+
+        y=0.0
+
+</b>
+
+
+    (score <b>-0.995</b>)
+
+top features
+        </p>
+
+    <table class="eli5-weights"
+           style="border-collapse: collapse; border: none; margin-top: 0em; table-layout: auto; margin-bottom: 2em;">
+        <thead>
+        <tr style="border: none;">
+
+                <th style="padding: 0 1em 0 0.5em; text-align: right; border: none;" title="Feature contribution already accounts for the feature value (for linear models, contribution = weight * feature value), and the sum of feature contributions is equal to the score or, for some classifiers, to the probability. Feature values are shown if &quot;show_feature_values&quot; is True.">
+                    Contribution<sup>?</sup>
+                </th>
+
+            <th style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">Feature</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr style="background-color: hsl(120, 100.00%, 80.00%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.389
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Estabelecimento Agropecuário (N)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 80.82%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.366
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Lavoura Temporária (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 85.16%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.254
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Agricultura familiar (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 88.83%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.169
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Pesca(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 93.57%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.077
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Aves-Corte (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 94.98%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.054
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Aves-Ovos(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.22%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.050
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Pecuária(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 95.58%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.045
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Uso das terras-Pastagem (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 96.60%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.031
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área lavoura/ Trator(ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 96.62%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.031
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Uso de irrigação (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 96.94%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.027
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Arroz (kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 97.42%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.021
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área lavoura/ Adubadeira (ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 98.40%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.011
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Despesa com Agrotóxicos (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 98.44%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.010
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Lavoura Permanente(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 98.70%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.008
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área lavoura/ Semeadeira(ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 98.97%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.006
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Área média (ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 99.18%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.004
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Pessoal Ocupado / Estabelecimento (Pessoa)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 99.93%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.000
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Carga de Bovinos (n/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 99.96%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.000
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Aquicultura(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(120, 100.00%, 99.97%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        +0.000
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Cacau(kg/ha)
+    </td>
+
+</tr>
+
+
+
+
+
+            <tr style="background-color: hsl(0, 100.00%, 99.81%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.000
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Cisterna (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 99.71%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.001
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Horticultura&amp;Floricultura(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 99.67%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.001
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Café(kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 99.20%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.004
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Laranja(kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 98.70%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.008
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Cana (kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 98.12%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.013
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Atividade-Produção Florestal(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 97.71%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.018
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Milho (kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 97.07%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.025
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Uso das terras-Lavoura(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 96.28%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.035
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Bovinos-Corte (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 95.77%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.042
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Rendimento-Mandioca (kg/ha)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 95.50%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.046
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Utilização de Agrotóxicos (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 93.58%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.077
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Bovinos-Leite(%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 93.56%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.077
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Assistência Técnica (%)
+    </td>
+
+</tr>
+
+            <tr style="background-color: hsl(0, 100.00%, 87.03%); border: none;">
+    <td style="padding: 0 1em 0 0.5em; text-align: right; border: none;">
+        -0.210
+    </td>
+    <td style="padding: 0 0.5em 0 0.5em; text-align: left; border: none;">
+        Produtor com escolaridade até Ensino Fundamental(%)
+    </td>
+
+</tr>
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+</div>
 </div>
 <div class="section" id="lime">
-<h2>LIME<a class="headerlink" href="#lime" title="Permalink to this headline">¶</a></h2>
+<h3>LIME<a class="headerlink" href="#lime" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="shap">
-<h2>SHAP<a class="headerlink" href="#shap" title="Permalink to this headline">¶</a></h2>
+<h3>SHAP<a class="headerlink" href="#shap" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shap_ridge_expainer</span> <span class="o">=</span> <span class="n">shap</span><span class="o">.</span><span class="n">KernelExplainer</span><span class="p">(</span>
+    <span class="n">ridge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span>
+    <span class="n">shap</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shap_ridge_values</span> <span class="o">=</span> <span class="n">shap_ridge_expainer</span><span class="o">.</span><span class="n">shap_values</span><span class="p">(</span><span class="n">shap</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0a040a3102834118b35126eef52c8602", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shap</span><span class="o">.</span><span class="n">decision_plot</span><span class="p">(</span>
+    <span class="n">shap_ridge_expainer</span><span class="o">.</span><span class="n">expected_value</span><span class="p">,</span>
+    <span class="n">shap_ridge_values</span><span class="p">,</span>
+    <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_64-ridge_classification_30_0.png" src="../_images/nb_64-ridge_classification_30_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shap</span><span class="o">.</span><span class="n">summary_plot</span><span class="p">(</span>
+    <span class="n">shap_ridge_values</span><span class="p">,</span>
+    <span class="n">features</span><span class="o">=</span><span class="n">shap</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">scaled_X</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_64-ridge_classification_31_0.png" src="../_images/nb_64-ridge_classification_31_0.png" />
+</div>
+</div>
+</div>
 </div>
 </div>
 
