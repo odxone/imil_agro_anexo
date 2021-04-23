@@ -50,7 +50,7 @@ sphinx:
       html_theme_options:
         use_download_button: false
         home_page_in_toc: true
-        repository_url: https://example.com/thing
+        repository_url: https://github.com/odxone/imil_agro_anexo
         use_issues_button: true
         use_repository_button: true
         use_edit_page_button: true
