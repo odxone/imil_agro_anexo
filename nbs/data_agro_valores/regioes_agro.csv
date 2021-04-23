@@ -1,0 +1,5571 @@
+OBJECTID;MUNICIPIO;Estado;Região
+1;Lupionópolis ; PR;Sul
+2;Águas de Lindóia ; SP;Sudeste
+3;Uruará ; PA;Norte
+4;São Leopoldo ; RS;Sul
+5;Vargem ; SP;Sudeste
+6;Tarumã ; SP;Sudeste
+7;Canas ; SP;Sudeste
+8;Várzea Paulista ; SP;Sudeste
+9;Morro Reuter ; RS;Sul
+10;São João del Rei ; MG;Sudeste
+11;Westfalia ; RS;Sul
+12;Sales ; SP;Sudeste
+13;Diamantino ; MT;Centro-Oeste
+14;Redenção da Serra ; SP;Sudeste
+15;Resende ; RJ;Sudeste
+16;Vassouras ; RJ;Sudeste
+17;Campos dos Goytacazes ; RJ;Sudeste
+18;Itaperuna ; RJ;Sudeste
+19;Jauru ; MT;Centro-Oeste
+20;Barra do Bugres ; MT;Centro-Oeste
+21;Campos Novos ; SC;Sul
+22;Venturosa ; PE;Nordeste
+23;Alagoinha ; PE;Nordeste
+24;Guarapuava ; PR;Sul
+25;Santa Cruz Cabrália ; BA;Nordeste
+26;Porto Seguro ; BA;Nordeste
+27;Cristalina ; GO;Centro-Oeste
+28;Piratini ; RS;Sul
+29;Dom Pedrito ; RS;Sul
+30;Morrinhos do Sul ; RS;Sul
+31;Balneário Gaivota ; SC;Sul
+32;Caçapava do Sul ; RS;Sul
+33;São Sepé ; RS;Sul
+34;Jaguari ; RS;Sul
+35;Manoel Viana ; RS;Sul
+36;São Francisco de Assis ; RS;Sul
+37;Nova Bréscia ; RS;Sul
+38;Jari ; RS;Sul
+39;Monte Belo do Sul ; RS;Sul
+40;Quevedos ; RS;Sul
+41;Sombrio ; SC;Sul
+42;Antônio Carlos ; SC;Sul
+43;Aporé ; GO;Centro-Oeste
+44;Lagoa Vermelha ; RS;Sul
+45;Lages ; SC;Sul
+46;São Domingos ; SC;Sul
+47;Paiçandu ; PR;Sul
+48;Planalto Alegre ; SC;Sul
+49;Indianópolis ; PR;Sul
+50;Galvão ; SC;Sul
+51;Tibagi ; PR;Sul
+52;Peritiba ; SC;Sul
+53;Rio Grande da Serra ; SP;Sudeste
+54;Esperança Nova ; PR;Sul
+55;São Caetano do Sul ; SP;Sudeste
+56;Terra Boa ; PR;Sul
+57;Jandira ; SP;Sudeste
+58;Taguaí ; SP;Sudeste
+59;Salto ; SP;Sudeste
+60;Jacareí ; SP;Sudeste
+61;Jataizinho ; PR;Sul
+62;Louveira ; SP;Sudeste
+63;Canitar ; SP;Sudeste
+64;Arraial do Cabo ; RJ;Sudeste
+65;Maricá ; RJ;Sudeste
+66;Tanguá ; RJ;Sudeste
+67;Santo Inácio ; PR;Sul
+68;Ribeirão do Sul ; SP;Sudeste
+69;Lindóia ; SP;Sudeste
+70;Guapimirim ; RJ;Sudeste
+71;Novo Gama ; GO;Centro-Oeste
+72;Senador Salgado Filho ; RS;Sul
+73;Silveirânia ; MG;Sudeste
+74;São José do Vale do Rio Preto ; RJ;Sudeste
+75;Anaurilândia ; MS;Centro-Oeste
+76;Bandeira do Sul ; MG;Sudeste
+77;Américo Brasiliense ; SP;Sudeste
+78;Senador Cortes ; MG;Sudeste
+79;Mineiros do Tietê ; SP;Sudeste
+80;Timburi ; SP;Sudeste
+81;Maracaju ; MS;Centro-Oeste
+82;Catiguá ; SP;Sudeste
+83;Uniflor ; PR;Sul
+84;Iconha ; ES;Sudeste
+85;Areiópolis ; SP;Sudeste
+86;Sidrolândia ; MS;Centro-Oeste
+87;São José dos Campos ; SP;Sudeste
+88;Senador Amaral ; MG;Sudeste
+89;São Roque de Minas ; MG;Sudeste
+90;Santo Antônio do Monte ; MG;Sudeste
+91;São Gonçalo do Pará ; MG;Sudeste
+92;Igaraçu do Tietê ; SP;Sudeste
+93;Moema ; MG;Sudeste
+94;Comendador Gomes ; MG;Sudeste
+95;Bandeirantes ; MS;Centro-Oeste
+96;Leandro Ferreira ; MG;Sudeste
+97;Ribas do Rio Pardo ; MS;Centro-Oeste
+98;Cachoeira da Prata ; MG;Sudeste
+99;Inhaúma ; MG;Sudeste
+100;Campos Altos ; MG;Sudeste
+101;Passabém ; MG;Sudeste
+102;Barbosa ; SP;Sudeste
+103;Baldim ; MG;Sudeste
+104;Cordisburgo ; MG;Sudeste
+105;Rio Paranaíba ; MG;Sudeste
+106;Paineiras ; MG;Sudeste
+107;Santa Mercedes ; SP;Sudeste
+108;Chapadão do Sul ; MS;Centro-Oeste
+109;Itamogi ; MG;Sudeste
+110;Itarumã ; GO;Centro-Oeste
+111;Patos de Minas ; MG;Sudeste
+112;Rio Verde de Mato Grosso ; MS;Centro-Oeste
+113;Morada Nova de Minas ; MG;Sudeste
+114;Quissamã ; RJ;Sudeste
+115;Quirinópolis ; GO;Centro-Oeste
+116;Morrinhos ; GO;Centro-Oeste
+117;Presidente Olegário ; MG;Sudeste
+118;Cedro do Abaeté ; MG;Sudeste
+119;Bocaiúva ; MG;Sudeste
+120;Alto Araguaia ; MT;Centro-Oeste
+121;Caiapônia ; GO;Centro-Oeste
+122;Vicência ; PE;Nordeste
+123;Guaratinga ; BA;Nordeste
+124;Barão de Melgaço ; MT;Centro-Oeste
+125;Campo Grande ; MS;Centro-Oeste
+126;Bastos ; SP;Sudeste
+127;Guiratinga ; MT;Centro-Oeste
+128;Maiquinique ; BA;Nordeste
+129;Mascote ; BA;Nordeste
+130;São Brás do Suaçuí ; MG;Sudeste
+131;Assunção ; PB;Nordeste
+132;Potengi ; CE;Nordeste
+133;Flórida ; PR;Sul
+134;Indianópolis ; MG;Sudeste
+135;Paranã ; TO;Norte
+136;Cunhataí ; SC;Sul
+137;São José da Vitória ; BA;Nordeste
+138;Sabino ; SP;Sudeste
+139;Santa Rosa da Serra ; MG;Sudeste
+140;Matozinhos ; MG;Sudeste
+141;Jaboticatubas ; MG;Sudeste
+142;Buerarema ; BA;Nordeste
+143;Jussara ; GO;Centro-Oeste
+144;Pompéu ; MG;Sudeste
+145;Itabuna ; BA;Nordeste
+146;Piripá ; BA;Nordeste
+147;Novo São Joaquim ; MT;Centro-Oeste
+148;Condeúba ; BA;Nordeste
+149;Firmino Alves ; BA;Nordeste
+150;Presidente Jânio Quadros ; BA;Nordeste
+151;Maetinga ; BA;Nordeste
+152;Jacaraci ; BA;Nordeste
+153;Caculé ; BA;Nordeste
+154;Planalto ; BA;Nordeste
+155;Guajeru ; BA;Nordeste
+156;Carinhanha ; BA;Nordeste
+157;Licínio de Almeida ; BA;Nordeste
+158;Felixlândia ; MG;Sudeste
+159;Anagé ; BA;Nordeste
+160;Januária ; MG;Sudeste
+161;Rio do Antônio ; BA;Nordeste
+162;Planalto da Serra ; MT;Centro-Oeste
+163;Alto Paraguai ; MT;Centro-Oeste
+164;Araguaiana ; MT;Centro-Oeste
+165;Malhada de Pedras ; BA;Nordeste
+166;Pontes e Lacerda ; MT;Centro-Oeste
+167;Camapuã ; MS;Centro-Oeste
+168;Flores de Goiás ; GO;Centro-Oeste
+169;Manoel Vitorino ; BA;Nordeste
+170;Apuarema ; BA;Nordeste
+171;Igrapiúna ; BA;Nordeste
+172;Vila Bela da Santíssima Trindade ; MT;Centro-Oeste
+173;Jequié ; BA;Nordeste
+174;Campinápolis ; MT;Centro-Oeste
+175;Nova Nazaré ; MT;Centro-Oeste
+176;Caetité ; BA;Nordeste
+177;Campinaçu ; GO;Centro-Oeste
+178;Poções ; BA;Nordeste
+179;Mirante ; BA;Nordeste
+180;Malhada ; BA;Nordeste
+181;Barra da Estiva ; BA;Nordeste
+182;Itaquara ; BA;Nordeste
+183;Coribe ; BA;Nordeste
+184;Morro do Chapéu ; BA;Nordeste
+185;Figueirão ; MS;Centro-Oeste
+186;Abaíra ; BA;Nordeste
+187;Ubaíra ; BA;Nordeste
+188;Laje ; BA;Nordeste
+189;Rio do Pires ; BA;Nordeste
+190;Jaguaripe ; BA;Nordeste
+191;Milagres ; BA;Nordeste
+192;Piatã ; BA;Nordeste
+193;Salinas da Margarida ; BA;Nordeste
+194;Porangatu ; GO;Centro-Oeste
+195;Nova Redenção ; BA;Nordeste
+196;Andaraí ; BA;Nordeste
+197;São Miguel do Araguaia ; GO;Centro-Oeste
+198;Ibiquera ; BA;Nordeste
+199;Arraias ; TO;Norte
+200;Nova Ubiratã ; MT;Centro-Oeste
+201;Ipaba ; MG;Sudeste
+202;Almadina ; BA;Nordeste
+203;Barra do Rocha ; BA;Nordeste
+204;Brejo ; MA;Nordeste
+205;Nova Maringá ; MT;Centro-Oeste
+206;Barra do Mendes ; BA;Nordeste
+207;Jataí ; GO;Centro-Oeste
+208;Lagoa de Pedras ; RN;Nordeste
+209;Euclides da Cunha ; BA;Nordeste
+210;São José do Xingu ; MT;Centro-Oeste
+211;Lagoa Salgada ; RN;Nordeste
+212;Ortigueira ; PR;Sul
+213;Pimenta Bueno ; RO;Norte
+214;Niterói ; RJ;Sudeste
+215;Cláudia ; MT;Centro-Oeste
+216;Querência ; MT;Centro-Oeste
+217;Nova Santa Helena ; MT;Centro-Oeste
+218;Senador Guiomard ; AC;Norte
+219;Parauapebas ; PA;Norte
+220;Cunha ; SP;Sudeste
+221;Goianésia do Pará ; PA;Norte
+222;Alta Floresta ; MT;Centro-Oeste
+223;Aripuanã ; MT;Centro-Oeste
+224;Alto Paraíso ; RO;Norte
+225;Sento Sé ; BA;Nordeste
+226;Banzaê ; BA;Nordeste
+227;Messias ; AL;Nordeste
+228;Paranaíta ; MT;Centro-Oeste
+229;Santa Rosa do Purus ; AC;Norte
+230;Nova Bandeirantes ; MT;Centro-Oeste
+231;Mata Grande ; AL;Nordeste
+232;Colniza ; MT;Centro-Oeste
+233;Manari ; PE;Nordeste
+234;Machadinho D'Oeste ; RO;Norte
+235;Lajedo ; PE;Nordeste
+236;Cachoeirinha ; PE;Nordeste
+237;Paulistana ; PI;Nordeste
+238;Cedro ; PE;Nordeste
+239;Ibirapitanga ; BA;Nordeste
+240;Tavares ; PB;Nordeste
+241;Cumaru do Norte ; PA;Norte
+242;Abaiara ; CE;Nordeste
+243;Aroeiras do Itaim ; PI;Nordeste
+244;Monsenhor Hipólito ; PI;Nordeste
+245;São Benedito do Sul ; PE;Nordeste
+246;Belém ; PB;Nordeste
+247;Boca da Mata ; AL;Nordeste
+248;Ipixuna ; AM;Norte
+249;Lagoa de Dentro ; PB;Nordeste
+250;Cacimba de Areia ; PB;Nordeste
+251;Francisco Ayres ; PI;Nordeste
+252;Riachão ; PB;Nordeste
+253;Jericó ; PB;Nordeste
+254;Novo Progresso ; PA;Norte
+255;Goianinha ; RN;Nordeste
+256;Formosa da Serra Negra ; MA;Nordeste
+257;São Gonçalo do Piauí ; PI;Nordeste
+258;Água Nova ; RN;Nordeste
+259;Ubatã ; BA;Nordeste
+260;Encanto ; RN;Nordeste
+261;Bom Jesus ; RN;Nordeste
+262;Canutama ; AM;Norte
+263;Boa Vista do Sul ; RS;Sul
+264;Cerro Corá ; RN;Nordeste
+265;São Pedro ; RN;Nordeste
+266;Pedra Grande ; RN;Nordeste
+267;Sapucaia do Sul ; RS;Sul
+268;Pau dos Ferros ; RN;Nordeste
+269;São João da Canabrava ; PI;Nordeste
+270;Axixá do Tocantins ; TO;Norte
+271;Galinhos ; RN;Nordeste
+272;Madeiro ; PI;Nordeste
+273;Arame ; MA;Nordeste
+274;Miranda do Norte ; MA;Nordeste
+275;Água Branca ; PI;Nordeste
+276;Bocaina ; PI;Nordeste
+277;Pilõezinhos ; PB;Nordeste
+278;Chorozinho ; CE;Nordeste
+279;Livramento ; PB;Nordeste
+280;Atalaia do Norte ; AM;Norte
+281;Nova Boa Vista ; RS;Sul
+282;Duas Estradas ; PB;Nordeste
+283;Graça ; CE;Nordeste
+284;Santo Antônio de Lisboa ; PI;Nordeste
+285;São João do Arraial ; PI;Nordeste
+286;Itaiçaba ; CE;Nordeste
+287;Sobral ; CE;Nordeste
+288;São João do Carú ; MA;Nordeste
+289;Pacajá ; PA;Norte
+290;Mojuí dos Campos ; PA;Norte
+291;Puxinanã ; PB;Nordeste
+292;Quatiguá ; PR;Sul
+293;Santarém ; PA;Norte
+294;Portel ; PA;Norte
+295;Manaus ; AM;Norte
+296;Oeiras do Pará ; PA;Norte
+297;Santa Amélia ; PR;Sul
+298;Campo do Meio ; MG;Sudeste
+299;Matinhas ; PB;Nordeste
+300;Maraã ; AM;Norte
+301;São Sebastião do Uatumã ; AM;Norte
+302;Melgaço ; PA;Norte
+303;Rorainópolis ; RR;Norte
+304;Macapá ; AP;Norte
+305;Bonfim ; RR;Norte
+306;Urucará ; AM;Norte
+307;Ferreira Gomes ; AP;Norte
+308;Alto Alegre ; RR;Norte
+309;Calçoene ; AP;Norte
+310;Normandia ; RR;Norte
+311;Amajari ; RR;Norte
+312;Peixe ; TO;Norte
+313;Jaraguari ; MS;Centro-Oeste
+314;Abaeté ; MG;Sudeste
+315;Carmo do Paranaíba ; MG;Sudeste
+316;Varjão de Minas ; MG;Sudeste
+317;Curvelo ; MG;Sudeste
+318;Ipameri ; GO;Centro-Oeste
+319;Mineiros ; GO;Centro-Oeste
+320;Primavera do Leste ; MT;Centro-Oeste
+321;Crixás ; GO;Centro-Oeste
+322;Aruanã ; GO;Centro-Oeste
+323;Rondolândia ; MT;Centro-Oeste
+324;Santa Luzia do Norte ; AL;Nordeste
+325;Cotriguaçu ; MT;Centro-Oeste
+326;Apuí ; AM;Norte
+327;Eirunepé ; AM;Norte
+328;Humaitá ; AM;Norte
+329;Seritinga ; MG;Sudeste
+330;Balbinos ; SP;Sudeste
+331;Sant'Ana do Livramento ; RS;Sul
+332;Passa-vinte; MG;Sudeste
+333;Vermelho Novo ; MG;Sudeste
+334;Rio Grande do Piauí ; PI;Nordeste
+335;Sete Lagoas ; MG;Sudeste
+336;Monteirópolis ; AL;Nordeste
+337;Santo Antônio ; RN;Nordeste
+338;Vista Serrana ; PB;Nordeste
+339;Arroio do Sal ; RS;Sul
+340;Balneário Pinhal ; RS;Sul
+341;Dois Irmãos ; RS;Sul
+342;Passo de Torres ; SC;Sul
+343;Treze de Maio ; SC;Sul
+344;Taboão da Serra ; SP;Sudeste
+345;Vargem Grande Paulista ; SP;Sudeste
+346;Cruzália ; SP;Sudeste
+347;Rio Grande ; RS;Sul
+348;Córrego do Bom Jesus ; MG;Sudeste
+349;Santa Gertrudes ; SP;Sudeste
+350;Taciba ; SP;Sudeste
+351;Júlio Mesquita ; SP;Sudeste
+352;Santa Lúcia ; SP;Sudeste
+353;Barroso ; MG;Sudeste
+354;União Paulista ; SP;Sudeste
+355;Nova Serrana ; MG;Sudeste
+356;Aquidauana ; MS;Centro-Oeste
+357;São João do Manteninha ; MG;Sudeste
+358;Tiros ; MG;Sudeste
+359;Comodoro ; MT;Centro-Oeste
+360;Vilhena ; RO;Norte
+361;Joaquim Nabuco ; PE;Nordeste
+362;Triunfo Potiguar ; RN;Nordeste
+363;Pedra Preta ; RN;Nordeste
+364;Funilândia ; MG;Sudeste
+365;Unaí ; MG;Sudeste
+366;Silveira Martins ; RS;Sul
+367;Jaborandi ; BA;Nordeste
+368;Porto Velho ; RO;Norte
+369;Moju ; PA;Norte
+370;Arapuá ; MG;Sudeste
+371;Marabá ; PA;Norte
+372;General Maynard ; SE;Nordeste
+373;Campos Lindos ; TO;Norte
+374;Muribeca ; SE;Nordeste
+375;Nova Alvorada do Sul ; MS;Centro-Oeste
+376;Nioaque ; MS;Centro-Oeste
+377;Santa Rita do Pardo ; MS;Centro-Oeste
+378;Brasilândia ; MS;Centro-Oeste
+379;Bonito ; MS;Centro-Oeste
+380;Porto Murtinho ; MS;Centro-Oeste
+381;Dois Irmãos do Buriti ; MS;Centro-Oeste
+382;Montes Claros de Goiás ; GO;Centro-Oeste
+383;Buriti ; MA;Nordeste
+384;Jardim ; MS;Centro-Oeste
+385;Divinópolis ; MG;Sudeste
+386;Santa Luzia ; BA;Nordeste
+387;Prata ; MG;Sudeste
+388;Porto Estrela ; MT;Centro-Oeste
+389;Umburanas ; BA;Nordeste
+390;Caetanópolis ; MG;Sudeste
+391;Caatiba ; BA;Nordeste
+392;Faro ; PA;Norte
+393;Santo Antônio das Missões ; RS;Sul
+394;Estância Velha ; RS;Sul
+395;Santana ; BA;Nordeste
+396;Dom Pedro de Alcântara ; RS;Sul
+397;Vitória da Conquista ; BA;Nordeste
+398;São Gabriel ; RS;Sul
+399;Nova Xavantina ; MT;Centro-Oeste
+400;Ibiassucê ; BA;Nordeste
+401;Capim Grosso ; BA;Nordeste
+402;Ipiaú ; BA;Nordeste
+403;Camamu ; BA;Nordeste
+404;Felipe Guerra ; RN;Nordeste
+405;São Gabriel do Oeste ; MS;Centro-Oeste
+406;Cotegipe ; BA;Nordeste
+407;Centro Novo do Maranhão ; MA;Nordeste
+408;Lavras do Sul ; RS;Sul
+409;Pedrinhas ; SE;Nordeste
+410;São Luiz Gonzaga ; RS;Sul
+411;Livramento de Nossa Senhora ; BA;Nordeste
+412;Maracás ; BA;Nordeste
+413;Alagoa Nova ; PB;Nordeste
+414;Governador Mangabeira ; BA;Nordeste
+415;Alagoinha ; PB;Nordeste
+416;São Braz do Piauí ; PI;Nordeste
+417;São Bentinho ; PB;Nordeste
+418;Algodão de Jandaíra ; PB;Nordeste
+419;Guarujá ; SP;Sudeste
+420;Bataguassu ; MS;Centro-Oeste
+421;Malta ; PB;Nordeste
+422;Alto Boa Vista ; MT;Centro-Oeste
+423;Ibotirama ; BA;Nordeste
+424;Argirita ; MG;Sudeste
+425;São Joaquim ; SC;Sul
+426;Santa Cruz ; RN;Nordeste
+427;Natividade ; TO;Norte
+428;São Gonçalo ; RJ;Sudeste
+429;Arauá ; SE;Nordeste
+430;Dois Riachos ; AL;Nordeste
+431;União do Sul ; MT;Centro-Oeste
+432;Almas ; TO;Norte
+433;Rio Sono ; TO;Norte
+434;Pium ; TO;Norte
+435;Jacaré dos Homens ; AL;Nordeste
+436;Itapuã do Oeste ; RO;Norte
+437;Uberaba ; MG;Sudeste
+438;Mar Vermelho ; AL;Nordeste
+439;Rio Largo ; AL;Nordeste
+440;Serrana ; SP;Sudeste
+441;Morro do Chapéu do Piauí ; PI;Nordeste
+442;Bom Jesus ; SC;Sul
+443;Jaqueira ; PE;Nordeste
+444;Ibirajuba ; PE;Nordeste
+445;Capitão Gervásio Oliveira ; PI;Nordeste
+446;Agrestina ; PE;Nordeste
+447;Igarassu ; PE;Nordeste
+448;Amparo ; PB;Nordeste
+449;Carrapateira ; PB;Nordeste
+450;Artur Nogueira ; SP;Sudeste
+451;Engenheiro Coelho ; SP;Sudeste
+452;Santo Antônio dos Milagres ; PI;Nordeste
+453;Japurá ; PR;Sul
+454;Santa Fé do Sul ; SP;Sudeste
+455;Cantagalo ; MG;Sudeste
+456;Votorantim ; SP;Sudeste
+457;Chuí ; RS;Sul
+458;Augusto Severo ; RN;Nordeste
+459;São Francisco ; PB;Nordeste
+460;Nova Odessa ; SP;Sudeste
+461;Armação dos Búzios ; RJ;Sudeste
+462;Laranjal ; MG;Sudeste
+463;Paiva ; MG;Sudeste
+464;Congonhal ; MG;Sudeste
+465;Caiçara do Norte ; RN;Nordeste
+466;Passira ; PE;Nordeste
+467;Nazaré ; BA;Nordeste
+468;Condado ; PB;Nordeste
+469;Salete ; SC;Sul
+470;Passa e Fica ; RN;Nordeste
+471;Monte das Gameleiras ; RN;Nordeste
+472;Monte Alegre do Sul ; SP;Sudeste
+473;Santa Inês ; PR;Sul
+474;Japeri ; RJ;Sudeste
+475;Senhora dos Remédios ; MG;Sudeste
+476;Santa Luzia ; MA;Nordeste
+477;Tanque do Piauí ; PI;Nordeste
+478;Junco do Seridó ; PB;Nordeste
+479;Granjeiro ; CE;Nordeste
+480;Casa Grande ; MG;Sudeste
+481;Uruburetama ; CE;Nordeste
+482;São Miguel ; RN;Nordeste
+483;Major Sales ; RN;Nordeste
+484;Serrinha dos Pintos ; RN;Nordeste
+485;Tangará ; RN;Nordeste
+486;Peixe-Boi ; PA;Norte
+487;Nhamundá ; AM;Norte
+488;Monte Alegre ; PA;Norte
+489;Paragominas ; PA;Norte
+490;Mucajaí ; RR;Norte
+491;Pacaraima ; RR;Norte
+492;Uiramutã ; RR;Norte
+493;Bambuí ; MG;Sudeste
+494;Teixeira ; PB;Nordeste
+495;Ipubi ; PE;Nordeste
+496;Coronel Ezequiel ; RN;Nordeste
+497;Novo Horizonte ; BA;Nordeste
+498;Passagem ; RN;Nordeste
+499;Jacareacanga ; PA;Norte
+500;Penalva ; MA;Nordeste
+501;Central ; BA;Nordeste
+502;Feijó ; AC;Norte
+503;Angical ; BA;Nordeste
+504;Salgado ; SE;Nordeste
+505;Feliz Natal ; MT;Centro-Oeste
+506;Várzea Nova ; BA;Nordeste
+507;Brasnorte ; MT;Centro-Oeste
+508;Arroio do Padre ; RS;Sul
+509;Mongaguá ; SP;Sudeste
+510;Alvorada ; RS;Sul
+511;Poço Verde ; SE;Nordeste
+512;Santo Antônio do Jardim ; SP;Sudeste
+513;Itobi ; SP;Sudeste
+514;Leoberto Leal ; SC;Sul
+515;Itabaiana ; PB;Nordeste
+516;São José do Seridó ; RN;Nordeste
+517;Brasília ; DF;Centro-Oeste
+518;Alagoinhas ; BA;Nordeste
+519;Santanópolis ; BA;Nordeste
+520;São José do Hortêncio ; RS;Sul
+521;Ibirité ; MG;Sudeste
+522;Nova Olinda ; CE;Nordeste
+523;Inhuma ; PI;Nordeste
+524;Quixeramobim ; CE;Nordeste
+525;Anadia ; AL;Nordeste
+526;Cupira ; PE;Nordeste
+527;Barra Velha ; SC;Sul
+528;Paripiranga ; BA;Nordeste
+529;Lagoa do Carro ; PE;Nordeste
+530;Madalena ; CE;Nordeste
+531;Barão ; RS;Sul
+532;Nova Russas ; CE;Nordeste
+533;Alto Bela Vista ; SC;Sul
+534;Rio do Sul ; SC;Sul
+535;São José do Sul ; RS;Sul
+536;Mato Leitão ; RS;Sul
+537;Maratá ; RS;Sul
+538;Divisa Alegre ; MG;Sudeste
+539;São João da Barra ; RJ;Sudeste
+540;Ouricuri ; PE;Nordeste
+541;Francisco Alves ; PR;Sul
+542;Presidente Kennedy ; ES;Sudeste
+543;Cerro Grande do Sul ; RS;Sul
+544;Santa Bárbara d'Oeste ; SP;Sudeste
+545;Glorinha ; RS;Sul
+546;Capivari do Sul ; RS;Sul
+547;Natal ; RN;Nordeste
+548;Curvelândia ; MT;Centro-Oeste
+549;Lajeado ; RS;Sul
+550;Balneário Rincão ; SC;Sul
+551;Jaguaruna ; SC;Sul
+552;Anchieta ; ES;Sudeste
+553;Alfredo Chaves ; ES;Sudeste
+554;Rio das Pedras ; SP;Sudeste
+555;Riozinho ; RS;Sul
+556;Nova Santa Rita ; RS;Sul
+557;Gravataí ; RS;Sul
+558;Brochier ; RS;Sul
+559;São Lourenço da Serra ; SP;Sudeste
+560;Guarapari ; ES;Sudeste
+561;Viana ; ES;Sudeste
+562;Cruzeiro do Sul ; RS;Sul
+563;Sobradinho ; RS;Sul
+564;Vidal Ramos ; SC;Sul
+565;Ibarama ; RS;Sul
+566;Elísio Medrado ; BA;Nordeste
+567;São Pedro da Serra ; RS;Sul
+568;São Mateus ; ES;Sudeste
+569;Itanagra ; BA;Nordeste
+570;São Pedro do Paraná ; PR;Sul
+571;Fernão ; SP;Sudeste
+572;Sertão Santana ; RS;Sul
+573;Mucurici ; ES;Sudeste
+574;Celso Ramos ; SC;Sul
+575;Capela de Santana ; RS;Sul
+576;Campo Bom ; RS;Sul
+577;Presidente Castelo Branco ; PR;Sul
+578;Aguiarnópolis ; TO;Norte
+579;Paulínia ; SP;Sudeste
+580;Americana ; SP;Sudeste
+581;Domingos Martins ; ES;Sudeste
+582;Santo Antônio de Posse ; SP;Sudeste
+583;Tocos do Moji ; MG;Sudeste
+584;Delta ; MG;Sudeste
+585;Paraíso do Norte ; PR;Sul
+586;Bom Princípio ; RS;Sul
+587;Vale Real ; RS;Sul
+588;São Roberto ; MA;Nordeste
+589;Manaíra ; PB;Nordeste
+590;Imigrante ; RS;Sul
+591;Faria Lemos ; MG;Sudeste
+592;São Francisco do Glória ; MG;Sudeste
+593;Arroio do Meio ; RS;Sul
+594;Serra ; ES;Sudeste
+595;Munhoz de Melo ; PR;Sul
+596;Irupi ; ES;Sudeste
+597;Catas Altas da Noruega ; MG;Sudeste
+598;Orizânia ; MG;Sudeste
+599;Tibau do Sul ; RN;Nordeste
+600;Mathias Lobato ; MG;Sudeste
+601;Santa Mônica ; PR;Sul
+602;Farroupilha ; RS;Sul
+603;Santa Rosa do Sul ; SC;Sul
+604;Terra Alta ; PA;Norte
+605;Almino Afonso ; RN;Nordeste
+606;Patu ; RN;Nordeste
+607;Jardinópolis ; SC;Sul
+608;Ipiranga do Sul ; RS;Sul
+609;Pedras Grandes ; SC;Sul
+610;Taquari ; RS;Sul
+611;Salvador das Missões ; RS;Sul
+612;Toledo ; MG;Sudeste
+613;Iúna ; ES;Sudeste
+614;Ibatiba ; ES;Sudeste
+615;Tabaí ; RS;Sul
+616;Iracema do Oeste ; PR;Sul
+617;Aracruz ; ES;Sudeste
+618;Itaguaçu ; ES;Sudeste
+619;Portão ; RS;Sul
+620;Paraíso do Sul ; RS;Sul
+621;Vera Cruz ; RS;Sul
+622;Imbituba ; SC;Sul
+623;Garopaba ; SC;Sul
+624;Platina ; SP;Sudeste
+625;Paulo Lopes ; SC;Sul
+626;Boa Viagem ; CE;Nordeste
+627;Bom Retiro do Sul ; RS;Sul
+628;Muniz Freire ; ES;Sudeste
+629;Sapiranga ; RS;Sul
+630;Lindolfo Collor ; RS;Sul
+631;Muliterno ; RS;Sul
+632;Travesseiro ; RS;Sul
+633;Colatina ; ES;Sudeste
+634;Maquiné ; RS;Sul
+635;Linhares ; ES;Sudeste
+636;Terra de Areia ; RS;Sul
+637;General Carneiro ; PR;Sul
+638;Ponto Belo ; ES;Sudeste
+639;Porto União ; SC;Sul
+640;Matos Costa ; SC;Sul
+641;Passos Maia ; SC;Sul
+642;São Gonçalo dos Campos ; BA;Nordeste
+643;Palmas ; PR;Sul
+644;Concórdia ; SC;Sul
+645;Vista Alegre ; RS;Sul
+646;Chiador ; MG;Sudeste
+647;Duque de Caxias ; RJ;Sudeste
+648;Marmelópolis ; MG;Sudeste
+649;Rio das Flores ; RJ;Sudeste
+650;Montanha ; ES;Sudeste
+651;Belmiro Braga ; MG;Sudeste
+652;Água Doce ; SC;Sul
+653;Alegre ; ES;Sudeste
+654;Mimoso do Sul ; ES;Sudeste
+655;Valença ; RJ;Sudeste
+656;São Fidélis ; RJ;Sudeste
+657;Bom Jesus do Norte ; ES;Sudeste
+658;Estiva ; MG;Sudeste
+659;São Francisco de Itabapoana ; RJ;Sudeste
+660;Humaitá ; RS;Sul
+661;Carapebus ; RJ;Sudeste
+662;Cardoso Moreira ; RJ;Sudeste
+663;Rolante ; RS;Sul
+664;Bom Jesus do Itabapoana ; RJ;Sudeste
+665;Baixo Guandu ; ES;Sudeste
+666;Marilândia ; ES;Sudeste
+667;Alto Rio Novo ; ES;Sudeste
+668;Itapagé ; CE;Nordeste
+669;Ivoti ; RS;Sul
+670;Laje do Muriaé ; RJ;Sudeste
+671;Pedro Osório ; RS;Sul
+672;Ibirubá ; RS;Sul
+673;Nova Ramada ; RS;Sul
+674;Posse ; GO;Centro-Oeste
+675;Cerro Branco ; RS;Sul
+676;Iaciara ; GO;Centro-Oeste
+677;Guarani de Goiás ; GO;Centro-Oeste
+678;Várzea Grande ; MT;Centro-Oeste
+679;Vale de São Domingos ; MT;Centro-Oeste
+680;Rio Real ; BA;Nordeste
+681;Tesouro ; MT;Centro-Oeste
+682;Rosário Oeste ; MT;Centro-Oeste
+683;Santa Bárbara do Sul ; RS;Sul
+684;Simões Filho ; BA;Nordeste
+685;Agrolândia ; SC;Sul
+686;Londrina ; PR;Sul
+687;Capela do Alto ; SP;Sudeste
+688;Arapuã ; PR;Sul
+689;Campinas do Sul ; RS;Sul
+690;Ponta Grossa ; PR;Sul
+691;Turvo ; PR;Sul
+692;Trindade ; PE;Nordeste
+693;Laguna ; SC;Sul
+694;Itamaraju ; BA;Nordeste
+695;Florianópolis ; SC;Sul
+696;Feliz ; RS;Sul
+697;Itabela ; BA;Nordeste
+698;Cruzeta ; RN;Nordeste
+699;Coração de Maria ; BA;Nordeste
+700;Bom Repouso ; MG;Sudeste
+701;Amaral Ferrador ; RS;Sul
+702;Anguera ; BA;Nordeste
+703;Itapoá ; SC;Sul
+704;Santo Amaro ; BA;Nordeste
+705;Conceição do Jacuípe ; BA;Nordeste
+706;Pedrão ; BA;Nordeste
+707;Terra Nova ; BA;Nordeste
+708;Ouriçangas ; BA;Nordeste
+709;Aramari ; BA;Nordeste
+710;Esplanada ; BA;Nordeste
+711;Dias d'Ávila ; BA;Nordeste
+712;Conde ; BA;Nordeste
+713;Jandaíra ; BA;Nordeste
+714;Mata de São João ; BA;Nordeste
+715;Camaçari ; BA;Nordeste
+716;Entre Rios ; BA;Nordeste
+717;São Sebastião do Passé ; BA;Nordeste
+718;Pau D'Arco ; PA;Norte
+719;Salvador do Sul ; RS;Sul
+720;Benjamin Constant do Sul ; RS;Sul
+721;Luziânia ; GO;Centro-Oeste
+722;Major Gercino ; SC;Sul
+723;Santo Antônio do Descoberto ; GO;Centro-Oeste
+724;Governador Celso Ramos ; SC;Sul
+725;Pinheirinho do Vale ; RS;Sul
+726;Abadiânia ; GO;Centro-Oeste
+727;Itaara ; RS;Sul
+728;Alexânia ; GO;Centro-Oeste
+729;Cerrito ; RS;Sul
+730;Corumbá de Goiás ; GO;Centro-Oeste
+731;Cabeceira Grande ; MG;Sudeste
+732;Jaguarão ; RS;Sul
+733;Araças ; BA;Nordeste
+734;Herval ; RS;Sul
+735;Bombinhas ; SC;Sul
+736;Capão do Leão ; RS;Sul
+737;Presidente Lucena ; RS;Sul
+738;Paial ; SC;Sul
+739;Pedras Altas ; RS;Sul
+740;Porto Belo ; SC;Sul
+741;Santana de Parnaíba ; SP;Sudeste
+742;São José do Norte ; RS;Sul
+743;Vale do Sol ; RS;Sul
+744;Aceguá ; RS;Sul
+745;Morro Redondo ; RS;Sul
+746;Pelotas ; RS;Sul
+747;Candiota ; RS;Sul
+748;Tavares ; RS;Sul
+749;Faxinal do Soturno ; RS;Sul
+750;Turuçu ; RS;Sul
+751;Hulha Negra ; RS;Sul
+752;Cristal ; RS;Sul
+753;Canguçu ; RS;Sul
+754;Arambaré ; RS;Sul
+755;Chuvisca ; RS;Sul
+756;Estrela ; RS;Sul
+757;Sentinela do Sul ; RS;Sul
+758;Penha ; SC;Sul
+759;Mostardas ; RS;Sul
+760;Linha Nova ; RS;Sul
+761;Pacatuba ; CE;Nordeste
+762;Guaíba ; RS;Sul
+763;Tapes ; RS;Sul
+764;Teutônia ; RS;Sul
+765;Santana da Boa Vista ; RS;Sul
+766;Santa Maria do Herval ; RS;Sul
+767;Dom Feliciano ; RS;Sul
+768;Barão do Triunfo ; RS;Sul
+769;São Vicente ; RN;Nordeste
+770;Barra do Ribeiro ; RS;Sul
+771;Mariana Pimentel ; RS;Sul
+772;Encruzilhada do Sul ; RS;Sul
+773;Vila Nova do Sul ; RS;Sul
+774;Palmares do Sul ; RS;Sul
+775;Lajes Pintadas ; RN;Nordeste
+776;Santa Margarida do Sul ; RS;Sul
+777;Pantano Grande ; RS;Sul
+778;Barra do Quaraí ; RS;Sul
+779;Joaçaba ; SC;Sul
+780;Vale Verde ; RS;Sul
+781;Caieiras ; SP;Sudeste
+782;Quaraí ; RS;Sul
+783;Viamão ; RS;Sul
+784;Cidreira ; RS;Sul
+785;Novo Hamburgo ; RS;Sul
+786;Eldorado do Sul ; RS;Sul
+787;Ascurra ; SC;Sul
+788;Osório ; RS;Sul
+789;São Jerônimo ; RS;Sul
+790;Minas do Leão ; RS;Sul
+791;Charqueadas ; RS;Sul
+792;Butiá ; RS;Sul
+793;Arroio dos Ratos ; RS;Sul
+794;Imbé ; RS;Sul
+795;Cachoeirinha ; RS;Sul
+796;Formigueiro ; RS;Sul
+797;Porto Alegre ; RS;Sul
+798;Cachoeira do Sul ; RS;Sul
+799;Rio Pardo ; RS;Sul
+800;General Câmara ; RS;Sul
+801;Santo Antônio da Patrulha ; RS;Sul
+802;Passo do Sobrado ; RS;Sul
+803;Dilermando de Aguiar ; RS;Sul
+804;Caraá ; RS;Sul
+805;Sarandi ; PR;Sul
+806;Novo Cabrais ; RS;Sul
+807;Triunfo ; RS;Sul
+808;Montenegro ; RS;Sul
+809;Candelária ; RS;Sul
+810;São Manoel do Paraná ; PR;Sul
+811;Taquara ; RS;Sul
+812;Agudo ; RS;Sul
+813;Nova Petrópolis ; RS;Sul
+814;Santa Maria ; RS;Sul
+815;Pareci Novo ; RS;Sul
+816;Nova Palma ; RS;Sul
+817;Mata ; RS;Sul
+818;Agricolândia ; PI;Nordeste
+819;São Pedro do Sul ; RS;Sul
+820;Ivorá ; RS;Sul
+821;Rodeio Bonito ; RS;Sul
+822;Toropi ; RS;Sul
+823;Santa Cruz do Sul ; RS;Sul
+824;Venâncio Aires ; RS;Sul
+825;Uruguaiana ; RS;Sul
+826;São Vendelino ; RS;Sul
+827;São Martinho da Serra ; RS;Sul
+828;Picada Café ; RS;Sul
+829;Colinas ; RS;Sul
+830;Três Cachoeiras ; RS;Sul
+831;Três Forquilhas ; RS;Sul
+832;Passa Sete ; RS;Sul
+833;Alto Feliz ; RS;Sul
+834;Serrania ; MG;Sudeste
+835;Canela ; RS;Sul
+836;Capitão ; RS;Sul
+837;Boqueirão do Leão ; RS;Sul
+838;Itati ; RS;Sul
+839;Nova Esperança do Sul ; RS;Sul
+840;Gramado Xavier ; RS;Sul
+841;Sinimbu ; RS;Sul
+842;Coronel Pilar ; RS;Sul
+843;Marques de Souza ; RS;Sul
+844;Garibaldi ; RS;Sul
+845;Segredo ; RS;Sul
+846;Pinhal Grande ; RS;Sul
+847;Progresso ; RS;Sul
+848;Torres ; RS;Sul
+849;Roca Sales ; RS;Sul
+850;Encantado ; RS;Sul
+851;Arroio do Tigre ; RS;Sul
+852;Estrela Velha ; RS;Sul
+853;Lagoão ; RS;Sul
+854;Relvado ; RS;Sul
+855;Coqueiro Baixo ; RS;Sul
+856;Santa Tereza ; RS;Sul
+857;Praia Grande ; SC;Sul
+858;Mampituba ; RS;Sul
+859;Tunas ; RS;Sul
+860;São João do Sul ; SC;Sul
+861;Doutor Ricardo ; RS;Sul
+862;Pinto Bandeira ; RS;Sul
+863;Nossa Senhora das Graças ; PR;Sul
+864;Bento Gonçalves ; RS;Sul
+865;Muçum ; RS;Sul
+866;São José do Herval ; RS;Sul
+867;São Valentim do Sul ; RS;Sul
+868;União da Serra ; RS;Sul
+869;Barros Cassal ; RS;Sul
+870;Salto do Jacuí ; RS;Sul
+871;Ermo ; SC;Sul
+872;Jacuizinho ; RS;Sul
+873;Nova Hartz ; RS;Sul
+874;Balneário Arroio do Silva ; SC;Sul
+875;Pouso Novo ; RS;Sul
+876;Putinga ; RS;Sul
+877;Unistalda ; RS;Sul
+878;Herveiras ; RS;Sul
+879;Flores da Cunha ; RS;Sul
+880;Jacinto Machado ; SC;Sul
+881;Veranópolis ; RS;Sul
+882;Ilópolis ; RS;Sul
+883;Anta Gorda ; RS;Sul
+884;Fazenda Vilanova ; RS;Sul
+885;São Marcos ; RS;Sul
+886;Vila Flores ; RS;Sul
+887;Entre Rios do Oeste ; PR;Sul
+888;Santana de Cataguases ; MG;Sudeste
+889;Fontoura Xavier ; RS;Sul
+890;Vista Alegre do Prata ; RS;Sul
+891;Campos Borges ; RS;Sul
+892;Maracajá ; SC;Sul
+893;Arvorezinha ; RS;Sul
+894;São Sebastião do Caí ; RS;Sul
+895;Itaqui ; RS;Sul
+896;Cambará do Sul ; RS;Sul
+897;Araranguá ; SC;Sul
+898;Gramado ; RS;Sul
+899;Caxias do Sul ; RS;Sul
+900;Entre Rios ; SC;Sul
+901;Jaquirana ; RS;Sul
+902;Alto Alegre ; RS;Sul
+903;Antônio Prado ; RS;Sul
+904;Guaporé ; RS;Sul
+905;Meleiro ; SC;Sul
+906;Bom Jesus do Oeste ; SC;Sul
+907;Boa Vista do Incra ; RS;Sul
+908;Nova Araçá ; RS;Sul
+909;Turvo ; SC;Sul
+910;Cotiporã ; RS;Sul
+911;Quinze de Novembro ; RS;Sul
+912;Camargo ; RS;Sul
+913;Fortaleza dos Valos ; RS;Sul
+914;Araricá ; RS;Sul
+915;Timbé do Sul ; SC;Sul
+916;Capão do Cipó ; RS;Sul
+917;Lajeado do Bugre ; RS;Sul
+918;Itapuca ; RS;Sul
+919;São João do Polêsine ; RS;Sul
+920;Protásio Alves ; RS;Sul
+921;Selbach ; RS;Sul
+922;Espumoso ; RS;Sul
+923;Forquilhinha ; SC;Sul
+924;Lagoa Bonita do Sul ; RS;Sul
+925;Soledade ; RS;Sul
+926;Morro da Fumaça ; SC;Sul
+927;Ipê ; RS;Sul
+928;Cristal do Sul ; RS;Sul
+929;Tapera ; RS;Sul
+930;Jóia ; RS;Sul
+931;Mormaço ; RS;Sul
+932;Campestre da Serra ; RS;Sul
+933;Pomerode ; SC;Sul
+934;Monte Alegre dos Campos ; RS;Sul
+935;Içara ; SC;Sul
+936;Paraí ; RS;Sul
+937;Parobé ; RS;Sul
+938;Ibirapuitã ; RS;Sul
+939;Lagoa dos Três Cantos ; RS;Sul
+940;Guabiju ; RS;Sul
+941;Witmarsum ; SC;Sul
+942;Tio Hugo ; RS;Sul
+943;Tupandi ; RS;Sul
+944;Casca ; RS;Sul
+945;São Domingos do Sul ; RS;Sul
+946;André da Rocha ; RS;Sul
+947;Sangão ; SC;Sul
+948;Nova Castilho ; SP;Sudeste
+949;Cruz Alta ; RS;Sul
+950;Siderópolis ; SC;Sul
+951;Nicolau Vergueiro ; RS;Sul
+952;Cocal do Sul ; SC;Sul
+953;Vila Maria ; RS;Sul
+954;Mato Queimado ; RS;Sul
+955;Lagoa do Piauí ; PI;Nordeste
+956;São José dos Ausentes ; RS;Sul
+957;Santo Antônio do Palma ; RS;Sul
+958;Boa Vista do Cadeado ; RS;Sul
+959;Bossoroca ; RS;Sul
+960;Nova Bassano ; RS;Sul
+961;Cosmópolis ; SP;Sudeste
+962;Eugênio de Castro ; RS;Sul
+963;Augusto Pestana ; RS;Sul
+964;São Miguel das Missões ; RS;Sul
+965;Victor Graeff ; RS;Sul
+966;Urussanga ; SC;Sul
+967;São Jorge ; RS;Sul
+968;Não-Me-Toque; RS;Sul
+969;David Canabarro ; RS;Sul
+970;Colorado ; RS;Sul
+971;Pejuçara ; RS;Sul
+972;Ernestina ; RS;Sul
+973;Coronel Barros ; RS;Sul
+974;Marau ; RS;Sul
+975;Pescaria Brava ; SC;Sul
+976;Varjota ; CE;Nordeste
+977;Entre-Ijuís ; RS;Sul
+978;Santo Antônio do Planalto ; RS;Sul
+979;Lauro Muller ; SC;Sul
+980;Gentil ; RS;Sul
+981;São Ludgero ; SC;Sul
+982;Saldanha Marinho ; RS;Sul
+983;Bozano ; RS;Sul
+984;Vitória das Missões ; RS;Sul
+985;Nova Alvorada ; RS;Sul
+986;Ibiraiaras ; RS;Sul
+987;Caibaté ; RS;Sul
+988;Santa Clara do Sul ; RS;Sul
+989;Criciúma ; SC;Sul
+990;Bom Jesus ; RS;Sul
+991;União do Oeste ; SC;Sul
+992;Ciríaco ; RS;Sul
+993;Panambi ; RS;Sul
+994;Mato Castelhano ; RS;Sul
+995;Carazinho ; RS;Sul
+996;Modelo ; SC;Sul
+997;Muitos Capões ; RS;Sul
+998;Rolador ; RS;Sul
+999;Braço do Norte ; SC;Sul
+1000;Nova Veneza ; SC;Sul
+1001;Macieira ; SC;Sul
+1002;Santo Ângelo ; RS;Sul
+1003;Três Coroas ; RS;Sul
+1004;Caseiros ; RS;Sul
+1005;Orleans ; SC;Sul
+1006;São Borja ; RS;Sul
+1007;Armazém ; SC;Sul
+1008;Passo Fundo ; RS;Sul
+1009;Água Santa ; RS;Sul
+1010;Bom Jardim da Serra ; SC;Sul
+1011;Eunápolis ; BA;Nordeste
+1012;Santa Cruz ; PB;Nordeste
+1013;Santa Cecília do Sul ; RS;Sul
+1014;Ajuricaba ; RS;Sul
+1015;Nova Prata ; RS;Sul
+1016;Garruchos ; RS;Sul
+1017;Imaruí ; SC;Sul
+1018;Ijuí ; RS;Sul
+1019;Cerro Largo ; RS;Sul
+1020;São Nicolau ; RS;Sul
+1021;Guarani das Missões ; RS;Sul
+1022;Condor ; RS;Sul
+1023;Almirante Tamandaré do Sul ; RS;Sul
+1024;Coqueiros do Sul ; RS;Sul
+1025;Coxilha ; RS;Sul
+1026;Dezesseis de Novembro ; RS;Sul
+1027;Vila Lângaro ; RS;Sul
+1028;Capão Bonito do Sul ; RS;Sul
+1029;Ubiretama ; RS;Sul
+1030;Vacaria ; RS;Sul
+1031;Ibiaçá ; RS;Sul
+1032;Maravilha ; SC;Sul
+1033;Tapejara ; RS;Sul
+1034;Catuípe ; RS;Sul
+1035;Grão Pará ; SC;Sul
+1036;Triunfo ; PE;Nordeste
+1037;Nova Candelária ; RS;Sul
+1038;Sertão ; RS;Sul
+1039;Rio Fortuna ; SC;Sul
+1040;Santa Rosa de Lima ; SC;Sul
+1041;Roque Gonzales ; RS;Sul
+1042;Montauri ; RS;Sul
+1043;Duque Bacelar ; MA;Nordeste
+1044;Pirapó ; RS;Sul
+1045;Chapada ; RS;Sul
+1046;Cruzaltense ; RS;Sul
+1047;Morro Grande ; SC;Sul
+1048;São Paulo das Missões ; RS;Sul
+1049;Urupema ; SC;Sul
+1050;Barão de Cotegipe ; RS;Sul
+1051;Pontão ; RS;Sul
+1052;Estação ; RS;Sul
+1053;Tupanci do Sul ; RS;Sul
+1054;Campina das Missões ; RS;Sul
+1055;Urubici ; SC;Sul
+1056;Charrua ; RS;Sul
+1057;Barra Funda ; RS;Sul
+1058;Santo Expedito do Sul ; RS;Sul
+1059;Porto Xavier ; RS;Sul
+1060;Erechim ; RS;Sul
+1061;São Martinho ; SC;Sul
+1062;Hugo Napoleão ; PI;Nordeste
+1063;Esmeralda ; RS;Sul
+1064;Cândido Godói ; RS;Sul
+1065;Pinhal ; RS;Sul
+1066;Capão Alto ; SC;Sul
+1067;Nova Trento ; SC;Sul
+1068;Inhacorá ; RS;Sul
+1069;Giruá ; RS;Sul
+1070;Santa Cruz da Esperança ; SP;Sudeste
+1071;São Lourenço do Sul ; RS;Sul
+1072;Novo Barreiro ; RS;Sul
+1073;São Bonifácio ; SC;Sul
+1074;Floriano Peixoto ; RS;Sul
+1075;Independência ; RS;Sul
+1076;Rio Rufino ; SC;Sul
+1077;Chiapetta ; RS;Sul
+1078;Quadra ; SP;Sudeste
+1079;Sarandi ; RS;Sul
+1080;Painel ; SC;Sul
+1081;Sananduva ; RS;Sul
+1082;Porto Lucena ; RS;Sul
+1083;São Valério do Sul ; RS;Sul
+1084;Santo Augusto ; RS;Sul
+1085;Erebango ; RS;Sul
+1086;São José das Missões ; RS;Sul
+1087;Dois Lajeados ; RS;Sul
+1088;Rondinha ; RS;Sul
+1089;Alegria ; RS;Sul
+1090;Serafina Corrêa ; RS;Sul
+1091;Paim Filho ; RS;Sul
+1092;Getúlio Vargas ; RS;Sul
+1093;Quatro Irmãos ; RS;Sul
+1094;Anitápolis ; SC;Sul
+1095;São Pedro das Missões ; RS;Sul
+1096;Pinhal da Serra ; RS;Sul
+1097;São João da Urtiga ; RS;Sul
+1098;Nova Pádua ; RS;Sul
+1099;Palmeira das Missões ; RS;Sul
+1100;Paulo Bento ; RS;Sul
+1101;Santa Rosa ; RS;Sul
+1102;Centenário ; RS;Sul
+1103;Porto Vera Cruz ; RS;Sul
+1104;Cacique Doble ; RS;Sul
+1105;Santo Cristo ; RS;Sul
+1106;São José do Inhacorá ; RS;Sul
+1107;Jacutinga ; RS;Sul
+1108;Novo Xingu ; RS;Sul
+1109;Ronda Alta ; RS;Sul
+1110;Sagrada Família ; RS;Sul
+1111;São Martinho ; RS;Sul
+1112;Coronel Bicaco ; RS;Sul
+1113;Carlos Gomes ; RS;Sul
+1114;Ponte Preta ; RS;Sul
+1115;Áurea ; RS;Sul
+1116;Boa Vista do Buricá ; RS;Sul
+1117;São José do Ouro ; RS;Sul
+1118;Águas Mornas ; SC;Sul
+1119;Bom Sucesso de Itararé ; SP;Sudeste
+1120;Bocaina do Sul ; SC;Sul
+1121;Bom Retiro ; SC;Sul
+1122;Boa Vista das Missões ; RS;Sul
+1123;Três de Maio ; RS;Sul
+1124;Dois Irmãos das Missões ; RS;Sul
+1125;São Francisco do Oeste ; RN;Nordeste
+1126;Campo Belo do Sul ; SC;Sul
+1127;Alfredo Wagner ; SC;Sul
+1128;Anita Garibaldi ; SC;Sul
+1129;Tuparendi ; RS;Sul
+1130;Palhoça ; SC;Sul
+1131;Constantina ; RS;Sul
+1132;Santo Amaro da Imperatriz ; SC;Sul
+1133;Cerro Negro ; SC;Sul
+1134;Barracão ; RS;Sul
+1135;Pendências ; RN;Nordeste
+1136;Tucunduva ; RS;Sul
+1137;Campo Novo ; RS;Sul
+1138;São Pedro de Alcântara ; SC;Sul
+1139;Três Palmeiras ; RS;Sul
+1140;Senador Georgino Avelino ; RN;Nordeste
+1141;Alecrim ; RS;Sul
+1142;São José ; SC;Sul
+1143;Jaboticaba ; RS;Sul
+1144;Petrolândia ; SC;Sul
+1145;Tunápolis ; SC;Sul
+1146;Maximiliano de Almeida ; RS;Sul
+1147;Chapadão do Lageado ; SC;Sul
+1148;Novo Tiradentes ; RS;Sul
+1149;Barcelona ; RN;Nordeste
+1150;Imbuia ; SC;Sul
+1151;Gaurama ; RS;Sul
+1152;Abdon Batista ; SC;Sul
+1153;Conchal ; SP;Sudeste
+1154;Botuverá ; SC;Sul
+1155;Porto Mauá ; RS;Sul
+1156;Braga ; RS;Sul
+1157;Angelina ; SC;Sul
+1158;Horizontina ; RS;Sul
+1159;Bom Progresso ; RS;Sul
+1160;Machadinho ; RS;Sul
+1161;Canudos do Vale ; RS;Sul
+1162;São Valentim ; RS;Sul
+1163;Correia Pinto ; SC;Sul
+1164;Ipira ; SC;Sul
+1165;Trindade do Sul ; RS;Sul
+1166;Presidente Nereu ; SC;Sul
+1167;Novo Machado ; RS;Sul
+1168;Guidoval ; MG;Sudeste
+1169;Palmeira ; SC;Sul
+1170;Liberato Salzano ; RS;Sul
+1171;Entre Rios do Sul ; RS;Sul
+1172;Viadutos ; RS;Sul
+1173;Itaperuçu ; PR;Sul
+1174;São José do Cerrito ; SC;Sul
+1175;Redentora ; RS;Sul
+1176;Três Arroios ; RS;Sul
+1177;Doutor Maurício Cardoso ; RS;Sul
+1178;Zortéa ; SC;Sul
+1179;Piratuba ; SC;Sul
+1180;Gramado dos Loureiros ; RS;Sul
+1181;Vargem ; SC;Sul
+1182;Crissiumal ; RS;Sul
+1183;Seberi ; RS;Sul
+1184;Fagundes ; PB;Nordeste
+1185;Erval Seco ; RS;Sul
+1186;Taquaruçu do Sul ; RS;Sul
+1187;Mariano Moro ; RS;Sul
+1188;Marcelino Ramos ; RS;Sul
+1189;Capinzal ; SC;Sul
+1190;Severiano de Almeida ; RS;Sul
+1191;Matinhos ; PR;Sul
+1192;Otacílio Costa ; SC;Sul
+1193;Capivari de Baixo ; SC;Sul
+1194;Três Passos ; RS;Sul
+1195;Biguaçu ; SC;Sul
+1196;Tubarão ; SC;Sul
+1197;Inajá ; PR;Sul
+1198;Ponte Alta ; SC;Sul
+1199;Ituporanga ; SC;Sul
+1200;Barra do Rio Azul ; RS;Sul
+1201;Planalto ; RS;Sul
+1202;Esperança do Sul ; RS;Sul
+1203;Tenente Portela ; RS;Sul
+1204;Aurora ; SC;Sul
+1205;Aratiba ; RS;Sul
+1206;Tiradentes do Sul ; RS;Sul
+1207;Agronômica ; SC;Sul
+1208;Marilena ; PR;Sul
+1209;Erval Grande ; RS;Sul
+1210;Trombudo Central ; SC;Sul
+1211;Brunópolis ; SC;Sul
+1212;Vicente Dutra ; RS;Sul
+1213;Erval Velho ; SC;Sul
+1214;Palmitinho ; RS;Sul
+1215;São João Batista ; SC;Sul
+1216;Itatiba do Sul ; RS;Sul
+1217;Frederico Westphalen ; RS;Sul
+1218;Gravatal ; SC;Sul
+1219;São Cristovão do Sul ; SC;Sul
+1220;Caxambu do Sul ; SC;Sul
+1221;Nonoai ; RS;Sul
+1222;Schroeder ; SC;Sul
+1223;Ribeirão Corrente ; SP;Sudeste
+1224;Pouso Redondo ; SC;Sul
+1225;Presidente Castello Branco ; SC;Sul
+1226;Ouro ; SC;Sul
+1227;Rio dos Índios ; RS;Sul
+1228;Itá ; SC;Sul
+1229;Caiçara ; RS;Sul
+1230;Iraí ; RS;Sul
+1231;Santa Salete ; SP;Sudeste
+1232;Tijucas ; SC;Sul
+1233;Derrubadas ; RS;Sul
+1234;Monte Carlo ; SC;Sul
+1235;Laurentino ; SC;Sul
+1236;Herval d'Oeste ; SC;Sul
+1237;Frei Rogério ; SC;Sul
+1238;Ponte Alta do Norte ; SC;Sul
+1239;Alpestre ; RS;Sul
+1240;Arabutã ; SC;Sul
+1241;Jaborá ; SC;Sul
+1242;Itapema ; SC;Sul
+1243;Curitibanos ; SC;Sul
+1244;Lontras ; SC;Sul
+1245;Tangará ; SC;Sul
+1246;Mirim Doce ; SC;Sul
+1247;Luzerna ; SC;Sul
+1248;Itaguari ; GO;Centro-Oeste
+1249;Seara ; SC;Sul
+1250;Rio do Oeste ; SC;Sul
+1251;Guabiruba ; SC;Sul
+1252;Ibicaré ; SC;Sul
+1253;Pinheiro Preto ; SC;Sul
+1254;Guatambú ; SC;Sul
+1255;Mondaí ; SC;Sul
+1256;Itapiranga ; SC;Sul
+1257;Piedade de Ponte Nova ; MG;Sudeste
+1258;Brusque ; SC;Sul
+1259;Arvoredo ; SC;Sul
+1260;Apiúna ; SC;Sul
+1261;Camboriú ; SC;Sul
+1262;Garuva ; SC;Sul
+1263;Taió ; SC;Sul
+1264;São Carlos ; SC;Sul
+1265;Águas de Chapecó ; SC;Sul
+1266;Catanduvas ; SC;Sul
+1267;Lindóia do Sul ; SC;Sul
+1268;Palmitos ; SC;Sul
+1269;Xavantina ; SC;Sul
+1270;Dona Emma ; SC;Sul
+1271;Chapecó ; SC;Sul
+1272;São João do Oeste ; SC;Sul
+1273;Ipumirim ; SC;Sul
+1274;Cordilheira Alta ; SC;Sul
+1275;Irani ; SC;Sul
+1276;Iomerê ; SC;Sul
+1277;Caibi ; SC;Sul
+1278;Riqueza ; SC;Sul
+1279;Fraiburgo ; SC;Sul
+1280;Xaxim ; SC;Sul
+1281;Nova Erechim ; SC;Sul
+1282;Videira ; SC;Sul
+1283;Treze Tílias ; SC;Sul
+1284;Salto Veloso ; SC;Sul
+1285;Vargem Bonita ; SC;Sul
+1286;Rio das Antas ; SC;Sul
+1287;Águas Frias ; SC;Sul
+1288;Lajeado Grande ; SC;Sul
+1289;Pereiras ; SP;Sudeste
+1290;Cunha Porã ; SC;Sul
+1291;Rio do Campo ; SC;Sul
+1292;Coronel Freitas ; SC;Sul
+1293;Bandeirante ; SC;Sul
+1294;Ponte Serrada ; SC;Sul
+1295;Xanxerê ; SC;Sul
+1296;Faxinal dos Guedes ; SC;Sul
+1297;Balneário Piçarras ; SC;Sul
+1298;Vitor Meireles ; SC;Sul
+1299;José Boiteux ; SC;Sul
+1300;Lebon Régis ; SC;Sul
+1301;Vargeão ; SC;Sul
+1302;Santa Cecília ; SC;Sul
+1303;Benedito Novo ; SC;Sul
+1304;São Miguel do Oeste ; SC;Sul
+1305;Ouro Verde ; SC;Sul
+1306;São Miguel da Boa Vista ; SC;Sul
+1307;Quilombo ; SC;Sul
+1308;Tigrinhos ; SC;Sul
+1309;Luiz Alves ; SC;Sul
+1310;Caçador ; SC;Sul
+1311;Iraceminha ; SC;Sul
+1312;Iporã do Oeste ; SC;Sul
+1313;Blumenau ; SC;Sul
+1314;Sul Brasil ; SC;Sul
+1315;Santiago do Sul ; SC;Sul
+1316;Irati ; SC;Sul
+1317;Ipuaçu ; SC;Sul
+1318;Romelândia ; SC;Sul
+1319;Brazabrantes ; GO;Centro-Oeste
+1320;Paraíso ; SC;Sul
+1321;Sério ; RS;Sul
+1322;Doutor Pedrinho ; SC;Sul
+1323;Saltinho ; SC;Sul
+1324;Parisi ; SP;Sudeste
+1325;Santa Terezinha do Progresso ; SC;Sul
+1326;Massaranduba ; SC;Sul
+1327;São João do Itaperiú ; SC;Sul
+1328;Monte Castelo ; SC;Sul
+1329;Santa Terezinha ; SC;Sul
+1330;Guaraciaba ; SC;Sul
+1331;Coronel Martins ; SC;Sul
+1332;Abelardo Luz ; SC;Sul
+1333;Anchieta ; SC;Sul
+1334;São Bernardino ; SC;Sul
+1335;São José do Cedro ; SC;Sul
+1336;Timbó Grande ; SC;Sul
+1337;Serra Azul ; SP;Sudeste
+1338;Rio dos Cedros ; SC;Sul
+1339;São Lourenço do Oeste ; SC;Sul
+1340;Corupá ; SC;Sul
+1341;São João do Cariri ; PB;Nordeste
+1342;Araquari ; SC;Sul
+1343;Nova Itaberaba ; SC;Sul
+1344;Palma Sola ; SC;Sul
+1345;Dionísio Cerqueira ; SC;Sul
+1346;Princesa ; SC;Sul
+1347;Guaramirim ; SC;Sul
+1348;São Tomé ; PR;Sul
+1349;Mariópolis ; PR;Sul
+1350;Itaiópolis ; SC;Sul
+1351;Presidente Getúlio ; SC;Sul
+1352;Santo Inácio do Piauí ; PI;Nordeste
+1353;Bela Vista do Toldo ; SC;Sul
+1354;Gaspar ; SC;Sul
+1355;Jupiá ; SC;Sul
+1356;Guarujá do Sul ; SC;Sul
+1357;Bom Jesus do Sul ; PR;Sul
+1358;Papanduva ; SC;Sul
+1359;Campo Erê ; SC;Sul
+1360;Cambuí ; MG;Sudeste
+1361;Rio Negrinho ; SC;Sul
+1362;Descanso ; SC;Sul
+1363;Major Vieira ; SC;Sul
+1364;Irineópolis ; SC;Sul
+1365;São Bento do Sul ; SC;Sul
+1366;Clevelândia ; PR;Sul
+1367;Ibirama ; SC;Sul
+1368;Guaraci ; PR;Sul
+1369;Porto Vitória ; PR;Sul
+1370;Marmeleiro ; PR;Sul
+1371;Vitorino ; PR;Sul
+1372;Renascença ; PR;Sul
+1373;Cássia dos Coqueiros ; SP;Sudeste
+1374;Paula Freitas ; PR;Sul
+1375;Vista Gaúcha ; RS;Sul
+1376;Honório Serpa ; PR;Sul
+1377;Três Barras ; SC;Sul
+1378;Canoinhas ; SC;Sul
+1379;Bom Sucesso do Sul ; PR;Sul
+1380;Pato Branco ; PR;Sul
+1381;Campo Alegre ; SC;Sul
+1382;Pinhal de São Bento ; PR;Sul
+1383;Paulo Frontin ; PR;Sul
+1384;Piên ; PR;Sul
+1385;Campo do Tenente ; PR;Sul
+1386;Rio Negro ; PR;Sul
+1387;Indaial ; SC;Sul
+1388;Jandaia do Sul ; PR;Sul
+1389;União da Vitória ; PR;Sul
+1390;Francisco Beltrão ; PR;Sul
+1391;Coronel Domingos Soares ; PR;Sul
+1392;Agudos do Sul ; PR;Sul
+1393;Santo Antônio do Sudoeste ; PR;Sul
+1394;Bituruna ; PR;Sul
+1395;Coronel Vivida ; PR;Sul
+1396;Itapejara d'Oeste ; PR;Sul
+1397;Santa Helena ; SC;Sul
+1398;Antônio Olinto ; PR;Sul
+1399;Bela Vista da Caroba ; PR;Sul
+1400;Mallet ; PR;Sul
+1401;Ampére ; PR;Sul
+1402;Quitandinha ; PR;Sul
+1403;Peabiru ; PR;Sul
+1404;Belmonte ; SC;Sul
+1405;Pérola d'Oeste ; PR;Sul
+1406;Verê ; PR;Sul
+1407;Mangueirinha ; PR;Sul
+1408;Harmonia ; RS;Sul
+1409;Doutor Camargo ; PR;Sul
+1410;Tijucas do Sul ; PR;Sul
+1411;Reserva do Iguaçu ; PR;Sul
+1412;Carapicuíba ; SP;Sudeste
+1413;São Mateus do Sul ; PR;Sul
+1414;Pranchita ; PR;Sul
+1415;Presidente Juscelino ; RN;Nordeste
+1416;Mandirituba ; PR;Sul
+1417;Salto do Lontra ; PR;Sul
+1418;Lacerdópolis ; SC;Sul
+1419;Cruz Machado ; PR;Sul
+1420;Itajaí ; SC;Sul
+1421;Chopinzinho ; PR;Sul
+1422;Planalto ; PR;Sul
+1423;Fazenda Rio Grande ; PR;Sul
+1424;Santa Izabel do Oeste ; PR;Sul
+1425;Dois Vizinhos ; PR;Sul
+1426;Foz do Jordão ; PR;Sul
+1427;Braço do Trombudo ; SC;Sul
+1428;Guaratuba ; PR;Sul
+1429;Rio Azul ; PR;Sul
+1430;Boa Esperança do Iguaçu ; PR;Sul
+1431;Califórnia ; PR;Sul
+1432;São João ; PR;Sul
+1433;Rebouças ; PR;Sul
+1434;Nova Esperança do Sudoeste ; PR;Sul
+1435;Lapa ; PR;Sul
+1436;Pontal do Paraná ; PR;Sul
+1437;São João do Triunfo ; PR;Sul
+1438;Dianópolis ; TO;Norte
+1439;Missal ; PR;Sul
+1440;Realeza ; PR;Sul
+1441;São Jorge d'Oeste ; PR;Sul
+1442;Arroio Trinta ; SC;Sul
+1443;Formoso do Araguaia ; TO;Norte
+1444;Capanema ; PR;Sul
+1445;Nova Prata do Iguaçu ; PR;Sul
+1446;Paverama ; RS;Sul
+1447;São José dos Pinhais ; PR;Sul
+1448;Porto Barreiro ; PR;Sul
+1449;Cruzeiro do Iguaçu ; PR;Sul
+1450;Inácio Martins ; PR;Sul
+1451;Araucária ; PR;Sul
+1452;Rio Bonito do Iguaçu ; PR;Sul
+1453;Pinhais ; PR;Sul
+1454;Paranaguá ; PR;Sul
+1455;Prata ; PB;Nordeste
+1456;Balsa Nova ; PR;Sul
+1457;Irati ; PR;Sul
+1458;Campo Magro ; PR;Sul
+1459;Serranópolis do Iguaçu ; PR;Sul
+1460;Santa Terezinha de Itaipu ; PR;Sul
+1461;Fernandes Pinheiro ; PR;Sul
+1462;Ametista do Sul ; RS;Sul
+1463;Candói ; PR;Sul
+1464;Campo Limpo Paulista ; SP;Sudeste
+1465;Joinville ; SC;Sul
+1466;Morretes ; PR;Sul
+1467;Quedas do Iguaçu ; PR;Sul
+1468;Espigão Alto do Iguaçu ; PR;Sul
+1469;Arandu ; SP;Sudeste
+1470;Virmond ; PR;Sul
+1471;Três Barras do Paraná ; PR;Sul
+1472;Lindoeste ; PR;Sul
+1473;Cantagalo ; PR;Sul
+1474;Foz do Iguaçu ; PR;Sul
+1475;Laranjeiras do Sul ; PR;Sul
+1476;Solidão ; PE;Nordeste
+1477;São Miguel do Iguaçu ; PR;Sul
+1478;Ibema ; PR;Sul
+1479;Catanduvas ; PR;Sul
+1480;Teixeira Soares ; PR;Sul
+1481;Monte Formoso ; MG;Sudeste
+1482;Porto Amazonas ; PR;Sul
+1483;Antonina ; PR;Sul
+1484;Matelândia ; PR;Sul
+1485;Medianeira ; PR;Sul
+1486;Guamiranga ; PR;Sul
+1487;Imbituva ; PR;Sul
+1488;Rodeio ; SC;Sul
+1489;Campina Grande do Sul ; PR;Sul
+1490;Boa Vista da Aparecida ; PR;Sul
+1491;Campina do Simão ; PR;Sul
+1492;Guaraqueçaba ; PR;Sul
+1493;Ibititá ; BA;Nordeste
+1494;Marquinho ; PR;Sul
+1495;Santa Lúcia ; PR;Sul
+1496;Jaraguá do Sul ; SC;Sul
+1497;Itaipulândia ; PR;Sul
+1498;Vera Cruz do Oeste ; PR;Sul
+1499;Céu Azul ; PR;Sul
+1500;Curitiba ; PR;Sul
+1501;Nova Laranjeiras ; PR;Sul
+1502;Marema ; SC;Sul
+1503;Goioxim ; PR;Sul
+1504;Ramilândia ; PR;Sul
+1505;Bocaiúva do Sul ; PR;Sul
+1506;Capitão Leônidas Marques ; PR;Sul
+1507;Rio Branco do Sul ; PR;Sul
+1508;Ilhota ; SC;Sul
+1509;Nova Roma do Sul ; RS;Sul
+1510;Pinhalzinho ; SC;Sul
+1511;Diamante D'Oeste ; PR;Sul
+1512;Diamante do Sul ; PR;Sul
+1513;Lucena ; PB;Nordeste
+1514;Ipiranga ; PR;Sul
+1515;São Pedro do Iguaçu ; PR;Sul
+1516;Cananéia ; SP;Sudeste
+1517;Carambeí ; PR;Sul
+1518;Santa Maria do Oeste ; PR;Sul
+1519;Uibaí ; BA;Nordeste
+1520;Cascavel ; PR;Sul
+1521;Santa Tereza do Oeste ; PR;Sul
+1522;Laranjal ; PR;Sul
+1523;Forquetinha ; RS;Sul
+1524;Tupãssi ; PR;Sul
+1525;Ivaí ; PR;Sul
+1526;Altamira do Paraná ; PR;Sul
+1527;Ouro Verde do Oeste ; PR;Sul
+1528;Campo Bonito ; PR;Sul
+1529;Ilha Comprida ; SP;Sudeste
+1530;Cerro Azul ; PR;Sul
+1531;Olímpio Noronha ; MG;Sudeste
+1532;Barra do Turvo ; SP;Sudeste
+1533;Tunas do Paraná ; PR;Sul
+1534;Piraúba ; MG;Sudeste
+1535;Boa Ventura de São Roque ; PR;Sul
+1536;São Brás ; AL;Nordeste
+1537;Cajati ; SP;Sudeste
+1538;Braganey ; PR;Sul
+1539;Fagundes Varela ; RS;Sul
+1540;Santa Helena ; PR;Sul
+1541;Adrianópolis ; PR;Sul
+1542;Iguatu ; PR;Sul
+1543;Mato Rico ; PR;Sul
+1544;Itaóca ; SP;Sudeste
+1545;Pariquera-Açu; SP;Sudeste
+1546;Castro ; PR;Sul
+1547;Pato Bragado ; PR;Sul
+1548;Quatro Pontes ; PR;Sul
+1549;Ribeira ; SP;Sudeste
+1550;Corbélia ; PR;Sul
+1551;Nova Cantu ; PR;Sul
+1552;Cafelândia ; PR;Sul
+1553;Igreja Nova ; AL;Nordeste
+1554;Toledo ; PR;Sul
+1555;Anahy ; PR;Sul
+1556;São José das Palmeiras ; PR;Sul
+1557;Campina da Lagoa ; PR;Sul
+1558;Navegantes ; SC;Sul
+1559;Jacupiranga ; SP;Sudeste
+1560;Marechal Cândido Rondon ; PR;Sul
+1561;Roncador ; PR;Sul
+1562;Anísio de Abreu ; PI;Nordeste
+1563;Iporã ; PR;Sul
+1564;Itapirapuã Paulista ; SP;Sudeste
+1565;Doutor Ulysses ; PR;Sul
+1566;Timbó ; SC;Sul
+1567;Cândido de Abreu ; PR;Sul
+1568;Lucianópolis ; SP;Sudeste
+1569;Manoel Ribas ; PR;Sul
+1570;Nova Santa Rosa ; PR;Sul
+1571;Maripá ; PR;Sul
+1572;Dumont ; SP;Sudeste
+1573;Enéas Marques ; PR;Sul
+1574;Registro ; SP;Sudeste
+1575;Ubiratã ; PR;Sul
+1576;Iguape ; SP;Sudeste
+1577;Mercedes ; PR;Sul
+1578;Rodeiro ; MG;Sudeste
+1579;Nova Aurora ; PR;Sul
+1580;Barra do Chapéu ; SP;Sudeste
+1581;São Bernardo do Campo ; SP;Sudeste
+1582;Reserva ; PR;Sul
+1583;Calmon ; SC;Sul
+1584;Itariri ; SP;Sudeste
+1585;Imbaú ; PR;Sul
+1586;Jesuítas ; PR;Sul
+1587;Quarto Centenário ; PR;Sul
+1588;Iporanga ; SP;Sudeste
+1589;Juranda ; PR;Sul
+1590;Ariranha do Ivaí ; PR;Sul
+1591;Piraí do Sul ; PR;Sul
+1592;Almirante Tamandaré ; PR;Sul
+1593;Rio Branco do Ivaí ; PR;Sul
+1594;Apiaí ; SP;Sudeste
+1595;Iretama ; PR;Sul
+1596;Colombo ; PR;Sul
+1597;Assis Chateaubriand ; PR;Sul
+1598;Eldorado ; SP;Sudeste
+1599;Mamborê ; PR;Sul
+1600;Ibiam ; SC;Sul
+1601;Formosa do Oeste ; PR;Sul
+1602;Japira ; PR;Sul
+1603;Ivaiporã ; PR;Sul
+1604;Bela Vista de Goiás ; GO;Centro-Oeste
+1605;Luiziana ; PR;Sul
+1606;Rosário do Ivaí ; PR;Sul
+1607;Nova Campina ; SP;Sudeste
+1608;Guapiara ; SP;Sudeste
+1609;Grandes Rios ; PR;Sul
+1610;Ribeirão Branco ; SP;Sudeste
+1611;Peruíbe ; SP;Sudeste
+1612;Sete Barras ; SP;Sudeste
+1613;Godoy Moreira ; PR;Sul
+1614;Flor do Sertão ; SC;Sul
+1615;Lambari ; MG;Sudeste
+1616;Jaguariaíva ; PR;Sul
+1617;Sete de Setembro ; RS;Sul
+1618;Brasilândia do Sul ; PR;Sul
+1619;Farol ; PR;Sul
+1620;Telêmaco Borba ; PR;Sul
+1621;Novo Horizonte ; SC;Sul
+1622;Ribeirão Grande ; SP;Sudeste
+1623;Corumbataí do Sul ; PR;Sul
+1624;Juquiá ; SP;Sudeste
+1625;Saudade do Iguaçu ; PR;Sul
+1626;Miracatu ; SP;Sudeste
+1627;Goioerê ; PR;Sul
+1628;Aparecida de Goiânia ; GO;Centro-Oeste
+1629;Pedro de Toledo ; SP;Sudeste
+1630;Campo Mourão ; PR;Sul
+1631;Terra Roxa ; PR;Sul
+1632;Ventania ; PR;Sul
+1633;Janiópolis ; PR;Sul
+1634;Guaíra ; PR;Sul
+1635;Praia Grande ; SP;Sudeste
+1636;Contenda ; PR;Sul
+1637;São João do Ivaí ; PR;Sul
+1638;Floresta ; PR;Sul
+1639;Sengés ; PR;Sul
+1640;Alto Piquiri ; PR;Sul
+1641;Barbosa Ferraz ; PR;Sul
+1642;Jaboti ; PR;Sul
+1643;Itararé ; SP;Sudeste
+1644;Cruzmaltina ; PR;Sul
+1645;Caldeirão Grande ; BA;Nordeste
+1646;Tapiraí ; SP;Sudeste
+1647;Mariluz ; PR;Sul
+1648;Curiúva ; PR;Sul
+1649;Moreira Sales ; PR;Sul
+1650;São Bento do Trairí ; RN;Nordeste
+1651;Borrazópolis ; PR;Sul
+1652;Taquarivaí ; SP;Sudeste
+1653;São Pedro do Ivaí ; PR;Sul
+1654;Faxinal ; PR;Sul
+1655;São Vicente ; SP;Sudeste
+1656;Arapoti ; PR;Sul
+1657;São Pedro do Butiá ; RS;Sul
+1658;Santana do Itararé ; PR;Sul
+1659;Capão Bonito ; SP;Sudeste
+1660;Santo André ; SP;Sudeste
+1661;Itanhaém ; SP;Sudeste
+1662;Mauá da Serra ; PR;Sul
+1663;Perobal ; PR;Sul
+1664;Canelinha ; SC;Sul
+1665;São José da Boa Vista ; PR;Sul
+1666;Juquitiba ; SP;Sudeste
+1667;Miraguaí ; RS;Sul
+1668;Mundo Novo ; MS;Centro-Oeste
+1669;Altônia ; PR;Sul
+1670;Fênix ; PR;Sul
+1671;Riversul ; SP;Sudeste
+1672;Figueira ; PR;Sul
+1673;São Miguel Arcanjo ; SP;Sudeste
+1674;Santos ; SP;Sudeste
+1675;Araruna ; PR;Sul
+1676;Sapopema ; PR;Sul
+1677;Wenceslau Braz ; PR;Sul
+1678;Japorã ; MS;Centro-Oeste
+1679;Sagres ; SP;Sudeste
+1680;Sete Quedas ; MS;Centro-Oeste
+1681;Rio Bom ; PR;Sul
+1682;Pinhalão ; PR;Sul
+1683;Pilar do Sul ; SP;Sudeste
+1684;Tamarana ; PR;Sul
+1685;Maria Helena ; PR;Sul
+1686;Quinta do Sol ; PR;Sul
+1687;Pérola ; PR;Sul
+1688;Novo Itacolomi ; PR;Sul
+1689;Kaloré ; PR;Sul
+1690;Boa Esperança ; PR;Sul
+1691;Itaberá ; SP;Sudeste
+1692;Tuneiras do Oeste ; PR;Sul
+1693;Rancho Alegre D'Oeste ; PR;Sul
+1694;Itapecerica da Serra ; SP;Sudeste
+1695;Sarapuí ; SP;Sudeste
+1696;Marumbi ; PR;Sul
+1697;Engenheiro Beltrão ; PR;Sul
+1698;Xambrê ; PR;Sul
+1699;Bom Sucesso ; PR;Sul
+1700;Ribeirão Pires ; SP;Sudeste
+1701;Mauá ; SP;Sudeste
+1702;Eldorado ; MS;Centro-Oeste
+1703;Ibiúna ; SP;Sudeste
+1704;Itapeva ; SP;Sudeste
+1705;Jupi ; PE;Nordeste
+1706;Marilândia do Sul ; PR;Sul
+1707;Itambé ; PR;Sul
+1708;Camocim de São Félix ; PE;Nordeste
+1709;Ibaiti ; PR;Sul
+1710;Piedade ; SP;Sudeste
+1711;Buri ; SP;Sudeste
+1712;Cotia ; SP;Sudeste
+1713;Tomazina ; PR;Sul
+1714;Siqueira Campos ; PR;Sul
+1715;Faxinalzinho ; RS;Sul
+1716;Salto do Itararé ; PR;Sul
+1717;Coronel Macedo ; SP;Sudeste
+1718;Cianorte ; PR;Sul
+1719;Barra Bonita ; SC;Sul
+1720;São Jerônimo da Serra ; PR;Sul
+1721;Saudades ; SC;Sul
+1722;Ferraz de Vasconcelos ; SP;Sudeste
+1723;Biritiba-Mirim; SP;Sudeste
+1724;Campina do Monte Alegre ; SP;Sudeste
+1725;Nova Santa Bárbara ; PR;Sul
+1726;Poá ; SP;Sudeste
+1727;Itapevi ; SP;Sudeste
+1728;Alambari ; SP;Sudeste
+1729;Itaporanga ; SP;Sudeste
+1730;Jussara ; PR;Sul
+1731;Cruzeiro do Oeste ; PR;Sul
+1732;Ivatuba ; PR;Sul
+1733;Suzano ; SP;Sudeste
+1734;Adolfo ; SP;Sudeste
+1735;Conselheiro Mairinck ; PR;Sul
+1736;Santa Cecília do Pavão ; PR;Sul
+1737;Cambira ; PR;Sul
+1738;Mairinque ; SP;Sudeste
+1739;São Jorge do Patrocínio ; PR;Sul
+1740;Salesópolis ; SP;Sudeste
+1741;Congonhinhas ; PR;Sul
+1742;Salto de Pirapora ; SP;Sudeste
+1743;Tapejara ; PR;Sul
+1744;Paranhos ; MS;Centro-Oeste
+1745;Araçoiaba da Serra ; SP;Sudeste
+1746;Santo Antônio do Paraíso ; PR;Sul
+1747;Marcos Parente ; PI;Nordeste
+1748;Umuarama ; PR;Sul
+1749;Itaquaquecetuba ; SP;Sudeste
+1750;Guapirama ; PR;Sul
+1751;Apucarana ; PR;Sul
+1752;Alumínio ; SP;Sudeste
+1753;Jundiaí do Sul ; PR;Sul
+1754;Taquarituba ; SP;Sudeste
+1755;Tacuru ; MS;Centro-Oeste
+1756;Nova Olímpia ; PR;Sul
+1757;Itapetininga ; SP;Sudeste
+1758;Serra Alta ; SC;Sul
+1759;Araçariguama ; SP;Sudeste
+1760;Sorocaba ; SP;Sudeste
+1761;Formosa do Sul ; SC;Sul
+1762;Tejupá ; SP;Sudeste
+1763;São Sebastião da Amoreira ; PR;Sul
+1764;Arapongas ; PR;Sul
+1765;Iperó ; SP;Sudeste
+1766;Jaguariúna ; SP;Sudeste
+1767;Alto Paraíso ; PR;Sul
+1768;Mandaguari ; PR;Sul
+1769;Nova Fátima ; PR;Sul
+1770;Dores do Turvo ; MG;Sudeste
+1771;Arujá ; SP;Sudeste
+1772;São Roque ; SP;Sudeste
+1773;Pirapora do Bom Jesus ; SP;Sudeste
+1774;Olivedos ; PB;Nordeste
+1775;Guararema ; SP;Sudeste
+1776;Ourizona ; PR;Sul
+1777;Joaquim Távora ; PR;Sul
+1778;Marialva ; PR;Sul
+1779;São Jorge do Ivaí ; PR;Sul
+1780;Bom Jesus dos Perdões ; SP;Sudeste
+1781;Paraibuna ; SP;Sudeste
+1782;Assaí ; PR;Sul
+1783;Natividade da Serra ; SP;Sudeste
+1784;Poço das Antas ; RS;Sul
+1785;Guarulhos ; SP;Sudeste
+1786;Paranapanema ; SP;Sudeste
+1787;São Carlos do Ivaí ; PR;Sul
+1788;Fartura ; SP;Sudeste
+1789;Sabáudia ; PR;Sul
+1790;Angatuba ; SP;Sudeste
+1791;Barão de Antonina ; SP;Sudeste
+1792;Guareí ; SP;Sudeste
+1793;Franco da Rocha ; SP;Sudeste
+1794;Nova América da Colina ; PR;Sul
+1795;Floraí ; PR;Sul
+1796;Maringá ; PR;Sul
+1797;Francisco Morato ; SP;Sudeste
+1798;Divinésia ; MG;Sudeste
+1799;Senador Canedo ; GO;Centro-Oeste
+1800;Bernardino de Campos ; SP;Sudeste
+1801;Ribeirão do Pinhal ; PR;Sul
+1802;Itaí ; SP;Sudeste
+1803;Rosário da Limeira ; MG;Sudeste
+1804;Tatuí ; SP;Sudeste
+1805;Abatiá ; PR;Sul
+1806;Mairiporã ; SP;Sudeste
+1807;Cabreúva ; SP;Sudeste
+1808;Icaraíma ; PR;Sul
+1809;Novais ; SP;Sudeste
+1810;Cidade Gaúcha ; PR;Sul
+1811;Torre de Pedra ; SP;Sudeste
+1812;Jambeiro ; SP;Sudeste
+1813;Boituva ; SP;Sudeste
+1814;Capim ; PB;Nordeste
+1815;Goiânia ; GO;Centro-Oeste
+1816;Douradina ; PR;Sul
+1817;Carlópolis ; PR;Sul
+1818;Tapira ; PR;Sul
+1819;Ivaté ; PR;Sul
+1820;Sarutaiá ; SP;Sudeste
+1821;Rolândia ; PR;Sul
+1822;Cuité de Mamanguape ; PB;Nordeste
+1823;Itu ; SP;Sudeste
+1824;Vanini ; RS;Sul
+1825;Cajamar ; SP;Sudeste
+1826;São Sebastião da Vargem Alegre ; MG;Sudeste
+1827;Cesário Lange ; SP;Sudeste
+1828;Mandaguaçu ; PR;Sul
+1829;Ângulo ; PR;Sul
+1830;Cerquilho ; SP;Sudeste
+1831;Mirador ; PR;Sul
+1832;Monsenhor Paulo ; MG;Sudeste
+1833;Santo Antônio da Platina ; PR;Sul
+1834;Sede Nova ; RS;Sul
+1835;Iguaraçu ; PR;Sul
+1836;Pitangueiras ; PR;Sul
+1837;Ribeirão Claro ; PR;Sul
+1838;Porto Feliz ; SP;Sudeste
+1839;Caxambu ; MG;Sudeste
+1840;Pilões ; PB;Nordeste
+1841;Itaquiraí ; MS;Centro-Oeste
+1842;Munhoz ; MG;Sudeste
+1843;Coronel Sapucaia ; MS;Centro-Oeste
+1844;Ibiporã ; PR;Sul
+1845;Barra do Guarita ; RS;Sul
+1846;Nazaré Paulista ; SP;Sudeste
+1847;São Luís do Paraitinga ; SP;Sudeste
+1848;Uraí ; PR;Sul
+1849;Astorga ; PR;Sul
+1850;Porangaba ; SP;Sudeste
+1851;Jundiaí ; SP;Sudeste
+1852;Ibituruna ; MG;Sudeste
+1853;Barra do Jacaré ; PR;Sul
+1854;Atalaia ; PR;Sul
+1855;Bandeirantes ; PR;Sul
+1856;Iguatemi ; MS;Centro-Oeste
+1857;Nova Esperança ; PR;Sul
+1858;Cornélio Procópio ; PR;Sul
+1859;Amaporã ; PR;Sul
+1860;Pardinho ; SP;Sudeste
+1861;Lagoinha ; SP;Sudeste
+1862;Ipaussu ; SP;Sudeste
+1863;Rancho Alegre ; PR;Sul
+1864;Piraju ; SP;Sudeste
+1865;Jumirim ; SP;Sudeste
+1866;Vinhedo ; SP;Sudeste
+1867;Atibaia ; SP;Sudeste
+1868;Rafard ; SP;Sudeste
+1869;Igaratá ; SP;Sudeste
+1870;Jarinu ; SP;Sudeste
+1871;Santa Isabel do Ivaí ; PR;Sul
+1872;Indaiatuba ; SP;Sudeste
+1873;Manduri ; SP;Sudeste
+1874;Loanda ; PR;Sul
+1875;Caçapava ; SP;Sudeste
+1876;Prado Ferreira ; PR;Sul
+1877;Cerro Grande ; RS;Sul
+1878;Bofete ; SP;Sudeste
+1879;Jacarezinho ; PR;Sul
+1880;Taubaté ; SP;Sudeste
+1881;Itupeva ; SP;Sudeste
+1882;Piracaia ; SP;Sudeste
+1883;Santa Fé ; PR;Sul
+1884;Itatinga ; SP;Sudeste
+1885;Rancho Queimado ; SC;Sul
+1886;Planaltina do Paraná ; PR;Sul
+1887;Chavantes ; SP;Sudeste
+1888;Sertanópolis ; PR;Sul
+1889;Andirá ; PR;Sul
+1890;Itatiba ; SP;Sudeste
+1891;Miraselva ; PR;Sul
+1892;Santa Cruz de Monte Castelo ; PR;Sul
+1893;Valinhos ; SP;Sudeste
+1894;Itambaracá ; PR;Sul
+1895;Monte Mor ; SP;Sudeste
+1896;Santa Mariana ; PR;Sul
+1897;Cambará ; PR;Sul
+1898;Cruzeiro do Sul ; PR;Sul
+1899;Bela Vista do Paraíso ; PR;Sul
+1900;Alto Paraná ; PR;Sul
+1901;Leópolis ; PR;Sul
+1902;Mombuca ; SP;Sudeste
+1903;Cerqueira César ; SP;Sudeste
+1904;Porto Ferreira ; SP;Sudeste
+1905;Tietê ; SP;Sudeste
+1906;Óleo ; SP;Sudeste
+1907;Jaguapitã ; PR;Sul
+1908;Hortolândia ; SP;Sudeste
+1909;Palotina ; PR;Sul
+1910;Lobato ; PR;Sul
+1911;Laranjal Paulista ; SP;Sudeste
+1912;Joanópolis ; SP;Sudeste
+1913;Capivari ; SP;Sudeste
+1914;Ourinhos ; SP;Sudeste
+1915;Roseira ; SP;Sudeste
+1916;Morungaba ; SP;Sudeste
+1917;Monteiro Lobato ; SP;Sudeste
+1918;Avaré ; SP;Sudeste
+1919;Conchas ; SP;Sudeste
+1920;Aparecida ; SP;Sudeste
+1921;Saquarema ; RJ;Sudeste
+1922;Santo Antônio do Pinhal ; SP;Sudeste
+1923;Bragança Paulista ; SP;Sudeste
+1924;Saltinho ; SP;Sudeste
+1925;Florestópolis ; PR;Sul
+1926;Salto Grande ; SP;Sudeste
+1927;Guairaçá ; PR;Sul
+1928;Sertaneja ; PR;Sul
+1929;Iguaba Grande ; RJ;Sudeste
+1930;Florínia ; SP;Sudeste
+1931;Tuiuti ; SP;Sudeste
+1932;Mesquita ; RJ;Sudeste
+1933;Pratânia ; SP;Sudeste
+1934;Campinas ; SP;Sudeste
+1935;São João do Caiuá ; PR;Sul
+1936;Águas de Santa Bárbara ; SP;Sudeste
+1937;Caravelas ; BA;Nordeste
+1938;Naviraí ; MS;Centro-Oeste
+1939;Pedrinhas Paulista ; SP;Sudeste
+1940;Primeiro de Maio ; PR;Sul
+1941;Pinhalzinho ; SP;Sudeste
+1942;Extrema ; MG;Sudeste
+1943;Sapucaí-Mirim; MG;Sudeste
+1944;Paranacity ; PR;Sul
+1945;Pindamonhangaba ; SP;Sudeste
+1946;Palmital ; SP;Sudeste
+1947;Aral Moreira ; MS;Centro-Oeste
+1948;Cândido Mota ; SP;Sudeste
+1949;Belford Roxo ; RJ;Sudeste
+1950;Ibirarema ; SP;Sudeste
+1951;Paulista ; PE;Nordeste
+1952;Colorado ; PR;Sul
+1953;Bady Bassitt ; SP;Sudeste
+1954;Camanducaia ; MG;Sudeste
+1955;Porecatu ; PR;Sul
+1956;Iaras ; SP;Sudeste
+1957;Alvorada do Sul ; PR;Sul
+1958;Centenário do Sul ; PR;Sul
+1959;São Pedro da Aldeia ; RJ;Sudeste
+1960;Rio Claro ; RJ;Sudeste
+1961;Lorena ; SP;Sudeste
+1962;Queluzito ; MG;Sudeste
+1963;Juruaia ; MG;Sudeste
+1964;Guaratinguetá ; SP;Sudeste
+1965;Paranavaí ; PR;Sul
+1966;Terra Rica ; PR;Sul
+1967;São José do Barreiro ; SP;Sudeste
+1968;Bananal ; SP;Sudeste
+1969;Juti ; MS;Centro-Oeste
+1970;Botucatu ; SP;Sudeste
+1971;Santo Antônio do Caiuá ; PR;Sul
+1972;Anhembi ; SP;Sudeste
+1973;Silveiras ; SP;Sudeste
+1974;Campos do Jordão ; SP;Sudeste
+1975;Espírito Santo do Turvo ; SP;Sudeste
+1976;Paranapoema ; PR;Sul
+1977;São Bento do Sapucaí ; SP;Sudeste
+1978;Cachoeira Paulista ; SP;Sudeste
+1979;Amparo ; SP;Sudeste
+1980;Nova Londrina ; PR;Sul
+1981;Itaguajé ; PR;Sul
+1982;São Manuel ; SP;Sudeste
+1983;Piracicaba ; SP;Sudeste
+1984;Borebi ; SP;Sudeste
+1985;Nova Iguaçu ; RJ;Sudeste
+1986;Areias ; SP;Sudeste
+1987;Santa Cruz do Rio Pardo ; SP;Sudeste
+1988;Cabedelo ; PB;Nordeste
+1989;Maracaí ; SP;Sudeste
+1990;Piraí ; RJ;Sudeste
+1991;Ijaci ; MG;Sudeste
+1992;Paulistânia ; SP;Sudeste
+1993;São Pedro do Turvo ; SP;Sudeste
+1994;Iracemápolis ; SP;Sudeste
+1995;Campos Novos Paulista ; SP;Sudeste
+1996;Magé ; RJ;Sudeste
+1997;Piquete ; SP;Sudeste
+1998;Pinheiral ; RJ;Sudeste
+1999;Lençóis Paulista ; SP;Sudeste
+2000;Mendonça ; SP;Sudeste
+2001;Santa Maria da Serra ; SP;Sudeste
+2002;Iepê ; SP;Sudeste
+2003;Socorro ; SP;Sudeste
+2004;Charqueada ; SP;Sudeste
+2005;Assis ; SP;Sudeste
+2006;Santo Expedito ; SP;Sudeste
+2007;Jateí ; MS;Centro-Oeste
+2008;Ubirajara ; SP;Sudeste
+2009;Novo Horizonte do Sul ; MS;Centro-Oeste
+2010;Paraisópolis ; MG;Sudeste
+2011;Limeira ; SP;Sudeste
+2012;São Pedro ; SP;Sudeste
+2013;Queluz ; SP;Sudeste
+2014;Estrela do Norte ; SP;Sudeste
+2015;Cabrália Paulista ; SP;Sudeste
+2016;Carvalhópolis ; MG;Sudeste
+2017;Euclides da Cunha Paulista ; SP;Sudeste
+2018;Seropédica ; RJ;Sudeste
+2019;Bueno Brandão ; MG;Sudeste
+2020;Macatuba ; SP;Sudeste
+2021;Delfim Moreira ; MG;Sudeste
+2022;Torrinha ; SP;Sudeste
+2023;Itajubá ; MG;Sudeste
+2024;Itapira ; SP;Sudeste
+2025;Rosana ; SP;Sudeste
+2026;Caarapó ; MS;Centro-Oeste
+2027;Itapeva ; MG;Sudeste
+2028;Lupércio ; SP;Sudeste
+2029;Laguna Carapã ; MS;Centro-Oeste
+2030;Taquarussu ; MS;Centro-Oeste
+2031;Narandiba ; SP;Sudeste
+2032;Ocauçu ; SP;Sudeste
+2033;Agudos ; SP;Sudeste
+2034;Monte Sião ; MG;Sudeste
+2035;Ipeúna ; SP;Sudeste
+2036;Brazópolis ; MG;Sudeste
+2037;Itatiaia ; RJ;Sudeste
+2038;Sandovalina ; SP;Sudeste
+2039;Passa Quatro ; MG;Sudeste
+2040;Barra Mansa ; RJ;Sudeste
+2041;Barra do Piraí ; RJ;Sudeste
+2042;Glória de Dourados ; MS;Centro-Oeste
+2043;Paraguaçu Paulista ; SP;Sudeste
+2044;Tarabai ; SP;Sudeste
+2045;Paty do Alferes ; RJ;Sudeste
+2046;Indiana ; SP;Sudeste
+2047;Piranguinho ; MG;Sudeste
+2048;Cachoeira de Minas ; MG;Sudeste
+2049;Itamonte ; MG;Sudeste
+2050;Echaporã ; SP;Sudeste
+2051;Maria da Fé ; MG;Sudeste
+2052;Itanhandu ; MG;Sudeste
+2053;Rio Claro ; SP;Sudeste
+2054;Pontal ; SP;Sudeste
+2055;Quatis ; RJ;Sudeste
+2056;Virgínia ; MG;Sudeste
+2057;Fátima do Sul ; MS;Centro-Oeste
+2058;Oscar Bressane ; SP;Sudeste
+2059;Petrópolis ; RJ;Sudeste
+2060;Arealva ; SP;Sudeste
+2061;Araras ; SP;Sudeste
+2062;Pirapozinho ; SP;Sudeste
+2063;Anhumas ; SP;Sudeste
+2064;Alfredo Marcondes ; SP;Sudeste
+2065;Gália ; SP;Sudeste
+2066;Jacutinga ; MG;Sudeste
+2067;Estiva Gerbi ; SP;Sudeste
+2068;Dois Córregos ; SP;Sudeste
+2069;Jaci ; SP;Sudeste
+2070;Cordeirópolis ; SP;Sudeste
+2071;Serra Branca ; PB;Nordeste
+2072;Teodoro Sampaio ; SP;Sudeste
+2073;Piratininga ; SP;Sudeste
+2074;Lutécia ; SP;Sudeste
+2075;Santa Rita do Sapucaí ; MG;Sudeste
+2076;Areal ; RJ;Sudeste
+2077;Pedralva ; MG;Sudeste
+2078;Mirante do Paranapanema ; SP;Sudeste
+2079;Dom Viçoso ; MG;Sudeste
+2080;Borá ; SP;Sudeste
+2081;Itirapina ; SP;Sudeste
+2082;Pouso Alto ; MG;Sudeste
+2083;Ivinhema ; MS;Centro-Oeste
+2084;Ouro Fino ; MG;Sudeste
+2085;Alagoa ; MG;Sudeste
+2086;São Lourenço ; MG;Sudeste
+2087;Jaú ; SP;Sudeste
+2088;Pouso Alegre ; MG;Sudeste
+2089;Gonçalves ; MG;Sudeste
+2090;Borda da Mata ; MG;Sudeste
+2091;Bom Jardim ; RJ;Sudeste
+2092;Garça ; SP;Sudeste
+2093;Brotas ; SP;Sudeste
+2094;Leme ; SP;Sudeste
+2095;Natércia ; MG;Sudeste
+2096;Mogi Guaçu ; SP;Sudeste
+2097;Pederneiras ; SP;Sudeste
+2098;Espírito Santo do Pinhal ; SP;Sudeste
+2099;Antônio João ; MS;Centro-Oeste
+2100;Vera Cruz ; SP;Sudeste
+2101;Bocaina de Minas ; MG;Sudeste
+2102;Boracéia ; SP;Sudeste
+2103;São Sebastião da Bela Vista ; MG;Sudeste
+2104;Santa Cruz da Conceição ; SP;Sudeste
+2105;Regente Feijó ; SP;Sudeste
+2106;Bauru ; SP;Sudeste
+2107;Dourado ; SP;Sudeste
+2108;Avaí ; SP;Sudeste
+2109;Serra Negra ; SP;Sudeste
+2110;Três Rios ; RJ;Sudeste
+2111;Lavrinhas ; SP;Sudeste
+2112;Analândia ; SP;Sudeste
+2113;Oriente ; SP;Sudeste
+2114;João Ramalho ; SP;Sudeste
+2115;Quatá ; SP;Sudeste
+2116;Comendador Levy Gasparian ; RJ;Sudeste
+2117;Paraíba do Sul ; RJ;Sudeste
+2118;Cordeiro ; RJ;Sudeste
+2119;Ibitiúra de Minas ; MG;Sudeste
+2120;Miguel Pereira ; RJ;Sudeste
+2121;Santa Rita de Jacutinga ; MG;Sudeste
+2122;Heliodora ; MG;Sudeste
+2123;Bocaina ; SP;Sudeste
+2124;Trabiju ; SP;Sudeste
+2125;Careaçu ; MG;Sudeste
+2126;Macuco ; RJ;Sudeste
+2127;Batayporã ; MS;Centro-Oeste
+2128;Presidente Alves ; SP;Sudeste
+2129;Carmo de Minas ; MG;Sudeste
+2130;Bariri ; SP;Sudeste
+2131;Aguaí ; SP;Sudeste
+2132;Quintana ; SP;Sudeste
+2133;Rio Preto ; MG;Sudeste
+2134;Nantes ; SP;Sudeste
+2135;Rancharia ; SP;Sudeste
+2136;Soledade de Minas ; MG;Sudeste
+2137;Marabá Paulista ; SP;Sudeste
+2138;Silvianópolis ; MG;Sudeste
+2139;Andradas ; MG;Sudeste
+2140;Deodápolis ; MS;Centro-Oeste
+2141;Espírito Santo do Dourado ; MG;Sudeste
+2142;Douradina ; MS;Centro-Oeste
+2143;Simão Pereira ; MG;Sudeste
+2144;Itaju ; SP;Sudeste
+2145;Ribeirão Bonito ; SP;Sudeste
+2146;Angélica ; MS;Centro-Oeste
+2147;Santa Rita de Caldas ; MG;Sudeste
+2148;São João da Mata ; MG;Sudeste
+2149;Marília ; SP;Sudeste
+2150;Liberdade ; MG;Sudeste
+2151;Ipuiúna ; MG;Sudeste
+2152;Álvares Machado ; SP;Sudeste
+2153;Santana do Deserto ; MG;Sudeste
+2154;São João da Boa Vista ; SP;Sudeste
+2155;Carvalhos ; MG;Sudeste
+2156;Presidente Bernardes ; SP;Sudeste
+2157;Martinópolis ; SP;Sudeste
+2158;Olaria ; MG;Sudeste
+2159;Boa Esperança do Sul ; SP;Sudeste
+2160;Pirassununga ; SP;Sudeste
+2161;Matias Barbosa ; MG;Sudeste
+2162;Santa Bárbara do Monte Verde ; MG;Sudeste
+2163;Baependi ; MG;Sudeste
+2164;Santo Anastácio ; SP;Sudeste
+2165;Caiabu ; SP;Sudeste
+2166;Águas da Prata ; SP;Sudeste
+2167;Ibaté ; SP;Sudeste
+2168;Pompéia ; SP;Sudeste
+2169;Itaporã ; MS;Centro-Oeste
+2170;Herculândia ; SP;Sudeste
+2171;Tupã ; SP;Sudeste
+2172;Bom Jardim de Minas ; MG;Sudeste
+2173;São Gonçalo do Sapucaí ; MG;Sudeste
+2174;Turvolândia ; MG;Sudeste
+2175;Guaimbê ; SP;Sudeste
+2176;Periquito ; MG;Sudeste
+2177;Carmo ; RJ;Sudeste
+2178;Arantina ; MG;Sudeste
+2179;Conceição do Rio Verde ; MG;Sudeste
+2180;Cambuquira ; MG;Sudeste
+2181;Caldas ; MG;Sudeste
+2182;Capela Nova ; MG;Sudeste
+2183;Santa Cruz das Palmeiras ; SP;Sudeste
+2184;Guarantã ; SP;Sudeste
+2185;Demerval Lobão ; PI;Nordeste
+2186;Vargem Grande do Sul ; SP;Sudeste
+2187;Pequeri ; MG;Sudeste
+2188;Iacanga ; SP;Sudeste
+2189;Aiuruoca ; MG;Sudeste
+2190;Nova Europa ; SP;Sudeste
+2191;Descalvado ; SP;Sudeste
+2192;Presidente Prudente ; SP;Sudeste
+2193;São Sebastião do Alto ; RJ;Sudeste
+2194;Mar de Espanha ; MG;Sudeste
+2195;Queiroz ; SP;Sudeste
+2196;Cantagalo ; RJ;Sudeste
+2197;Emilianópolis ; SP;Sudeste
+2198;Poço Fundo ; MG;Sudeste
+2199;Gavião Peixoto ; SP;Sudeste
+2200;Arco-Íris; SP;Sudeste
+2201;Cordislândia ; MG;Sudeste
+2202;Parapuã ; SP;Sudeste
+2203;Ribeirão dos Índios ; SP;Sudeste
+2204;Mariápolis ; SP;Sudeste
+2205;Motuca ; SP;Sudeste
+2206;Pirajuí ; SP;Sudeste
+2207;Getulina ; SP;Sudeste
+2208;Campanha ; MG;Sudeste
+2209;Uru ; SP;Sudeste
+2210;Iacri ; SP;Sudeste
+2211;São Sebastião da Grama ; SP;Sudeste
+2212;Santo Antônio do Aventureiro ; MG;Sudeste
+2213;Poços de Caldas ; MG;Sudeste
+2214;Ibitinga ; SP;Sudeste
+2215;Além Paraíba ; MG;Sudeste
+2216;Pedro Teixeira ; MG;Sudeste
+2217;Reginópolis ; SP;Sudeste
+2218;Monções ; SP;Sudeste
+2219;Piquerobi ; SP;Sudeste
+2220;Lima Duarte ; MG;Sudeste
+2221;Inúbia Paulista ; SP;Sudeste
+2222;Flora Rica ; SP;Sudeste
+2223;São Thomé das Letras ; MG;Sudeste
+2224;Luiziânia ; SP;Sudeste
+2225;Tabatinga ; SP;Sudeste
+2226;Pongaí ; SP;Sudeste
+2227;Chácara ; MG;Sudeste
+2228;Aperibé ; RJ;Sudeste
+2229;São Carlos ; SP;Sudeste
+2230;Bicas ; MG;Sudeste
+2231;Itaocara ; RJ;Sudeste
+2232;Rochedo de Minas ; MG;Sudeste
+2233;Cruzília ; MG;Sudeste
+2234;Presidente Venceslau ; SP;Sudeste
+2235;Rinópolis ; SP;Sudeste
+2236;Santa Rosa de Viterbo ; SP;Sudeste
+2237;Casa Branca ; SP;Sudeste
+2238;Propriá ; SE;Nordeste
+2239;Nova Luzitânia ; SP;Sudeste
+2240;Campestre ; MG;Sudeste
+2241;Santa Rita do Passa Quatro ; SP;Sudeste
+2242;Santana do Garambéu ; MG;Sudeste
+2243;Nova Andradina ; MS;Centro-Oeste
+2244;Maripá de Minas ; MG;Sudeste
+2245;Osvaldo Cruz ; SP;Sudeste
+2246;Botelhos ; MG;Sudeste
+2247;Caiuá ; SP;Sudeste
+2248;Andrelândia ; MG;Sudeste
+2249;Machado ; MG;Sudeste
+2250;Coronel Pacheco ; MG;Sudeste
+2251;Araraquara ; SP;Sudeste
+2252;Três Corações ; MG;Sudeste
+2253;Bias Fortes ; MG;Sudeste
+2254;Cafelândia ; SP;Sudeste
+2255;Juiz de Fora ; MG;Sudeste
+2256;Matão ; SP;Sudeste
+2257;São Vicente de Minas ; MG;Sudeste
+2258;Pirapetinga ; MG;Sudeste
+2259;Ewbank da Câmara ; MG;Sudeste
+2260;São José do Rio Pardo ; SP;Sudeste
+2261;Presidente Epitácio ; SP;Sudeste
+2262;Santa Rita de Ibitipoca ; MG;Sudeste
+2263;Barra Bonita ; SP;Sudeste
+2264;Lins ; SP;Sudeste
+2265;Goianá ; MG;Sudeste
+2266;Piacatu ; SP;Sudeste
+2267;Salmourão ; SP;Sudeste
+2268;São João Nepomuceno ; MG;Sudeste
+2269;Clementina ; SP;Sudeste
+2270;Dobrada ; SP;Sudeste
+2271;Recreio ; MG;Sudeste
+2272;Varginha ; MG;Sudeste
+2273;Braúna ; SP;Sudeste
+2274;Borborema ; SP;Sudeste
+2275;Santópolis do Aguapeí ; SP;Sudeste
+2276;Rincão ; SP;Sudeste
+2277;Elói Mendes ; MG;Sudeste
+2278;Divisa Nova ; MG;Sudeste
+2279;Tapiratiba ; SP;Sudeste
+2280;Lucélia ; SP;Sudeste
+2281;Piau ; MG;Sudeste
+2282;Minduri ; MG;Sudeste
+2283;Santo Antônio de Pádua ; RJ;Sudeste
+2284;Volta Redonda ; RJ;Sudeste
+2285;Paraguaçu ; MG;Sudeste
+2286;Caconde ; SP;Sudeste
+2287;Dracena ; SP;Sudeste
+2288;Alto Alegre ; SP;Sudeste
+2289;Itajobi ; SP;Sudeste
+2290;Luminárias ; MG;Sudeste
+2291;Adamantina ; SP;Sudeste
+2292;Fama ; MG;Sudeste
+2293;Rio Novo ; MG;Sudeste
+2294;Leopoldina ; MG;Sudeste
+2295;Gabriel Monteiro ; SP;Sudeste
+2296;Ouro Verde ; SP;Sudeste
+2297;Piedade do Rio Grande ; MG;Sudeste
+2298;Cabo Verde ; MG;Sudeste
+2299;Santa Ernestina ; SP;Sudeste
+2300;Tambaú ; SP;Sudeste
+2301;Madre de Deus de Minas ; MG;Sudeste
+2302;Itápolis ; SP;Sudeste
+2303;Arceburgo ; MG;Sudeste
+2304;Guia Lopes da Laguna ; MS;Centro-Oeste
+2305;Luís Antônio ; SP;Sudeste
+2306;Descoberto ; MG;Sudeste
+2307;Guaiçara ; SP;Sudeste
+2308;Estrela Dalva ; MG;Sudeste
+2309;Nova Guataporanga ; SP;Sudeste
+2310;Santos Dumont ; MG;Sudeste
+2311;Ibertioga ; MG;Sudeste
+2312;Astolfo Dutra ; MG;Sudeste
+2313;Cambuci ; RJ;Sudeste
+2314;Flórida Paulista ; SP;Sudeste
+2315;Carmo da Cachoeira ; MG;Sudeste
+2316;São Simão ; SP;Sudeste
+2317;Italva ; RJ;Sudeste
+2318;Ingaí ; MG;Sudeste
+2319;Avanhandava ; SP;Sudeste
+2320;Taquaritinga ; SP;Sudeste
+2321;Panorama ; SP;Sudeste
+2322;Pacaembu ; SP;Sudeste
+2323;São Bento Abade ; MG;Sudeste
+2324;Carrancas ; MG;Sudeste
+2325;Bilac ; SP;Sudeste
+2326;Guarani ; MG;Sudeste
+2327;Guatapará ; SP;Sudeste
+2328;Palma ; MG;Sudeste
+2329;Três Pontas ; MG;Sudeste
+2330;Irapuru ; SP;Sudeste
+2331;Tabuleiro ; MG;Sudeste
+2332;Promissão ; SP;Sudeste
+2333;Novo Horizonte ; SP;Sudeste
+2334;Antônio Carlos ; MG;Sudeste
+2335;Mococa ; SP;Sudeste
+2336;Cândido Rodrigues ; SP;Sudeste
+2337;Areado ; MG;Sudeste
+2338;Junqueirópolis ; SP;Sudeste
+2339;Muzambinho ; MG;Sudeste
+2340;Fernando Prestes ; SP;Sudeste
+2341;Santa Adélia ; SP;Sudeste
+2342;Coroados ; SP;Sudeste
+2343;Itutinga ; MG;Sudeste
+2344;Rubiácea ; SP;Sudeste
+2345;Cataguases ; MG;Sudeste
+2346;Santana da Vargem ; MG;Sudeste
+2347;Penápolis ; SP;Sudeste
+2348;Cravinhos ; SP;Sudeste
+2349;Bento de Abreu ; SP;Sudeste
+2350;Monte Belo ; MG;Sudeste
+2351;Cariré ; CE;Nordeste
+2352;Angelim ; PE;Nordeste
+2353;Itamarati de Minas ; MG;Sudeste
+2354;Janduís ; RN;Nordeste
+2355;Barão de Monte Alto ; MG;Sudeste
+2356;Marapoama ; SP;Sudeste
+2357;Irapuã ; SP;Sudeste
+2358;Itumirim ; MG;Sudeste
+2359;Santa Bárbara do Tugúrio ; MG;Sudeste
+2360;Engenheiro Paulo de Frontin ; RJ;Sudeste
+2361;Monte Alto ; SP;Sudeste
+2362;Barrinha ; SP;Sudeste
+2363;Guaranésia ; MG;Sudeste
+2364;São João do Pau d'Alho ; SP;Sudeste
+2365;Alterosa ; MG;Sudeste
+2366;Monte Castelo ; SP;Sudeste
+2367;Alfenas ; MG;Sudeste
+2368;Glicério ; SP;Sudeste
+2369;Coqueiral ; MG;Sudeste
+2370;Porto Real ; RJ;Sudeste
+2371;Lavras ; MG;Sudeste
+2372;Campos Gerais ; MG;Sudeste
+2373;Urupês ; SP;Sudeste
+2374;Barbacena ; MG;Sudeste
+2375;Guaxupé ; MG;Sudeste
+2376;Desterro do Melo ; MG;Sudeste
+2377;Patrocínio do Muriaé ; MG;Sudeste
+2378;Rio Pomba ; MG;Sudeste
+2379;Cajuru ; SP;Sudeste
+2380;Birigui ; SP;Sudeste
+2381;Ribeirão Preto ; SP;Sudeste
+2382;Elisiário ; SP;Sudeste
+2383;Taiaçu ; SP;Sudeste
+2384;Conceição da Aparecida ; MG;Sudeste
+2385;Jaboticabal ; SP;Sudeste
+2386;Mercês ; MG;Sudeste
+2387;Monte Santo de Minas ; MG;Sudeste
+2388;Miraí ; MG;Sudeste
+2389;Paulicéia ; SP;Sudeste
+2390;Nazareno ; MG;Sudeste
+2391;Taiúva ; SP;Sudeste
+2392;Tiradentes ; MG;Sudeste
+2393;Nova Independência ; SP;Sudeste
+2394;Nepomuceno ; MG;Sudeste
+2395;Conceição da Barra de Minas ; MG;Sudeste
+2396;Ressaquinha ; MG;Sudeste
+2397;São Pedro da União ; MG;Sudeste
+2398;Pirangi ; SP;Sudeste
+2399;Cristina ; MG;Sudeste
+2400;Catanduva ; SP;Sudeste
+2401;Prados ; MG;Sudeste
+2402;Potirendaba ; SP;Sudeste
+2403;Santo Antônio da Alegria ; SP;Sudeste
+2404;Nova Aliança ; SP;Sudeste
+2405;Guararapes ; SP;Sudeste
+2406;Antônio Prado de Minas ; MG;Sudeste
+2407;Nova Resende ; MG;Sudeste
+2408;Ubá ; MG;Sudeste
+2409;Sertãozinho ; SP;Sudeste
+2410;Ibirá ; SP;Sudeste
+2411;Coronel Xavier Chaves ; MG;Sudeste
+2412;Perdões ; MG;Sudeste
+2413;Valparaíso ; SP;Sudeste
+2414;Brodowski ; SP;Sudeste
+2415;Visconde do Rio Branco ; MG;Sudeste
+2416;Paraíso ; SP;Sudeste
+2417;Alto Rio Doce ; MG;Sudeste
+2418;Natividade ; RJ;Sudeste
+2419;Conceição do Canindé ; PI;Nordeste
+2420;Atilio Vivacqua ; ES;Sudeste
+2421;José Bonifácio ; SP;Sudeste
+2422;Cana Verde ; MG;Sudeste
+2423;Bom Jesus da Penha ; MG;Sudeste
+2424;Querência do Norte ; PR;Sul
+2425;Lavínia ; SP;Sudeste
+2426;Buritama ; SP;Sudeste
+2427;Embaúba ; SP;Sudeste
+2428;Aguanil ; MG;Sudeste
+2429;Lourdes ; SP;Sudeste
+2430;Pitangueiras ; SP;Sudeste
+2431;Carandaí ; MG;Sudeste
+2432;Jacuí ; MG;Sudeste
+2433;Turiúba ; SP;Sudeste
+2434;Muriaé ; MG;Sudeste
+2435;Itapemirim ; ES;Sudeste
+2436;Murutinga do Sul ; SP;Sudeste
+2437;Ritápolis ; MG;Sudeste
+2438;Boa Esperança ; MG;Sudeste
+2439;Jardinópolis ; SP;Sudeste
+2440;Eugenópolis ; MG;Sudeste
+2441;Cipotânea ; MG;Sudeste
+2442;Bom Sucesso ; MG;Sudeste
+2443;Ilicínea ; MG;Sudeste
+2444;Guaraçaí ; SP;Sudeste
+2445;Muqui ; ES;Sudeste
+2446;Caranaíba ; MG;Sudeste
+2447;Santana do Jacaré ; MG;Sudeste
+2448;Araçatuba ; SP;Sudeste
+2449;Paula Cândido ; MG;Sudeste
+2450;Mirandópolis ; SP;Sudeste
+2451;Campo Belo ; MG;Sudeste
+2452;Cajobi ; SP;Sudeste
+2453;Tabapuã ; SP;Sudeste
+2454;Vieiras ; MG;Sudeste
+2455;Monte Azul Paulista ; SP;Sudeste
+2456;Altinópolis ; SP;Sudeste
+2457;Coimbra ; MG;Sudeste
+2458;Varre-Sai ; RJ;Sudeste
+2459;Fortaleza de Minas ; MG;Sudeste
+2460;Carmo do Rio Claro ; MG;Sudeste
+2461;Cedral ; SP;Sudeste
+2462;Brás Pires ; MG;Sudeste
+2463;Santo Antônio do Amparo ; MG;Sudeste
+2464;Piúma ; ES;Sudeste
+2465;Bebedouro ; SP;Sudeste
+2466;Duartina ; SP;Sudeste
+2467;Gastão Vidigal ; SP;Sudeste
+2468;Planalto ; SP;Sudeste
+2469;Guiricema ; MG;Sudeste
+2470;Pedra Dourada ; MG;Sudeste
+2471;São José da Bela Vista ; SP;Sudeste
+2472;São Tiago ; MG;Sudeste
+2473;Uchoa ; SP;Sudeste
+2474;Rio Espera ; MG;Sudeste
+2475;Ervália ; MG;Sudeste
+2476;Porciúncula ; RJ;Sudeste
+2477;Lagoa Dourada ; MG;Sudeste
+2478;Neves Paulista ; SP;Sudeste
+2479;Miradouro ; MG;Sudeste
+2480;São Sebastião do Paraíso ; MG;Sudeste
+2481;Macaubal ; SP;Sudeste
+2482;Lamim ; MG;Sudeste
+2483;Severínia ; SP;Sudeste
+2484;São Tomás de Aquino ; MG;Sudeste
+2485;Santana dos Montes ; MG;Sudeste
+2486;Mirassol ; SP;Sudeste
+2487;Resende Costa ; MG;Sudeste
+2488;Jerônimo Monteiro ; ES;Sudeste
+2489;Presidente Bernardes ; MG;Sudeste
+2490;Itapura ; SP;Sudeste
+2491;Batatais ; SP;Sudeste
+2492;Terra Roxa ; SP;Sudeste
+2493;Cristais ; MG;Sudeste
+2494;Piracema ; MG;Sudeste
+2495;Pratápolis ; MG;Sudeste
+2496;Rio Novo do Sul ; ES;Sudeste
+2497;Onda Verde ; SP;Sudeste
+2498;Diogo de Vasconcelos ; MG;Sudeste
+2499;Santo Antônio do Aracanguá ; SP;Sudeste
+2500;Alpinópolis ; MG;Sudeste
+2501;Caiana ; MG;Sudeste
+2502;Poloni ; SP;Sudeste
+2503;Andradina ; SP;Sudeste
+2504;Viçosa ; MG;Sudeste
+2505;São Miguel do Anta ; MG;Sudeste
+2506;São José do Rio Preto ; SP;Sudeste
+2507;Candeias ; MG;Sudeste
+2508;Guaçuí ; ES;Sudeste
+2509;São José da Barra ; MG;Sudeste
+2510;São Francisco de Paula ; MG;Sudeste
+2511;Itaú de Minas ; MG;Sudeste
+2512;Colina ; SP;Sudeste
+2513;Divinolândia ; SP;Sudeste
+2514;Guapé ; MG;Sudeste
+2515;Castilho ; SP;Sudeste
+2516;Bálsamo ; SP;Sudeste
+2517;Carangola ; MG;Sudeste
+2518;Cachoeiro de Itapemirim ; ES;Sudeste
+2519;Tupi Paulista ; SP;Sudeste
+2520;Oliveira ; MG;Sudeste
+2521;Entre Rios de Minas ; MG;Sudeste
+2522;Monte Aprazível ; SP;Sudeste
+2523;Ipiguá ; SP;Sudeste
+2524;Guapiaçu ; SP;Sudeste
+2525;Fervedouro ; MG;Sudeste
+2526;Canaã ; MG;Sudeste
+2527;Orlândia ; SP;Sudeste
+2528;Itaverava ; MG;Sudeste
+2529;Nuporanga ; SP;Sudeste
+2530;Pradópolis ; SP;Sudeste
+2531;Porto Firme ; MG;Sudeste
+2532;Jaborandi ; SP;Sudeste
+2533;Camacho ; MG;Sudeste
+2534;Sebastianópolis do Sul ; SP;Sudeste
+2535;Teixeiras ; MG;Sudeste
+2536;Araponga ; MG;Sudeste
+2537;Restinga ; SP;Sudeste
+2538;Olímpia ; SP;Sudeste
+2539;Conselheiro Lafaiete ; MG;Sudeste
+2540;Sud Mennucci ; SP;Sudeste
+2541;Capetinga ; MG;Sudeste
+2542;Guzolândia ; SP;Sudeste
+2543;Oliveira Fortes ; MG;Sudeste
+2544;Oratórios ; MG;Sudeste
+2545;Patrocínio Paulista ; SP;Sudeste
+2546;Pedra do Anta ; MG;Sudeste
+2547;Passa Tempo ; MG;Sudeste
+2548;Luisburgo ; MG;Sudeste
+2549;Desterro de Entre Rios ; MG;Sudeste
+2550;Floreal ; SP;Sudeste
+2551;Nhandeara ; SP;Sudeste
+2552;Auriflama ; SP;Sudeste
+2553;Capitólio ; MG;Sudeste
+2554;Divino de São Lourenço ; ES;Sudeste
+2555;Mirassolândia ; SP;Sudeste
+2556;Piranga ; MG;Sudeste
+2557;Crucilândia ; MG;Sudeste
+2558;General Salgado ; SP;Sudeste
+2559;Caparaó ; MG;Sudeste
+2560;Jeceaba ; MG;Sudeste
+2561;Espera Feliz ; MG;Sudeste
+2562;Dores do Rio Preto ; ES;Sudeste
+2563;Carmo da Mata ; MG;Sudeste
+2564;Divino ; MG;Sudeste
+2565;Magda ; SP;Sudeste
+2566;Passos ; MG;Sudeste
+2567;Pereira Barreto ; SP;Sudeste
+2568;Dona Eusébia ; MG;Sudeste
+2569;São João de Iracema ; SP;Sudeste
+2570;Morro Agudo ; SP;Sudeste
+2571;Amparo do Serra ; MG;Sudeste
+2572;Guaraciaba ; MG;Sudeste
+2573;Itirapuã ; SP;Sudeste
+2574;São Joaquim da Barra ; SP;Sudeste
+2575;Ouro Branco ; MG;Sudeste
+2576;Manhumirim ; MG;Sudeste
+2577;Anastácio ; MS;Centro-Oeste
+2578;Vargem Alta ; ES;Sudeste
+2579;Santa Cruz de Minas ; MG;Sudeste
+2580;São João do Manhuaçu ; MG;Sudeste
+2581;Franca ; SP;Sudeste
+2582;Congonhas ; MG;Sudeste
+2583;Altair ; SP;Sudeste
+2584;Marinópolis ; SP;Sudeste
+2585;Sericita ; MG;Sudeste
+2586;Carmópolis de Minas ; MG;Sudeste
+2587;São José do Goiabal ; MG;Sudeste
+2588;Castelo ; ES;Sudeste
+2589;Alto Caparaó ; MG;Sudeste
+2590;Aparecida d'Oeste ; SP;Sudeste
+2591;Guará ; SP;Sudeste
+2592;Paranaíba ; MS;Centro-Oeste
+2593;Francisco Macedo ; PI;Nordeste
+2594;Piedade dos Gerais ; MG;Sudeste
+2595;Suzanápolis ; SP;Sudeste
+2596;Córrego Fundo ; MG;Sudeste
+2597;São João Batista do Glória ; MG;Sudeste
+2598;Pontalinda ; SP;Sudeste
+2599;Cássia ; MG;Sudeste
+2600;Ibitirama ; ES;Sudeste
+2601;Pimenta ; MG;Sudeste
+2602;Jequeri ; MG;Sudeste
+2603;Marechal Floriano ; ES;Sudeste
+2604;São João das Duas Pontes ; SP;Sudeste
+2605;Palmeira d'Oeste ; SP;Sudeste
+2606;Tanabi ; SP;Sudeste
+2607;Piumhi ; MG;Sudeste
+2608;Itaueira ; PI;Nordeste
+2609;Votuporanga ; SP;Sudeste
+2610;Vila Velha ; ES;Sudeste
+2611;Formiga ; MG;Sudeste
+2612;Vargem Bonita ; MG;Sudeste
+2613;São Francisco ; SP;Sudeste
+2614;Valentim Gentil ; SP;Sudeste
+2615;Belo Vale ; MG;Sudeste
+2616;Cajuri ; MG;Sudeste
+2617;Nova Granada ; SP;Sudeste
+2618;Nova Canaã Paulista ; SP;Sudeste
+2619;Barretos ; SP;Sudeste
+2620;Santo Antônio do Grama ; MG;Sudeste
+2621;Ipuã ; SP;Sudeste
+2622;Pains ; MG;Sudeste
+2623;Meridiano ; SP;Sudeste
+2624;Venda Nova do Imigrante ; ES;Sudeste
+2625;Riachão do Bacamarte ; PB;Nordeste
+2626;Cosmorama ; SP;Sudeste
+2627;Itapecerica ; MG;Sudeste
+2628;Jeriquara ; SP;Sudeste
+2629;Ponte Nova ; MG;Sudeste
+2630;Itaguara ; MG;Sudeste
+2631;Nilópolis ; RJ;Sudeste
+2632;Cláudio ; MG;Sudeste
+2633;Conceição do Castelo ; ES;Sudeste
+2634;Ariranha ; SP;Sudeste
+2635;Ibiraci ; MG;Sudeste
+2636;Belo Oriente ; MG;Sudeste
+2637;Doresópolis ; MG;Sudeste
+2638;Bonfim ; MG;Sudeste
+2639;Claraval ; MG;Sudeste
+2640;Cariacica ; ES;Sudeste
+2641;Américo de Campos ; SP;Sudeste
+2642;Três Fronteiras ; SP;Sudeste
+2643;Santana da Ponte Pensa ; SP;Sudeste
+2644;Delfinópolis ; MG;Sudeste
+2645;Bodoquena ; MS;Centro-Oeste
+2646;Pedra do Indaiá ; MG;Sudeste
+2647;Palestina ; SP;Sudeste
+2648;Barra Longa ; MG;Sudeste
+2649;Ouro Preto ; MG;Sudeste
+2650;Icém ; SP;Sudeste
+2651;Álvares Florence ; SP;Sudeste
+2652;Rio Manso ; MG;Sudeste
+2653;Ituverava ; SP;Sudeste
+2654;Vitória Brasil ; SP;Sudeste
+2655;Guaraci ; SP;Sudeste
+2656;Buritizal ; SP;Sudeste
+2657;Colômbia ; SP;Sudeste
+2658;Sumaré ; SP;Sudeste
+2659;Rio Doce ; MG;Sudeste
+2660;São Sebastião do Oeste ; MG;Sudeste
+2661;Jales ; SP;Sudeste
+2662;Terenos ; MS;Centro-Oeste
+2663;Reduto ; MG;Sudeste
+2664;Itabirito ; MG;Sudeste
+2665;Guaíra ; SP;Sudeste
+2666;Sales Oliveira ; SP;Sudeste
+2667;Santa Cruz do Escalvado ; MG;Sudeste
+2668;Guariba ; SP;Sudeste
+2669;Fronteira ; MG;Sudeste
+2670;Pedra Bonita ; MG;Sudeste
+2671;Mariana ; MG;Sudeste
+2672;Abre Campo ; MG;Sudeste
+2673;Aspásia ; SP;Sudeste
+2674;Itatiaiuçu ; MG;Sudeste
+2675;Orindiúva ; SP;Sudeste
+2676;Estrela d'Oeste ; SP;Sudeste
+2677;Rubinéia ; SP;Sudeste
+2678;Pedranópolis ; SP;Sudeste
+2679;Congo ; PB;Nordeste
+2680;Damolândia ; GO;Centro-Oeste
+2681;Fernandópolis ; SP;Sudeste
+2682;Caputira ; MG;Sudeste
+2683;Durandé ; MG;Sudeste
+2684;Arcos ; MG;Sudeste
+2685;Potim ; SP;Sudeste
+2686;Aramina ; SP;Sudeste
+2687;Carmo do Cajuru ; MG;Sudeste
+2688;Brumadinho ; MG;Sudeste
+2689;Igarapé ; MG;Sudeste
+2690;Pontes Gestal ; SP;Sudeste
+2691;Mário Campos ; MG;Sudeste
+2692;Miguelópolis ; SP;Sudeste
+2693;Alvinópolis ; MG;Sudeste
+2694;Rio Acima ; MG;Sudeste
+2695;São Joaquim de Bicas ; MG;Sudeste
+2696;Pedregulho ; SP;Sudeste
+2697;Martins Soares ; MG;Sudeste
+2698;Manhuaçu ; MG;Sudeste
+2699;Santa Clara d'Oeste ; SP;Sudeste
+2700;Itaporanga ; PB;Nordeste
+2701;Rio Casca ; MG;Sudeste
+2702;Santa Rita d'Oeste ; SP;Sudeste
+2703;Igarapava ; SP;Sudeste
+2704;Gado Bravo ; PB;Nordeste
+2705;Iguatama ; MG;Sudeste
+2706;Turmalina ; SP;Sudeste
+2707;Planura ; MG;Sudeste
+2708;São José de Ubá ; RJ;Sudeste
+2709;Rifaina ; SP;Sudeste
+2710;Cacimbas ; PB;Nordeste
+2711;Santa Maria de Jetibá ; ES;Sudeste
+2712;Nova Lima ; MG;Sudeste
+2713;Várzea da Roça ; BA;Nordeste
+2714;Raposos ; MG;Sudeste
+2715;Santana do Manhuaçu ; MG;Sudeste
+2716;São José de Princesa ; PB;Nordeste
+2717;Riolândia ; SP;Sudeste
+2718;Mateus Leme ; MG;Sudeste
+2719;Rio Piracicaba ; MG;Sudeste
+2720;Cardoso ; SP;Sudeste
+2721;Selvíria ; MS;Centro-Oeste
+2722;Lagoa Santa ; MG;Sudeste
+2723;Santa Leopoldina ; ES;Sudeste
+2724;Santa Albertina ; SP;Sudeste
+2725;Paulo de Faria ; SP;Sudeste
+2726;Juatuba ; MG;Sudeste
+2727;Afonso Cláudio ; ES;Sudeste
+2728;Macedônia ; SP;Sudeste
+2729;Santa Bárbara ; MG;Sudeste
+2730;São Pedro dos Ferros ; MG;Sudeste
+2731;Medeiros ; MG;Sudeste
+2732;Mira Estrela ; SP;Sudeste
+2733;Raul Soares ; MG;Sudeste
+2734;Guarani d'Oeste ; SP;Sudeste
+2735;Fundão ; ES;Sudeste
+2736;Itarana ; ES;Sudeste
+2737;Pirajuba ; MG;Sudeste
+2738;Água Comprida ; MG;Sudeste
+2739;Alegrete do Piauí ; PI;Nordeste
+2740;Betim ; MG;Sudeste
+2741;Santa Rita de Minas ; MG;Sudeste
+2742;Conceição de Ipanema ; MG;Sudeste
+2743;Chalé ; MG;Sudeste
+2744;Aparecida do Taboado ; MS;Centro-Oeste
+2745;Córrego Novo ; MG;Sudeste
+2746;Simonésia ; MG;Sudeste
+2747;Contagem ; MG;Sudeste
+2748;Ouroeste ; SP;Sudeste
+2749;Tapiraí ; MG;Sudeste
+2750;Populina ; SP;Sudeste
+2751;João Monlevade ; MG;Sudeste
+2752;Belo Horizonte ; MG;Sudeste
+2753;Tapira ; MG;Sudeste
+2754;Barão de Cocais ; MG;Sudeste
+2755;Brejetuba ; ES;Sudeste
+2756;Laranja da Terra ; ES;Sudeste
+2757;Japaraíba ; MG;Sudeste
+2758;Ibiraçu ; ES;Sudeste
+2759;São Domingos do Prata ; MG;Sudeste
+2760;Rochedo ; MS;Centro-Oeste
+2761;Pedra Bela ; SP;Sudeste
+2762;Conceição das Alagoas ; MG;Sudeste
+2763;São Gonçalo do Rio Abaixo ; MG;Sudeste
+2764;Ribeirão das Neves ; MG;Sudeste
+2765;Bela Vista de Minas ; MG;Sudeste
+2766;Piedade de Caratinga ; MG;Sudeste
+2767;Bodocó ; PE;Nordeste
+2768;Vespasiano ; MG;Sudeste
+2769;Pingo-d'Água; MG;Sudeste
+2770;Conquista ; MG;Sudeste
+2771;Taparuba ; MG;Sudeste
+2772;Itamarati ; AM;Norte
+2773;Mutum ; MG;Sudeste
+2774;Dionísio ; MG;Sudeste
+2775;Caeté ; MG;Sudeste
+2776;São José da Lapa ; MG;Sudeste
+2777;Dolcinópolis ; SP;Sudeste
+2778;Bom Jesus do Amparo ; MG;Sudeste
+2779;São José da Varginha ; MG;Sudeste
+2780;Santa Teresa ; ES;Sudeste
+2781;Onça de Pitangui ; MG;Sudeste
+2782;Luz ; MG;Sudeste
+2783;Pratinha ; MG;Sudeste
+2784;Vargem Alegre ; MG;Sudeste
+2785;São Francisco de Sales ; MG;Sudeste
+2786;Matipó ; MG;Sudeste
+2787;Arapeí ; SP;Sudeste
+2788;Confins ; MG;Sudeste
+2789;Entre Folhas ; MG;Sudeste
+2790;Ipanema ; MG;Sudeste
+2791;Imbé de Minas ; MG;Sudeste
+2792;Campo Florido ; MG;Sudeste
+2793;Ubaporanga ; MG;Sudeste
+2794;Pequi ; MG;Sudeste
+2795;Iturama ; MG;Sudeste
+2796;Lajinha ; MG;Sudeste
+2797;Bugre ; MG;Sudeste
+2798;Taquaraçu de Minas ; MG;Sudeste
+2799;Timóteo ; MG;Sudeste
+2800;Nova União ; MG;Sudeste
+2801;Capim Branco ; MG;Sudeste
+2802;Corguinho ; MS;Centro-Oeste
+2803;Caratinga ; MG;Sudeste
+2804;Jaguaraçu ; MG;Sudeste
+2805;Sacramento ; MG;Sudeste
+2806;São Sebastião do Rio Preto ; MG;Sudeste
+2807;Pocrane ; MG;Sudeste
+2808;Itabira ; MG;Sudeste
+2809;São Domingos das Dores ; MG;Sudeste
+2810;Veríssimo ; MG;Sudeste
+2811;Antônio Dias ; MG;Sudeste
+2812;Prudente de Morais ; MG;Sudeste
+2813;Araxá ; MG;Sudeste
+2814;Ipatinga ; MG;Sudeste
+2815;Itambé do Mato Dentro ; MG;Sudeste
+2816;Condado ; PE;Nordeste
+2817;Carneirinho ; MG;Sudeste
+2818;Santana do Paraíso ; MG;Sudeste
+2819;Marliéria ; MG;Sudeste
+2820;Santa Maria de Itabira ; MG;Sudeste
+2821;Aimorés ; MG;Sudeste
+2822;Campinas do Piauí ; PI;Nordeste
+2823;Bom Jesus do Galho ; MG;Sudeste
+2824;Inhapim ; MG;Sudeste
+2825;Ibiá ; MG;Sudeste
+2826;Ipiaçu ; MG;Sudeste
+2827;Uberlândia ; MG;Sudeste
+2828;Serra da Saudade ; MG;Sudeste
+2829;Quartel Geral ; MG;Sudeste
+2830;Santa Rita do Itueto ; MG;Sudeste
+2831;São João do Oriente ; MG;Sudeste
+2832;Dom Silvério ; MG;Sudeste
+2833;Santana de Mangueira ; PB;Nordeste
+2834;Divino das Laranjeiras ; MG;Sudeste
+2835;União de Minas ; MG;Sudeste
+2836;Itueta ; MG;Sudeste
+2837;Tocantins ; MG;Sudeste
+2838;Limeira do Oeste ; MG;Sudeste
+2839;Iapu ; MG;Sudeste
+2840;Rio Negro ; MS;Centro-Oeste
+2841;Santo Antônio do Rio Abaixo ; MG;Sudeste
+2842;Mesquita ; MG;Sudeste
+2843;Joanésia ; MG;Sudeste
+2844;Araçaí ; MG;Sudeste
+2845;Tarumirim ; MG;Sudeste
+2846;Santa Juliana ; MG;Sudeste
+2847;Perdizes ; MG;Sudeste
+2848;Alvarenga ; MG;Sudeste
+2849;Naque ; MG;Sudeste
+2850;Pedrinópolis ; MG;Sudeste
+2851;Morro do Pilar ; MG;Sudeste
+2852;Sobrália ; MG;Sudeste
+2853;Lagoa Santa ; GO;Centro-Oeste
+2854;Carmésia ; MG;Sudeste
+2855;Ferros ; MG;Sudeste
+2856;Rio Bananal ; ES;Sudeste
+2857;Goiabeira ; MG;Sudeste
+2858;Iraí de Minas ; MG;Sudeste
+2859;Resplendor ; MG;Sudeste
+2860;São Domingos do Norte ; ES;Sudeste
+2861;Ladário ; MS;Centro-Oeste
+2862;Fernandes Tourinho ; MG;Sudeste
+2863;Itanhomi ; MG;Sudeste
+2864;Engenheiro Caldas ; MG;Sudeste
+2865;São José do Calçado ; ES;Sudeste
+2866;Pancas ; ES;Sudeste
+2867;Nova Ponte ; MG;Sudeste
+2868;Cruzeiro da Fortaleza ; MG;Sudeste
+2869;Sooretama ; ES;Sudeste
+2870;Açucena ; MG;Sudeste
+2871;Holambra ; SP;Sudeste
+2872;Cascalho Rico ; MG;Sudeste
+2873;Dores de Guanhães ; MG;Sudeste
+2874;Gonzaga ; MG;Sudeste
+2875;Tumiritinga ; MG;Sudeste
+2876;Nova Belém ; MG;Sudeste
+2877;Jaguaré ; ES;Sudeste
+2878;Dom Joaquim ; MG;Sudeste
+2879;Brejo Alegre ; SP;Sudeste
+2880;Congonhas do Norte ; MG;Sudeste
+2881;Conselheiro Pena ; MG;Sudeste
+2882;Mantenópolis ; ES;Sudeste
+2883;Gurinhatã ; MG;Sudeste
+2884;Paraíso das Águas ; MS;Centro-Oeste
+2885;Barro Duro ; PI;Nordeste
+2886;Galiléia ; MG;Sudeste
+2887;Patrocínio ; MG;Sudeste
+2888;Jerumenha ; PI;Nordeste
+2889;Guimarânia ; MG;Sudeste
+2890;Santana de Pirapama ; MG;Sudeste
+2891;Lagoa Formosa ; MG;Sudeste
+2892;Vila Valério ; ES;Sudeste
+2893;Alvorada de Minas ; MG;Sudeste
+2894;Nova Marilândia ; MT;Centro-Oeste
+2895;Guanhães ; MG;Sudeste
+2896;Santa Vitória ; MG;Sudeste
+2897;Conceição do Mato Dentro ; MG;Sudeste
+2898;Ribeirão Vermelho ; MG;Sudeste
+2899;Marilac ; MG;Sudeste
+2900;Paranaiguara ; GO;Centro-Oeste
+2901;Virginópolis ; MG;Sudeste
+2902;Ituiutaba ; MG;Sudeste
+2903;Inimutaba ; MG;Sudeste
+2904;São Geraldo ; MG;Sudeste
+2905;Presidente Kubitschek ; MG;Sudeste
+2906;Canápolis ; MG;Sudeste
+2907;Águia Branca ; ES;Sudeste
+2908;Santo Antônio do Itambé ; MG;Sudeste
+2909;Governador Valadares ; MG;Sudeste
+2910;Estrela do Sul ; MG;Sudeste
+2911;Mantena ; MG;Sudeste
+2912;Pindorama ; SP;Sudeste
+2913;Sem-Peixe; MG;Sudeste
+2914;Morro da Garça ; MG;Sudeste
+2915;Centralina ; MG;Sudeste
+2916;Coroaci ; MG;Sudeste
+2917;Pilar ; AL;Nordeste
+2918;Presidente Juscelino ; MG;Sudeste
+2919;Açu ; RN;Nordeste
+2920;Monte Carmelo ; MG;Sudeste
+2921;Cachoeira Dourada ; MG;Sudeste
+2922;Vila Pavão ; ES;Sudeste
+2923;Sabinópolis ; MG;Sudeste
+2924;Barra de São Francisco ; ES;Sudeste
+2925;Araporã ; MG;Sudeste
+2926;Nacip Raydan ; MG;Sudeste
+2927;Materlândia ; MG;Sudeste
+2928;Senador Firmino ; MG;Sudeste
+2929;Cachoeira Dourada ; GO;Centro-Oeste
+2930;Frei Inocêncio ; MG;Sudeste
+2931;Coronel Fabriciano ; MG;Sudeste
+2932;Governador Lindenberg ; ES;Sudeste
+2933;Dores de Campos ; MG;Sudeste
+2934;Virgolândia ; MG;Sudeste
+2935;Inaciolândia ; GO;Centro-Oeste
+2936;Douradoquara ; MG;Sudeste
+2937;Água Doce do Norte ; ES;Sudeste
+2938;Jampruca ; MG;Sudeste
+2939;Peçanha ; MG;Sudeste
+2940;Gouvelândia ; GO;Centro-Oeste
+2941;Três Ranchos ; GO;Centro-Oeste
+2942;Alpercata ; MG;Sudeste
+2943;Araguari ; MG;Sudeste
+2944;Nova Era ; MG;Sudeste
+2945;Gouveia ; MG;Sudeste
+2946;Paulistas ; MG;Sudeste
+2947;São João Evangelista ; MG;Sudeste
+2948;Cachoeira Alta ; GO;Centro-Oeste
+2949;Nova Módica ; MG;Sudeste
+2950;Tupaciguara ; MG;Sudeste
+2951;Datas ; MG;Sudeste
+2952;José Raydan ; MG;Sudeste
+2953;Serro ; MG;Sudeste
+2954;Pinheiros ; ES;Sudeste
+2955;São José da Safira ; MG;Sudeste
+2956;São Pedro do Suaçuí ; MG;Sudeste
+2957;Monjolos ; MG;Sudeste
+2958;Santo Hipólito ; MG;Sudeste
+2959;Serra Azul de Minas ; MG;Sudeste
+2960;Cumari ; GO;Centro-Oeste
+2961;Abadia dos Dourados ; MG;Sudeste
+2962;Apiacá ; ES;Sudeste
+2963;São José do Jacuri ; MG;Sudeste
+2964;Itumbiara ; GO;Centro-Oeste
+2965;Coluna ; MG;Sudeste
+2966;Frei Lagonegro ; MG;Sudeste
+2967;Aparecida do Rio Doce ; GO;Centro-Oeste
+2968;Ouro Verde de Minas ; MG;Sudeste
+2969;Chapadão do Céu ; GO;Centro-Oeste
+2970;Rio Vermelho ; MG;Sudeste
+2971;Bom Jesus de Goiás ; GO;Centro-Oeste
+2972;Pedro Canário ; ES;Sudeste
+2973;Davinópolis ; GO;Centro-Oeste
+2974;Castelândia ; GO;Centro-Oeste
+2975;Santa Maria do Suaçuí ; MG;Sudeste
+2976;Goiandira ; GO;Centro-Oeste
+2977;Augusto de Lima ; MG;Sudeste
+2978;Buriti Alegre ; GO;Centro-Oeste
+2979;Ecoporanga ; ES;Sudeste
+2980;São José do Divino ; MG;Sudeste
+2981;Corinto ; MG;Sudeste
+2982;Viradouro ; SP;Sudeste
+2983;Anhanguera ; GO;Centro-Oeste
+2984;São Gonçalo do Rio Preto ; MG;Sudeste
+2985;Ataléia ; MG;Sudeste
+2986;Marataízes ; ES;Sudeste
+2987;Felício dos Santos ; MG;Sudeste
+2988;Conceição da Barra ; ES;Sudeste
+2989;Panamá ; GO;Centro-Oeste
+2990;São Sebastião do Maranhão ; MG;Sudeste
+2991;Coromandel ; MG;Sudeste
+2992;Maurilândia ; GO;Centro-Oeste
+2993;Ouvidor ; GO;Centro-Oeste
+2994;Nova Aurora ; GO;Centro-Oeste
+2995;Itambacuri ; MG;Sudeste
+2996;Água Limpa ; GO;Centro-Oeste
+2997;Corumbaíba ; GO;Centro-Oeste
+2998;Serranópolis ; GO;Centro-Oeste
+2999;Goiatuba ; GO;Centro-Oeste
+3000;Marzagão ; GO;Centro-Oeste
+3001;Jenipapo de Minas ; MG;Sudeste
+3002;Nova Viçosa ; BA;Nordeste
+3003;Porteirão ; GO;Centro-Oeste
+3004;Lagamar ; MG;Sudeste
+3005;Serra dos Aimorés ; MG;Sudeste
+3006;Água Boa ; MG;Sudeste
+3007;Mucuri ; BA;Nordeste
+3008;Couto de Magalhães de Minas ; MG;Sudeste
+3009;Malacacheta ; MG;Sudeste
+3010;Poté ; MG;Sudeste
+3011;Lassance ; MG;Sudeste
+3012;Aloândia ; GO;Centro-Oeste
+3013;Angelândia ; MG;Sudeste
+3014;Santa Helena de Goiás ; GO;Centro-Oeste
+3015;Ibirapuã ; BA;Nordeste
+3016;Vicentinópolis ; GO;Centro-Oeste
+3017;Tombos ; MG;Sudeste
+3018;Treviso ; SC;Sul
+3019;Turvelândia ; GO;Centro-Oeste
+3020;João Pinheiro ; MG;Sudeste
+3021;Itapissuma ; PE;Nordeste
+3022;Senador Modestino Gonçalves ; MG;Sudeste
+3023;Buenópolis ; MG;Sudeste
+3024;Itamarandiba ; MG;Sudeste
+3025;Ilha Solteira ; SP;Sudeste
+3026;Granito ; PE;Nordeste
+3027;Vazante ; MG;Sudeste
+3028;Machacalis ; MG;Sudeste
+3029;Frei Gaspar ; MG;Sudeste
+3030;Lagoa Grande ; MG;Sudeste
+3031;Caldas Novas ; GO;Centro-Oeste
+3032;Setubinha ; MG;Sudeste
+3033;Alto Taquari ; MT;Centro-Oeste
+3034;Capelinha ; MG;Sudeste
+3035;Joviânia ; GO;Centro-Oeste
+3036;Guarda-Mor; MG;Sudeste
+3037;Nanuque ; MG;Sudeste
+3038;Cafeara ; PR;Sul
+3039;Nazaré da Mata ; PE;Nordeste
+3040;Joaquim Felício ; MG;Sudeste
+3041;Ladainha ; MG;Sudeste
+3042;Franciscópolis ; MG;Sudeste
+3043;Lajedão ; BA;Nordeste
+3044;Fernando de Noronha ; PE;Nordeste
+3045;Carlos Chagas ; MG;Sudeste
+3046;Palmares Paulista ; SP;Sudeste
+3047;Teófilo Otoni ; MG;Sudeste
+3048;Dom Cavati ; MG;Sudeste
+3049;Campanário ; MG;Sudeste
+3050;Veredinha ; MG;Sudeste
+3051;Pavão ; MG;Sudeste
+3052;Diamantina ; MG;Sudeste
+3053;Aricanduva ; MG;Sudeste
+3054;Pontalina ; GO;Centro-Oeste
+3055;Santo Antônio da Barra ; GO;Centro-Oeste
+3056;Carbonita ; MG;Sudeste
+3057;Perolândia ; GO;Centro-Oeste
+3058;Urutaí ; GO;Centro-Oeste
+3059;Teixeira de Freitas ; BA;Nordeste
+3060;Olhos-d'Água ; MG;Sudeste
+3061;Edéia ; GO;Centro-Oeste
+3062;Capitão Andrade ; MG;Sudeste
+3063;Pirapora ; MG;Sudeste
+3064;Edealina ; GO;Centro-Oeste
+3065;Taquaral ; SP;Sudeste
+3066;Acreúna ; GO;Centro-Oeste
+3067;Medeiros Neto ; BA;Nordeste
+3068;Corumbá ; MS;Centro-Oeste
+3069;Francisco Dumont ; MG;Sudeste
+3070;Tramandaí ; RS;Sul
+3071;Engenheiro Navarro ; MG;Sudeste
+3072;Campo Alegre de Goiás ; GO;Centro-Oeste
+3073;Portelândia ; GO;Centro-Oeste
+3074;Mairipotaba ; GO;Centro-Oeste
+3075;Rio Quente ; GO;Centro-Oeste
+3076;Santa Cruz de Goiás ; GO;Centro-Oeste
+3077;Cromínia ; GO;Centro-Oeste
+3078;Catuji ; MG;Sudeste
+3079;Cristianópolis ; GO;Centro-Oeste
+3080;Crisólita ; MG;Sudeste
+3081;Caldazinha ; GO;Centro-Oeste
+3082;Minas Novas ; MG;Sudeste
+3083;Professor Jamil ; GO;Centro-Oeste
+3084;Várzea da Palma ; MG;Sudeste
+3085;São Simão ; GO;Centro-Oeste
+3086;Buriti do Tocantins ; TO;Norte
+3087;Piracanjuba ; GO;Centro-Oeste
+3088;Cruzeiro ; SP;Sudeste
+3089;Umburatiba ; MG;Sudeste
+3090;Pires do Rio ; GO;Centro-Oeste
+3091;Turmalina ; MG;Sudeste
+3092;Caraí ; MG;Sudeste
+3093;Indiara ; GO;Centro-Oeste
+3094;Padre Paraíso ; MG;Sudeste
+3095;Pedro Avelino ; RN;Nordeste
+3096;Novo Oriente de Minas ; MG;Sudeste
+3097;Montividiu ; GO;Centro-Oeste
+3098;Novo Cruzeiro ; MG;Sudeste
+3099;Álvaro de Carvalho ; SP;Sudeste
+3100;Varjão ; GO;Centro-Oeste
+3101;Águas Formosas ; MG;Sudeste
+3102;Cezarina ; GO;Centro-Oeste
+3103;Catas Altas ; MG;Sudeste
+3104;Jandaia ; GO;Centro-Oeste
+3105;Santa Margarida ; MG;Sudeste
+3106;Chapada do Norte ; MG;Sudeste
+3107;Prado ; BA;Nordeste
+3108;Leme do Prado ; MG;Sudeste
+3109;Vereda ; BA;Nordeste
+3110;Jandaíra ; RN;Nordeste
+3111;Jequitaí ; MG;Sudeste
+3112;Guaraciama ; MG;Sudeste
+3113;Itanhém ; BA;Nordeste
+3114;Francisco Badaró ; MG;Sudeste
+3115;Consolação ; MG;Sudeste
+3116;Lagoa dos Patos ; MG;Sudeste
+3117;Wenceslau Braz ; MG;Sudeste
+3118;Santa Rita do Araguaia ; GO;Centro-Oeste
+3119;Santa Helena de Minas ; MG;Sudeste
+3120;Itaipé ; MG;Sudeste
+3121;Hidrolândia ; GO;Centro-Oeste
+3122;São Miguel do Passa Quatro ; GO;Centro-Oeste
+3123;Claro dos Poções ; MG;Sudeste
+3124;Fronteira dos Vales ; MG;Sudeste
+3125;Bertópolis ; MG;Sudeste
+3126;Guapó ; GO;Centro-Oeste
+3127;Braúnas ; MG;Sudeste
+3128;José Gonçalves de Minas ; MG;Sudeste
+3129;Carrasco Bonito ; TO;Norte
+3130;Jardim Alegre ; PR;Sul
+3131;Orizona ; GO;Centro-Oeste
+3132;Juramento ; MG;Sudeste
+3133;São João da Paraúna ; GO;Centro-Oeste
+3134;Paranapuã ; SP;Sudeste
+3135;Brasilândia de Minas ; MG;Sudeste
+3136;Palminópolis ; GO;Centro-Oeste
+3137;Botumirim ; MG;Sudeste
+3138;Berilo ; MG;Sudeste
+3139;Ibiaí ; MG;Sudeste
+3140;Jucuruçu ; BA;Nordeste
+3141;Campestre de Goiás ; GO;Centro-Oeste
+3142;Itacambira ; MG;Sudeste
+3143;Guamaré ; RN;Nordeste
+3144;Vianópolis ; GO;Centro-Oeste
+3145;Ponto dos Volantes ; MG;Sudeste
+3146;Amorinópolis ; GO;Centro-Oeste
+3147;São João da Lagoa ; MG;Sudeste
+3148;Palmeiras de Goiás ; GO;Centro-Oeste
+3149;Palmópolis ; MG;Sudeste
+3150;Cachoeira de Goiás ; GO;Centro-Oeste
+3151;Araçuaí ; MG;Sudeste
+3152;Joaíma ; MG;Sudeste
+3153;Cristália ; MG;Sudeste
+3154;Cristiano Otoni ; MG;Sudeste
+3155;Dom Bosco ; MG;Sudeste
+3156;Araguainha ; MT;Centro-Oeste
+3157;Santa Fé de Minas ; MG;Sudeste
+3158;Cuparaque ; MG;Sudeste
+3159;Ponte Branca ; MT;Centro-Oeste
+3160;Aurilândia ; GO;Centro-Oeste
+3161;Nazário ; GO;Centro-Oeste
+3162;Felisburgo ; MG;Sudeste
+3163;Igrejinha ; RS;Sul
+3164;Alto Garças ; MT;Centro-Oeste
+3165;Bonfinópolis ; GO;Centro-Oeste
+3166;Pedra Preta ; MT;Centro-Oeste
+3167;Nossa Senhora do Socorro ; SE;Nordeste
+3168;Palestina de Goiás ; GO;Centro-Oeste
+3169;Pescador ; MG;Sudeste
+3170;Virgem da Lapa ; MG;Sudeste
+3171;Aracaju ; SE;Nordeste
+3172;Barra dos Coqueiros ; SE;Nordeste
+3173;Turvânia ; GO;Centro-Oeste
+3174;Firminópolis ; GO;Centro-Oeste
+3175;Jardim ; CE;Nordeste
+3176;Ponto Chique ; MG;Sudeste
+3177;Santa Bárbara de Goiás ; GO;Centro-Oeste
+3178;São João do Pacuí ; MG;Sudeste
+3179;Avelinópolis ; GO;Centro-Oeste
+3180;Caturaí ; GO;Centro-Oeste
+3181;Moiporá ; GO;Centro-Oeste
+3182;Terezópolis de Goiás ; GO;Centro-Oeste
+3183;Natalândia ; MG;Sudeste
+3184;Coração de Jesus ; MG;Sudeste
+3185;Josenópolis ; MG;Sudeste
+3186;Santo Antônio do Jacinto ; MG;Sudeste
+3187;Itinga ; MG;Sudeste
+3188;Nova Olinda ; PB;Nordeste
+3189;Adelândia ; GO;Centro-Oeste
+3190;Ribeirãozinho ; MT;Centro-Oeste
+3191;Nerópolis ; GO;Centro-Oeste
+3192;São Luís de Montes Belos ; GO;Centro-Oeste
+3193;São José do Povo ; MT;Centro-Oeste
+3194;Gameleira de Goiás ; GO;Centro-Oeste
+3195;Itaobim ; MG;Sudeste
+3196;Buriti de Goiás ; GO;Centro-Oeste
+3197;Iporá ; GO;Centro-Oeste
+3198;Senhora de Oliveira ; MG;Sudeste
+3199;Nova Veneza ; GO;Centro-Oeste
+3200;Flores do Piauí ; PI;Nordeste
+3201;Anicuns ; GO;Centro-Oeste
+3202;Luislândia ; MG;Sudeste
+3203;Lidianópolis ; PR;Sul
+3204;Bonfinópolis de Minas ; MG;Sudeste
+3205;Rubelita ; MG;Sudeste
+3206;Córrego do Ouro ; GO;Centro-Oeste
+3207;Israelândia ; GO;Centro-Oeste
+3208;Aragoiânia ; GO;Centro-Oeste
+3209;Campo Limpo de Goiás ; GO;Centro-Oeste
+3210;Lunardelli ; PR;Sul
+3211;Rubim ; MG;Sudeste
+3212;Piranguçu ; MG;Sudeste
+3213;Ouro Verde de Goiás ; GO;Centro-Oeste
+3214;Inhumas ; GO;Centro-Oeste
+3215;Sanclerlândia ; GO;Centro-Oeste
+3216;Americano do Brasil ; GO;Centro-Oeste
+3217;Anápolis ; GO;Centro-Oeste
+3218;Cafezal do Sul ; PR;Sul
+3219;Itauçu ; GO;Centro-Oeste
+3220;Urânia ; SP;Sudeste
+3221;São Romão ; MG;Sudeste
+3222;Ubaí ; MG;Sudeste
+3223;Montes Claros ; MG;Sudeste
+3224;Baliza ; GO;Centro-Oeste
+3225;Padre Carvalho ; MG;Sudeste
+3226;Piranhas ; GO;Centro-Oeste
+3227;Itaúna ; MG;Sudeste
+3228;Francisco Sá ; MG;Sudeste
+3229;Glaucilândia ; MG;Sudeste
+3230;Cidade Ocidental ; GO;Centro-Oeste
+3231;Valparaíso de Goiás ; GO;Centro-Oeste
+3232;Rondonópolis ; MT;Centro-Oeste
+3233;Barueri ; SP;Sudeste
+3234;Nova Tebas ; PR;Sul
+3235;Icaraí de Minas ; MG;Sudeste
+3236;Diorama ; GO;Centro-Oeste
+3237;Comercinho ; MG;Sudeste
+3238;Jequitinhonha ; MG;Sudeste
+3239;Santa Maria do Salto ; MG;Sudeste
+3240;Medina ; MG;Sudeste
+3241;Mirabela ; MG;Sudeste
+3242;Jaupaci ; GO;Centro-Oeste
+3243;Arenópolis ; GO;Centro-Oeste
+3244;Santo Antônio de Goiás ; GO;Centro-Oeste
+3245;Riachinho ; MG;Sudeste
+3246;Coronel Murta ; MG;Sudeste
+3247;Mossâmedes ; GO;Centro-Oeste
+3248;Fruta de Leite ; MG;Sudeste
+3249;Santa Bárbara do Leste ; MG;Sudeste
+3250;Águas Lindas de Goiás ; GO;Centro-Oeste
+3251;Fazenda Nova ; GO;Centro-Oeste
+3252;Rio do Prado ; MG;Sudeste
+3253;Petrolina de Goiás ; GO;Centro-Oeste
+3254;Brasília de Minas ; MG;Sudeste
+3255;Abadia de Goiás ; GO;Centro-Oeste
+3256;Jacinto ; MG;Sudeste
+3257;Bom Jardim de Goiás ; GO;Centro-Oeste
+3258;Santa Cruz de Salinas ; MG;Sudeste
+3259;Campo Azul ; MG;Sudeste
+3260;Novorizonte ; MG;Sudeste
+3261;Alvinlândia ; SP;Sudeste
+3262;Salto da Divisa ; MG;Sudeste
+3263;Engenho Velho ; RS;Sul
+3264;Juscimeira ; MT;Centro-Oeste
+3265;São Pedro da Cipa ; MT;Centro-Oeste
+3266;Salinas ; MG;Sudeste
+3267;Pintópolis ; MG;Sudeste
+3268;São Francisco de Goiás ; GO;Centro-Oeste
+3269;Almenara ; MG;Sudeste
+3270;Sapeaçu ; BA;Nordeste
+3271;Aragarças ; GO;Centro-Oeste
+3272;Riacho dos Machados ; MG;Sudeste
+3273;Coronel João Pessoa ; RN;Nordeste
+3274;Araçu ; GO;Centro-Oeste
+3275;Itaberaí ; GO;Centro-Oeste
+3276;Cachoeira de Pajeú ; MG;Sudeste
+3277;São Gabriel da Palha ; ES;Sudeste
+3278;Japonvar ; MG;Sudeste
+3279;São Félix ; BA;Nordeste
+3280;Capitão Enéas ; MG;Sudeste
+3281;Trindade ; GO;Centro-Oeste
+3282;Jordânia ; MG;Sudeste
+3283;Jesúpolis ; GO;Centro-Oeste
+3284;Lontra ; MG;Sudeste
+3285;Curral de Dentro ; MG;Sudeste
+3286;Cambé ; PR;Sul
+3287;Urucuia ; MG;Sudeste
+3288;Bandeira ; MG;Sudeste
+3289;São João da Ponte ; MG;Sudeste
+3290;Uruana de Minas ; MG;Sudeste
+3291;Glória D'Oeste ; MT;Centro-Oeste
+3292;Pedra Azul ; MG;Sudeste
+3293;Alcobaça ; BA;Nordeste
+3294;Itaguaru ; GO;Centro-Oeste
+3295;Nova Porteirinha ; MG;Sudeste
+3296;Jaciara ; MT;Centro-Oeste
+3297;Indiaporã ; SP;Sudeste
+3298;Goiás ; GO;Centro-Oeste
+3299;São Francisco ; MG;Sudeste
+3300;Urucânia ; MG;Sudeste
+3301;Potiraguá ; BA;Nordeste
+3302;Cabeceiras ; GO;Centro-Oeste
+3303;Pirenópolis ; GO;Centro-Oeste
+3304;Berizal ; MG;Sudeste
+3305;João Câmara ; RN;Nordeste
+3306;Águas Vermelhas ; MG;Sudeste
+3307;Conceição dos Ouros ; MG;Sudeste
+3308;Guaraíta ; GO;Centro-Oeste
+3309;Itapirapuã ; GO;Centro-Oeste
+3310;Mesópolis ; SP;Sudeste
+3311;Divisópolis ; MG;Sudeste
+3312;Jaraguá ; GO;Centro-Oeste
+3313;Santa Fé de Goiás ; GO;Centro-Oeste
+3314;Serranópolis de Minas ; MG;Sudeste
+3315;Rianápolis ; GO;Centro-Oeste
+3316;Uruana ; GO;Centro-Oeste
+3317;Varzelândia ; MG;Sudeste
+3318;Rio Pardo de Minas ; MG;Sudeste
+3319;Cristais Paulista ; SP;Sudeste
+3320;Canavieiras ; BA;Nordeste
+3321;Arinos ; MG;Sudeste
+3322;Cocalzinho de Goiás ; GO;Centro-Oeste
+3323;Moeda ; MG;Sudeste
+3324;Angical do Piauí ; PI;Nordeste
+3325;Ibiracatu ; MG;Sudeste
+3326;Dom Aquino ; MT;Centro-Oeste
+3327;Itarantim ; BA;Nordeste
+3328;Japaratuba ; SE;Nordeste
+3329;Ipecaetá ; BA;Nordeste
+3330;Itapuranga ; GO;Centro-Oeste
+3331;Ouro Preto do Oeste ; RO;Norte
+3332;Mirassol d'Oeste ; MT;Centro-Oeste
+3333;Indaiabira ; MG;Sudeste
+3334;São José dos Quatro Marcos ; MT;Centro-Oeste
+3335;Taiobeiras ; MG;Sudeste
+3336;Verdelândia ; MG;Sudeste
+3337;Heitoraí ; GO;Centro-Oeste
+3338;Morro Agudo de Goiás ; GO;Centro-Oeste
+3339;Janaúba ; MG;Sudeste
+3340;Vargem Grande do Rio Pardo ; MG;Sudeste
+3341;Ceres ; GO;Centro-Oeste
+3342;Porteirinha ; MG;Sudeste
+3343;Pau Brasil ; BA;Nordeste
+3344;Macarani ; BA;Nordeste
+3345;Arataca ; BA;Nordeste
+3346;Pontal do Araguaia ; MT;Centro-Oeste
+3347;Alagoinha do Piauí ; PI;Nordeste
+3348;Figueirópolis D'Oeste ; MT;Centro-Oeste
+3349;Carmo do Rio Verde ; GO;Centro-Oeste
+3350;Encruzilhada ; BA;Nordeste
+3351;São Patrício ; GO;Centro-Oeste
+3352;Camacan ; BA;Nordeste
+3353;São João de Meriti ; RJ;Sudeste
+3354;Grupiara ; MG;Sudeste
+3355;Pedras de Maria da Cruz ; MG;Sudeste
+3356;Mato Verde ; MG;Sudeste
+3357;Tibau ; RN;Nordeste
+3358;Poxoréo ; MT;Centro-Oeste
+3359;Faina ; GO;Centro-Oeste
+3360;Santa Rosa de Goiás ; GO;Centro-Oeste
+3361;São Geraldo do Baixio ; MG;Sudeste
+3362;Ribeirão do Largo ; BA;Nordeste
+3363;Catuti ; MG;Sudeste
+3364;Rialma ; GO;Centro-Oeste
+3365;Taquaral de Goiás ; GO;Centro-Oeste
+3366;Indiavaí ; MT;Centro-Oeste
+3367;Mata Verde ; MG;Sudeste
+3368;Lambari D'Oeste ; MT;Centro-Oeste
+3369;Rio Branco ; MT;Centro-Oeste
+3370;Baixa Grande ; BA;Nordeste
+3371;Jangada ; MT;Centro-Oeste
+3372;São Geraldo da Piedade ; MG;Sudeste
+3373;Novo Brasil ; GO;Centro-Oeste
+3374;Ninheira ; MG;Sudeste
+3375;Itapetinga ; BA;Nordeste
+3376;Queimados ; RJ;Sudeste
+3377;São João do Paraíso ; MG;Sudeste
+3378;Patis ; MG;Sudeste
+3379;Candeias ; BA;Nordeste
+3380;Cândido Sales ; BA;Nordeste
+3381;Pai Pedro ; MG;Sudeste
+3382;Cuiabá ; MT;Centro-Oeste
+3383;Mamonas ; MG;Sudeste
+3384;José de Freitas ; PI;Nordeste
+3385;Prudentópolis ; PR;Sul
+3386;Santo Antônio do Retiro ; MG;Sudeste
+3387;Monte Azul ; MG;Sudeste
+3388;Rurópolis ; PA;Norte
+3389;Itaituba ; PA;Norte
+3390;Matias Olímpio ; PI;Nordeste
+3391;Matrinchã ; GO;Centro-Oeste
+3392;Presidente Figueiredo ; AM;Norte
+3393;Japurá ; AM;Norte
+3394;Mazagão ; AP;Norte
+3395;Porto Grande ; AP;Norte
+3396;Chapada Gaúcha ; MG;Sudeste
+3397;Santa Isabel do Rio Negro ; AM;Norte
+3398;Oiapoque ; AP;Norte
+3399;São Gabriel da Cachoeira ; AM;Norte
+3400;Arroio Grande ; RS;Sul
+3401;Bagé ; RS;Sul
+3402;Camaquã ; RS;Sul
+3403;Santa Vitória do Palmar ; RS;Sul
+3404;Planaltina ; GO;Centro-Oeste
+3405;Rubiataba ; GO;Centro-Oeste
+3406;Vitória de Santo Antão ; PE;Nordeste
+3407;Itambé ; BA;Nordeste
+3408;Pracinha ; SP;Sudeste
+3409;Rosário do Sul ; RS;Sul
+3410;Cacequi ; RS;Sul
+3411;Júlio de Castilhos ; RS;Sul
+3412;Santiago ; RS;Sul
+3413;Tupanciretã ; RS;Sul
+3414;São Francisco de Paula ; RS;Sul
+3415;Itacurubi ; RS;Sul
+3416;Buritis ; MG;Sudeste
+3417;Serranos ; MG;Sudeste
+3418;Zacarias ; SP;Sudeste
+3419;Jussari ; BA;Nordeste
+3420;Batalha ; AL;Nordeste
+3421;Goianésia ; GO;Centro-Oeste
+3422;Miracema ; RJ;Sudeste
+3423;Igaratinga ; MG;Sudeste
+3424;Araputanga ; MT;Centro-Oeste
+3425;Santa Isabel ; GO;Centro-Oeste
+3426;Una ; BA;Nordeste
+3427;Acorizal ; MT;Centro-Oeste
+3428;Romaria ; MG;Sudeste
+3429;Sardoá ; MG;Sudeste
+3430;Montezuma ; MG;Sudeste
+3431;Nova Glória ; GO;Centro-Oeste
+3432;Jatobá ; PE;Nordeste
+3433;Jaíba ; MG;Sudeste
+3434;Campo Verde ; MT;Centro-Oeste
+3435;Capão da Canoa ; RS;Sul
+3436;Itaju do Colônia ; BA;Nordeste
+3437;Britânia ; GO;Centro-Oeste
+3438;Itacarambi ; MG;Sudeste
+3439;Vista Alegre do Alto ; SP;Sudeste
+3440;Maruim ; SE;Nordeste
+3441;Araguapaz ; GO;Centro-Oeste
+3442;São Domingos do Cariri ; PB;Nordeste
+3443;Itapé ; BA;Nordeste
+3444;Santa Cruz da Vitória ; BA;Nordeste
+3445;Costa Rica ; MS;Centro-Oeste
+3446;São João das Missões ; MG;Sudeste
+3447;Guaiúba ; CE;Nordeste
+3448;Cordeiros ; BA;Nordeste
+3449;Buenos Aires ; PE;Nordeste
+3450;Vila Propício ; GO;Centro-Oeste
+3451;Mimoso de Goiás ; GO;Centro-Oeste
+3452;Alto Jequitibá ; MG;Sudeste
+3453;Gameleiras ; MG;Sudeste
+3454;Ubarana ; SP;Sudeste
+3455;Dom Macedo Costa ; BA;Nordeste
+3456;Itapaci ; GO;Centro-Oeste
+3457;Juripiranga ; PB;Nordeste
+3458;Nova Itarana ; BA;Nordeste
+3459;Itaparica ; BA;Nordeste
+3460;Formoso ; MG;Sudeste
+3461;Barro Preto ; BA;Nordeste
+3462;Reserva do Cabaçal ; MT;Centro-Oeste
+3463;Alfredo Vasconcelos ; MG;Sudeste
+3464;Barra do Garças ; MT;Centro-Oeste
+3465;Tremedal ; BA;Nordeste
+3466;Barra do Choça ; BA;Nordeste
+3467;Vila Boa ; GO;Centro-Oeste
+3468;Santa Efigênia de Minas ; MG;Sudeste
+3469;Pinhão ; SE;Nordeste
+3470;General Sampaio ; CE;Nordeste
+3471;Salto do Céu ; MT;Centro-Oeste
+3472;Ibicaraí ; BA;Nordeste
+3473;Hidrolina ; GO;Centro-Oeste
+3474;Espinosa ; MG;Sudeste
+3475;Altaneira ; CE;Nordeste
+3476;Barro Alto ; GO;Centro-Oeste
+3477;Floresta Azul ; BA;Nordeste
+3478;São José da Lagoa Tapada ; PB;Nordeste
+3479;Água Fria de Goiás ; GO;Centro-Oeste
+3480;Senhora do Porto ; MG;Sudeste
+3481;Canoas ; RS;Sul
+3482;Cônego Marinho ; MG;Sudeste
+3483;Axixá ; MA;Nordeste
+3484;Aratuípe ; BA;Nordeste
+3485;Belo Campo ; BA;Nordeste
+3486;Barrocas ; BA;Nordeste
+3487;Mozarlândia ; GO;Centro-Oeste
+3488;Marcionílio Souza ; BA;Nordeste
+3489;Santa Rita do Novo Destino ; GO;Centro-Oeste
+3490;Muniz Ferreira ; BA;Nordeste
+3491;Nova Olímpia ; MT;Centro-Oeste
+3492;Balneário Barra do Sul ; SC;Sul
+3493;Matias Cardoso ; MG;Sudeste
+3494;Damianópolis ; GO;Centro-Oeste
+3495;Nova Canaã ; BA;Nordeste
+3496;Simolândia ; GO;Centro-Oeste
+3497;Paquetá ; PI;Nordeste
+3498;Denise ; MT;Centro-Oeste
+3499;Capinópolis ; MG;Sudeste
+3500;Esteio ; RS;Sul
+3501;Iguaí ; BA;Nordeste
+3502;Buritinópolis ; GO;Centro-Oeste
+3503;Nova Colinas ; MA;Nordeste
+3504;Guarinos ; GO;Centro-Oeste
+3505;Coaraci ; BA;Nordeste
+3506;Bonito de Minas ; MG;Sudeste
+3507;Lagoa de Itaenga ; PE;Nordeste
+3508;Sítio d'Abadia ; GO;Centro-Oeste
+3509;Itajuípe ; BA;Nordeste
+3510;Urandi ; BA;Nordeste
+3511;Ilhéus ; BA;Nordeste
+3512;Estrela do Norte ; GO;Centro-Oeste
+3513;Uruçuca ; BA;Nordeste
+3514;Feira da Mata ; BA;Nordeste
+3515;Santa Teresinha ; PB;Nordeste
+3516;Trajano de Moraes ; RJ;Sudeste
+3517;Santo Antônio do Leste ; MT;Centro-Oeste
+3518;Itapitanga ; BA;Nordeste
+3519;São Francisco do Piauí ; PI;Nordeste
+3520;Manga ; MG;Sudeste
+3521;São Félix de Minas ; MG;Sudeste
+3522;Teofilândia ; BA;Nordeste
+3523;Arenápolis ; MT;Centro-Oeste
+3524;Iuiú ; BA;Nordeste
+3525;Ibicuí ; BA;Nordeste
+3526;Itacaré ; BA;Nordeste
+3527;Soledade ; PB;Nordeste
+3528;Embu das Artes ; SP;Sudeste
+3529;Sebastião Laranjeiras ; BA;Nordeste
+3530;Aurelino Leal ; BA;Nordeste
+3531;Alvorada do Norte ; GO;Centro-Oeste
+3532;Santo Afonso ; MT;Centro-Oeste
+3533;Pindaí ; BA;Nordeste
+3534;Conquista D'Oeste ; MT;Centro-Oeste
+3535;Candiba ; BA;Nordeste
+3536;Nova América ; GO;Centro-Oeste
+3537;Juvenília ; MG;Sudeste
+3538;Mendes Pimentel ; MG;Sudeste
+3539;Mari ; PB;Nordeste
+3540;Bom Jesus da Serra ; BA;Nordeste
+3541;Santa Luzia do Itanhy ; SE;Nordeste
+3542;Montalvânia ; MG;Sudeste
+3543;Dário Meira ; BA;Nordeste
+3544;Boa Nova ; BA;Nordeste
+3545;Pedro Alexandre ; BA;Nordeste
+3546;Mortugaba ; BA;Nordeste
+3547;Itororó ; BA;Nordeste
+3548;Mambaí ; GO;Centro-Oeste
+3549;Nova Iguaçu de Goiás ; GO;Centro-Oeste
+3550;Pilar de Goiás ; GO;Centro-Oeste
+3551;Gongogi ; BA;Nordeste
+3552;Nortelândia ; MT;Centro-Oeste
+3553;São Cristóvão ; SE;Nordeste
+3554;Itagibá ; BA;Nordeste
+3555;Aracatu ; BA;Nordeste
+3556;Campos Verdes ; GO;Centro-Oeste
+3557;Santa Terezinha de Goiás ; GO;Centro-Oeste
+3558;Coremas ; PB;Nordeste
+3559;Caetanos ; BA;Nordeste
+3560;Brumado ; BA;Nordeste
+3561;Campo Largo ; PR;Sul
+3562;Alto Horizonte ; GO;Centro-Oeste
+3563;Tangará da Serra ; MT;Centro-Oeste
+3564;Nobres ; MT;Centro-Oeste
+3565;Uirapuru ; GO;Centro-Oeste
+3566;Maraú ; BA;Nordeste
+3567;Itagi ; BA;Nordeste
+3568;Itamari ; BA;Nordeste
+3569;Alto Paraíso de Goiás ; GO;Centro-Oeste
+3570;Ibirataia ; BA;Nordeste
+3571;Laranjeiras ; SE;Nordeste
+3572;Maravilha ; AL;Nordeste
+3573;Mara Rosa ; GO;Centro-Oeste
+3574;Diadema ; SP;Sudeste
+3575;Cristalândia do Piauí ; PI;Nordeste
+3576;Tanhaçu ; BA;Nordeste
+3577;São Paulo ; SP;Sudeste
+3578;Mogi das Cruzes ; SP;Sudeste
+3579;Amaralina ; GO;Centro-Oeste
+3580;Jitaúna ; BA;Nordeste
+3581;Água Branca ; AL;Nordeste
+3582;Ituaçu ; BA;Nordeste
+3583;Embu-Guaçu; SP;Sudeste
+3584;Santa Branca ; SP;Sudeste
+3585;Dom Basílio ; BA;Nordeste
+3586;Teolândia ; BA;Nordeste
+3587;Santa Isabel ; SP;Sudeste
+3588;Ituberá ; BA;Nordeste
+3589;Caturama ; BA;Nordeste
+3590;Silva Jardim ; RJ;Sudeste
+3591;Campinorte ; GO;Centro-Oeste
+3592;Igaporã ; BA;Nordeste
+3593;Divinolândia de Minas ; MG;Sudeste
+3594;Teixeirópolis ; RO;Norte
+3595;Casimiro de Abreu ; RJ;Sudeste
+3596;Contendas do Sincorá ; BA;Nordeste
+3597;Vicentina ; MS;Centro-Oeste
+3598;Nilo Peçanha ; BA;Nordeste
+3599;Taperoá ; BA;Nordeste
+3600;Mutunópolis ; GO;Centro-Oeste
+3601;Teresina de Goiás ; GO;Centro-Oeste
+3602;Mundo Novo ; GO;Centro-Oeste
+3603;Divinópolis de Goiás ; GO;Centro-Oeste
+3604;Wenceslau Guimarães ; BA;Nordeste
+3605;Palmas de Monte Alto ; BA;Nordeste
+3606;Lafaiete Coutinho ; BA;Nordeste
+3607;Umbaúba ; SE;Nordeste
+3608;Formoso ; GO;Centro-Oeste
+3609;Guanambi ; BA;Nordeste
+3610;Jussiape ; BA;Nordeste
+3611;Nova Roma ; GO;Centro-Oeste
+3612;Central de Minas ; MG;Sudeste
+3613;Tanque Novo ; BA;Nordeste
+3614;Santana do Piauí ; PI;Nordeste
+3615;Bonópolis ; GO;Centro-Oeste
+3616;Ribeira do Pombal ; BA;Nordeste
+3617;Cairu ; BA;Nordeste
+3618;Santa Tereza de Goiás ; GO;Centro-Oeste
+3619;Cravolândia ; BA;Nordeste
+3620;Cabixi ; RO;Norte
+3621;Mato Grosso ; PB;Nordeste
+3622;Itiruçu ; BA;Nordeste
+3623;Ipueiras ; TO;Norte
+3624;Riacho de Santana ; BA;Nordeste
+3625;Presidente Tancredo Neves ; BA;Nordeste
+3626;Cedro de São João ; SE;Nordeste
+3627;Rio de Contas ; BA;Nordeste
+3628;Jaguaquara ; BA;Nordeste
+3629;Paramirim ; BA;Nordeste
+3630;São Félix do Coribe ; BA;Nordeste
+3631;Iramaia ; BA;Nordeste
+3632;Érico Cardoso ; BA;Nordeste
+3633;Muritiba ; BA;Nordeste
+3634;Salvador ; BA;Nordeste
+3635;Ibicoara ; BA;Nordeste
+3636;Santa Rita do Trivelato ; MT;Centro-Oeste
+3637;Lajedo do Tabocal ; BA;Nordeste
+3638;Santo Antônio de Jesus ; BA;Nordeste
+3639;Trombas ; GO;Centro-Oeste
+3640;Maragogipe ; BA;Nordeste
+3641;Ministro Andreazza ; RO;Norte
+3642;Brejões ; BA;Nordeste
+3643;Valença ; BA;Nordeste
+3644;Boquim ; SE;Nordeste
+3645;Serra Preta ; BA;Nordeste
+3646;Santa Inês ; BA;Nordeste
+3647;Botuporã ; BA;Nordeste
+3648;Mutuípe ; BA;Nordeste
+3649;Ponto Novo ; BA;Nordeste
+3650;Serra do Ramalho ; BA;Nordeste
+3651;Itabirinha ; MG;Sudeste
+3652;São Gabriel ; BA;Nordeste
+3653;Jiquiriçá ; BA;Nordeste
+3654;São Domingos ; GO;Centro-Oeste
+3655;Planaltino ; BA;Nordeste
+3656;Santo Estêvão ; BA;Nordeste
+3657;Cerejeiras ; RO;Norte
+3658;Novo Planalto ; GO;Centro-Oeste
+3659;Correntina ; BA;Nordeste
+3660;Santa Maria da Vitória ; BA;Nordeste
+3661;Canápolis ; BA;Nordeste
+3662;João Neiva ; ES;Sudeste
+3663;São Miguel das Matas ; BA;Nordeste
+3664;Colorado do Oeste ; RO;Norte
+3665;Vera Cruz ; BA;Nordeste
+3666;Campos Belos ; GO;Centro-Oeste
+3667;Macaúbas ; BA;Nordeste
+3668;Amargosa ; BA;Nordeste
+3669;Varzedo ; BA;Nordeste
+3670;Antônio Gonçalves ; BA;Nordeste
+3671;Itacuruba ; PE;Nordeste
+3672;Ibipitanga ; BA;Nordeste
+3673;Bom Jesus da Lapa ; BA;Nordeste
+3674;Lauro de Freitas ; BA;Nordeste
+3675;Pimenteiras do Oeste ; RO;Norte
+3676;Montividiu do Norte ; GO;Centro-Oeste
+3677;Conceição do Almeida ; BA;Nordeste
+3678;Palmeirópolis ; TO;Norte
+3679;Combinado ; TO;Norte
+3680;Logradouro ; PB;Nordeste
+3681;Itaeté ; BA;Nordeste
+3682;Mucugê ; BA;Nordeste
+3683;Gandu ; BA;Nordeste
+3684;Antônio Cardoso ; BA;Nordeste
+3685;Nova Ibiá ; BA;Nordeste
+3686;São Felipe ; BA;Nordeste
+3687;Boninal ; BA;Nordeste
+3688;Lavandeira ; TO;Norte
+3689;Cocalinho ; MT;Centro-Oeste
+3690;Serra Dourada ; BA;Nordeste
+3691;Cruz das Almas ; BA;Nordeste
+3692;Boquira ; BA;Nordeste
+3693;Corumbiara ; RO;Norte
+3694;Conceição da Feira ; BA;Nordeste
+3695;Vieirópolis ; PB;Nordeste
+3696;Iaçu ; BA;Nordeste
+3697;Cachoeira ; BA;Nordeste
+3698;São Francisco do Conde ; BA;Nordeste
+3699;Ibitiara ; BA;Nordeste
+3700;Saubara ; BA;Nordeste
+3701;Pojuca ; BA;Nordeste
+3702;Talismã ; TO;Norte
+3703;Aurora do Tocantins ; TO;Norte
+3704;Itaporanga d'Ajuda ; SE;Nordeste
+3705;Boa Vista do Tupim ; BA;Nordeste
+3706;Barracão ; PR;Sul
+3707;Paratinga ; BA;Nordeste
+3708;Piraí do Norte ; BA;Nordeste
+3709;Rafael Jambeiro ; BA;Nordeste
+3710;Retirolândia ; BA;Nordeste
+3711;Flor da Serra do Sul ; PR;Sul
+3712;São Desidério ; BA;Nordeste
+3713;Tapurah ; MT;Centro-Oeste
+3714;Santa Teresinha ; BA;Nordeste
+3715;Riachão do Jacuípe ; BA;Nordeste
+3716;Teodoro Sampaio ; BA;Nordeste
+3717;Catolândia ; BA;Nordeste
+3718;Itaberaba ; BA;Nordeste
+3719;Goianápolis ; GO;Centro-Oeste
+3720;Lajedinho ; BA;Nordeste
+3721;São Salvador do Tocantins ; TO;Norte
+3722;Leopoldo de Bulhões ; GO;Centro-Oeste
+3723;Tabocas do Brejo Velho ; BA;Nordeste
+3724;Alvorada ; TO;Norte
+3725;Chupinguaia ; RO;Norte
+3726;Piaçabuçu ; AL;Nordeste
+3727;Santo Amaro das Brotas ; SE;Nordeste
+3728;Itagimirim ; BA;Nordeste
+3729;Ruy Barbosa ; BA;Nordeste
+3730;Brejolândia ; BA;Nordeste
+3731;Lençóis ; BA;Nordeste
+3732;Amélia Rodrigues ; BA;Nordeste
+3733;Vera ; MT;Centro-Oeste
+3734;São Roque do Canaã ; ES;Sudeste
+3735;Taguatinga ; TO;Norte
+3736;Sandolândia ; TO;Norte
+3737;Palmeiras ; BA;Nordeste
+3738;Cristópolis ; BA;Nordeste
+3739;São João d'Aliança ; GO;Centro-Oeste
+3740;Morros ; MA;Nordeste
+3741;Nossa Senhora dos Remédios ; PI;Nordeste
+3742;Seabra ; BA;Nordeste
+3743;Belmonte ; BA;Nordeste
+3744;São Domingos ; SE;Nordeste
+3745;Cristinápolis ; SE;Nordeste
+3746;Itapebi ; BA;Nordeste
+3747;Aiquara ; BA;Nordeste
+3748;Catu ; BA;Nordeste
+3749;Wagner ; BA;Nordeste
+3750;Parecis ; RO;Norte
+3751;Castro Alves ; BA;Nordeste
+3752;Ipupiara ; BA;Nordeste
+3753;Alto Alegre dos Parecis ; RO;Norte
+3754;Figueirópolis ; TO;Norte
+3755;Tanquinho ; BA;Nordeste
+3756;Macajuba ; BA;Nordeste
+3757;Taipas do Tocantins ; TO;Norte
+3758;Piraquara ; PR;Sul
+3759;Itanhangá ; MT;Centro-Oeste
+3760;Miravânia ; MG;Sudeste
+3761;Cardeal da Silva ; BA;Nordeste
+3762;Utinga ; BA;Nordeste
+3763;Mulungu do Morro ; BA;Nordeste
+3764;Bom Jesus do Araguaia ; MT;Centro-Oeste
+3765;Luís Eduardo Magalhães ; BA;Nordeste
+3766;Iraquara ; BA;Nordeste
+3767;Santa Luzia D'Oeste ; RO;Norte
+3768;Itatim ; BA;Nordeste
+3769;Ipirá ; BA;Nordeste
+3770;Barro Alto ; BA;Nordeste
+3771;Oliveira dos Brejinhos ; BA;Nordeste
+3772;Sucupira ; TO;Norte
+3773;Sítio do Mato ; BA;Nordeste
+3774;São Benedito do Rio Preto ; MA;Nordeste
+3775;Conceição do Tocantins ; TO;Norte
+3776;Quatro Barras ; PR;Sul
+3777;Serra Nova Dourada ; MT;Centro-Oeste
+3778;São Francisco do Guaporé ; RO;Norte
+3779;Alta Floresta D'Oeste ; RO;Norte
+3780;Tapiramutá ; BA;Nordeste
+3781;Pedreira ; SP;Sudeste
+3782;Lagoa do Ouro ; PE;Nordeste
+3783;Bonito ; BA;Nordeste
+3784;Pé de Serra ; BA;Nordeste
+3785;Cariri do Tocantins ; TO;Norte
+3786;Lamarão ; BA;Nordeste
+3787;Ponte Alta do Bom Jesus ; TO;Norte
+3788;Moreno ; PE;Nordeste
+3789;Souto Soares ; BA;Nordeste
+3790;Pintadas ; BA;Nordeste
+3791;São Felipe D'Oeste ; RO;Norte
+3792;Ouro Branco ; AL;Nordeste
+3793;Muquém de São Francisco ; BA;Nordeste
+3794;Candeal ; BA;Nordeste
+3795;Primavera de Rondônia ; RO;Norte
+3796;Zabelê ; PB;Nordeste
+3797;Água Fria ; BA;Nordeste
+3798;Irará ; BA;Nordeste
+3799;Aporá ; BA;Nordeste
+3800;Brotas de Macaúbas ; BA;Nordeste
+3801;Santa Carmem ; MT;Centro-Oeste
+3802;Costa Marques ; RO;Norte
+3803;Ichu ; BA;Nordeste
+3804;Mundo Novo ; BA;Nordeste
+3805;João Alfredo ; PE;Nordeste
+3806;Novo Jardim ; TO;Norte
+3807;Novo Horizonte do Oeste ; RO;Norte
+3808;Canarana ; BA;Nordeste
+3809;Acajutiba ; BA;Nordeste
+3810;Adustina ; BA;Nordeste
+3811;Piritiba ; BA;Nordeste
+3812;Rolim de Moura ; RO;Norte
+3813;Corumbataí ; SP;Sudeste
+3814;Mairi ; BA;Nordeste
+3815;Cafarnaum ; BA;Nordeste
+3816;Inhambupe ; BA;Nordeste
+3817;Salgado Filho ; PR;Sul
+3818;Morpará ; BA;Nordeste
+3819;Santa Cruz da Baixa Verde ; PE;Nordeste
+3820;Seringueiras ; RO;Norte
+3821;Piranhas ; AL;Nordeste
+3822;Palmeira ; PR;Sul
+3823;Baianópolis ; BA;Nordeste
+3824;Nova Fátima ; BA;Nordeste
+3825;Carpina ; PE;Nordeste
+3826;Ipiranga do Norte ; MT;Centro-Oeste
+3827;Capela do Alto Alegre ; BA;Nordeste
+3828;Matina ; BA;Nordeste
+3829;Gavião ; BA;Nordeste
+3830;Lagoa Real ; BA;Nordeste
+3831;Indiaroba ; SE;Nordeste
+3832;Japoatã ; SE;Nordeste
+3833;Ilha das Flores ; SE;Nordeste
+3834;Ribeirópolis ; SE;Nordeste
+3835;Rio da Conceição ; TO;Norte
+3836;Gurupi ; TO;Norte
+3837;Conceição do Coité ; BA;Nordeste
+3838;Porto Alegre do Tocantins ; TO;Norte
+3839;Wanderley ; BA;Nordeste
+3840;Riachão das Neves ; BA;Nordeste
+3841;São José do Jacuípe ; BA;Nordeste
+3842;Sinop ; MT;Centro-Oeste
+3843;Chapada da Natividade ; TO;Norte
+3844;Castanheiras ; RO;Norte
+3845;Malhada dos Bois ; SE;Nordeste
+3846;Curral Velho ; PB;Nordeste
+3847;Novo Horizonte do Norte ; MT;Centro-Oeste
+3848;Miguel Calmon ; BA;Nordeste
+3849;Pacatuba ; SE;Nordeste
+3850;Biritinga ; BA;Nordeste
+3851;Nova Brasilândia D'Oeste ; RO;Norte
+3852;Irecê ; BA;Nordeste
+3853;Santa Rosa do Tocantins ; TO;Norte
+3854;Tomar do Geru ; SE;Nordeste
+3855;Sátiro Dias ; BA;Nordeste
+3856;Senhor do Bonfim ; BA;Nordeste
+3857;Frutuoso Gomes ; RN;Nordeste
+3858;América Dourada ; BA;Nordeste
+3859;Aliança do Tocantins ; TO;Norte
+3860;São Francisco ; SE;Nordeste
+3861;Ibipeba ; BA;Nordeste
+3862;Itabaianinha ; SE;Nordeste
+3863;Estância ; SE;Nordeste
+3864;Crixás do Tocantins ; TO;Norte
+3865;São Sebastião do Rio Verde ; MG;Sudeste
+3866;Cipó ; BA;Nordeste
+3867;Urupá ; RO;Norte
+3868;Olho-d'Água do Borges; RN;Nordeste
+3869;Alvorada D'Oeste ; RO;Norte
+3870;João Dourado ; BA;Nordeste
+3871;Mafra ; SC;Sul
+3872;Pinhão ; PR;Sul
+3873;Guaraniaçu ; PR;Sul
+3874;Palmital ; PR;Sul
+3875;Pitanga ; PR;Sul
+3876;Gentio do Ouro ; BA;Nordeste
+3877;Jesuânia ; MG;Sudeste
+3878;Ribeira do Amparo ; BA;Nordeste
+3879;Espigão D'Oeste ; RO;Norte
+3880;Presidente Médici ; RO;Norte
+3881;Araci ; BA;Nordeste
+3882;Cacoal ; RO;Norte
+3883;Serrinha ; BA;Nordeste
+3884;Caém ; BA;Nordeste
+3885;Pindorama do Tocantins ; TO;Norte
+3886;Olindina ; BA;Nordeste
+3887;Areia Branca ; SE;Nordeste
+3888;Canabrava do Norte ; MT;Centro-Oeste
+3889;Itapicuru ; BA;Nordeste
+3890;Xangri-lá; RS;Sul
+3891;Várzea do Poço ; BA;Nordeste
+3892;Tamboara ; PR;Sul
+3893;Itaboraí ; RJ;Sudeste
+3894;Silvanópolis ; TO;Norte
+3895;Santaluz ; BA;Nordeste
+3896;Águas de São Pedro ; SP;Sudeste
+3897;Araruama ; RJ;Sudeste
+3898;Cabo Frio ; RJ;Sudeste
+3899;Mirante da Serra ; RO;Norte
+3900;Riachão do Dantas ; SE;Nordeste
+3901;Crisópolis ; BA;Nordeste
+3902;São Félix do Araguaia ; MT;Centro-Oeste
+3903;São Miguel do Guaporé ; RO;Norte
+3904;Rio das Ostras ; RJ;Sudeste
+3905;Cachoeiras de Macacu ; RJ;Sudeste
+3906;Jacobina ; BA;Nordeste
+3907;Campo do Brito ; SE;Nordeste
+3908;Tobias Barreto ; SE;Nordeste
+3909;Queimadas ; BA;Nordeste
+3910;Saúde ; BA;Nordeste
+3911;Nordestina ; BA;Nordeste
+3912;Brejinho de Nazaré ; TO;Norte
+3913;Jussara ; BA;Nordeste
+3914;Lagarto ; SE;Nordeste
+3915;Santa Rita do Tocantins ; TO;Norte
+3916;Fátima ; TO;Norte
+3917;Presidente Dutra ; BA;Nordeste
+3918;Santa Rosa de Lima ; SE;Nordeste
+3919;Simão Dias ; SE;Nordeste
+3920;Novo Alegre ; TO;Norte
+3921;Ourolândia ; BA;Nordeste
+3922;Tucano ; BA;Nordeste
+3923;Itabaiana ; SE;Nordeste
+3924;Epitaciolândia ; AC;Norte
+3925;Malhador ; SE;Nordeste
+3926;Capela ; SE;Nordeste
+3927;Filadélfia ; BA;Nordeste
+3928;Mansidão ; BA;Nordeste
+3929;Oliveira de Fátima ; TO;Norte
+3930;Nova Friburgo ; RJ;Sudeste
+3931;Nova Soure ; BA;Nordeste
+3932;Antas ; BA;Nordeste
+3933;Quijingue ; BA;Nordeste
+3934;Pindobaçu ; BA;Nordeste
+3935;Santa Rita de Cássia ; BA;Nordeste
+3936;Pedra Mole ; SE;Nordeste
+3937;Feira Nova ; SE;Nordeste
+3938;Teresópolis ; RJ;Sudeste
+3939;Conceição de Macabu ; RJ;Sudeste
+3940;Lagoa da Confusão ; TO;Norte
+3941;Nossa Senhora Aparecida ; SE;Nordeste
+3942;Cansanção ; BA;Nordeste
+3943;Sumidouro ; RJ;Sudeste
+3944;Duas Barras ; RJ;Sudeste
+3945;Sapucaia ; RJ;Sudeste
+3946;Dourados ; MS;Centro-Oeste
+3947;Santa Maria Madalena ; RJ;Sudeste
+3948;Ponta Porã ; MS;Centro-Oeste
+3949;Nova Rosalândia ; TO;Norte
+3950;Governador Jorge Teixeira ; RO;Norte
+3951;Cícero Dantas ; BA;Nordeste
+3952;Cristalândia ; TO;Norte
+3953;Sebastião Barros ; PI;Nordeste
+3954;Traipu ; AL;Nordeste
+3955;Itiúba ; BA;Nordeste
+3956;Guajará-Mirim; RO;Norte
+3957;Brejo Grande ; SE;Nordeste
+3958;Brasiléia ; AC;Norte
+3959;Frei Paulo ; SE;Nordeste
+3960;Assis Brasil ; AC;Norte
+3961;Divina Pastora ; SE;Nordeste
+3962;Caracol ; MS;Centro-Oeste
+3963;Bela Vista ; MS;Centro-Oeste
+3964;Rio Brilhante ; MS;Centro-Oeste
+3965;Monte do Carmo ; TO;Norte
+3966;Nipoã ; SP;Sudeste
+3967;Lagoa da Prata ; MG;Sudeste
+3968;Perdigão ; MG;Sudeste
+3969;Sabará ; MG;Sudeste
+3970;Conceição do Pará ; MG;Sudeste
+3971;Pará de Minas ; MG;Sudeste
+3972;Itapagipe ; MG;Sudeste
+3973;Nossa Senhora das Dores ; SE;Nordeste
+3974;Pugmil ; TO;Norte
+3975;Inconfidentes ; MG;Sudeste
+3976;Novo Triunfo ; BA;Nordeste
+3977;Júlio Borges ; PI;Nordeste
+3978;Juru ; PB;Nordeste
+3979;Neópolis ; SE;Nordeste
+3980;São Miguel do Aleixo ; SE;Nordeste
+3981;Riachuelo ; SE;Nordeste
+3982;Xique-Xique; BA;Nordeste
+3983;Biquinhas ; MG;Sudeste
+3984;Monte Alegre de Minas ; MG;Sudeste
+3985;Caçu ; GO;Centro-Oeste
+3986;Três Marias ; MG;Sudeste
+3987;Alcinópolis ; MS;Centro-Oeste
+3988;Heliópolis ; BA;Nordeste
+3989;Carmópolis ; SE;Nordeste
+3990;Bom Despacho ; MG;Sudeste
+3991;Barra ; BA;Nordeste
+3992;São Gonçalo do Abaeté ; MG;Sudeste
+3993;Nossa Senhora do Livramento ; MT;Centro-Oeste
+3994;Terra Nova do Norte ; MT;Centro-Oeste
+3995;Quixabeira ; BA;Nordeste
+3996;Juara ; MT;Centro-Oeste
+3997;Santana do São Francisco ; SE;Nordeste
+3998;Pedro Leopoldo ; MG;Sudeste
+3999;Cumbe ; SE;Nordeste
+4000;Pitangui ; MG;Sudeste
+4001;Estrela do Indaiá ; MG;Sudeste
+4002;Fortuna de Minas ; MG;Sudeste
+4003;Maravilhas ; MG;Sudeste
+4004;Água Clara ; MS;Centro-Oeste
+4005;Florestal ; MG;Sudeste
+4006;Dores do Indaiá ; MG;Sudeste
+4007;Papagaios ; MG;Sudeste
+4008;Capixaba ; AC;Norte
+4009;Porto Esperidião ; MT;Centro-Oeste
+4010;Jaru ; RO;Norte
+4011;Martinho Campos ; MG;Sudeste
+4012;Campina Verde ; MG;Sudeste
+4013;Inocência ; MS;Centro-Oeste
+4014;São Gotardo ; MG;Sudeste
+4015;Paraopeba ; MG;Sudeste
+4016;Matutina ; MG;Sudeste
+4017;Jequitibá ; MG;Sudeste
+4018;Santana do Riacho ; MG;Sudeste
+4019;Carira ; SE;Nordeste
+4020;Serra do Salitre ; MG;Sudeste
+4021;Itajá ; GO;Centro-Oeste
+4022;Sítio do Quinto ; BA;Nordeste
+4023;Chapada dos Guimarães ; MT;Centro-Oeste
+4024;Itaguaçu da Bahia ; BA;Nordeste
+4025;Feliz Deserto ; AL;Nordeste
+4026;Santa Tereza do Tocantins ; TO;Norte
+4027;Coxim ; MS;Centro-Oeste
+4028;Pedro Gomes ; MS;Centro-Oeste
+4029;Catalão ; GO;Centro-Oeste
+4030;Buritirama ; BA;Nordeste
+4031;Cacaulândia ; RO;Norte
+4032;Sonora ; MS;Centro-Oeste
+4033;Rio Verde ; GO;Centro-Oeste
+4034;Itiquira ; MT;Centro-Oeste
+4035;Paraúna ; GO;Centro-Oeste
+4036;Paracatu ; MG;Sudeste
+4037;Buritizeiro ; MG;Sudeste
+4038;Silvânia ; GO;Centro-Oeste
+4039;Doverlândia ; GO;Centro-Oeste
+4040;Campo Novo de Rondônia ; RO;Norte
+4041;Rosário do Catete ; SE;Nordeste
+4042;Grão Mogol ; MG;Sudeste
+4043;Ivolândia ; GO;Centro-Oeste
+4044;Torixoréu ; MT;Centro-Oeste
+4045;Poconé ; MT;Centro-Oeste
+4046;Santo Antônio do Leverger ; MT;Centro-Oeste
+4047;Cáceres ; MT;Centro-Oeste
+4048;General Carneiro ; MT;Centro-Oeste
+4049;Padre Bernardo ; GO;Centro-Oeste
+4050;Juruena ; MT;Centro-Oeste
+4051;Lagoa do Tocantins ; TO;Norte
+4052;Amparo de São Francisco ; SE;Nordeste
+4053;Caraíbas ; BA;Nordeste
+4054;Nova Brasilândia ; MT;Centro-Oeste
+4055;Colíder ; MT;Centro-Oeste
+4056;Niquelândia ; GO;Centro-Oeste
+4057;Nova Lacerda ; MT;Centro-Oeste
+4058;Uruaçu ; GO;Centro-Oeste
+4059;Cocos ; BA;Nordeste
+4060;Água Boa ; MT;Centro-Oeste
+4061;Colinas do Sul ; GO;Centro-Oeste
+4062;Coronel João Sá ; BA;Nordeste
+4063;Macambira ; SE;Nordeste
+4064;Canhoba ; SE;Nordeste
+4065;Vale do Paraíso ; RO;Norte
+4066;Nova Crixás ; GO;Centro-Oeste
+4067;Minaçu ; GO;Centro-Oeste
+4068;Cavalcante ; GO;Centro-Oeste
+4069;Monte Alegre de Goiás ; GO;Centro-Oeste
+4070;São José do Rio Claro ; MT;Centro-Oeste
+4071;Campo Novo do Parecis ; MT;Centro-Oeste
+4072;Nova Mutum ; MT;Centro-Oeste
+4073;Nova Guarita ; MT;Centro-Oeste
+4074;Telha ; SE;Nordeste
+4075;Lucas do Rio Verde ; MT;Centro-Oeste
+4076;Ribeirão Cascalheira ; MT;Centro-Oeste
+4077;Gaúcha do Norte ; MT;Centro-Oeste
+4078;Sapezal ; MT;Centro-Oeste
+4079;São Francisco do Sul ; SC;Sul
+4080;Nossa Senhora da Glória ; SE;Nordeste
+4081;Itabi ; SE;Nordeste
+4082;Porto Nacional ; TO;Norte
+4083;Paranatinga ; MT;Centro-Oeste
+4084;Campos de Júlio ; MT;Centro-Oeste
+4085;Novo Santo Antônio ; MT;Centro-Oeste
+4086;Sorriso ; MT;Centro-Oeste
+4087;Barreiras ; BA;Nordeste
+4088;Canarana ; MT;Centro-Oeste
+4089;Porto dos Gaúchos ; MT;Centro-Oeste
+4090;Paraíso do Tocantins ; TO;Norte
+4091;Olho d'Água Grande ; AL;Nordeste
+4092;Campo Grande ; AL;Nordeste
+4093;Cassilândia ; MS;Centro-Oeste
+4094;Itaúba ; MT;Centro-Oeste
+4095;Monte Alegre de Sergipe ; SE;Nordeste
+4096;Monte Negro ; RO;Norte
+4097;Teotônio Vilela ; AL;Nordeste
+4098;Penedo ; AL;Nordeste
+4099;Porto Real do Colégio ; AL;Nordeste
+4100;Chapada de Areia ; TO;Norte
+4101;Nova União ; RO;Norte
+4102;Avelino Lopes ; PI;Nordeste
+4103;Palmas ; TO;Norte
+4104;Juína ; MT;Centro-Oeste
+4105;Castanheira ; MT;Centro-Oeste
+4106;Ponte Alta do Tocantins ; TO;Norte
+4107;Monte Santo ; BA;Nordeste
+4108;Gararu ; SE;Nordeste
+4109;Nova Canaã do Norte ; MT;Centro-Oeste
+4110;Xapuri ; AC;Norte
+4111;Mateiros ; TO;Norte
+4112;Novo Acordo ; TO;Norte
+4113;São José do Mantimento ; MG;Sudeste
+4114;Nossa Senhora de Lourdes ; SE;Nordeste
+4115;Confresa ; MT;Centro-Oeste
+4116;Parnaguá ; PI;Nordeste
+4117;Andorinha ; BA;Nordeste
+4118;São Sebastião ; AL;Nordeste
+4119;São Félix do Tocantins ; TO;Norte
+4120;Aquidabã ; SE;Nordeste
+4121;Nova Mamoré ; RO;Norte
+4122;Formosa do Rio Preto ; BA;Nordeste
+4123;Plácido de Castro ; AC;Norte
+4124;Campo Formoso ; BA;Nordeste
+4125;Vila Rica ; MT;Centro-Oeste
+4126;Monte Santo do Tocantins ; TO;Norte
+4127;Corrente ; PI;Nordeste
+4128;Roteiro ; AL;Nordeste
+4129;Ipiranga de Goiás ; GO;Centro-Oeste
+4130;Ji-Paraná; RO;Norte
+4131;Matupá ; MT;Centro-Oeste
+4132;Buritis ; RO;Norte
+4133;São Gonçalo do Gurguéia ; PI;Nordeste
+4134;Lajeado ; TO;Norte
+4135;Miracema do Tocantins ; TO;Norte
+4136;Theobroma ; RO;Norte
+4137;Barra de Santo Antônio ; AL;Nordeste
+4138;Santa Terezinha ; MT;Centro-Oeste
+4139;Jaguarari ; BA;Nordeste
+4140;Junqueiro ; AL;Nordeste
+4141;Aparecida do Rio Negro ; TO;Norte
+4142;Lizarda ; TO;Norte
+4143;Jordão ; AC;Norte
+4144;Porto da Folha ; SE;Nordeste
+4145;Barrolândia ; TO;Norte
+4146;Coruripe ; AL;Nordeste
+4147;Carlinda ; MT;Centro-Oeste
+4148;Calçado ; PE;Nordeste
+4149;Marcelândia ; MT;Centro-Oeste
+4150;Barreiras do Piauí ; PI;Nordeste
+4151;Feira Grande ; AL;Nordeste
+4152;Jequiá da Praia ; AL;Nordeste
+4153;Candeias do Jamari ; RO;Norte
+4154;Recursolândia ; TO;Norte
+4155;Santa Maria das Barreiras ; PA;Norte
+4156;Itacajá ; TO;Norte
+4157;Boca do Acre ; AM;Norte
+4158;Santa Cruz do Xingu ; MT;Centro-Oeste
+4159;Cubatão ; SP;Sudeste
+4160;Tarauacá ; AC;Norte
+4161;Conceição do Araguaia ; PA;Norte
+4162;Ariquemes ; RO;Norte
+4163;Goiatins ; TO;Norte
+4164;Cruzeiro do Sul ; AC;Norte
+4165;Balsas ; MA;Nordeste
+4166;Riachão ; MA;Nordeste
+4167;Pauini ; AM;Norte
+4168;Lábrea ; AM;Norte
+4169;Carolina ; MA;Nordeste
+4170;Ourilândia do Norte ; PA;Norte
+4171;Acrelândia ; AC;Norte
+4172;Poço Redondo ; SE;Nordeste
+4173;Girau do Ponciano ; AL;Nordeste
+4174;Peixoto de Azevedo ; MT;Centro-Oeste
+4175;Coari ; AM;Norte
+4176;Jutaí ; AM;Norte
+4177;São Luís ; MA;Nordeste
+4178;Ipixuna do Pará ; PA;Norte
+4179;Codajás ; AM;Norte
+4180;Fonte Boa ; AM;Norte
+4181;Curimatá ; PI;Nordeste
+4182;Limoeiro de Anadia ; AL;Nordeste
+4183;Uauá ; BA;Nordeste
+4184;Breves ; PA;Norte
+4185;Novo Airão ; AM;Norte
+4186;Prainha ; PA;Norte
+4187;Alenquer ; PA;Norte
+4188;Pracuúba ; AP;Norte
+4189;Canudos ; BA;Nordeste
+4190;Jeremoabo ; BA;Nordeste
+4191;Marechal Deodoro ; AL;Nordeste
+4192;Coqueiro Seco ; AL;Nordeste
+4193;Santa Brígida ; BA;Nordeste
+4194;Coité do Nóia ; AL;Nordeste
+4195;Craíbas ; AL;Nordeste
+4196;Riacho Frio ; PI;Nordeste
+4197;Grajaú ; MA;Nordeste
+4198;Mirador ; MA;Nordeste
+4199;Marianópolis do Tocantins ; TO;Norte
+4200;Satuba ; AL;Nordeste
+4201;Taquarana ; AL;Nordeste
+4202;Arapiraca ; AL;Nordeste
+4203;Rio Crespo ; RO;Norte
+4204;Nova Monte Verde ; MT;Centro-Oeste
+4205;Pão de Açúcar ; AL;Nordeste
+4206;Delmiro Gouveia ; AL;Nordeste
+4207;Guarantã do Norte ; MT;Centro-Oeste
+4208;Tanque d'Arca ; AL;Nordeste
+4209;Severiano Melo ; RN;Nordeste
+4210;Rio Bonito ; RJ;Sudeste
+4211;Igaci ; AL;Nordeste
+4212;Maribondo ; AL;Nordeste
+4213;Morro Cabeça no Tempo ; PI;Nordeste
+4214;Olho d'Água das Flores ; AL;Nordeste
+4215;Novo Mundo ; MT;Centro-Oeste
+4216;Canindé de São Francisco ; SE;Nordeste
+4217;Olivença ; AL;Nordeste
+4218;Pindoba ; AL;Nordeste
+4219;Carneiros ; AL;Nordeste
+4220;São José da Tapera ; AL;Nordeste
+4221;Barra de São Miguel ; AL;Nordeste
+4222;Sobradinho ; BA;Nordeste
+4223;Atalaia ; AL;Nordeste
+4224;Maceió ; AL;Nordeste
+4225;Cacimbinhas ; AL;Nordeste
+4226;Paulo Jacinto ; AL;Nordeste
+4227;Caraúbas ; RN;Nordeste
+4228;Paulo Afonso ; BA;Nordeste
+4229;Porto Acre ; AC;Norte
+4230;Fartura do Piauí ; PI;Nordeste
+4231;Vale do Anari ; RO;Norte
+4232;Minador do Negrão ; AL;Nordeste
+4233;Divinópolis do Tocantins ; TO;Norte
+4234;Monte Alegre do Piauí ; PI;Nordeste
+4235;Pilão Arcado ; BA;Nordeste
+4236;Senador Rui Palmeira ; AL;Nordeste
+4237;Palmeira dos Índios ; AL;Nordeste
+4238;Olho d'Água do Casado ; AL;Nordeste
+4239;Tocantínia ; TO;Norte
+4240;Redenção do Gurguéia ; PI;Nordeste
+4241;Estrela de Alagoas ; AL;Nordeste
+4242;Campo Alegre de Lourdes ; BA;Nordeste
+4243;Santana do Ipanema ; AL;Nordeste
+4244;Bujari ; AC;Norte
+4245;Remanso ; BA;Nordeste
+4246;Miranorte ; TO;Norte
+4247;Chã Preta ; AL;Nordeste
+4248;Gilbués ; PI;Nordeste
+4249;Inhapi ; AL;Nordeste
+4250;Dirceu Arcoverde ; PI;Nordeste
+4251;Pariconha ; AL;Nordeste
+4252;Abreulândia ; TO;Norte
+4253;Boa Ventura ; PB;Nordeste
+4254;Várzea Branca ; PI;Nordeste
+4255;Poço das Trincheiras ; AL;Nordeste
+4256;Branquinha ; AL;Nordeste
+4257;Murici ; AL;Nordeste
+4258;Flexeiras ; AL;Nordeste
+4259;São Luís do Quitunde ; AL;Nordeste
+4260;Porto de Pedras ; AL;Nordeste
+4261;Matriz de Camaragibe ; AL;Nordeste
+4262;Caturité ; PB;Nordeste
+4263;Tamandaré ; PE;Nordeste
+4264;Caseara ; TO;Norte
+4265;Japaratinga ; AL;Nordeste
+4266;Guaribas ; PI;Nordeste
+4267;Juazeiro ; BA;Nordeste
+4268;Rio dos Bois ; TO;Norte
+4269;União dos Palmares ; AL;Nordeste
+4270;Santana do Mundaú ; AL;Nordeste
+4271;Joaquim Gomes ; AL;Nordeste
+4272;Bom Conselho ; PE;Nordeste
+4273;Terezinha ; PE;Nordeste
+4274;Correntes ; PE;Nordeste
+4275;São Lourenço do Piauí ; PI;Nordeste
+4276;Canapi ; AL;Nordeste
+4277;Bonfim do Piauí ; PI;Nordeste
+4278;Pedro Afonso ; TO;Norte
+4279;Glória ; BA;Nordeste
+4280;Brejão ; PE;Nordeste
+4281;Palmeirina ; PE;Nordeste
+4282;Campo Alegre ; AL;Nordeste
+4283;Fortaleza do Tabocão ; TO;Norte
+4284;Bom Jesus ; PI;Nordeste
+4285;Porto Calvo ; AL;Nordeste
+4286;Jundiá ; AL;Nordeste
+4287;São Miguel dos Campos ; AL;Nordeste
+4288;Dois Irmãos do Tocantins ; TO;Norte
+4289;São José da Laje ; AL;Nordeste
+4290;Águas Belas ; PE;Nordeste
+4291;Iati ; PE;Nordeste
+4292;Saloá ; PE;Nordeste
+4293;Maragogi ; AL;Nordeste
+4294;Macururé ; BA;Nordeste
+4295;Lagoa da Canoa ; AL;Nordeste
+4296;Ibateguara ; AL;Nordeste
+4297;Colônia Leopoldina ; AL;Nordeste
+4298;Belo Monte ; AL;Nordeste
+4299;Catende ; PE;Nordeste
+4300;Novo Lino ; AL;Nordeste
+4301;Paranatama ; PE;Nordeste
+4302;São José da Coroa Grande ; PE;Nordeste
+4303;Campestre ; AL;Nordeste
+4304;Bom Jesus do Tocantins ; TO;Norte
+4305;Jacuípe ; AL;Nordeste
+4306;Santa Luz ; PI;Nordeste
+4307;Centenário ; TO;Norte
+4308;São João ; PE;Nordeste
+4309;Itaíba ; PE;Nordeste
+4310;Garanhuns ; PE;Nordeste
+4311;Alto Parnaíba ; MA;Nordeste
+4312;Barreiros ; PE;Nordeste
+4313;Quipapá ; PE;Nordeste
+4314;Maraial ; PE;Nordeste
+4315;Tupirama ; TO;Norte
+4316;Rodelas ; BA;Nordeste
+4317;Cujubim ; RO;Norte
+4318;Caetés ; PE;Nordeste
+4319;Chorrochó ; BA;Nordeste
+4320;Palestina ; AL;Nordeste
+4321;Canhotinho ; PE;Nordeste
+4322;Caracol ; PI;Nordeste
+4323;Santana do Araguaia ; PA;Norte
+4324;Casa Nova ; BA;Nordeste
+4325;Cristino Castro ; PI;Nordeste
+4326;Petrolândia ; PE;Nordeste
+4327;Marechal Thaumaturgo ; AC;Norte
+4328;Tacaratu ; PE;Nordeste
+4329;Santa Maria do Tocantins ; TO;Norte
+4330;Lagoa dos Gatos ; PE;Nordeste
+4331;Goianorte ; TO;Norte
+4332;Coronel José Dias ; PI;Nordeste
+4333;Petrolina ; PE;Nordeste
+4334;Inajá ; PE;Nordeste
+4335;Antônio Martins ; RN;Nordeste
+4336;Colméia ; TO;Norte
+4337;Rio Formoso ; PE;Nordeste
+4338;São Raimundo Nonato ; PI;Nordeste
+4339;Dom Inocêncio ; PI;Nordeste
+4340;Capoeiras ; PE;Nordeste
+4341;Socorro do Piauí ; PI;Nordeste
+4342;Araguacema ; TO;Norte
+4343;Belém ; AL;Nordeste
+4344;Palmares ; PE;Nordeste
+4345;Ribeirão ; PE;Nordeste
+4346;Guaraí ; TO;Norte
+4347;Paripueira ; AL;Nordeste
+4348;Belém de Maria ; PE;Nordeste
+4349;Gameleira ; PE;Nordeste
+4350;Sirinhaém ; PE;Nordeste
+4351;Currais ; PI;Nordeste
+4352;Curaçá ; BA;Nordeste
+4353;Água Preta ; PE;Nordeste
+4354;Lagoa Grande ; PE;Nordeste
+4355;Major Isidoro ; AL;Nordeste
+4356;Panelas ; PE;Nordeste
+4357;Abaré ; BA;Nordeste
+4358;Pedra ; PE;Nordeste
+4359;São Bento do Una ; PE;Nordeste
+4360;Ipojuca ; PE;Nordeste
+4361;Buíque ; PE;Nordeste
+4362;Tupanatinga ; PE;Nordeste
+4363;Viçosa ; AL;Nordeste
+4364;Vitória ; ES;Sudeste
+4365;Santa Filomena ; PI;Nordeste
+4366;Barra de Guabiraba ; PE;Nordeste
+4367;Bonito ; PE;Nordeste
+4368;Afrânio ; PE;Nordeste
+4369;Cortês ; PE;Nordeste
+4370;Presidente Kennedy ; TO;Norte
+4371;Altinho ; PE;Nordeste
+4372;João Costa ; PI;Nordeste
+4373;Escada ; PE;Nordeste
+4374;Pedra Branca ; PB;Nordeste
+4375;Santa Maria da Boa Vista ; PE;Nordeste
+4376;Ibimirim ; PE;Nordeste
+4377;Sanharó ; PE;Nordeste
+4378;Lagoa do Barro do Piauí ; PI;Nordeste
+4379;Dormentes ; PE;Nordeste
+4380;Jurema ; PE;Nordeste
+4381;Primavera ; PE;Nordeste
+4382;Queimada Nova ; PI;Nordeste
+4383;Vila Nova do Piauí ; PI;Nordeste
+4384;Tamboril do Piauí ; PI;Nordeste
+4385;Floresta ; PE;Nordeste
+4386;Alvorada do Gurguéia ; PI;Nordeste
+4387;Carnaubeira da Penha ; PE;Nordeste
+4388;Couto Magalhães ; TO;Norte
+4389;Pesqueira ; PE;Nordeste
+4390;Itaporã do Tocantins ; TO;Norte
+4391;Amaraji ; PE;Nordeste
+4392;São Caitano ; PE;Nordeste
+4393;Santa Luzia ; PB;Nordeste
+4394;Colônia do Gurguéia ; PI;Nordeste
+4395;Cabo de Santo Agostinho ; PE;Nordeste
+4396;Cabrobó ; PE;Nordeste
+4397;Juarina ; TO;Norte
+4398;Arcoverde ; PE;Nordeste
+4399;Brasilândia do Tocantins ; TO;Norte
+4400;Tupiratins ; TO;Norte
+4401;Porto Walter ; AC;Norte
+4402;Jucati ; PE;Nordeste
+4403;Sairé ; PE;Nordeste
+4404;Poção ; PE;Nordeste
+4405;Belo Jardim ; PE;Nordeste
+4406;Bezerros ; PE;Nordeste
+4407;Acauã ; PI;Nordeste
+4408;São Julião ; PI;Nordeste
+4409;Pequizeiro ; TO;Norte
+4410;São Joaquim do Monte ; PE;Nordeste
+4411;Pombos ; PE;Nordeste
+4412;São João do Piauí ; PI;Nordeste
+4413;Betânia ; PE;Nordeste
+4414;Gravatá ; PE;Nordeste
+4415;Santa Cruz ; PE;Nordeste
+4416;Jaboatão dos Guararapes ; PE;Nordeste
+4417;Terra Nova ; PE;Nordeste
+4418;Brejo do Piauí ; PI;Nordeste
+4419;Palmeira do Piauí ; PI;Nordeste
+4420;Santa Filomena ; PE;Nordeste
+4421;Betânia do Piauí ; PI;Nordeste
+4422;Mirandiba ; PE;Nordeste
+4423;São Francisco de Assis do Piauí ; PI;Nordeste
+4424;São Sebastião do Umbuzeiro ; PB;Nordeste
+4425;Surubim ; PE;Nordeste
+4426;Caruaru ; PE;Nordeste
+4427;Manoel Emídio ; PI;Nordeste
+4428;Riacho das Almas ; PE;Nordeste
+4429;Cumaru ; PE;Nordeste
+4430;Eliseu Martins ; PI;Nordeste
+4431;Sertânia ; PE;Nordeste
+4432;São Lourenço da Mata ; PE;Nordeste
+4433;Santa Maria do Cambucá ; PE;Nordeste
+4434;Canto do Buriti ; PI;Nordeste
+4435;Recife ; PE;Nordeste
+4436;São João do Tigre ; PB;Nordeste
+4437;Itapiratins ; TO;Norte
+4438;Brejo da Madre de Deus ; PE;Nordeste
+4439;Pedro Laurentino ; PI;Nordeste
+4440;São Luíz do Norte ; GO;Centro-Oeste
+4441;Parnamirim ; PE;Nordeste
+4442;Salgadinho ; PE;Nordeste
+4443;Limoeiro ; PE;Nordeste
+4444;Custódia ; PE;Nordeste
+4445;Frei Miguelinho ; PE;Nordeste
+4446;Colinas do Tocantins ; TO;Norte
+4447;Jataúba ; PE;Nordeste
+4448;Bernardo Sayão ; TO;Norte
+4449;Paudalho ; PE;Nordeste
+4450;Verdejante ; PE;Nordeste
+4451;Vertentes ; PE;Nordeste
+4452;Santa Cruz do Capibaribe ; PE;Nordeste
+4453;Tasso Fragoso ; MA;Nordeste
+4454;Bom Jardim ; PE;Nordeste
+4455;Abreu e Lima ; PE;Nordeste
+4456;Baixa Grande do Ribeiro ; PI;Nordeste
+4457;Camalaú ; PB;Nordeste
+4458;Salgueiro ; PE;Nordeste
+4459;Taquaritinga do Norte ; PE;Nordeste
+4460;Flores ; PE;Nordeste
+4461;Curral Novo do Piauí ; PI;Nordeste
+4462;Araçoiaba ; PE;Nordeste
+4463;Paes Landim ; PI;Nordeste
+4464;Vertente do Lério ; PE;Nordeste
+4465;Casinhas ; PE;Nordeste
+4466;Redenção ; PA;Norte
+4467;Jacobina do Piauí ; PI;Nordeste
+4468;São José do Alegre ; MG;Sudeste
+4469;Monteiro ; PB;Nordeste
+4470;Serra Talhada ; PE;Nordeste
+4471;Diamante do Norte ; PR;Sul
+4472;Penaforte ; CE;Nordeste
+4473;Ilha de Itamaracá ; PE;Nordeste
+4474;Santa Cecília ; PB;Nordeste
+4475;Pajeú do Piauí ; PI;Nordeste
+4476;Pavussu ; PI;Nordeste
+4477;Rodrigues Alves ; AC;Norte
+4478;Caraúbas ; PB;Nordeste
+4479;Orobó ; PE;Nordeste
+4480;Quixaba ; PE;Nordeste
+4481;Ingazeira ; PE;Nordeste
+4482;Serrita ; PE;Nordeste
+4483;São José do Belmonte ; PE;Nordeste
+4484;Arraial ; PI;Nordeste
+4485;Carnaíba ; PE;Nordeste
+4486;Jati ; CE;Nordeste
+4487;Umbuzeiro ; PB;Nordeste
+4488;Itaquitinga ; PE;Nordeste
+4489;Afogados da Ingazeira ; PE;Nordeste
+4490;Água Branca ; PB;Nordeste
+4491;Caridade do Piauí ; PI;Nordeste
+4492;Tuparetama ; PE;Nordeste
+4493;Coxixola ; PB;Nordeste
+4494;Várzea Grande ; PI;Nordeste
+4495;Ribeira do Piauí ; PI;Nordeste
+4496;Bandeirantes do Tocantins ; TO;Norte
+4497;Riacho de Santo Antônio ; PB;Nordeste
+4498;Alcantil ; PB;Nordeste
+4499;Simplício Mendes ; PI;Nordeste
+4500;Guarará ; MG;Sudeste
+4501;Barra de São Miguel ; PB;Nordeste
+4502;Santa Inês ; PB;Nordeste
+4503;Arapoema ; TO;Norte
+4504;Palmeirante ; TO;Norte
+4505;Volta Grande ; MG;Sudeste
+4506;Vera Mendes ; PI;Nordeste
+4507;Princesa Isabel ; PB;Nordeste
+4508;Patos do Piauí ; PI;Nordeste
+4509;Sumé ; PB;Nordeste
+4510;Dom Pedro ; MA;Nordeste
+4511;Barra de Santana ; PB;Nordeste
+4512;Ribeiro Gonçalves ; PI;Nordeste
+4513;Gurinhém ; PB;Nordeste
+4514;Ubaitaba ; BA;Nordeste
+4515;Aliança ; PE;Nordeste
+4516;São Vicente Ferrer ; PE;Nordeste
+4517;Caldas Brandão ; PB;Nordeste
+4518;Porteiras ; CE;Nordeste
+4519;Bertolínia ; PI;Nordeste
+4520;Moreilândia ; PE;Nordeste
+4521;Goiana ; PE;Nordeste
+4522;Sarzedo ; MG;Sudeste
+4523;Cruz do Espírito Santo ; PB;Nordeste
+4524;Simões ; PI;Nordeste
+4525;Aroeiras ; PB;Nordeste
+4526;Tabira ; PE;Nordeste
+4527;Caaporã ; PB;Nordeste
+4528;Barra do Ouro ; TO;Norte
+4529;Itambé ; PE;Nordeste
+4530;Salgadinho ; PB;Nordeste
+4531;Nova Olinda ; TO;Norte
+4532;São Miguel do Fidalgo ; PI;Nordeste
+4533;Timbaúba ; PE;Nordeste
+4534;Brejo Santo ; CE;Nordeste
+4535;Conceição ; PB;Nordeste
+4536;Exu ; PE;Nordeste
+4537;Araripina ; PE;Nordeste
+4538;Pau D'Arco ; TO;Norte
+4539;Itatuba ; PB;Nordeste
+4540;Diamante ; PB;Nordeste
+4541;Imaculada ; PB;Nordeste
+4542;Cabaceiras ; PB;Nordeste
+4543;São José dos Cordeiros ; PB;Nordeste
+4544;Queimadas ; PB;Nordeste
+4545;Serra do Mel ; RN;Nordeste
+4546;Santana dos Garrotes ; PB;Nordeste
+4547;Itapetim ; PE;Nordeste
+4548;Padre Marcos ; PI;Nordeste
+4549;Campo Largo do Piauí ; PI;Nordeste
+4550;Filadélfia ; TO;Norte
+4551;Itainópolis ; PI;Nordeste
+4552;Alhandra ; PB;Nordeste
+4553;Belém do Piauí ; PI;Nordeste
+4554;Canavieira ; PI;Nordeste
+4555;Sebastião Leal ; PI;Nordeste
+4556;Conde ; PB;Nordeste
+4557;Parari ; PB;Nordeste
+4558;Desterro ; PB;Nordeste
+4559;Maturéia ; PB;Nordeste
+4560;Barbalha ; CE;Nordeste
+4561;Mogeiro ; PB;Nordeste
+4562;Mauriti ; CE;Nordeste
+4563;Pedras de Fogo ; PB;Nordeste
+4564;Caldeirão Grande do Piauí ; PI;Nordeste
+4565;Jaicós ; PI;Nordeste
+4566;Brejinho ; PE;Nordeste
+4567;Bonito de Santa Fé ; PB;Nordeste
+4568;Pilar ; PB;Nordeste
+4569;Serra Grande ; PB;Nordeste
+4570;Bannach ; PA;Norte
+4571;Gurjão ; PB;Nordeste
+4572;São Miguel de Taipu ; PB;Nordeste
+4573;Envira ; AM;Norte
+4574;Dona Francisca ; RS;Sul
+4575;Mãe d'Água ; PB;Nordeste
+4576;Amapá do Maranhão ; MA;Nordeste
+4577;Campina Grande ; PB;Nordeste
+4578;São José de Caiana ; PB;Nordeste
+4579;Santo André ; PB;Nordeste
+4580;Sobrado ; PB;Nordeste
+4581;Juarez Távora ; PB;Nordeste
+4582;Floresta do Araguaia ; PA;Norte
+4583;Riachão do Poço ; PB;Nordeste
+4584;Mâncio Lima ; AC;Norte
+4585;Olho d'Água ; PB;Nordeste
+4586;Taperoá ; PB;Nordeste
+4587;Uruçuí ; PI;Nordeste
+4588;Serra Redonda ; PB;Nordeste
+4589;Piancó ; PB;Nordeste
+4590;Bayeux ; PB;Nordeste
+4591;São José do Bonfim ; PB;Nordeste
+4592;Campo Grande do Piauí ; PI;Nordeste
+4593;João Pessoa ; PB;Nordeste
+4594;Areia de Baraúnas ; PB;Nordeste
+4595;Santa Cruz do Piauí ; PI;Nordeste
+4596;Antônio Almeida ; PI;Nordeste
+4597;Santana do Cariri ; CE;Nordeste
+4598;Crato ; CE;Nordeste
+4599;Rio Maria ; PA;Norte
+4600;Missão Velha ; CE;Nordeste
+4601;Araripe ; CE;Nordeste
+4602;Salitre ; CE;Nordeste
+4603;São José de Piranhas ; PB;Nordeste
+4604;Fronteiras ; PI;Nordeste
+4605;Pocinhos ; PB;Nordeste
+4606;Araguaína ; TO;Norte
+4607;Barro ; CE;Nordeste
+4608;Alagoa Grande ; PB;Nordeste
+4609;Sapé ; PB;Nordeste
+4610;Esperança ; PB;Nordeste
+4611;Mulungu ; PB;Nordeste
+4612;Santa Rita ; PB;Nordeste
+4613;Gonçalves Dias ; MA;Nordeste
+4614;Babaçulândia ; TO;Norte
+4615;Caririaçu ; CE;Nordeste
+4616;Altos ; PI;Nordeste
+4617;Patos ; PB;Nordeste
+4618;Carmolândia ; TO;Norte
+4619;Benedito Leite ; MA;Nordeste
+4620;Juazeirinho ; PB;Nordeste
+4621;Guarabira ; PB;Nordeste
+4622;Guajará ; AM;Norte
+4623;Feira Nova do Maranhão ; MA;Nordeste
+4624;Dom Expedito Lopes ; PI;Nordeste
+4625;Santa Fé do Araguaia ; TO;Norte
+4626;Pirambu ; SE;Nordeste
+4627;Aurora ; CE;Nordeste
+4628;Serraria ; PB;Nordeste
+4629;Cajazeiras ; PB;Nordeste
+4630;São Mamede ; PB;Nordeste
+4631;Assaré ; CE;Nordeste
+4632;São José de Espinharas ; PB;Nordeste
+4633;Sambaíba ; MA;Nordeste
+4634;Farias Brito ; CE;Nordeste
+4635;Campos Sales ; CE;Nordeste
+4636;Araçagi ; PB;Nordeste
+4637;Francisco Santos ; PI;Nordeste
+4638;Itapororoca ; PB;Nordeste
+4639;São José do Sabugi ; PB;Nordeste
+4640;Osasco ; SP;Sudeste
+4641;Muricilândia ; TO;Norte
+4642;Areia ; PB;Nordeste
+4643;São Domingos ; PB;Nordeste
+4644;Pirpirituba ; PB;Nordeste
+4645;Ipueira ; RN;Nordeste
+4646;Loreto ; MA;Nordeste
+4647;São José do Piauí ; PI;Nordeste
+4648;Porto Alegre do Piauí ; PI;Nordeste
+4649;Ipaumirim ; CE;Nordeste
+4650;Sertãozinho ; PB;Nordeste
+4651;Santa Rosa do Piauí ; PI;Nordeste
+4652;Várzea ; PB;Nordeste
+4653;São Félix de Balsas ; MA;Nordeste
+4654;Cajazeirinhas ; PB;Nordeste
+4655;Guadalupe ; PI;Nordeste
+4656;Santana do Seridó ; RN;Nordeste
+4657;São Raimundo das Mangabeiras ; MA;Nordeste
+4658;Fortaleza dos Nogueiras ; MA;Nordeste
+4659;Marcação ; PB;Nordeste
+4660;Curral de Cima ; PB;Nordeste
+4661;Esperantinópolis ; MA;Nordeste
+4662;São Domingos do Azeitão ; MA;Nordeste
+4663;Pedra Lavrada ; PB;Nordeste
+4664;Antonina do Norte ; CE;Nordeste
+4665;Floriano ; PI;Nordeste
+4666;Ipiranga do Piauí ; PI;Nordeste
+4667;São Pedro dos Crentes ; MA;Nordeste
+4668;São Luis do Piauí ; PI;Nordeste
+4669;Casserengue ; PB;Nordeste
+4670;Sossêgo ; PB;Nordeste
+4671;Bonito ; PA;Norte
+4672;Aragominas ; TO;Norte
+4673;Aparecida ; PB;Nordeste
+4674;Cajazeiras do Piauí ; PI;Nordeste
+4675;Sapucaia ; PA;Norte
+4676;Santa Helena ; PB;Nordeste
+4677;Wanderlândia ; TO;Norte
+4678;Baía da Traição ; PB;Nordeste
+4679;Oeiras ; PI;Nordeste
+4680;São João do Sabugi ; RN;Nordeste
+4681;Tarrafas ; CE;Nordeste
+4682;Bananeiras ; PB;Nordeste
+4683;Rio Tinto ; PB;Nordeste
+4684;Pombal ; PB;Nordeste
+4685;Barra de Santa Rosa ; PB;Nordeste
+4686;Brejo dos Santos ; PB;Nordeste
+4687;Sousa ; PB;Nordeste
+4688;Nova Palmeira ; PB;Nordeste
+4689;Lavras da Mangabeira ; CE;Nordeste
+4690;Várzea Alegre ; CE;Nordeste
+4691;Tucumã ; PA;Norte
+4692;Ouro Branco ; RN;Nordeste
+4693;Damião ; PB;Nordeste
+4694;Nova Iorque ; MA;Nordeste
+4695;Cacimba de Dentro ; PB;Nordeste
+4696;Baraúna ; PB;Nordeste
+4697;Dona Inês ; PB;Nordeste
+4698;Umari ; CE;Nordeste
+4699;Lagoa ; PB;Nordeste
+4700;Darcinópolis ; TO;Norte
+4701;São João do Rio do Peixe ; PB;Nordeste
+4702;Jacaraú ; PB;Nordeste
+4703;Paulista ; PB;Nordeste
+4704;Mamanguape ; PB;Nordeste
+4705;Jardim do Seridó ; RN;Nordeste
+4706;Pio IX ; PI;Nordeste
+4707;Caiçara ; PB;Nordeste
+4708;Cariús ; CE;Nordeste
+4709;São Bento ; PB;Nordeste
+4710;Estreito ; MA;Nordeste
+4711;Nova Floresta ; PB;Nordeste
+4712;Portalegre ; RN;Nordeste
+4713;Araguanã ; TO;Norte
+4714;Carnaúba dos Dantas ; RN;Nordeste
+4715;Lastro ; PB;Nordeste
+4716;Palmeiras do Tocantins ; TO;Norte
+4717;Goianira ; GO;Centro-Oeste
+4718;Mataraca ; PB;Nordeste
+4719;Montanhas ; RN;Nordeste
+4720;Xinguara ; PA;Norte
+4721;Araruna ; PB;Nordeste
+4722;Cedro ; CE;Nordeste
+4723;Rodolfo Fernandes ; RN;Nordeste
+4724;Piraquê ; TO;Norte
+4725;Bernardino Batista ; PB;Nordeste
+4726;Serra Negra do Norte ; RN;Nordeste
+4727;Barra D'Alcântara ; PI;Nordeste
+4728;Cuité ; PB;Nordeste
+4729;Tenente Ananias ; RN;Nordeste
+4730;Serra de São Bento ; RN;Nordeste
+4731;Japi ; RN;Nordeste
+4732;Ingá ; PB;Nordeste
+4733;Graça Aranha ; MA;Nordeste
+4734;Xambioá ; TO;Norte
+4735;Santa Terezinha do Tocantins ; TO;Norte
+4736;Bom Sucesso ; PB;Nordeste
+4737;Paraná ; RN;Nordeste
+4738;Riachinho ; TO;Norte
+4739;Riacho dos Cavalos ; PB;Nordeste
+4740;Aiuaba ; CE;Nordeste
+4741;Sussuapara ; PI;Nordeste
+4742;Barão de Grajaú ; MA;Nordeste
+4743;Picos ; PI;Nordeste
+4744;Baía Formosa ; RN;Nordeste
+4745;Novo Oriente do Piauí ; PI;Nordeste
+4746;Lagoa d'Anta ; RN;Nordeste
+4747;Jucás ; CE;Nordeste
+4748;Quixabá ; PB;Nordeste
+4749;Poço Dantas ; PB;Nordeste
+4750;Venha-Ver ; RN;Nordeste
+4751;Paraibano ; MA;Nordeste
+4752;São João dos Patos ; MA;Nordeste
+4753;São José do Divino ; PI;Nordeste
+4754;Picuí ; PB;Nordeste
+4755;Canguaretama ; RN;Nordeste
+4756;José da Penha ; RN;Nordeste
+4757;Acari ; RN;Nordeste
+4758;Água Azul do Norte ; PA;Norte
+4759;Piçarra ; PA;Norte
+4760;Vila Flor ; RN;Nordeste
+4761;Alexandria ; RN;Nordeste
+4762;Pilões ; RN;Nordeste
+4763;Nazaré ; TO;Norte
+4764;Canaã dos Carajás ; PA;Norte
+4765;Várzea ; RN;Nordeste
+4766;Catolé do Rocha ; PB;Nordeste
+4767;Saboeiro ; CE;Nordeste
+4768;Serrinha ; RN;Nordeste
+4769;Jundiá ; RN;Nordeste
+4770;Frei Martinho ; PB;Nordeste
+4771;Porto Franco ; MA;Nordeste
+4772;Francinópolis ; PI;Nordeste
+4773;Sucupira do Riachão ; MA;Nordeste
+4774;Espírito Santo ; RN;Nordeste
+4775;Orós ; CE;Nordeste
+4776;São João do Paraíso ; MA;Nordeste
+4777;Angico ; TO;Norte
+4778;Lagoa Nova ; RN;Nordeste
+4779;Lagoa de Velhos ; RN;Nordeste
+4780;Caicó ; RN;Nordeste
+4781;São José do Campestre ; RN;Nordeste
+4782;Valença do Piauí ; PI;Nordeste
+4783;São Fernando ; RN;Nordeste
+4784;Iguatu ; CE;Nordeste
+4785;Rafael Fernandes ; RN;Nordeste
+4786;Arês ; RN;Nordeste
+4787;Jardim de Piranhas ; RN;Nordeste
+4788;Luzinópolis ; TO;Norte
+4789;São Miguel do Gostoso ; RN;Nordeste
+4790;Bacurituba ; MA;Nordeste
+4791;Currais Novos ; RN;Nordeste
+4792;Catarina ; CE;Nordeste
+4793;Brejinho ; RN;Nordeste
+4794;Campo Redondo ; RN;Nordeste
+4795;Tenente Laurentino Cruz ; RN;Nordeste
+4796;Icó ; CE;Nordeste
+4797;Amarante ; PI;Nordeste
+4798;Arneiroz ; CE;Nordeste
+4799;Campestre do Maranhão ; MA;Nordeste
+4800;Lucrécia ; RN;Nordeste
+4801;Doutor Severiano ; RN;Nordeste
+4802;Januário Cicco ; RN;Nordeste
+4803;Monte Alegre ; RN;Nordeste
+4804;Pimenteiras ; PI;Nordeste
+4805;Florânia ; RN;Nordeste
+4806;Quixelô ; CE;Nordeste
+4807;Belém do Brejo do Cruz ; PB;Nordeste
+4808;Messias Targino ; RN;Nordeste
+4809;Tocantinópolis ; TO;Norte
+4810;Rafael Godeiro ; RN;Nordeste
+4811;Vera Cruz ; RN;Nordeste
+4812;Parambu ; CE;Nordeste
+4813;Aroazes ; PI;Nordeste
+4814;Joca Claudino ; PB;Nordeste
+4815;Lajeado Novo ; MA;Nordeste
+4816;Nísia Floresta ; RN;Nordeste
+4817;Umarizal ; RN;Nordeste
+4818;Acopiara ; CE;Nordeste
+4819;Francisco Dantas ; RN;Nordeste
+4820;São José de Mipibu ; RN;Nordeste
+4821;Ananás ; TO;Norte
+4822;Nova Cruz ; RN;Nordeste
+4823;Elesbão Veloso ; PI;Nordeste
+4824;São Francisco do Maranhão ; MA;Nordeste
+4825;Macaíba ; RN;Nordeste
+4826;Passagem Franca ; MA;Nordeste
+4827;Ererê ; CE;Nordeste
+4828;São Geraldo do Araguaia ; PA;Norte
+4829;Jucurutu ; RN;Nordeste
+4830;Colinas ; MA;Nordeste
+4831;Ribamar Fiquene ; MA;Nordeste
+4832;Eldorado dos Carajás ; PA;Norte
+4833;Fernando Falcão ; MA;Nordeste
+4834;São Tomé ; RN;Nordeste
+4835;Curionópolis ; PA;Norte
+4836;São Rafael ; RN;Nordeste
+4837;Maurilândia do Tocantins ; TO;Norte
+4838;Ruy Barbosa ; RN;Nordeste
+4839;Pereiro ; CE;Nordeste
+4840;São Félix do Piauí ; PI;Nordeste
+4841;Santa Cruz dos Milagres ; PI;Nordeste
+4842;São Bento do Tocantins ; TO;Norte
+4843;Deputado Irapuan Pinheiro ; CE;Nordeste
+4844;Jaguaribe ; CE;Nordeste
+4845;Taboleiro Grande ; RN;Nordeste
+4846;Lagoa do Mato ; MA;Nordeste
+4847;São Gonçalo do Amarante ; RN;Nordeste
+4848;Sítio Novo ; MA;Nordeste
+4849;Jatobá ; MA;Nordeste
+4850;Santa Maria ; RN;Nordeste
+4851;Olho D'Água do Piauí ; PI;Nordeste
+4852;Santana do Matos ; RN;Nordeste
+4853;Piquet Carneiro ; CE;Nordeste
+4854;Palestina do Pará ; PA;Norte
+4855;Ielmo Marinho ; RN;Nordeste
+4856;Paraú ; RN;Nordeste
+4857;São Miguel da Baixa Grande ; PI;Nordeste
+4858;Quiterianópolis ; CE;Nordeste
+4859;Potiretama ; CE;Nordeste
+4860;Montes Altos ; MA;Nordeste
+4861;Angicos ; RN;Nordeste
+4862;Governador Edison Lobão ; MA;Nordeste
+4863;Extremoz ; RN;Nordeste
+4864;Bento Fernandes ; RN;Nordeste
+4865;Itajá ; RN;Nordeste
+4866;Iracema ; CE;Nordeste
+4867;Passagem Franca do Piauí ; PI;Nordeste
+4868;Mombaça ; CE;Nordeste
+4869;Buriti Bravo ; MA;Nordeste
+4870;Palmeirais ; PI;Nordeste
+4871;Sítio Novo do Tocantins ; TO;Norte
+4872;Davinópolis ; MA;Nordeste
+4873;Curralinhos ; PI;Nordeste
+4874;Brejo Grande do Araguaia ; PA;Norte
+4875;Milhã ; CE;Nordeste
+4876;Monsenhor Gil ; PI;Nordeste
+4877;Fortuna ; MA;Nordeste
+4878;Taipu ; RN;Nordeste
+4879;Upanema ; RN;Nordeste
+4880;São Domingos do Araguaia ; PA;Norte
+4881;Itaú ; RN;Nordeste
+4882;Jardim de Angicos ; RN;Nordeste
+4883;Ipanguaçu ; RN;Nordeste
+4884;São Domingos do Maranhão ; MA;Nordeste
+4885;Poço Branco ; RN;Nordeste
+4886;Solonópole ; CE;Nordeste
+4887;Ceará-Mirim; RN;Nordeste
+4888;Governador Luiz Rocha ; MA;Nordeste
+4889;Lajes ; RN;Nordeste
+4890;Novo Oriente ; CE;Nordeste
+4891;Miguel Leão ; PI;Nordeste
+4892;São Miguel do Tocantins ; TO;Norte
+4893;Tauá ; CE;Nordeste
+4894;Caiçara do Rio do Vento ; RN;Nordeste
+4895;Jaguaribara ; CE;Nordeste
+4896;Santa Filomena do Maranhão ; MA;Nordeste
+4897;São João da Serra ; PI;Nordeste
+4898;São Miguel do Tapuio ; PI;Nordeste
+4899;Maxaranguape ; RN;Nordeste
+4900;Afonso Bezerra ; RN;Nordeste
+4901;Senador Pompeu ; CE;Nordeste
+4902;Alto Santo ; CE;Nordeste
+4903;Buritirana ; MA;Nordeste
+4904;Beneditinos ; PI;Nordeste
+4905;Pedra Branca ; CE;Nordeste
+4906;Nazária ; PI;Nordeste
+4907;São João do Araguaia ; PA;Norte
+4908;Apodi ; RN;Nordeste
+4909;Sampaio ; TO;Norte
+4910;Parnarama ; MA;Nordeste
+4911;Augustinópolis ; TO;Norte
+4912;Araguatins ; TO;Norte
+4913;Itaguatins ; TO;Norte
+4914;Alto do Rodrigues ; RN;Nordeste
+4915;Rio do Fogo ; RN;Nordeste
+4916;Governador Eugênio Barros ; MA;Nordeste
+4917;Jardim do Mulato ; PI;Nordeste
+4918;Governador Dix-Sept Rosado ; RN;Nordeste
+4919;São João do Jaguaribe ; CE;Nordeste
+4920;Parazinho ; RN;Nordeste
+4921;Limoeiro do Norte ; CE;Nordeste
+4922;Jaguaretama ; CE;Nordeste
+4923;São Sebastião do Tocantins ; TO;Norte
+4924;Senador Alexandre Costa ; MA;Nordeste
+4925;Tabuleiro do Norte ; CE;Nordeste
+4926;Coivaras ; PI;Nordeste
+4927;Matões ; MA;Nordeste
+4928;Independência ; CE;Nordeste
+4929;Carnaubais ; RN;Nordeste
+4930;Imperatriz ; MA;Nordeste
+4931;Esperantina ; TO;Norte
+4932;Touros ; RN;Nordeste
+4933;Presidente Dutra ; MA;Nordeste
+4934;Senador La Rocque ; MA;Nordeste
+4935;Alto Longá ; PI;Nordeste
+4936;Banabuiú ; CE;Nordeste
+4937;Jenipapo dos Vieiras ; MA;Nordeste
+4938;São Bento do Norte ; RN;Nordeste
+4939;São Francisco do Brejão ; MA;Nordeste
+4940;Timon ; MA;Nordeste
+4941;Barra do Corda ; MA;Nordeste
+4942;Sítio Novo ; RN;Nordeste
+4943;São Raimundo do Doca Bezerra ; MA;Nordeste
+4944;João Lisboa ; MA;Nordeste
+4945;Cachoeirinha ; TO;Norte
+4946;Castelo do Piauí ; PI;Nordeste
+4947;Itaipava do Grajaú ; MA;Nordeste
+4948;São Pedro da Água Branca ; MA;Nordeste
+4949;Crateús ; CE;Nordeste
+4950;Areia Branca ; RN;Nordeste
+4951;Juazeiro do Piauí ; PI;Nordeste
+4952;Baraúna ; RN;Nordeste
+4953;Novo Aripuanã ; AM;Norte
+4954;São João do Soter ; MA;Nordeste
+4955;Ipaporanga ; CE;Nordeste
+4956;Joselândia ; MA;Nordeste
+4957;São José dos Basílios ; MA;Nordeste
+4958;Grossos ; RN;Nordeste
+4959;Amarante do Maranhão ; MA;Nordeste
+4960;Quixeré ; CE;Nordeste
+4961;Teresina ; PI;Nordeste
+4962;Governador Archer ; MA;Nordeste
+4963;Abel Figueiredo ; PA;Norte
+4964;Cidelândia ; MA;Nordeste
+4965;Monsenhor Tabosa ; CE;Nordeste
+4966;Vila Nova dos Martírios ; MA;Nordeste
+4967;Lagoa Grande do Maranhão ; MA;Nordeste
+4968;Nova Ipixuna ; PA;Norte
+4969;Buriti dos Montes ; PI;Nordeste
+4970;Bom Jesus do Tocantins ; PA;Norte
+4971;Sigefredo Pacheco ; PI;Nordeste
+4972;Jaguaruana ; CE;Nordeste
+4973;Itupiranga ; PA;Norte
+4974;Ararendá ; CE;Nordeste
+4975;Jatobá do Piauí ; PI;Nordeste
+4976;Quixadá ; CE;Nordeste
+4977;Santo Antônio dos Lopes ; MA;Nordeste
+4978;Milton Brandão ; PI;Nordeste
+4979;Poção de Pedras ; MA;Nordeste
+4980;Pedro II ; PI;Nordeste
+4981;Choró ; CE;Nordeste
+4982;Ibaretama ; CE;Nordeste
+4983;Russas ; CE;Nordeste
+4984;Palhano ; CE;Nordeste
+4985;Bernardo do Mearim ; MA;Nordeste
+4986;Poranga ; CE;Nordeste
+4987;Redenção ; CE;Nordeste
+4988;Marajá do Sena ; MA;Nordeste
+4989;Mossoró ; RN;Nordeste
+4990;Tamboril ; CE;Nordeste
+4991;Itaitinga ; CE;Nordeste
+4992;Campo Maior ; PI;Nordeste
+4993;Baixio ; CE;Nordeste
+4994;Cocal de Telha ; PI;Nordeste
+4995;União ; PI;Nordeste
+4996;Morada Nova ; CE;Nordeste
+4997;Ibicuitinga ; CE;Nordeste
+4998;Lima Campos ; MA;Nordeste
+4999;Itatira ; CE;Nordeste
+5000;Itapiúna ; CE;Nordeste
+5001;Ipueiras ; CE;Nordeste
+5002;Pedreiras ; MA;Nordeste
+5003;Boqueirão do Piauí ; PI;Nordeste
+5004;Capitão de Campos ; PI;Nordeste
+5005;Lago da Pedra ; MA;Nordeste
+5006;Catunda ; CE;Nordeste
+5007;Aracati ; CE;Nordeste
+5008;Paulo Ramos ; MA;Nordeste
+5009;Ocara ; CE;Nordeste
+5010;Lagoa Alegre ; PI;Nordeste
+5011;Caxias ; MA;Nordeste
+5012;Fortim ; CE;Nordeste
+5013;Jacundá ; PA;Norte
+5014;Lagoa de São Francisco ; PI;Nordeste
+5015;São Luís Gonzaga do Maranhão ; MA;Nordeste
+5016;Croatá ; CE;Nordeste
+5017;Peritoró ; MA;Nordeste
+5018;Aracoiaba ; CE;Nordeste
+5019;Boa Hora ; PI;Nordeste
+5020;Tururu ; CE;Nordeste
+5021;Hidrolândia ; CE;Nordeste
+5022;Baturité ; CE;Nordeste
+5023;Coelho Neto ; MA;Nordeste
+5024;Aldeias Altas ; MA;Nordeste
+5025;Icapuí ; CE;Nordeste
+5026;Açailândia ; MA;Nordeste
+5027;Brejo de Areia ; MA;Nordeste
+5028;Barreira ; CE;Nordeste
+5029;Ipu ; CE;Nordeste
+5030;Pires Ferreira ; CE;Nordeste
+5031;Guaraciaba do Norte ; CE;Nordeste
+5032;Pindoretama ; CE;Nordeste
+5033;Brasileira ; PI;Nordeste
+5034;Bom Jesus das Selvas ; MA;Nordeste
+5035;Mulungu ; CE;Nordeste
+5036;Palmácia ; CE;Nordeste
+5037;Reriutaba ; CE;Nordeste
+5038;Codó ; MA;Nordeste
+5039;Guaramiranga ; CE;Nordeste
+5040;Acarape ; CE;Nordeste
+5041;Piripiri ; PI;Nordeste
+5042;Domingos Mourão ; PI;Nordeste
+5043;Pacajus ; CE;Nordeste
+5044;Bom Lugar ; MA;Nordeste
+5045;Beberibe ; CE;Nordeste
+5046;Afonso Cunha ; MA;Nordeste
+5047;Carnaubal ; CE;Nordeste
+5048;Paramoti ; CE;Nordeste
+5049;Canindé ; CE;Nordeste
+5050;Horizonte ; CE;Nordeste
+5051;Rondon do Pará ; PA;Norte
+5052;Cascavel ; CE;Nordeste
+5053;Capinzal do Norte ; MA;Nordeste
+5054;Caridade ; CE;Nordeste
+5055;Timbiras ; MA;Nordeste
+5056;Olho d'Água das Cunhãs ; MA;Nordeste
+5057;Santa Quitéria ; CE;Nordeste
+5058;Tejuçuoca ; CE;Nordeste
+5059;Buriticupu ; MA;Nordeste
+5060;Barras ; PI;Nordeste
+5061;Carlos Barbosa ; RS;Sul
+5062;Altamira do Maranhão ; MA;Nordeste
+5063;Miguel Alves ; PI;Nordeste
+5064;Ibiapina ; CE;Nordeste
+5065;Vitorino Freire ; MA;Nordeste
+5066;Pacujá ; CE;Nordeste
+5067;São Benedito ; CE;Nordeste
+5068;Novo Repartimento ; PA;Norte
+5069;Solânea ; PB;Nordeste
+5070;Maranguape ; CE;Nordeste
+5071;Bacabal ; MA;Nordeste
+5072;Lago Verde ; MA;Nordeste
+5073;Bela Vista do Maranhão ; MA;Nordeste
+5074;São Mateus do Maranhão ; MA;Nordeste
+5075;Nova Aliança do Ivaí ; PR;Sul
+5076;Pio XII ; MA;Nordeste
+5077;Coroatá ; MA;Nordeste
+5078;São João da Fronteira ; PI;Nordeste
+5079;Dom Eliseu ; PA;Norte
+5080;Aquiraz ; CE;Nordeste
+5081;Ubajara ; CE;Nordeste
+5082;Forquilha ; CE;Nordeste
+5083;Uiraúna ; PB;Nordeste
+5084;Vargem Grande ; MA;Nordeste
+5085;Pentecoste ; CE;Nordeste
+5086;Esperantina ; PI;Nordeste
+5087;Placas ; PA;Norte
+5088;Viçosa do Ceará ; CE;Nordeste
+5089;Careiro ; AM;Norte
+5090;Tefé ; AM;Norte
+5091;Fortaleza ; CE;Nordeste
+5092;Cantanhede ; MA;Nordeste
+5093;Batalha ; PI;Nordeste
+5094;Tabatinga ; AM;Norte
+5095;Olinda Nova do Maranhão ; MA;Nordeste
+5096;Conceição do Lago-Açu; MA;Nordeste
+5097;Igarapé do Meio ; MA;Nordeste
+5098;Irauçuba ; CE;Nordeste
+5099;Anori ; AM;Norte
+5100;Santa Inês ; MA;Nordeste
+5101;Frecheirinha ; CE;Nordeste
+5102;Beruri ; AM;Norte
+5103;Pirapemas ; MA;Nordeste
+5104;Alto Alegre do Pindaré ; MA;Nordeste
+5105;Tufilândia ; MA;Nordeste
+5106;Peri Mirim ; MA;Nordeste
+5107;Pindaré-Mirim; MA;Nordeste
+5108;Itinga do Maranhão ; MA;Nordeste
+5109;Caucaia ; CE;Nordeste
+5110;Piracuruca ; PI;Nordeste
+5111;Matões do Norte ; MA;Nordeste
+5112;Nova Olinda do Norte ; AM;Norte
+5113;Arara ; PB;Nordeste
+5114;Mãe do Rio ; PA;Norte
+5115;Alcântaras ; CE;Nordeste
+5116;São Gonçalo do Amarante ; CE;Nordeste
+5117;Tucuruí ; PA;Norte
+5118;Breu Branco ; PA;Norte
+5119;Cocal dos Alves ; PI;Nordeste
+5120;Mata Roma ; MA;Nordeste
+5121;Coreaú ; CE;Nordeste
+5122;Meruoca ; CE;Nordeste
+5123;Paracambi ; RJ;Sudeste
+5124;Joaquim Pires ; PI;Nordeste
+5125;Paracuru ; CE;Nordeste
+5126;Boa Vista ; PB;Nordeste
+5127;Milagres do Maranhão ; MA;Nordeste
+5128;Anapurus ; MA;Nordeste
+5129;Massapê ; CE;Nordeste
+5130;Miraíma ; CE;Nordeste
+5131;Moraújo ; CE;Nordeste
+5132;Vitória do Mearim ; MA;Nordeste
+5133;Nina Rodrigues ; MA;Nordeste
+5134;Tianguá ; CE;Nordeste
+5135;Nossa Senhora de Nazaré ; PI;Nordeste
+5136;Governador Newton Bello ; MA;Nordeste
+5137;Cubati ; PB;Nordeste
+5138;São Vicente do Sul ; RS;Sul
+5139;Santana do Acaraú ; CE;Nordeste
+5140;Uruoca ; CE;Nordeste
+5141;Manaquiri ; AM;Norte
+5142;Martins ; RN;Nordeste
+5143;Paraipaba ; CE;Nordeste
+5144;Arari ; MA;Nordeste
+5145;Anamã ; AM;Norte
+5146;Caxingó ; PI;Nordeste
+5147;Monção ; MA;Nordeste
+5148;Cajari ; MA;Nordeste
+5149;Autazes ; AM;Norte
+5150;Senador Elói de Souza ; RN;Nordeste
+5151;Murici dos Portelas ; PI;Nordeste
+5152;Pedro Régis ; PB;Nordeste
+5153;Chapadinha ; MA;Nordeste
+5154;Cocal ; PI;Nordeste
+5155;Trairi ; CE;Nordeste
+5156;Bom Jesus ; PB;Nordeste
+5157;Itapecuru Mirim ; MA;Nordeste
+5158;Senador Sá ; CE;Nordeste
+5159;Areial ; PB;Nordeste
+5160;Alegrete ; RS;Sul
+5161;Borborema ; PB;Nordeste
+5162;Marco ; CE;Nordeste
+5163;Aratuba ; CE;Nordeste
+5164;Buriti dos Lopes ; PI;Nordeste
+5165;Itapipoca ; CE;Nordeste
+5166;Emas ; PB;Nordeste
+5167;Palmeirândia ; MA;Nordeste
+5168;Urbano Santos ; MA;Nordeste
+5169;Itapuí ; SP;Sudeste
+5170;Groaíras ; CE;Nordeste
+5171;Alvarães ; AM;Norte
+5172;Amaturá ; AM;Norte
+5173;Granja ; CE;Nordeste
+5174;Careiro da Várzea ; AM;Norte
+5175;Santa Luzia do Paruá ; MA;Nordeste
+5176;Santa Rita ; MA;Nordeste
+5177;Zé Doca ; MA;Nordeste
+5178;Bom Princípio do Piauí ; PI;Nordeste
+5179;Bacabeira ; MA;Nordeste
+5180;Chaval ; CE;Nordeste
+5181;Manfrinópolis ; PR;Sul
+5182;Bela Cruz ; CE;Nordeste
+5183;Macaparana ; PE;Nordeste
+5184;Amontada ; CE;Nordeste
+5185;Apuiarés ; CE;Nordeste
+5186;Belágua ; MA;Nordeste
+5187;Presidente Juscelino ; MA;Nordeste
+5188;Cachoeira Grande ; MA;Nordeste
+5189;Tutóia ; MA;Nordeste
+5190;Lago dos Rodrigues ; MA;Nordeste
+5191;Matinha ; MA;Nordeste
+5192;Viana ; MA;Nordeste
+5193;São Bernardo ; MA;Nordeste
+5194;Cajueiro da Praia ; PI;Nordeste
+5195;Martinópole ; CE;Nordeste
+5196;Araguanã ; MA;Nordeste
+5197;Anajatuba ; MA;Nordeste
+5198;Itarema ; CE;Nordeste
+5199;Luís Correia ; PI;Nordeste
+5200;Santana do Maranhão ; MA;Nordeste
+5201;São Vicente Ferrer ; MA;Nordeste
+5202;Capela ; AL;Nordeste
+5203;Camocim ; CE;Nordeste
+5204;Iranduba ; AM;Norte
+5205;Boa Vista do Ramos ; AM;Norte
+5206;Poço de José de Moura ; PB;Nordeste
+5207;Água Doce do Maranhão ; MA;Nordeste
+5208;Ilha Grande ; PI;Nordeste
+5209;Vitória do Xingu ; PA;Norte
+5210;Santa Quitéria do Maranhão ; MA;Nordeste
+5211;Lagoa do Sítio ; PI;Nordeste
+5212;Pedro do Rosário ; MA;Nordeste
+5213;Cajapió ; MA;Nordeste
+5214;Barroquinha ; CE;Nordeste
+5215;Manacapuru ; AM;Norte
+5216;Paulino Neves ; MA;Nordeste
+5217;Massaranduba ; PB;Nordeste
+5218;Rondon ; PR;Sul
+5219;Brasil Novo ; PA;Norte
+5220;Santo Antônio do Içá ; AM;Norte
+5221;Baião ; PA;Norte
+5222;Nova Olinda do Maranhão ; MA;Nordeste
+5223;São Bento ; MA;Nordeste
+5224;Caapiranga ; AM;Norte
+5225;Maracaçumé ; MA;Nordeste
+5226;Barreirinha ; AM;Norte
+5227;Luís Gomes ; RN;Nordeste
+5228;Silves ; AM;Norte
+5229;Urucurituba ; AM;Norte
+5230;Irajuba ; BA;Nordeste
+5231;Araguaçu ; TO;Norte
+5232;Jaú do Tocantins ; TO;Norte
+5233;Belterra ; PA;Norte
+5234;Colônia do Piauí ; PI;Nordeste
+5235;Itacoatiara ; AM;Norte
+5236;Jardim Olinda ; PR;Sul
+5237;Paço do Lumiar ; MA;Nordeste
+5238;Cruz ; CE;Nordeste
+5239;Cabaceiras do Paraguaçu ; BA;Nordeste
+5240;Mocajuba ; PA;Norte
+5241;Boa Vista do Gurupi ; MA;Nordeste
+5242;Capistrano ; CE;Nordeste
+5243;Tailândia ; PA;Norte
+5244;Eusébio ; CE;Nordeste
+5245;Santo Amaro do Maranhão ; MA;Nordeste
+5246;Primeira Cruz ; MA;Nordeste
+5247;Santa Maria do Pará ; PA;Norte
+5248;Parintins ; AM;Norte
+5249;Juazeiro do Norte ; CE;Nordeste
+5250;Itapiranga ; AM;Norte
+5251;Landri Sales ; PI;Nordeste
+5252;Jijoca de Jericoacoara ; CE;Nordeste
+5253;Uarini ; AM;Norte
+5254;Humberto de Campos ; MA;Nordeste
+5255;Presidente Médici ; MA;Nordeste
+5256;Tonantins ; AM;Norte
+5257;Parnaíba ; PI;Nordeste
+5258;Albertina ; MG;Sudeste
+5259;Geminiano ; PI;Nordeste
+5260;Assunção do Piauí ; PI;Nordeste
+5261;Maranhãozinho ; MA;Nordeste
+5262;Centro do Guilherme ; MA;Nordeste
+5263;Maracanaú ; CE;Nordeste
+5264;Porto ; PI;Nordeste
+5265;Umirim ; CE;Nordeste
+5266;Cuitegi ; PB;Nordeste
+5267;Araioses ; MA;Nordeste
+5268;Tomé-Açu; PA;Norte
+5269;Junco do Maranhão ; MA;Nordeste
+5270;Rio Preto da Eva ; AM;Norte
+5271;Santa Helena ; MA;Nordeste
+5272;Satubinha ; MA;Nordeste
+5273;Pureza ; RN;Nordeste
+5274;São Luís do Curu ; CE;Nordeste
+5275;Raposa ; MA;Nordeste
+5276;Aurora do Pará ; PA;Norte
+5277;Juruti ; PA;Norte
+5278;Cametá ; PA;Norte
+5279;Nova Esperança do Piriá ; PA;Norte
+5280;Mirinzal ; MA;Nordeste
+5281;Cedral ; MA;Nordeste
+5282;Turilândia ; MA;Nordeste
+5283;São Domingos do Capim ; PA;Norte
+5284;Garrafão do Norte ; PA;Norte
+5285;Trizidela do Vale ; MA;Nordeste
+5286;Governador Nunes Freire ; MA;Nordeste
+5287;Bagre ; PA;Norte
+5288;Limoeiro do Ajuru ; PA;Norte
+5289;Concórdia do Pará ; PA;Norte
+5290;Nazarezinho ; PB;Nordeste
+5291;Dueré ; TO;Norte
+5292;Igarapé-Miri; PA;Norte
+5293;Tabaporã ; MT;Centro-Oeste
+5294;Porto Alegre do Norte ; MT;Centro-Oeste
+5295;Siriri ; SE;Nordeste
+5296;Terra Santa ; PA;Norte
+5297;Castanhal ; PA;Norte
+5298;Cachoeira do Piriá ; PA;Norte
+5299;Serrano do Maranhão ; MA;Nordeste
+5300;Capitão Poço ; PA;Norte
+5301;Novo Santo Antônio ; PI;Nordeste
+5302;Irituia ; PA;Norte
+5303;Abaetetuba ; PA;Norte
+5304;Bacuri ; MA;Nordeste
+5305;Rosário ; MA;Nordeste
+5306;Ourém ; PA;Norte
+5307;Porto de Moz ; PA;Norte
+5308;Mucambo ; CE;Nordeste
+5309;Acará ; PA;Norte
+5310;Marituba ; PA;Norte
+5311;Igaracy ; PB;Nordeste
+5312;Bujaru ; PA;Norte
+5313;São Miguel do Guamá ; PA;Norte
+5314;Lagoa Seca ; PB;Nordeste
+5315;Curuá ; PA;Norte
+5316;Sulina ; PR;Sul
+5317;Santa Luzia do Pará ; PA;Norte
+5318;Benevides ; PA;Norte
+5319;Curralinho ; PA;Norte
+5320;São Francisco do Pará ; PA;Norte
+5321;Ananindeua ; PA;Norte
+5322;Barcarena ; PA;Norte
+5323;Triunfo ; PB;Nordeste
+5324;Santa Bárbara do Pará ; PA;Norte
+5325;Marcelino Vieira ; RN;Nordeste
+5326;Aguiar ; PB;Nordeste
+5327;São Sebastião da Boa Vista ; PA;Norte
+5328;Milagres ; CE;Nordeste
+5329;Carutapera ; MA;Nordeste
+5330;Belém ; PA;Norte
+5331;Santarém Novo ; PA;Norte
+5332;São João da Ponta ; PA;Norte
+5333;Muaná ; PA;Norte
+5334;Vitória do Jari ; AP;Norte
+5335;Remígio ; PB;Nordeste
+5336;Jurema ; PI;Nordeste
+5337;Tracuateua ; PA;Norte
+5338;Capanema ; PA;Norte
+5339;Colares ; PA;Norte
+5340;Quatipuru ; PA;Norte
+5341;Caraúbas do Piauí ; PI;Nordeste
+5342;Ponta de Pedras ; PA;Norte
+5343;Cachoeira dos Índios ; PB;Nordeste
+5344;Vigia ; PA;Norte
+5345;Salvaterra ; PA;Norte
+5346;Magalhães Barata ; PA;Norte
+5347;Santo Antônio do Tauá ; PA;Norte
+5348;São João de Pirabas ; PA;Norte
+5349;Atalanta ; SC;Sul
+5350;Joca Marques ; PI;Nordeste
+5351;Salinópolis ; PA;Norte
+5352;Maracanã ; PA;Norte
+5353;Cachoeira do Arari ; PA;Norte
+5354;São João da Varjota ; PI;Nordeste
+5355;Regeneração ; PI;Nordeste
+5356;Anajás ; PA;Norte
+5357;Itaúna do Sul ; PR;Sul
+5358;Soure ; PA;Norte
+5359;Guaporema ; PR;Sul
+5360;Gurupá ; PA;Norte
+5361;Afuá ; PA;Norte
+5362;Igarapé-Açu; PA;Norte
+5363;Santana ; AP;Norte
+5364;Chaves ; PA;Norte
+5365;Itaubal ; AP;Norte
+5366;Pau D'Arco do Piauí ; PI;Nordeste
+5367;Presidente Sarney ; MA;Nordeste
+5368;São João da Baliza ; RR;Norte
+5369;Marapanim ; PA;Norte
+5370;Cutias ; AP;Norte
+5371;Santa Cruz do Arari ; PA;Norte
+5372;Caroebe ; RR;Norte
+5373;Tartarugalzinho ; AP;Norte
+5374;Amapá ; AP;Norte
+5375;Barcelos ; AM;Norte
+5376;Óbidos ; PA;Norte
+5377;Serra do Navio ; AP;Norte
+5378;Laranjal do Jari ; AP;Norte
+5379;Oriximiná ; PA;Norte
+5380;Almeirim ; PA;Norte
+5381;Iracema ; RR;Norte
+5382;Cantá ; RR;Norte
+5383;Boa Vista ; RR;Norte
+5384;Fernando Pedroza ; RN;Nordeste
+5385;São Luiz ; RR;Norte
+5386;Alto Alegre do Maranhão ; MA;Nordeste
+5387;Nova Timboteua ; PA;Norte
+5388;Marizópolis ; PB;Nordeste
+5389;Ulianópolis ; PA;Norte
+5390;Luzilândia ; PI;Nordeste
+5391;Caracaraí ; RR;Norte
+5392;Pedra Branca do Amapari ; AP;Norte
+5393;São Sebastião de Lagoa de Roça ; PB;Nordeste
+5394;Passagem ; PB;Nordeste
+5395;Pinheiro Machado ; RS;Sul
+5396;Primavera ; PA;Norte
+5397;São João Batista ; MA;Nordeste
+5398;São Pedro do Piauí ; PI;Nordeste
+5399;Parnamirim ; RN;Nordeste
+5400;Inhangapi ; PA;Norte
+5401;São Paulo do Potengi ; RN;Nordeste
+5402;Bodó ; RN;Nordeste
+5403;Riacho da Cruz ; RN;Nordeste
+5404;Quebrangulo ; AL;Nordeste
+5405;João Dias ; RN;Nordeste
+5406;Brejo do Cruz ; PB;Nordeste
+5407;Catingueira ; PB;Nordeste
+5408;Tremembé ; SP;Sudeste
+5409;Praia Norte ; TO;Norte
+5410;Mirangaba ; BA;Nordeste
+5411;Timbaúba dos Batistas ; RN;Nordeste
+5412;São José do Brejo do Cruz ; PB;Nordeste
+5413;Jaçanã ; RN;Nordeste
+5414;Pastos Bons ; MA;Nordeste
+5415;Pedro Velho ; RN;Nordeste
+5416;Magalhães de Almeida ; MA;Nordeste
+5417;Morrinhos ; CE;Nordeste
+5418;Viçosa ; RN;Nordeste
+5419;Passo de Camaragibe ; AL;Nordeste
+5420;São Domingos ; BA;Nordeste
+5421;Aracitaba ; MG;Sudeste
+5422;Lapão ; BA;Nordeste
+5423;Porto Rico ; PR;Sul
+5424;Serrolândia ; BA;Nordeste
+5425;Toritama ; PE;Nordeste
+5426;Chã de Alegria ; PE;Nordeste
+5427;Presidente Vargas ; MA;Nordeste
+5428;Olinda ; PE;Nordeste
+5429;Glória do Goitá ; PE;Nordeste
+5430;Camaragibe ; PE;Nordeste
+5431;Araújos ; MG;Sudeste
+5432;Frutal ; MG;Sudeste
+5433;Miranda ; MS;Centro-Oeste
+5434;Três Lagoas ; MS;Centro-Oeste
+5435;Santa Luzia ; MG;Sudeste
+5436;Córrego Danta ; MG;Sudeste
+5437;Esmeraldas ; MG;Sudeste
+5438;São Sebastião do Anta ; MG;Sudeste
+5439;Calumbi ; PE;Nordeste
+5440;Moita Bonita ; SE;Nordeste
+5441;São José do Peixe ; PI;Nordeste
+5442;Senador José Bento ; MG;Sudeste
+5443;Wall Ferraz ; PI;Nordeste
+5444;São José dos Ramos ; PB;Nordeste
+5445;Conceição das Pedras ; MG;Sudeste
+5446;Prata do Piauí ; PI;Nordeste
+5447;Monte Horebe ; PB;Nordeste
+5448;São Miguel dos Milagres ; AL;Nordeste
+5449;Feira Nova ; PE;Nordeste
+5450;Ouro Velho ; PB;Nordeste
+5451;Dirce Reis ; SP;Sudeste
+5452;Jaramataia ; AL;Nordeste
+5453;Tracunhaém ; PE;Nordeste
+5454;Ferreiros ; PE;Nordeste
+5455;Pacoti ; CE;Nordeste
+5456;Acaiaca ; MG;Sudeste
+5457;Massapê do Piauí ; PI;Nordeste
+5458;Ibiara ; PB;Nordeste
+5459;Campo Alegre do Fidalgo ; PI;Nordeste
+5460;Lago do Junco ; MA;Nordeste
+5461;Igarapé Grande ; MA;Nordeste
+5462;Palmelo ; GO;Centro-Oeste
+5463;Cabeceiras do Piauí ; PI;Nordeste
+5464;Mendes ; RJ;Sudeste
+5465;Fátima ; BA;Nordeste
+5466;Xexéu ; PE;Nordeste
+5467;Rio Branco ; AC;Norte
+5468;Cajueiro ; AL;Nordeste
+5469;Machados ; PE;Nordeste
+5470;Sena Madureira ; AC;Norte
+5471;Camutanga ; PE;Nordeste
+5472;Isaías Coelho ; PI;Nordeste
+5473;Lagoinha do Piauí ; PI;Nordeste
+5474;Riachuelo ; RN;Nordeste
+5475;Tenório ; PB;Nordeste
+5476;Valente ; BA;Nordeste
+5477;Manoel Urbano ; AC;Norte
+5478;Orocó ; PE;Nordeste
+5479;Madre de Deus ; BA;Nordeste
+5480;Tacaimbó ; PE;Nordeste
+5481;Chã Grande ; PE;Nordeste
+5482;Senador José Porfírio ; PA;Norte
+5483;Aveiro ; PA;Norte
+5484;São Paulo de Olivença ; AM;Norte
+5485;Maués ; AM;Norte
+5486;Altamira ; PA;Norte
+5487;Anapu ; PA;Norte
+5488;Medicilândia ; PA;Norte
+5489;Natuba ; PB;Nordeste
+5490;Montadas ; PB;Nordeste
+5491;Nazaré do Piauí ; PI;Nordeste
+5492;Serra da Raiz ; PB;Nordeste
+5493;Sucupira do Norte ; MA;Nordeste
+5494;Riacho de Santana ; RN;Nordeste
+5495;Tapauá ; AM;Norte
+5496;Juruá ; AM;Norte
+5497;São José do Egito ; PE;Nordeste
+5498;Santa Terezinha ; PE;Nordeste
+5499;Marcolândia ; PI;Nordeste
+5500;Boqueirão ; PB;Nordeste
+5501;Apiacás ; MT;Centro-Oeste
+5502;Floresta do Piauí ; PI;Nordeste
+5503;Pitimbu ; PB;Nordeste
+5504;Salgado de São Félix ; PB;Nordeste
+5505;São Félix do Xingu ; PA;Norte
+5506;Tuntum ; MA;Nordeste
+5507;Manicoré ; AM;Norte
+5508;Trairão ; PA;Norte
+5509;Carauari ; AM;Norte
+5510;Benjamin Constant ; AM;Norte
+5511;Elias Fausto ; SP;Sudeste
+5512;Borba ; AM;Norte
+5513;Bom Jardim ; MA;Nordeste
+5514;Parelhas ; RN;Nordeste
+5515;Equador ; RN;Nordeste
+5516;Icatu ; MA;Nordeste
+5517;Formosa ; GO;Centro-Oeste
+5518;São José de Ribamar ; MA;Nordeste
+5519;Santa Isabel do Pará ; PA;Norte
+5520;São Vicente do Seridó ; PB;Nordeste
+5521;Tacima ; PB;Nordeste
+5522;São Valério ; TO;Norte
+5523;Belém do São Francisco ; PE;Nordeste
+5524;Iguaraci ; PE;Nordeste
+5525;Moji Mirim ; SP;Sudeste
+5526;Maçambará ; RS;Sul
+5527;Amambai ; MS;Centro-Oeste
+5528;Luciara ; MT;Centro-Oeste
+5529;Boa Esperança ; ES;Sudeste
+5530;Nova Venécia ; ES;Sudeste
+5531;Bela Vista do Piauí ; PI;Nordeste
+5532;Nova Santa Rita ; PI;Nordeste
+5533;Restinga Seca ; RS;Sul
+5534;Vespasiano Correa ; RS;Sul
+5535;Gracho Cardoso ; SE;Nordeste
+5536;Alcântara ; MA;Nordeste
+5537;Ilhabela ; SP;Sudeste
+5538;Guimarães ; MA;Nordeste
+5539;Santa Bárbara ; BA;Nordeste
+5540;Porto Rico do Maranhão ; MA;Nordeste
+5541;Cururupu ; MA;Nordeste
+5542;Apicum-Açu; MA;Nordeste
+5543;Feira de Santana ; BA;Nordeste
+5544;São Sebastião ; SP;Sudeste
+5545;Ubatuba ; SP;Sudeste
+5546;Godofredo Viana ; MA;Nordeste
+5547;Cândido Mendes ; MA;Nordeste
+5548;Central do Maranhão ; MA;Nordeste
+5549;Luís Domingues ; MA;Nordeste
+5550;Viseu ; PA;Norte
+5551;Augusto Corrêa ; PA;Norte
+5552;Pinheiro ; MA;Nordeste
+5553;Bequimão ; MA;Nordeste
+5554;Paraty ; RJ;Sudeste
+5555;São Caetano de Odivelas ; PA;Norte
+5556;Caraguatatuba ; SP;Sudeste
+5557;Angra dos Reis ; RJ;Sudeste
+5558;Macau ; RN;Nordeste
+5559;Porto do Mangue ; RN;Nordeste
+5560;Curuçá ; PA;Norte
+5561;Mangaratiba ; RJ;Sudeste
+5562;Balneário Camboriú ; SC;Sul
+5563;Macaé ; RJ;Sudeste
+5564;Itaguaí ; RJ;Sudeste
+5565;Bertioga ; SP;Sudeste
+5566;Rio de Janeiro ; RJ;Sudeste
+5567;Acaraú ; CE;Nordeste
+5568;Turiaçu ; MA;Nordeste
+5569;Bragança ; PA;Norte
+5570;Barreirinhas ; MA;Nordeste
