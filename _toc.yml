@@ -3,7 +3,6 @@
 #
 - file: covers/intro
 - file: nbs/nb_chap1
-- file: nbs/nb_chap2
 - file: nbs/nb_chap3
 - file: nbs/nb_20-VAR
 - file: nbs/nb_30-COMEX

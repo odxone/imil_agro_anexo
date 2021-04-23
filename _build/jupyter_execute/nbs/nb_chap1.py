@@ -13,12 +13,7 @@ import sgs
 import pandas as pd
 
 #graphs
-import plotly.graph_objs as go
-import plotly.offline as py
-import cufflinks as cf
-
-py.init_notebook_mode(connected=False)
-cf.go_offline()
+import altair as alt
 
 series = [7326]
 labels = ['PIB_variação_real_ano']
@@ -27,27 +22,26 @@ data_final = '31-12-2020'
 PIB_variação= sgs.dataframe(series, start= data_inicial, end=data_final)
 PIB_variação= PIB_variação.rename(columns={s:l for s, l in zip(series, labels)})
 
-cores = []
-for x in PIB_variação['PIB_variação_real_ano']:
-    if x < 0:
-        cores.append('red')
-    else:
-        cores.append('blue')
+vermelho, azul = "#ae1325", "#1a1e76"
 
-data = [go.Bar(x=PIB_variação.index,
-               y=PIB_variação['PIB_variação_real_ano'],
-               marker = {'color': cores,
-                         'line': {'color': '#333',
-                                  'width': 2}
-                        },
-               opacity= 0.9
-              )
-       ]
-configuracoes_layout = go.Layout(title='Variação real anual do PIB',
-                                 yaxis={'title':'Variação percentual'},
-                                 xaxis={'title':'Período'})
-fig = go.Figure(data=data, layout=configuracoes_layout)
-py.iplot(fig)
+def highlight_breakpoint(campo, breakpoint=0, colors=(vermelho,azul)):
+    return alt.condition(f"datum.{campo} <= {breakpoint}", alt.value(vermelho), alt.value(azul))
+
+fig = (
+    alt.Chart(
+        PIB_variação.reset_index(),
+        title='Variação real anual do PIB',
+        width=800,
+        height=400)
+    .mark_bar(width=10)
+    .encode(
+        x = alt.X('index:T', title='Período'),
+        y = alt.Y('PIB_variação_real_ano:Q', title='Variação percentual'),
+        color=highlight_breakpoint("PIB_variação_real_ano"),
+        tooltip=alt.Tooltip(['index:T', 'PIB_variação_real_ano:Q'])
+    )
+)
+fig
 
 series = [4380]
 labels = ['PIB_valores']
@@ -56,8 +50,18 @@ data_final = '31-12-2020'
 PIB_valores = sgs.dataframe(series, start= data_inicial, end=data_final)
 PIB_valores = PIB_valores.rename(columns={s:l for s, l in zip(series, labels)})
 
-PIB_valores['PIB_valores']=PIB_valores['PIB_valores']/100000
-PIB_valores.iplot(kind='bar', color='Darkblue', title='PIB Mensal em valores correntes em trilhões de reais')
+fig = (
+    alt.Chart(
+        PIB_valores.reset_index(),
+        title="PIB mensal em valores correntes",
+        width=800,
+        height=400,
+    ).mark_area().encode(
+        x=alt.X('index:T', title="Período"),
+        y=alt.Y('PIB_valores:Q', title="Trilhões de R$"),
+    ).configure_mark(color=azul)
+)
+fig
 
 series = [7327,7329,7328]
 labels = ['PIB_agro','PIB_serviços','PIB_indústria']
@@ -68,68 +72,50 @@ PIB_setor= PIB_setor.rename(columns={s:l for s, l in zip(series, labels)})
 
 PIB_setor.head()
 
-cores = []
-for x in PIB_setor['PIB_agro']:
-    if x < 0:
-        cores.append('red')
-    else:
-        cores.append('blue')
+fig = (
+    alt.Chart(
+        PIB_setor['PIB_agro'].reset_index(),
+        title='Variação anual do PIB da Agropecuária',
+        width=800,
+        height=400)
+    .mark_bar(width=90)
+    .encode(
+        x = alt.X('year(index):T', title='Período'),
+        y = alt.Y('PIB_agro:Q', title='Variação percentual'),
+        color=highlight_breakpoint("PIB_agro"),
+        tooltip=alt.Tooltip(['year(index):T', 'PIB_agro:Q'])
+    )
+)
+fig
 
-data = [go.Bar(x=PIB_setor.index,
-               y=PIB_setor['PIB_agro'],
-               marker = {'color': cores,
-                         'line': {'color': '#333',
-                                  'width': 2}
-                        },
-               opacity= 0.9
-              )
-       ]
-configuracoes_layout = go.Layout(title='Variação anual do PIB da Agropecuária',
-                                 yaxis={'title':'Variação percentual'},
-                                 xaxis={'title':'Período'})
-fig = go.Figure(data=data, layout=configuracoes_layout)
-py.iplot(fig)
+fig = (
+    alt.Chart(
+        PIB_setor['PIB_serviços'].reset_index(),
+        title='Variação anual do PIB de Serviços',
+        width=800,
+        height=400)
+    .mark_bar(width=90)
+    .encode(
+        x = alt.X('year(index):T', title='Período'),
+        y = alt.Y('PIB_serviços:Q', title='Variação percentual'),
+        color=highlight_breakpoint("PIB_serviços"),
+        tooltip=alt.Tooltip(['year(index):T', 'PIB_serviços:Q'])
+    )
+)
+fig
 
-cores = []
-for x in PIB_setor['PIB_serviços']:
-    if x < 0:
-        cores.append('red')
-    else:
-        cores.append('blue')
-
-data = [go.Bar(x=PIB_setor.index,
-               y=PIB_setor['PIB_serviços'],
-               marker = {'color': cores,
-                         'line': {'color': '#333',
-                                  'width': 2}
-                        },
-               opacity= 0.9
-              )
-       ]
-configuracoes_layout = go.Layout(title='Variação anual do PIB da Serviços',
-                                 yaxis={'title':'Variação percentual'},
-                                 xaxis={'title':'Período'})
-fig = go.Figure(data=data, layout=configuracoes_layout)
-py.iplot(fig)
-
-cores = []
-for x in PIB_setor['PIB_indústria']:
-    if x < 0:
-        cores.append('red')
-    else:
-        cores.append('blue')
-
-data = [go.Bar(x=PIB_setor.index,
-               y=PIB_setor['PIB_indústria'],
-               marker = {'color': cores,
-                         'line': {'color': '#333',
-                                  'width': 2}
-                        },
-               opacity= 0.9
-              )
-       ]
-configuracoes_layout = go.Layout(title='Variação anual do PIB da Indústria',
-                                 yaxis={'title':'Variação percentual'},
-                                 xaxis={'title':'Período'})
-fig = go.Figure(data=data, layout=configuracoes_layout)
-py.iplot(fig)
+fig = (
+    alt.Chart(
+        PIB_setor['PIB_indústria'].reset_index(),
+        title='Variação anual do PIB da Indústria',
+        width=800,
+        height=400)
+    .mark_bar(width=90)
+    .encode(
+        x = alt.X('year(index):T', title='Período'),
+        y = alt.Y('PIB_indústria:Q', title='Variação percentual'),
+        color=highlight_breakpoint("PIB_indústria"),
+        tooltip=alt.Tooltip(['year(index):T', 'PIB_indústria:Q'])
+    )
+)
+fig

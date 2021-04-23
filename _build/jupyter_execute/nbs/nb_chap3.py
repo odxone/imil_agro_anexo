@@ -11,6 +11,8 @@ import pandas as pd
 import geopandas as gpd
 
 # graphs
+import altair as alt
+
 import plotly.graph_objs as go
 import plotly.offline as py
 import cufflinks as cf
@@ -20,13 +22,28 @@ import seaborn as sns
 py.init_notebook_mode(connected=False)
 cf.go_offline()
 
+vermelho, azul, verde = "#ae1325", "#1a1e76", "#2a8125"
+
+def highlight_breakpoint(campo, breakpoint=0, colors=(vermelho,azul)):
+    return alt.condition(f"datum.{campo} <= {breakpoint}", alt.value(vermelho), alt.value(azul))
+
 pib_agro2 = ipea.timeseries(
     'SCN10_VAAGRON10'
 )
-
 pib_agro2 = pib_agro2[pib_agro2.YEAR >= 1990]
 
-pib_agro2['VALUE (R$)'].iplot(kind='bar',color='green', title= 'PIB agropecuária anual')
+fig = (
+    alt.Chart(
+        pib_agro2.reset_index().rename(columns={'VALUE (R$)':'valor'}),
+        title="PIB agropecuária anual",
+        width=800,
+        height=400,
+    ).mark_bar(width=20).encode(
+        x=alt.X('year(DATE):T', title="Período"),
+        y=alt.Y('valor:Q', title="Milhões de R$")
+    ).configure_mark(color=verde, )
+)
+fig
 
 - Esta mesma série foi deflacionada pelo IPCA ( IPEADATA também trás disponível a série deflacionada)
 
@@ -35,9 +52,20 @@ agro_deflat=pd.read_csv(
     sep=';',
 )[['DATA', 'Nominal', 'Real']]
 
-agro_deflat=agro_deflat.set_index(['DATA'])
-
-agro_deflat.iplot(title='PIB-Valor Adicionado Agropecuária- correção pelo IPCA de Março de 2021')
+fig = (
+    alt.Chart(
+        agro_deflat.melt(id_vars="DATA", var_name="Tipo", value_name="Valor"),
+        title="PIB - Valor Adicionado Agropecuária - correção pelo IPCA de Março de 2021",
+        width=800,
+        height=400
+    ).mark_line().encode(
+        x=alt.X("DATA:T", title="Período"),
+        y=alt.Y("Valor:Q", title="Milhões de R$"),
+        color=alt.Color("Tipo:N", title=""),
+        tooltip=["DATA:T", "Valor:Q"]
+    )
+)
+fig
 
 - Já os mapas foram retirados do shape file fornecido pelo IBGE no Censo Agropecuário neste endereço: 
 
@@ -116,4 +144,18 @@ Valor_adicionado_por_setor = Valor_adicionado_por_setor.rename(columns={s:l for 
 
 Valor_adicionado_por_setor.head()
 
-Valor_adicionado_por_setor.iplot(title= 'PIB Trimestral por Setor- Dados dessazonalizados')
+fig = (
+    alt.Chart(
+        (Valor_adicionado_por_setor.reset_index()
+         .melt(id_vars="index", var_name="Série", value_name="Valor")),
+        title="PIB Trimestral por Setor - Dados dessazonalizados",
+        height=400,
+        width=800,
+    ).mark_line().encode(
+        x=alt.X("index:T", title="Período"),
+        y=alt.Y("Valor:Q", title="Índice"),
+        color=alt.Color("Série:N", title="")
+    )
+)
+fig
+

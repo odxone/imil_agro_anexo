@@ -77,13 +77,13 @@ lspa = lspa[~lspa['Produto das lavouras'].isin(produtos_dropados)]
 
 ## Preparação dos Gráficos
 
-def plot_producao(df, produto):
+def plot_producao(df, produto, size=(250, 400)):
     dataf = df[
         (df['Variável'] == 'Produção (Toneladas)') &
         (df['Produto das lavouras'] == produto)
     ]
 
-    return alt.Chart(dataf).mark_line().encode(
+    return alt.Chart(dataf, width=size[0], height=size[1]).mark_line().encode(
         x=alt.X("Mês:T", title='Período'),
         y=alt.Y('Valor:Q', title='Toneladas'),
         tooltip=alt.Tooltip(["Mês:T", 'Valor:Q'])
@@ -91,13 +91,13 @@ def plot_producao(df, produto):
         title=f"{produto} - Produção"
     )
 
-def plot_areas(df, produto):
+def plot_areas(df, produto, size=(250, 400)):
     dataf = df[
         (df['Variável'].isin(['Área plantada (Hectares)', 'Área colhida (Hectares)'])) &
         (df['Produto das lavouras'] == produto)
     ]
 
-    return alt.Chart(dataf).mark_line().encode(
+    return alt.Chart(dataf, width=size[0], height=size[1]).mark_line().encode(
         x=alt.X("Mês:T", title='Período'),
         y=alt.Y("Valor:Q", title='Hectares'),
         color=alt.Color("Variável:N"),
@@ -106,13 +106,13 @@ def plot_areas(df, produto):
         title=f"{produto} - Áreas"
     )
 
-def plot_rendimento(df, produto):
+def plot_rendimento(df, produto, size=(250, 400)):
     dataf = df[
         (df['Variável'] == 'Rendimento médio (Quilogramas por Hectare)') &
         (df['Produto das lavouras'] == produto)
     ]
 
-    return alt.Chart(dataf).mark_line().encode(
+    return alt.Chart(dataf, width=size[0], height=size[1]).mark_line().encode(
         x=alt.X("Mês:T", title="Período"),
         y=alt.Y("Valor:Q", title="Kg/hectare"),
         tooltip=alt.Tooltip(["Mês:T", "Valor:Q"])
@@ -150,7 +150,7 @@ def plot_grafico_produto(tipo_grafico, Produto, dados=lspa):
         'rendimento': plot_rendimento,
     }
     
-    return tipos[tipo_grafico](dados, Produto)
+    return tipos[tipo_grafico](dados, Produto, size=(400, 400))
 
 lspa.head()
 
