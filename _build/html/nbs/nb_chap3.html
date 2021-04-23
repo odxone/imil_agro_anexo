@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agropecuária em Valores &#8212; Anexo ao Estudo sobre a Agropecuária no Brasil</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vetor Auto Regressivo" href="nb_20-VAR.html" />
+    <link rel="prev" title="UNDER CONST" href="nb_chap2.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/LOGO_IML_ODX.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Anexo ao Estudo sobre a Agropecuária no Brasil</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../covers/intro.html">
+   Estudo sobre a Agropecuária no Brasil
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_chap1.html">
+   Cenário Econômico
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_chap2.html">
+   UNDER CONST
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Agropecuária em Valores
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_20-VAR.html">
+   Vetor Auto Regressivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_30-COMEX.html">
+   Balança Comercial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_40-emprego_formal_caged.html">
+   Análise dos empregos formais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_50-tratamento_produtividade.html">
+   Produtividade na Agricultura
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/desigualdade.html">
+   Estudo sobre desigualdade e variáveis da agropecuária
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_60-preprocessing.html">
+     Pré-Processamento - Leitura e Limpeza
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_61-pandas_profiling.html">
+     Pré-Processamento - Análise das variáveis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_62-scaling_encoding.html">
+     Pré-Processamento - Padronização e Codificação
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_63-logistic_regression.html">
+     Regressão Logística
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_64-ridge_classification.html">
+     Classificação Ridge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_65-random_forest_classification.html">
+     Floresta Aleatória
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_66-neural_network_classification.html">
+     Rede Neural
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/odxone/imil_agro_anexo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/odxone/imil_agro_anexo/issues/new?title=Issue%20on%20page%20%2Fnbs/nb_chap3.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/odxone/imil_agro_anexo/edit/master/nbs/nb_chap3.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#carregando-bibliotecas">
+   Carregando bibliotecas
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="agropecuaria-em-valores">
+<h1>Agropecuária em Valores<a class="headerlink" href="#agropecuaria-em-valores" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="carregando-bibliotecas">
+<h2>Carregando bibliotecas<a class="headerlink" href="#carregando-bibliotecas" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># dados</span>
+<span class="kn">import</span> <span class="nn">ipeadatapy</span> <span class="k">as</span> <span class="nn">ipea</span>
+<span class="kn">import</span> <span class="nn">sgs</span>
+
+<span class="c1"># manipulacao de dados</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+
+<span class="c1"># graphs</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">plotly.offline</span> <span class="k">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">cufflinks</span> <span class="k">as</span> <span class="nn">cf</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">cf</span><span class="o">.</span><span class="n">go_offline</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pib_agro2</span> <span class="o">=</span> <span class="n">ipea</span><span class="o">.</span><span class="n">timeseries</span><span class="p">(</span>
+    <span class="s1">&#39;SCN10_VAAGRON10&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pib_agro2</span> <span class="o">=</span> <span class="n">pib_agro2</span><span class="p">[</span><span class="n">pib_agro2</span><span class="o">.</span><span class="n">YEAR</span> <span class="o">&gt;=</span> <span class="mi">1990</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pib_agro2</span><span class="p">[</span><span class="s1">&#39;VALUE (R$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span> <span class="s1">&#39;PIB agropecuária anual&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>                            <div id="d1bef32c-7206-4111-abcc-c9ed1ebe32fe" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    window.PLOTLYENV.BASE_URL='https://plot.ly';                                    if (document.getElementById("d1bef32c-7206-4111-abcc-c9ed1ebe32fe")) {                    Plotly.newPlot(                        "d1bef32c-7206-4111-abcc-c9ed1ebe32fe",                        [{"marker": {"color": "rgba(0, 128, 0, 0.6)", "line": {"color": "rgba(0, 128, 0, 1.0)", "width": 1}}, "name": "VALUE (R$)", "orientation": "v", "text": "", "type": "bar", "x": ["1990-01-01", "1991-01-01", "1992-01-01", "1993-01-01", "1994-01-01", "1995-01-01", "1996-01-01", "1997-01-01", "1998-01-01", "1999-01-01", "2000-01-01", "2001-01-01", "2002-01-01", "2003-01-01", "2004-01-01", "2005-01-01", "2006-01-01", "2007-01-01", "2008-01-01", "2009-01-01", "2010-01-01", "2011-01-01", "2012-01-01", "2013-01-01", "2014-01-01", "2015-01-01", "2016-01-01", "2017-01-01", "2018-01-01", "2019-01-01", "2020-01-01"], "y": [0.8041934545454545, 4.124350909090909, 43.62423963636363, 955.5178181818181, 30457.594999999994, 35381.9418924396, 40758.6436796665, 44605.8265612914, 47612.1223412677, 50534.8269774117, 56962.3888585328, 63169.9860348165, 81515.1948181145, 105949.168631983, 110912.706112694, 100957.5496526, 105294.016435283, 120151.713604652, 142051.177152542, 149212.639035677, 159932.0, 190024.0, 200695.0, 240290.0, 249975.0, 258967.0, 306655.0, 302971.0, 309611.0, 326039.640499999, 439838.433714299]}],                        {"legend": {"bgcolor": "#F5F6F9", "font": {"color": "#4D5663"}}, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"color": "#4D5663"}, "text": "PIB agropecu\u00e1ria anual"}, "xaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}, "yaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}},                        {"showLink": true, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly", "responsive": true}                    ).then(function(){
+
+var gd = document.getElementById('d1bef32c-7206-4111-abcc-c9ed1ebe32fe');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+<ul class="simple">
+<li><p>Esta mesma série foi deflacionada pelo IPCA ( IPEADATA também trás disponível a série deflacionada)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agro_deflat</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s1">&#39;https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_agro_valores/pib_agro_valores.csv&#39;</span><span class="p">,</span>
+    <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span>
+<span class="p">)[[</span><span class="s1">&#39;DATA&#39;</span><span class="p">,</span> <span class="s1">&#39;Nominal&#39;</span><span class="p">,</span> <span class="s1">&#39;Real&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agro_deflat</span><span class="o">=</span><span class="n">agro_deflat</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;DATA&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agro_deflat</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;PIB-Valor Adicionado Agropecuária- correção pelo IPCA de Março de 2021&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>                            <div id="ebdbd792-999d-4853-8b1b-0325487e32f8" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    window.PLOTLYENV.BASE_URL='https://plot.ly';                                    if (document.getElementById("ebdbd792-999d-4853-8b1b-0325487e32f8")) {                    Plotly.newPlot(                        "ebdbd792-999d-4853-8b1b-0325487e32f8",                        [{"line": {"color": "rgba(255, 153, 51, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Nominal", "text": "", "type": "scatter", "x": ["01/12/1996", "01/12/1997", "01/12/1998", "01/12/1999", "01/12/2000", "01/12/2001", "01/12/2002", "01/12/2003", "01/12/2004", "01/12/2005", "01/12/2006", "01/12/2007", "01/12/2008", "01/12/2009", "01/12/2010", "01/12/2011", "01/12/2012", "01/12/2013", "01/12/2014", "01/12/2015", "01/12/2016", "01/12/2017", "01/12/2018", "01/12/2019", "01/12/2020"], "y": [40759, 44606, 47612, 50535, 56962, 63170, 81515, 105949, 110913, 100958, 105294, 120152, 142051, 149213, 159932, 190024, 200695, 240290, 249975, 258967, 306655, 302971, 309611, 326040, 439838]}, {"line": {"color": "rgba(55, 128, 191, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Real", "text": "", "type": "scatter", "x": ["01/12/1996", "01/12/1997", "01/12/1998", "01/12/1999", "01/12/2000", "01/12/2001", "01/12/2002", "01/12/2003", "01/12/2004", "01/12/2005", "01/12/2006", "01/12/2007", "01/12/2008", "01/12/2009", "01/12/2010", "01/12/2011", "01/12/2012", "01/12/2013", "01/12/2014", "01/12/2015", "01/12/2016", "01/12/2017", "01/12/2018", "01/12/2019", "01/12/2020"], "y": ["\u00a0170466", "\u00a0177222", "185901", "181608", "193147", "199050", "249809\u00a0", "271079\u00a0", "264626", "226777", "229587\u00a0", "251454", "279434", "281641", "285770", "318394", "318640", "360678", "352131", "330205", "365474", "351235", "344976", "351761", "454925\u00a0"]}],                        {"legend": {"bgcolor": "#F5F6F9", "font": {"color": "#4D5663"}}, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"color": "#4D5663"}, "text": "PIB-Valor Adicionado Agropecu\u00e1ria- corre\u00e7\u00e3o pelo IPCA de Mar\u00e7o de 2021"}, "xaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}, "yaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}},                        {"showLink": true, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly", "responsive": true}                    ).then(function(){
+
+var gd = document.getElementById('ebdbd792-999d-4853-8b1b-0325487e32f8');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+<ul class="simple">
+<li><p>Já os mapas foram retirados do shape file fornecido pelo IBGE no Censo Agropecuário neste endereço:</p></li>
+</ul>
+<p><a class="reference external" href="https://mapasinterativos.ibge.gov.br/agrocompara/">https://mapasinterativos.ibge.gov.br/agrocompara/</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shape</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_gini/mun_agro.zip&#39;</span><span class="p">)</span>
+<span class="n">shape</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>MUNICIPIO</th>
+      <th>Shape_Leng</th>
+      <th>Shape_Area</th>
+      <th>V1</th>
+      <th>V2</th>
+      <th>V3</th>
+      <th>V4</th>
+      <th>V5</th>
+      <th>V6</th>
+      <th>...</th>
+      <th>GEO</th>
+      <th>V32</th>
+      <th>V33</th>
+      <th>V34</th>
+      <th>V35</th>
+      <th>V36</th>
+      <th>V37</th>
+      <th>V38</th>
+      <th>V39</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Lupionópolis - PR</td>
+      <td>0.514701</td>
+      <td>0.010596</td>
+      <td>173.0</td>
+      <td>59.7001</td>
+      <td>3.23121</td>
+      <td>165.7380</td>
+      <td>852.3680</td>
+      <td>124.304</td>
+      <td>...</td>
+      <td>4113809.0</td>
+      <td>2.45788</td>
+      <td>1.15607</td>
+      <td>48.5549</td>
+      <td>8.58624</td>
+      <td>8.09249</td>
+      <td>68.7861</td>
+      <td>71.0983</td>
+      <td>36.9942</td>
+      <td>POLYGON Z ((-51.63021 -22.66372 0.00000, -51.6...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Águas de Lindóia - SP</td>
+      <td>0.344094</td>
+      <td>0.004856</td>
+      <td>69.0</td>
+      <td>28.4016</td>
+      <td>3.42029</td>
+      <td>36.3902</td>
+      <td>80.0584</td>
+      <td>133.431</td>
+      <td>...</td>
+      <td>3500501.0</td>
+      <td>2.18536</td>
+      <td>5.79710</td>
+      <td>39.1304</td>
+      <td>2.43528</td>
+      <td>13.04350</td>
+      <td>49.2754</td>
+      <td>60.8696</td>
+      <td>46.3768</td>
+      <td>POLYGON Z ((-46.61019 -22.43936 0.00000, -46.6...</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 45 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">subplot_kw</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;aspect&#39;</span><span class="p">:</span><span class="s1">&#39;equal&#39;</span><span class="p">})</span>
+<span class="n">shape</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">column</span><span class="o">=</span><span class="s1">&#39;V2&#39;</span><span class="p">,</span>
+    <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;Quantiles&#39;</span><span class="p">,</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;OrRd&#39;</span><span class="p">,</span>
+    <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Área média por município(Agropecuária)&quot;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">25</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">5.5</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_chap3_12_0.png" src="../_images/nb_chap3_12_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">regioes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_agro_valores/regioes_agro.csv&quot;</span><span class="p">,</span>
+    <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;;&quot;</span><span class="p">,</span>
+    <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span>
+<span class="p">)</span>
+<span class="n">mapa</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span><span class="n">regioes</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;OBJECTID&#39;</span><span class="p">],</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gráfico</span> <span class="o">=</span> <span class="n">mapa</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">gráfico</span><span class="p">[</span><span class="s1">&#39;Estado&#39;</span><span class="p">],</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">gráfico</span><span class="p">[</span><span class="s1">&#39;V2&#39;</span><span class="p">],</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">gráfico</span><span class="p">,</span>
+            <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Dark2&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Área Média (ha) por município&quot;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">25</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">5.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;área média em hectares&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_chap3_14_0.png" src="../_images/nb_chap3_14_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">area_por_estado</span> <span class="o">=</span> <span class="n">mapa</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Estado&#39;</span><span class="p">,</span> <span class="s1">&#39;Região&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()[[</span><span class="s1">&#39;V2&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">area_por_estado</span> <span class="o">=</span> <span class="n">area_por_estado</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;V2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gráfico</span> <span class="o">=</span> <span class="n">area_por_estado</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">gráfico</span><span class="p">[</span><span class="s1">&#39;Estado&#39;</span><span class="p">],</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">gráfico</span><span class="p">[</span><span class="s1">&#39;V2&#39;</span><span class="p">],</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">gráfico</span><span class="p">,</span>
+            <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Dark2&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Área Média (ha) por município&quot;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">25</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">5.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;área média em hectares&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">})</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/nb_chap3_16_0.png" src="../_images/nb_chap3_16_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Já a série trimestral foi obtida do SGS do Banco Central, através da API</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">series_VA</span> <span class="o">=</span> <span class="p">[</span><span class="mi">22105</span><span class="p">,</span><span class="mi">22106</span><span class="p">,</span><span class="mi">22107</span><span class="p">,</span><span class="mi">22110</span><span class="p">]</span>
+<span class="n">labels_VA</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;PIB_Agropecuária&#39;</span><span class="p">,</span><span class="s1">&#39;PIB_Indústria&#39;</span><span class="p">,</span><span class="s1">&#39;PIB_serviços&#39;</span><span class="p">,</span><span class="s1">&#39;Consumo_das_famílias&#39;</span><span class="p">]</span>
+<span class="n">data_inicial</span> <span class="o">=</span><span class="s1">&#39;01-01-1996&#39;</span>
+<span class="n">data_final</span> <span class="o">=</span> <span class="s1">&#39;01-01-2021&#39;</span>
+<span class="n">Valor_adicionado_por_setor</span> <span class="o">=</span> <span class="n">sgs</span><span class="o">.</span><span class="n">dataframe</span><span class="p">(</span><span class="n">series_VA</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span> <span class="n">data_inicial</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">data_final</span><span class="p">)</span>
+<span class="n">Valor_adicionado_por_setor</span> <span class="o">=</span> <span class="n">Valor_adicionado_por_setor</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">s</span><span class="p">:</span><span class="n">l</span> <span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">series_VA</span><span class="p">,</span> <span class="n">labels_VA</span><span class="p">)})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Valor_adicionado_por_setor</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PIB_Agropecuária</th>
+      <th>PIB_Indústria</th>
+      <th>PIB_serviços</th>
+      <th>Consumo_das_famílias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1996-01-01</th>
+      <td>95.12</td>
+      <td>100.69</td>
+      <td>100.80</td>
+      <td>98.86</td>
+    </tr>
+    <tr>
+      <th>1996-04-01</th>
+      <td>96.59</td>
+      <td>97.05</td>
+      <td>102.31</td>
+      <td>100.93</td>
+    </tr>
+    <tr>
+      <th>1996-07-01</th>
+      <td>101.69</td>
+      <td>105.99</td>
+      <td>103.69</td>
+      <td>103.70</td>
+    </tr>
+    <tr>
+      <th>1996-10-01</th>
+      <td>126.16</td>
+      <td>99.54</td>
+      <td>101.56</td>
+      <td>109.13</td>
+    </tr>
+    <tr>
+      <th>1997-01-01</th>
+      <td>101.74</td>
+      <td>104.25</td>
+      <td>103.86</td>
+      <td>106.65</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Valor_adicionado_por_setor</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span> <span class="s1">&#39;PIB Trimestral por Setor- Dados dessazonalizados&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>                            <div id="9230081e-2b18-4dee-a5c6-7ea3a7d1927a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    window.PLOTLYENV.BASE_URL='https://plot.ly';                                    if (document.getElementById("9230081e-2b18-4dee-a5c6-7ea3a7d1927a")) {                    Plotly.newPlot(                        "9230081e-2b18-4dee-a5c6-7ea3a7d1927a",                        [{"line": {"color": "rgba(255, 153, 51, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "PIB_Agropecu\u00e1ria", "text": "", "type": "scatter", "x": ["1996-01-01", "1996-04-01", "1996-07-01", "1996-10-01", "1997-01-01", "1997-04-01", "1997-07-01", "1997-10-01", "1998-01-01", "1998-04-01", "1998-07-01", "1998-10-01", "1999-01-01", "1999-04-01", "1999-07-01", "1999-10-01", "2000-01-01", "2000-04-01", "2000-07-01", "2000-10-01", "2001-01-01", "2001-04-01", "2001-07-01", "2001-10-01", "2002-01-01", "2002-04-01", "2002-07-01", "2002-10-01", "2003-01-01", "2003-04-01", "2003-07-01", "2003-10-01", "2004-01-01", "2004-04-01", "2004-07-01", "2004-10-01", "2005-01-01", "2005-04-01", "2005-07-01", "2005-10-01", "2006-01-01", "2006-04-01", "2006-07-01", "2006-10-01", "2007-01-01", "2007-04-01", "2007-07-01", "2007-10-01", "2008-01-01", "2008-04-01", "2008-07-01", "2008-10-01", "2009-01-01", "2009-04-01", "2009-07-01", "2009-10-01", "2010-01-01", "2010-04-01", "2010-07-01", "2010-10-01", "2011-01-01", "2011-04-01", "2011-07-01", "2011-10-01", "2012-01-01", "2012-04-01", "2012-07-01", "2012-10-01", "2013-01-01", "2013-04-01", "2013-07-01", "2013-10-01", "2014-01-01", "2014-04-01", "2014-07-01", "2014-10-01", "2015-01-01", "2015-04-01", "2015-07-01", "2015-10-01", "2016-01-01", "2016-04-01", "2016-07-01", "2016-10-01", "2017-01-01", "2017-04-01", "2017-07-01", "2017-10-01", "2018-01-01", "2018-04-01", "2018-07-01", "2018-10-01", "2019-01-01", "2019-04-01", "2019-07-01", "2019-10-01", "2020-01-01", "2020-04-01", "2020-07-01", "2020-10-01"], "y": [95.12, 96.59, 101.69, 126.16, 101.74, 100.38, 103.59, 112.79, 100.06, 112.72, 109.73, 107.59, 111.95, 113.96, 114.52, 118.95, 118.2, 117.77, 116.68, 117.4, 121.05, 121.29, 124.04, 130.5, 126.71, 129.72, 138.82, 142.78, 146.07, 146.01, 141.81, 144.26, 145.97, 148.48, 148.47, 146.73, 150.45, 152.4, 145.22, 146.52, 151.5, 153.21, 159.84, 160.68, 158.12, 154.81, 166.51, 166.58, 166.35, 171.74, 175.04, 168.09, 163.53, 161.75, 163.32, 170.2, 173.47, 177.72, 173.78, 176.52, 180.73, 179.16, 188.44, 197.17, 158.7, 178.66, 198.86, 188.05, 189.88, 196.5, 195.89, 198.1, 199.75, 196.49, 200.69, 205.87, 210.81, 204.67, 203.09, 207.42, 192.8, 192.93, 196.06, 205.31, 230.66, 223.07, 217.63, 218.34, 223.52, 224.37, 228.07, 231.17, 225.26, 226.76, 230.04, 229.47, 234.08, 232.04, 230.68, 229.61]}, {"line": {"color": "rgba(55, 128, 191, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "PIB_Ind\u00fastria", "text": "", "type": "scatter", "x": ["1996-01-01", "1996-04-01", "1996-07-01", "1996-10-01", "1997-01-01", "1997-04-01", "1997-07-01", "1997-10-01", "1998-01-01", "1998-04-01", "1998-07-01", "1998-10-01", "1999-01-01", "1999-04-01", "1999-07-01", "1999-10-01", "2000-01-01", "2000-04-01", "2000-07-01", "2000-10-01", "2001-01-01", "2001-04-01", "2001-07-01", "2001-10-01", "2002-01-01", "2002-04-01", "2002-07-01", "2002-10-01", "2003-01-01", "2003-04-01", "2003-07-01", "2003-10-01", "2004-01-01", "2004-04-01", "2004-07-01", "2004-10-01", "2005-01-01", "2005-04-01", "2005-07-01", "2005-10-01", "2006-01-01", "2006-04-01", "2006-07-01", "2006-10-01", "2007-01-01", "2007-04-01", "2007-07-01", "2007-10-01", "2008-01-01", "2008-04-01", "2008-07-01", "2008-10-01", "2009-01-01", "2009-04-01", "2009-07-01", "2009-10-01", "2010-01-01", "2010-04-01", "2010-07-01", "2010-10-01", "2011-01-01", "2011-04-01", "2011-07-01", "2011-10-01", "2012-01-01", "2012-04-01", "2012-07-01", "2012-10-01", "2013-01-01", "2013-04-01", "2013-07-01", "2013-10-01", "2014-01-01", "2014-04-01", "2014-07-01", "2014-10-01", "2015-01-01", "2015-04-01", "2015-07-01", "2015-10-01", "2016-01-01", "2016-04-01", "2016-07-01", "2016-10-01", "2017-01-01", "2017-04-01", "2017-07-01", "2017-10-01", "2018-01-01", "2018-04-01", "2018-07-01", "2018-10-01", "2019-01-01", "2019-04-01", "2019-07-01", "2019-10-01", "2020-01-01", "2020-04-01", "2020-07-01", "2020-10-01"], "y": [100.69, 97.05, 105.99, 99.54, 104.25, 104.91, 106.37, 105.99, 104.17, 104.65, 103.54, 100.34, 99.92, 100.1, 99.91, 101.94, 103.42, 104.31, 105.33, 107.16, 107.3, 105.15, 102.37, 101.85, 105.8, 107.97, 107.66, 111.05, 106.13, 106.19, 109.59, 110.99, 113.15, 115.78, 119.61, 119.51, 118.37, 121.93, 118.13, 120.36, 121.42, 119.68, 121.95, 125.51, 125.97, 130.04, 130.82, 131.37, 134.41, 136.63, 139.4, 128.49, 121.16, 125.74, 130.92, 136.33, 138.33, 141.84, 142.18, 144.3, 145.51, 149.13, 147.91, 148.05, 147.88, 144.49, 147.74, 145.69, 145.94, 151.17, 151.33, 149.95, 150.88, 146.1, 145.67, 146.64, 144.55, 139.43, 136.9, 134.35, 133.55, 134.13, 131.96, 130.2, 131.11, 131.16, 132.07, 133.35, 132.85, 132.46, 133.47, 132.02, 132.79, 133.21, 133.55, 133.22, 131.96, 114.62, 132.31, 134.76]}, {"line": {"color": "rgba(50, 171, 96, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "PIB_servi\u00e7os", "text": "", "type": "scatter", "x": ["1996-01-01", "1996-04-01", "1996-07-01", "1996-10-01", "1997-01-01", "1997-04-01", "1997-07-01", "1997-10-01", "1998-01-01", "1998-04-01", "1998-07-01", "1998-10-01", "1999-01-01", "1999-04-01", "1999-07-01", "1999-10-01", "2000-01-01", "2000-04-01", "2000-07-01", "2000-10-01", "2001-01-01", "2001-04-01", "2001-07-01", "2001-10-01", "2002-01-01", "2002-04-01", "2002-07-01", "2002-10-01", "2003-01-01", "2003-04-01", "2003-07-01", "2003-10-01", "2004-01-01", "2004-04-01", "2004-07-01", "2004-10-01", "2005-01-01", "2005-04-01", "2005-07-01", "2005-10-01", "2006-01-01", "2006-04-01", "2006-07-01", "2006-10-01", "2007-01-01", "2007-04-01", "2007-07-01", "2007-10-01", "2008-01-01", "2008-04-01", "2008-07-01", "2008-10-01", "2009-01-01", "2009-04-01", "2009-07-01", "2009-10-01", "2010-01-01", "2010-04-01", "2010-07-01", "2010-10-01", "2011-01-01", "2011-04-01", "2011-07-01", "2011-10-01", "2012-01-01", "2012-04-01", "2012-07-01", "2012-10-01", "2013-01-01", "2013-04-01", "2013-07-01", "2013-10-01", "2014-01-01", "2014-04-01", "2014-07-01", "2014-10-01", "2015-01-01", "2015-04-01", "2015-07-01", "2015-10-01", "2016-01-01", "2016-04-01", "2016-07-01", "2016-10-01", "2017-01-01", "2017-04-01", "2017-07-01", "2017-10-01", "2018-01-01", "2018-04-01", "2018-07-01", "2018-10-01", "2019-01-01", "2019-04-01", "2019-07-01", "2019-10-01", "2020-01-01", "2020-04-01", "2020-07-01", "2020-10-01"], "y": [100.8, 102.31, 103.69, 101.56, 103.86, 104.54, 105.07, 106.37, 105.22, 106.4, 107.08, 107.14, 108.01, 108.06, 108.21, 109.33, 110.04, 111.6, 113.02, 114.29, 113.93, 115.06, 115.06, 115.49, 117.23, 117.82, 119.06, 119.73, 119.41, 118.63, 119.74, 120.93, 121.91, 124.94, 126.17, 128.26, 128.69, 129.93, 130.79, 131.75, 134.29, 134.85, 136.63, 137.81, 141.74, 142.88, 144.03, 146.46, 147.54, 151.19, 152.93, 149.55, 150.73, 152.25, 155.0, 157.26, 160.09, 161.44, 163.82, 165.65, 167.61, 168.4, 168.48, 169.15, 169.28, 172.47, 174.11, 175.34, 175.83, 177.89, 178.96, 179.53, 180.62, 179.21, 179.66, 179.85, 178.39, 175.26, 173.48, 172.68, 170.76, 171.47, 170.51, 169.54, 170.6, 172.0, 172.95, 173.67, 175.11, 175.49, 176.54, 176.43, 178.48, 178.46, 179.04, 179.21, 175.44, 160.27, 170.56, 175.11]}, {"line": {"color": "rgba(128, 0, 128, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Consumo_das_fam\u00edlias", "text": "", "type": "scatter", "x": ["1996-01-01", "1996-04-01", "1996-07-01", "1996-10-01", "1997-01-01", "1997-04-01", "1997-07-01", "1997-10-01", "1998-01-01", "1998-04-01", "1998-07-01", "1998-10-01", "1999-01-01", "1999-04-01", "1999-07-01", "1999-10-01", "2000-01-01", "2000-04-01", "2000-07-01", "2000-10-01", "2001-01-01", "2001-04-01", "2001-07-01", "2001-10-01", "2002-01-01", "2002-04-01", "2002-07-01", "2002-10-01", "2003-01-01", "2003-04-01", "2003-07-01", "2003-10-01", "2004-01-01", "2004-04-01", "2004-07-01", "2004-10-01", "2005-01-01", "2005-04-01", "2005-07-01", "2005-10-01", "2006-01-01", "2006-04-01", "2006-07-01", "2006-10-01", "2007-01-01", "2007-04-01", "2007-07-01", "2007-10-01", "2008-01-01", "2008-04-01", "2008-07-01", "2008-10-01", "2009-01-01", "2009-04-01", "2009-07-01", "2009-10-01", "2010-01-01", "2010-04-01", "2010-07-01", "2010-10-01", "2011-01-01", "2011-04-01", "2011-07-01", "2011-10-01", "2012-01-01", "2012-04-01", "2012-07-01", "2012-10-01", "2013-01-01", "2013-04-01", "2013-07-01", "2013-10-01", "2014-01-01", "2014-04-01", "2014-07-01", "2014-10-01", "2015-01-01", "2015-04-01", "2015-07-01", "2015-10-01", "2016-01-01", "2016-04-01", "2016-07-01", "2016-10-01", "2017-01-01", "2017-04-01", "2017-07-01", "2017-10-01", "2018-01-01", "2018-04-01", "2018-07-01", "2018-10-01", "2019-01-01", "2019-04-01", "2019-07-01", "2019-10-01", "2020-01-01", "2020-04-01", "2020-07-01", "2020-10-01"], "y": [98.86, 100.93, 103.7, 109.13, 106.65, 106.97, 105.88, 106.01, 106.1, 105.78, 106.0, 104.6, 105.04, 105.1, 105.99, 107.86, 108.08, 109.52, 111.19, 112.26, 112.3, 112.89, 109.3, 110.15, 112.46, 113.69, 112.37, 111.9, 112.38, 111.38, 111.61, 112.54, 113.34, 114.86, 117.12, 119.96, 119.35, 120.38, 122.27, 123.9, 125.26, 127.37, 128.69, 130.3, 133.24, 135.23, 136.07, 139.68, 142.79, 144.71, 147.4, 144.65, 146.01, 150.48, 153.96, 154.69, 156.91, 158.63, 162.09, 165.24, 166.87, 169.24, 168.6, 169.32, 171.73, 173.1, 175.42, 177.27, 178.14, 180.44, 181.68, 181.48, 184.45, 183.42, 183.73, 186.41, 183.21, 179.68, 176.48, 175.21, 172.91, 171.85, 171.32, 170.94, 171.91, 174.71, 176.54, 177.22, 178.3, 178.68, 179.9, 180.17, 182.1, 182.67, 183.74, 184.25, 180.73, 160.38, 172.79, 178.64]}],                        {"legend": {"bgcolor": "#F5F6F9", "font": {"color": "#4D5663"}}, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"color": "#4D5663"}, "text": "PIB Trimestral por Setor- Dados dessazonalizados"}, "xaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}, "yaxis": {"gridcolor": "#E1E5ED", "showgrid": true, "tickfont": {"color": "#4D5663"}, "title": {"font": {"color": "#4D5663"}, "text": ""}, "zerolinecolor": "#E1E5ED"}},                        {"showLink": true, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly", "responsive": true}                    ).then(function(){
+
+var gd = document.getElementById('9230081e-2b18-4dee-a5c6-7ea3a7d1927a');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./nbs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="nb_chap2.html" title="previous page">UNDER CONST</a>
+    <a class='right-next' id="next-link" href="nb_20-VAR.html" title="next page">Vetor Auto Regressivo</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Octahedron Data Experts<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
