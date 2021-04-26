@@ -89,6 +89,62 @@ ax.set_facecolor('lightgrey')
 ax.spines['bottom'].set_linewidth(5.5)
 fig.tight_layout()
 
+fig, ax = plt.subplots(figsize=(12,12), subplot_kw={'aspect':'equal'})
+shape.plot(
+    column='V7',
+    scheme='Quantiles',
+    k=7,
+    cmap='OrRd',
+    legend=True,
+    ax=ax)
+ax.set_title("Média da área de lavouras por trator", fontdict={'fontsize':25})
+ax.set_xlabel(' ', fontdict={'fontsize':20})
+ax.set_facecolor('lightgrey')
+ax.spines['bottom'].set_linewidth(5.5)
+fig.tight_layout()
+
+fig, ax = plt.subplots(figsize=(12,12), subplot_kw={'aspect':'equal'})
+shape.plot(
+    column='V4',
+    scheme='Quantiles',
+    k=7,
+    cmap='OrRd',
+    legend=True,
+    ax=ax)
+ax.set_title("Média da área de lavouras por adubadeira", fontdict={'fontsize':25})
+ax.set_xlabel(' ', fontdict={'fontsize':20})
+ax.set_facecolor('lightgrey')
+ax.spines['bottom'].set_linewidth(5.5)
+fig.tight_layout()
+
+fig, ax = plt.subplots(figsize=(12,12), subplot_kw={'aspect':'equal'})
+shape.plot(
+    column='V5',
+    scheme='Quantiles',
+    k=7,
+    cmap='OrRd',
+    legend=True,
+    ax=ax)
+ax.set_title("Média da área de lavouras por colheitadeira", fontdict={'fontsize':25})
+ax.set_xlabel(' ', fontdict={'fontsize':20})
+ax.set_facecolor('lightgrey')
+ax.spines['bottom'].set_linewidth(5.5)
+fig.tight_layout()
+
+fig, ax = plt.subplots(figsize=(12,12), subplot_kw={'aspect':'equal'})
+shape.plot(
+    column='V6',
+    scheme='Quantiles',
+    k=7,
+    cmap='OrRd',
+    legend=True,
+    ax=ax)
+ax.set_title("Média da área de lavouras por semeadeira", fontdict={'fontsize':25})
+ax.set_xlabel(' ', fontdict={'fontsize':20})
+ax.set_facecolor('lightgrey')
+ax.spines['bottom'].set_linewidth(5.5)
+fig.tight_layout()
+
 regioes = pd.read_csv(
     "https://github.com/odxone/imil_agro_anexo/raw/main/nbs/data_agro_valores/regioes_agro.csv",
     sep = ";",
@@ -159,3 +215,40 @@ fig = (
 )
 fig
 
+## Empregabilidade
+
+empregabilidade=(
+    pd.read_csv(
+        "https://sidra.ibge.gov.br/geratabela?format=us.csv&name=tabela6884.csv&terr=NCS&rank=-&query=t/6884/n1/all/n3/all/v/185/p/all/c829/46302/c2/6794/c223/46571/c218/46502/c12517/113601/l/v,p%2Bc829%2Bc2%2Bc223,t%2Bc218%2Bc12517&measurecol=true",
+        sep=',',
+        encoding='UTF-8',
+        skiprows=7,
+        skipfooter=16,
+        engine='python')
+    [['Brasil', '15105125']]
+    .rename(
+        columns={
+            'Brasil':'UF',
+            '15105125':'Pessoas ocupadas'}
+    ).sort_values(
+        ascending=False,
+        by='Pessoas ocupadas')
+)
+empregabilidade.head()
+
+fig, ax = plt.subplots(figsize=(25,15))
+sns.set_style('darkgrid')
+sns.barplot(
+    x=empregabilidade['UF'],
+    y=empregabilidade['Pessoas ocupadas'],
+    ax=ax, 
+    data=empregabilidade,
+    palette="Dark2")
+ax.set_title("Pessoal ocupado em estabelecimento agropecuários por Estado", fontdict={'fontsize':30})
+ax.spines['bottom'].set_linewidth(5.5)
+ax.tick_params(labelsize=20)
+plt.xticks(rotation=90, size=25)
+plt.yticks(rotation=0, size=17)
+ax.set_ylabel('Milhões de pessoas', fontdict={'fontsize':25})
+ax.set_xlabel(' ', fontdict={'fontsize':25})
+fig.tight_layout()
