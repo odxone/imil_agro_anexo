@@ -1,7 +1,7 @@
 Estudo sobre a Agropecuária no Brasil
 ============================
 
-![](https://github.com/feliciov/agro_online/raw/main/CAPA_AGRO_06.png)
+![](https://github.com/odxone/imil_agro_anexo/raw/main/CAPA_AGRO_06.png)
 
 Esse Jupyter-book foi elaborado para sintetizar e disponibilizar acesso a parte do trabalho elaborado pela [Octahedron Data Experts](https://odx.one) em parceria com [Instituto Millenium](https://www.institutomillenium.org.br/).
 
