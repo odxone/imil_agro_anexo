@@ -1,0 +1,887 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensurando toda a cadeia do Agronegócios &#8212; Anexo ao Estudo sobre a Agropecuária no Brasil</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Balança Comercial" href="nb_30-COMEX.html" />
+    <link rel="prev" title="Vetor Auto Regressivo" href="nb_20-VAR.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/LOGO_IML_ODX.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Anexo ao Estudo sobre a Agropecuária no Brasil</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../covers/intro.html">
+   Estudo sobre a Agropecuária no Brasil
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_chap1.html">
+   Cenário Econômico
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_chap3.html">
+   Agropecuária em Valores
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_20-VAR.html">
+   Vetor Auto Regressivo
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Mensurando toda a cadeia do Agronegócios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_30-COMEX.html">
+   Balança Comercial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_40-emprego_formal_caged.html">
+   Análise dos empregos formais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nb_50-tratamento_produtividade.html">
+   Produtividade na Agricultura
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../covers/desigualdade.html">
+   Estudo sobre desigualdade e variáveis da agropecuária
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_60-preprocessing.html">
+     Pré-Processamento - Leitura e Limpeza
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_61-pandas_profiling.html">
+     Pré-Processamento - Análise das variáveis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_62-scaling_encoding.html">
+     Pré-Processamento - Padronização e Codificação
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_63-logistic_regression.html">
+     Regressão Logística
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_64-ridge_classification.html">
+     Classificação Ridge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_65-random_forest_classification.html">
+     Floresta Aleatória
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_66-neural_network_classification.html">
+     Rede Neural
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/odxone/imil_agro_anexo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/odxone/imil_agro_anexo/issues/new?title=Issue%20on%20page%20%2Fnbs/nb_cadeia_agronegócio.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/odxone/imil_agro_anexo/edit/master/nbs/nb_cadeia_agronegócio.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#carregando-bibliotecas">
+   Carregando bibliotecas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#carregando-dados">
+   Carregando Dados
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="mensurando-toda-a-cadeia-do-agronegocios">
+<h1>Mensurando toda a cadeia do Agronegócios<a class="headerlink" href="#mensurando-toda-a-cadeia-do-agronegocios" title="Permalink to this headline">¶</a></h1>
+<p>Fonte: As bases de dados utilizadas neste capítulo estão disponíveis no repositório do CEPEA ESALQ/usp</p>
+<p><a class="reference external" href="https://www.cepea.esalq.usp.br/br/pib-do-agronegocio-brasileiro.aspx">https://www.cepea.esalq.usp.br/br/pib-do-agronegocio-brasileiro.aspx</a></p>
+<div class="section" id="carregando-bibliotecas">
+<h2>Carregando bibliotecas<a class="headerlink" href="#carregando-bibliotecas" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># carregamento e manipulação de dados</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># utils</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="c1"># graphs</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># formatando numeros em tabelas</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="carregando-dados">
+<h2>Carregando Dados<a class="headerlink" href="#carregando-dados" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agronegócio</span><span class="o">=</span><span class="p">(</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span>
+        <span class="s2">&quot;https://www.cepea.esalq.usp.br/upload/kceditor/files/Planilha_PIB_Cepea_Portugues_Site_2020.xlsx&quot;</span><span class="p">,</span>
+        <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;PIB&#39;</span><span class="p">,</span>
+        <span class="n">skiprows</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+        <span class="n">skipfooter</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="p">[[</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">,</span> <span class="s1">&#39;(A) Insumos&#39;</span><span class="p">,</span> <span class="s1">&#39;(B) Agropecuária &#39;</span><span class="p">,</span> <span class="s1">&#39;(C) Indústria&#39;</span><span class="p">,</span><span class="s1">&#39;(D) Serviços&#39;</span><span class="p">]]</span>
+<span class="p">)</span>
+
+<span class="n">agronegócio</span><span class="o">=</span><span class="p">(</span>
+    <span class="n">agronegócio</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">:</span><span class="s1">&#39;Data&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;(A) Insumos&#39;</span><span class="p">:</span><span class="s1">&#39;Insumos Agrícolas&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;(B) Agropecuária &#39;</span><span class="p">:</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;(C) Indústria&#39;</span><span class="p">:</span><span class="s1">&#39;Agro Indústria&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;(D) Serviços&#39;</span><span class="p">:</span><span class="s1">&#39;Agro Serviços&#39;</span><span class="p">})</span>
+<span class="p">)</span>
+<span class="n">agronegócio</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 25 entries, 0 to 24
+Data columns (total 5 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Data               25 non-null     int64  
+ 1   Insumos Agrícolas  25 non-null     float64
+ 2   Agropecuária       25 non-null     float64
+ 3   Agro Indústria     25 non-null     float64
+ 4   Agro Serviços      25 non-null     float64
+dtypes: float64(4), int64(1)
+memory usage: 1.1 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agronegócio</span><span class="p">[</span><span class="s1">&#39;Data&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">agronegócio</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span><span class="n">datetime</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">agronegócio</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Data</th>
+      <th>Insumos Agrícolas</th>
+      <th>Agropecuária</th>
+      <th>Agro Indústria</th>
+      <th>Agro Serviços</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1996-01-01</td>
+      <td>30261.70</td>
+      <td>188280.09</td>
+      <td>559461.31</td>
+      <td>838870.45</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1997-01-01</td>
+      <td>31397.80</td>
+      <td>188026.30</td>
+      <td>514936.00</td>
+      <td>770815.31</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1998-01-01</td>
+      <td>30428.92</td>
+      <td>188997.68</td>
+      <td>483939.42</td>
+      <td>732203.51</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1999-01-01</td>
+      <td>33309.23</td>
+      <td>194587.97</td>
+      <td>474249.16</td>
+      <td>719798.91</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2000-01-01</td>
+      <td>38935.88</td>
+      <td>196712.06</td>
+      <td>518607.74</td>
+      <td>785257.18</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agronegócio_variação</span><span class="o">=</span><span class="p">(</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span>
+        <span class="s2">&quot;https://www.cepea.esalq.usp.br/upload/kceditor/files/Planilha_PIB_Cepea_Portugues_Site_2020.xlsx&quot;</span><span class="p">,</span>
+        <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;VARIAÇÃO&#39;</span><span class="p">,</span>
+        <span class="n">skiprows</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+        <span class="n">skipfooter</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="p">[[</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">,</span> <span class="s1">&#39;(A) Insumos&#39;</span><span class="p">,</span> <span class="s1">&#39;(B) Agropecuária &#39;</span><span class="p">,</span> <span class="s1">&#39;(C) Indústria&#39;</span><span class="p">,</span><span class="s1">&#39;(D) Serviços&#39;</span><span class="p">]]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">:</span><span class="s1">&#39;Data&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;(A) Insumos&#39;</span><span class="p">:</span><span class="s1">&#39;Insumos_Agrícolas&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;(B) Agropecuária &#39;</span><span class="p">:</span><span class="s1">&#39;Agropecuária&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;(C) Indústria&#39;</span><span class="p">:</span><span class="s1">&#39;Agroindústria&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;(D) Serviços&#39;</span><span class="p">:</span><span class="s1">&#39;Agrosserviços&#39;</span><span class="p">}</span>
+<span class="p">)</span>
+<span class="n">agronegócio_variação</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 25 entries, 0 to 24
+Data columns (total 5 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Data               25 non-null     int64  
+ 1   Insumos_Agrícolas  25 non-null     float64
+ 2   Agropecuária       25 non-null     float64
+ 3   Agroindústria      25 non-null     float64
+ 4   Agrosserviços      25 non-null     float64
+dtypes: float64(4), int64(1)
+memory usage: 1.1 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">agronegócio_variação</span><span class="p">[</span><span class="s1">&#39;Data&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">agronegócio_variação</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span><span class="n">datetime</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">agronegócio_variação</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Data</th>
+      <th>Insumos_Agrícolas</th>
+      <th>Agropecuária</th>
+      <th>Agroindústria</th>
+      <th>Agrosserviços</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>20</th>
+      <td>2016-01-01</td>
+      <td>1.33</td>
+      <td>12.36</td>
+      <td>4.23</td>
+      <td>6.96</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2017-01-01</td>
+      <td>-6.25</td>
+      <td>-7.97</td>
+      <td>-3.87</td>
+      <td>-5.59</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>2018-01-01</td>
+      <td>12.48</td>
+      <td>-4.13</td>
+      <td>0.27</td>
+      <td>-2.27</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>2019-01-01</td>
+      <td>5.84</td>
+      <td>0.42</td>
+      <td>3.27</td>
+      <td>4.69</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>2020-01-01</td>
+      <td>6.91</td>
+      <td>56.59</td>
+      <td>8.72</td>
+      <td>20.93</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vermelho</span><span class="p">,</span> <span class="n">azul</span> <span class="o">=</span> <span class="s2">&quot;#ae1325&quot;</span><span class="p">,</span> <span class="s2">&quot;#1a1e76&quot;</span>
+
+<span class="k">def</span> <span class="nf">highlight_breakpoint</span><span class="p">(</span><span class="n">campo</span><span class="p">,</span> <span class="n">breakpoint</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="p">(</span><span class="n">vermelho</span><span class="p">,</span><span class="n">azul</span><span class="p">)):</span>
+    <span class="k">return</span> <span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;datum.</span><span class="si">{</span><span class="n">campo</span><span class="si">}</span><span class="s2"> &lt;= </span><span class="si">{</span><span class="n">breakpoint</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="n">vermelho</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="n">azul</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span>
+        <span class="n">agronegócio_variação</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Variação anual Insumos Agrícolas&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Período&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Insumos_Agrícolas:Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Variação Percentual&quot;</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">highlight_breakpoint</span><span class="p">(</span><span class="s2">&quot;Insumos_Agrícolas&quot;</span><span class="p">),</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="s1">&#39;Insumos_Agrícolas:Q&#39;</span><span class="p">]</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-da509f3a076945b0ab2d8df2efa3e85d"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-da509f3a076945b0ab2d8df2efa3e85d") {
+      outputDiv = document.getElementById("altair-viz-da509f3a076945b0ab2d8df2efa3e85d");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-f6b9b558f8a386cf4e141128c51a27cd"}, "mark": "bar", "encoding": {"color": {"condition": {"value": "#ae1325", "test": "datum.Insumos_Agr\u00edcolas <= 0"}, "value": "#1a1e76"}, "tooltip": [{"type": "temporal", "field": "Data", "timeUnit": "year"}, {"type": "quantitative", "field": "Insumos_Agr\u00edcolas"}], "x": {"type": "temporal", "field": "Data", "timeUnit": "year", "title": "Per\u00edodo"}, "y": {"type": "quantitative", "field": "Insumos_Agr\u00edcolas", "title": "Varia\u00e7\u00e3o Percentual"}}, "height": 400, "title": "Varia\u00e7\u00e3o anual Insumos Agr\u00edcolas", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-f6b9b558f8a386cf4e141128c51a27cd": [{"Data": "1996-01-01T00:00:00", "Insumos_Agr\u00edcolas": 10.875330066235712, "Agropecu\u00e1ria": -9.643018359505206, "Agroind\u00fastria": -15.86836289485667, "Agrosservi\u00e7os": -15.475339819127388}, {"Data": "1997-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.754219877511411, "Agropecu\u00e1ria": -0.13479600743711018, "Agroind\u00fastria": -7.958604647675305, "Agrosservi\u00e7os": -8.112710674231682}, {"Data": "1998-01-01T00:00:00", "Insumos_Agr\u00edcolas": -3.085812239708008, "Agropecu\u00e1ria": 0.5166196772053988, "Agroind\u00fastria": -6.0195009349304, "Agrosservi\u00e7os": -5.009215997875072}, {"Data": "1999-01-01T00:00:00", "Insumos_Agr\u00edcolas": 9.465703008151728, "Agropecu\u00e1ria": 2.9578650416875574, "Agroind\u00fastria": -2.002371150677129, "Agrosservi\u00e7os": -1.6941461418374604}, {"Data": "2000-01-01T00:00:00", "Insumos_Agr\u00edcolas": 16.892166835794864, "Agropecu\u00e1ria": 1.0915825797827239, "Agroind\u00fastria": 9.353435320664216, "Agrosservi\u00e7os": 9.093966545156507}, {"Data": "2001-01-01T00:00:00", "Insumos_Agr\u00edcolas": 4.365748243615242, "Agropecu\u00e1ria": 14.916398681435394, "Agroind\u00fastria": -4.028588806487665, "Agrosservi\u00e7os": -1.4267765588479309}, {"Data": "2002-01-01T00:00:00", "Insumos_Agr\u00edcolas": 27.312526186679587, "Agropecu\u00e1ria": 18.543879037318757, "Agroind\u00fastria": -0.5045330843623241, "Agrosservi\u00e7os": 0.30240414056503795}, {"Data": "2003-01-01T00:00:00", "Insumos_Agr\u00edcolas": 24.450243990393304, "Agropecu\u00e1ria": 16.32365220843166, "Agroind\u00fastria": -2.6984871128787336, "Agrosservi\u00e7os": -0.9231320429549106}, {"Data": "2004-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.132577922368991, "Agropecu\u00e1ria": -8.445294178778706, "Agroind\u00fastria": -2.306272091148265, "Agrosservi\u00e7os": -6.557023443243715}, {"Data": "2005-01-01T00:00:00", "Insumos_Agr\u00edcolas": -21.816936251775942, "Agropecu\u00e1ria": -19.028089946881988, "Agroind\u00fastria": -2.506928061318625, "Agrosservi\u00e7os": -6.224520553180113}, {"Data": "2006-01-01T00:00:00", "Insumos_Agr\u00edcolas": -12.850573538602728, "Agropecu\u00e1ria": 12.460756375921477, "Agroind\u00fastria": -2.9678748022907264, "Agrosservi\u00e7os": -2.396946144280998}, {"Data": "2007-01-01T00:00:00", "Insumos_Agr\u00edcolas": 19.186185573452907, "Agropecu\u00e1ria": 6.520238699610648, "Agroind\u00fastria": -0.8788509051323667, "Agrosservi\u00e7os": 3.2999921348232153}, {"Data": "2008-01-01T00:00:00", "Insumos_Agr\u00edcolas": 25.068046389051357, "Agropecu\u00e1ria": 9.892314749478292, "Agroind\u00fastria": 0.40964565727605873, "Agrosservi\u00e7os": 3.794376764810603}, {"Data": "2009-01-01T00:00:00", "Insumos_Agr\u00edcolas": -18.240250477378883, "Agropecu\u00e1ria": -15.361256146369517, "Agroind\u00fastria": -0.9194736411892168, "Agrosservi\u00e7os": -2.8887824852977917}, {"Data": "2010-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3247622414724214, "Agropecu\u00e1ria": 21.734962572131032, "Agroind\u00fastria": 3.0219778785591567, "Agrosservi\u00e7os": 6.430005785807391}, {"Data": "2011-01-01T00:00:00", "Insumos_Agr\u00edcolas": 7.857161243684496, "Agropecu\u00e1ria": 14.878138846102917, "Agroind\u00fastria": -4.659269460557402, "Agrosservi\u00e7os": -2.928434069040353}, {"Data": "2012-01-01T00:00:00", "Insumos_Agr\u00edcolas": 2.932151128823546, "Agropecu\u00e1ria": -10.96984230430077, "Agroind\u00fastria": -3.491062920824095, "Agrosservi\u00e7os": -5.81306958449318}, {"Data": "2013-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.5890701968904093, "Agropecu\u00e1ria": 3.974569879422196, "Agroind\u00fastria": -0.5678518027092183, "Agrosservi\u00e7os": 1.1508126886492276}, {"Data": "2014-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.9147796304857754, "Agropecu\u00e1ria": -0.6112609215067843, "Agroind\u00fastria": -1.0817011220499606, "Agrosservi\u00e7os": 0.39575441358383756}, {"Data": "2015-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.1844181762793347, "Agropecu\u00e1ria": 0.4107529771984808, "Agroind\u00fastria": 3.6135468798321524, "Agrosservi\u00e7os": 6.617163141645377}, {"Data": "2016-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3300814565493368, "Agropecu\u00e1ria": 12.361961303698354, "Agroind\u00fastria": 4.233885822356553, "Agrosservi\u00e7os": 6.955908247761178}, {"Data": "2017-01-01T00:00:00", "Insumos_Agr\u00edcolas": -6.25456643249046, "Agropecu\u00e1ria": -7.965249432065258, "Agroind\u00fastria": -3.869248388353652, "Agrosservi\u00e7os": -5.59079320450201}, {"Data": "2018-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.482002794611603, "Agropecu\u00e1ria": -4.131978638122735, "Agroind\u00fastria": 0.2695922692013353, "Agrosservi\u00e7os": -2.2702160742525512}, {"Data": "2019-01-01T00:00:00", "Insumos_Agr\u00edcolas": 5.840889789791537, "Agropecu\u00e1ria": 0.4157920127298542, "Agroind\u00fastria": 3.2658560375188106, "Agrosservi\u00e7os": 4.692253869269392}, {"Data": "2020-01-01T00:00:00", "Insumos_Agr\u00edcolas": 6.909182332760788, "Agropecu\u00e1ria": 56.58537300432946, "Agroind\u00fastria": 8.717328245643596, "Agrosservi\u00e7os": 20.926538122064354}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span>
+        <span class="n">agronegócio_variação</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Variação anual Agro Indústria&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Período&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Agroindústria:Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Variação Percentual&quot;</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">highlight_breakpoint</span><span class="p">(</span><span class="s2">&quot;Agroindústria&quot;</span><span class="p">),</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="s1">&#39;Agroindústria:Q&#39;</span><span class="p">]</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-dedb5fd8a5454231b44e5f914ac59638"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-dedb5fd8a5454231b44e5f914ac59638") {
+      outputDiv = document.getElementById("altair-viz-dedb5fd8a5454231b44e5f914ac59638");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-f6b9b558f8a386cf4e141128c51a27cd"}, "mark": "bar", "encoding": {"color": {"condition": {"value": "#ae1325", "test": "datum.Agroind\u00fastria <= 0"}, "value": "#1a1e76"}, "tooltip": [{"type": "temporal", "field": "Data", "timeUnit": "year"}, {"type": "quantitative", "field": "Agroind\u00fastria"}], "x": {"type": "temporal", "field": "Data", "timeUnit": "year", "title": "Per\u00edodo"}, "y": {"type": "quantitative", "field": "Agroind\u00fastria", "title": "Varia\u00e7\u00e3o Percentual"}}, "height": 400, "title": "Varia\u00e7\u00e3o anual Agro Ind\u00fastria", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-f6b9b558f8a386cf4e141128c51a27cd": [{"Data": "1996-01-01T00:00:00", "Insumos_Agr\u00edcolas": 10.875330066235712, "Agropecu\u00e1ria": -9.643018359505206, "Agroind\u00fastria": -15.86836289485667, "Agrosservi\u00e7os": -15.475339819127388}, {"Data": "1997-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.754219877511411, "Agropecu\u00e1ria": -0.13479600743711018, "Agroind\u00fastria": -7.958604647675305, "Agrosservi\u00e7os": -8.112710674231682}, {"Data": "1998-01-01T00:00:00", "Insumos_Agr\u00edcolas": -3.085812239708008, "Agropecu\u00e1ria": 0.5166196772053988, "Agroind\u00fastria": -6.0195009349304, "Agrosservi\u00e7os": -5.009215997875072}, {"Data": "1999-01-01T00:00:00", "Insumos_Agr\u00edcolas": 9.465703008151728, "Agropecu\u00e1ria": 2.9578650416875574, "Agroind\u00fastria": -2.002371150677129, "Agrosservi\u00e7os": -1.6941461418374604}, {"Data": "2000-01-01T00:00:00", "Insumos_Agr\u00edcolas": 16.892166835794864, "Agropecu\u00e1ria": 1.0915825797827239, "Agroind\u00fastria": 9.353435320664216, "Agrosservi\u00e7os": 9.093966545156507}, {"Data": "2001-01-01T00:00:00", "Insumos_Agr\u00edcolas": 4.365748243615242, "Agropecu\u00e1ria": 14.916398681435394, "Agroind\u00fastria": -4.028588806487665, "Agrosservi\u00e7os": -1.4267765588479309}, {"Data": "2002-01-01T00:00:00", "Insumos_Agr\u00edcolas": 27.312526186679587, "Agropecu\u00e1ria": 18.543879037318757, "Agroind\u00fastria": -0.5045330843623241, "Agrosservi\u00e7os": 0.30240414056503795}, {"Data": "2003-01-01T00:00:00", "Insumos_Agr\u00edcolas": 24.450243990393304, "Agropecu\u00e1ria": 16.32365220843166, "Agroind\u00fastria": -2.6984871128787336, "Agrosservi\u00e7os": -0.9231320429549106}, {"Data": "2004-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.132577922368991, "Agropecu\u00e1ria": -8.445294178778706, "Agroind\u00fastria": -2.306272091148265, "Agrosservi\u00e7os": -6.557023443243715}, {"Data": "2005-01-01T00:00:00", "Insumos_Agr\u00edcolas": -21.816936251775942, "Agropecu\u00e1ria": -19.028089946881988, "Agroind\u00fastria": -2.506928061318625, "Agrosservi\u00e7os": -6.224520553180113}, {"Data": "2006-01-01T00:00:00", "Insumos_Agr\u00edcolas": -12.850573538602728, "Agropecu\u00e1ria": 12.460756375921477, "Agroind\u00fastria": -2.9678748022907264, "Agrosservi\u00e7os": -2.396946144280998}, {"Data": "2007-01-01T00:00:00", "Insumos_Agr\u00edcolas": 19.186185573452907, "Agropecu\u00e1ria": 6.520238699610648, "Agroind\u00fastria": -0.8788509051323667, "Agrosservi\u00e7os": 3.2999921348232153}, {"Data": "2008-01-01T00:00:00", "Insumos_Agr\u00edcolas": 25.068046389051357, "Agropecu\u00e1ria": 9.892314749478292, "Agroind\u00fastria": 0.40964565727605873, "Agrosservi\u00e7os": 3.794376764810603}, {"Data": "2009-01-01T00:00:00", "Insumos_Agr\u00edcolas": -18.240250477378883, "Agropecu\u00e1ria": -15.361256146369517, "Agroind\u00fastria": -0.9194736411892168, "Agrosservi\u00e7os": -2.8887824852977917}, {"Data": "2010-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3247622414724214, "Agropecu\u00e1ria": 21.734962572131032, "Agroind\u00fastria": 3.0219778785591567, "Agrosservi\u00e7os": 6.430005785807391}, {"Data": "2011-01-01T00:00:00", "Insumos_Agr\u00edcolas": 7.857161243684496, "Agropecu\u00e1ria": 14.878138846102917, "Agroind\u00fastria": -4.659269460557402, "Agrosservi\u00e7os": -2.928434069040353}, {"Data": "2012-01-01T00:00:00", "Insumos_Agr\u00edcolas": 2.932151128823546, "Agropecu\u00e1ria": -10.96984230430077, "Agroind\u00fastria": -3.491062920824095, "Agrosservi\u00e7os": -5.81306958449318}, {"Data": "2013-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.5890701968904093, "Agropecu\u00e1ria": 3.974569879422196, "Agroind\u00fastria": -0.5678518027092183, "Agrosservi\u00e7os": 1.1508126886492276}, {"Data": "2014-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.9147796304857754, "Agropecu\u00e1ria": -0.6112609215067843, "Agroind\u00fastria": -1.0817011220499606, "Agrosservi\u00e7os": 0.39575441358383756}, {"Data": "2015-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.1844181762793347, "Agropecu\u00e1ria": 0.4107529771984808, "Agroind\u00fastria": 3.6135468798321524, "Agrosservi\u00e7os": 6.617163141645377}, {"Data": "2016-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3300814565493368, "Agropecu\u00e1ria": 12.361961303698354, "Agroind\u00fastria": 4.233885822356553, "Agrosservi\u00e7os": 6.955908247761178}, {"Data": "2017-01-01T00:00:00", "Insumos_Agr\u00edcolas": -6.25456643249046, "Agropecu\u00e1ria": -7.965249432065258, "Agroind\u00fastria": -3.869248388353652, "Agrosservi\u00e7os": -5.59079320450201}, {"Data": "2018-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.482002794611603, "Agropecu\u00e1ria": -4.131978638122735, "Agroind\u00fastria": 0.2695922692013353, "Agrosservi\u00e7os": -2.2702160742525512}, {"Data": "2019-01-01T00:00:00", "Insumos_Agr\u00edcolas": 5.840889789791537, "Agropecu\u00e1ria": 0.4157920127298542, "Agroind\u00fastria": 3.2658560375188106, "Agrosservi\u00e7os": 4.692253869269392}, {"Data": "2020-01-01T00:00:00", "Insumos_Agr\u00edcolas": 6.909182332760788, "Agropecu\u00e1ria": 56.58537300432946, "Agroind\u00fastria": 8.717328245643596, "Agrosservi\u00e7os": 20.926538122064354}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span>
+        <span class="n">agronegócio_variação</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Variação anual Agro Pecuária&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Período&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Agropecuária:Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Variação Percentual&quot;</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">highlight_breakpoint</span><span class="p">(</span><span class="s2">&quot;Agropecuária&quot;</span><span class="p">),</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="s1">&#39;Agrospecuária:Q&#39;</span><span class="p">]</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-d79f378a982d44a898d96074c88e5e7e"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d79f378a982d44a898d96074c88e5e7e") {
+      outputDiv = document.getElementById("altair-viz-d79f378a982d44a898d96074c88e5e7e");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-f6b9b558f8a386cf4e141128c51a27cd"}, "mark": "bar", "encoding": {"color": {"condition": {"value": "#ae1325", "test": "datum.Agropecu\u00e1ria <= 0"}, "value": "#1a1e76"}, "tooltip": [{"type": "temporal", "field": "Data", "timeUnit": "year"}, {"type": "quantitative", "field": "Agrospecu\u00e1ria"}], "x": {"type": "temporal", "field": "Data", "timeUnit": "year", "title": "Per\u00edodo"}, "y": {"type": "quantitative", "field": "Agropecu\u00e1ria", "title": "Varia\u00e7\u00e3o Percentual"}}, "height": 400, "title": "Varia\u00e7\u00e3o anual Agro Pecu\u00e1ria", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-f6b9b558f8a386cf4e141128c51a27cd": [{"Data": "1996-01-01T00:00:00", "Insumos_Agr\u00edcolas": 10.875330066235712, "Agropecu\u00e1ria": -9.643018359505206, "Agroind\u00fastria": -15.86836289485667, "Agrosservi\u00e7os": -15.475339819127388}, {"Data": "1997-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.754219877511411, "Agropecu\u00e1ria": -0.13479600743711018, "Agroind\u00fastria": -7.958604647675305, "Agrosservi\u00e7os": -8.112710674231682}, {"Data": "1998-01-01T00:00:00", "Insumos_Agr\u00edcolas": -3.085812239708008, "Agropecu\u00e1ria": 0.5166196772053988, "Agroind\u00fastria": -6.0195009349304, "Agrosservi\u00e7os": -5.009215997875072}, {"Data": "1999-01-01T00:00:00", "Insumos_Agr\u00edcolas": 9.465703008151728, "Agropecu\u00e1ria": 2.9578650416875574, "Agroind\u00fastria": -2.002371150677129, "Agrosservi\u00e7os": -1.6941461418374604}, {"Data": "2000-01-01T00:00:00", "Insumos_Agr\u00edcolas": 16.892166835794864, "Agropecu\u00e1ria": 1.0915825797827239, "Agroind\u00fastria": 9.353435320664216, "Agrosservi\u00e7os": 9.093966545156507}, {"Data": "2001-01-01T00:00:00", "Insumos_Agr\u00edcolas": 4.365748243615242, "Agropecu\u00e1ria": 14.916398681435394, "Agroind\u00fastria": -4.028588806487665, "Agrosservi\u00e7os": -1.4267765588479309}, {"Data": "2002-01-01T00:00:00", "Insumos_Agr\u00edcolas": 27.312526186679587, "Agropecu\u00e1ria": 18.543879037318757, "Agroind\u00fastria": -0.5045330843623241, "Agrosservi\u00e7os": 0.30240414056503795}, {"Data": "2003-01-01T00:00:00", "Insumos_Agr\u00edcolas": 24.450243990393304, "Agropecu\u00e1ria": 16.32365220843166, "Agroind\u00fastria": -2.6984871128787336, "Agrosservi\u00e7os": -0.9231320429549106}, {"Data": "2004-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.132577922368991, "Agropecu\u00e1ria": -8.445294178778706, "Agroind\u00fastria": -2.306272091148265, "Agrosservi\u00e7os": -6.557023443243715}, {"Data": "2005-01-01T00:00:00", "Insumos_Agr\u00edcolas": -21.816936251775942, "Agropecu\u00e1ria": -19.028089946881988, "Agroind\u00fastria": -2.506928061318625, "Agrosservi\u00e7os": -6.224520553180113}, {"Data": "2006-01-01T00:00:00", "Insumos_Agr\u00edcolas": -12.850573538602728, "Agropecu\u00e1ria": 12.460756375921477, "Agroind\u00fastria": -2.9678748022907264, "Agrosservi\u00e7os": -2.396946144280998}, {"Data": "2007-01-01T00:00:00", "Insumos_Agr\u00edcolas": 19.186185573452907, "Agropecu\u00e1ria": 6.520238699610648, "Agroind\u00fastria": -0.8788509051323667, "Agrosservi\u00e7os": 3.2999921348232153}, {"Data": "2008-01-01T00:00:00", "Insumos_Agr\u00edcolas": 25.068046389051357, "Agropecu\u00e1ria": 9.892314749478292, "Agroind\u00fastria": 0.40964565727605873, "Agrosservi\u00e7os": 3.794376764810603}, {"Data": "2009-01-01T00:00:00", "Insumos_Agr\u00edcolas": -18.240250477378883, "Agropecu\u00e1ria": -15.361256146369517, "Agroind\u00fastria": -0.9194736411892168, "Agrosservi\u00e7os": -2.8887824852977917}, {"Data": "2010-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3247622414724214, "Agropecu\u00e1ria": 21.734962572131032, "Agroind\u00fastria": 3.0219778785591567, "Agrosservi\u00e7os": 6.430005785807391}, {"Data": "2011-01-01T00:00:00", "Insumos_Agr\u00edcolas": 7.857161243684496, "Agropecu\u00e1ria": 14.878138846102917, "Agroind\u00fastria": -4.659269460557402, "Agrosservi\u00e7os": -2.928434069040353}, {"Data": "2012-01-01T00:00:00", "Insumos_Agr\u00edcolas": 2.932151128823546, "Agropecu\u00e1ria": -10.96984230430077, "Agroind\u00fastria": -3.491062920824095, "Agrosservi\u00e7os": -5.81306958449318}, {"Data": "2013-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.5890701968904093, "Agropecu\u00e1ria": 3.974569879422196, "Agroind\u00fastria": -0.5678518027092183, "Agrosservi\u00e7os": 1.1508126886492276}, {"Data": "2014-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.9147796304857754, "Agropecu\u00e1ria": -0.6112609215067843, "Agroind\u00fastria": -1.0817011220499606, "Agrosservi\u00e7os": 0.39575441358383756}, {"Data": "2015-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.1844181762793347, "Agropecu\u00e1ria": 0.4107529771984808, "Agroind\u00fastria": 3.6135468798321524, "Agrosservi\u00e7os": 6.617163141645377}, {"Data": "2016-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3300814565493368, "Agropecu\u00e1ria": 12.361961303698354, "Agroind\u00fastria": 4.233885822356553, "Agrosservi\u00e7os": 6.955908247761178}, {"Data": "2017-01-01T00:00:00", "Insumos_Agr\u00edcolas": -6.25456643249046, "Agropecu\u00e1ria": -7.965249432065258, "Agroind\u00fastria": -3.869248388353652, "Agrosservi\u00e7os": -5.59079320450201}, {"Data": "2018-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.482002794611603, "Agropecu\u00e1ria": -4.131978638122735, "Agroind\u00fastria": 0.2695922692013353, "Agrosservi\u00e7os": -2.2702160742525512}, {"Data": "2019-01-01T00:00:00", "Insumos_Agr\u00edcolas": 5.840889789791537, "Agropecu\u00e1ria": 0.4157920127298542, "Agroind\u00fastria": 3.2658560375188106, "Agrosservi\u00e7os": 4.692253869269392}, {"Data": "2020-01-01T00:00:00", "Insumos_Agr\u00edcolas": 6.909182332760788, "Agropecu\u00e1ria": 56.58537300432946, "Agroind\u00fastria": 8.717328245643596, "Agrosservi\u00e7os": 20.926538122064354}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span>
+        <span class="n">agronegócio_variação</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Variação anual Agro Serviços&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Período&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Agrosserviços:Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Variação Percentual&quot;</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">highlight_breakpoint</span><span class="p">(</span><span class="s2">&quot;Agrosserviços&quot;</span><span class="p">),</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;year(Data):T&#39;</span><span class="p">,</span> <span class="s1">&#39;Agrosserviços:Q&#39;</span><span class="p">]</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-d83643cf4c6c4aa6a5258e4010d84581"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d83643cf4c6c4aa6a5258e4010d84581") {
+      outputDiv = document.getElementById("altair-viz-d83643cf4c6c4aa6a5258e4010d84581");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-f6b9b558f8a386cf4e141128c51a27cd"}, "mark": "bar", "encoding": {"color": {"condition": {"value": "#ae1325", "test": "datum.Agrosservi\u00e7os <= 0"}, "value": "#1a1e76"}, "tooltip": [{"type": "temporal", "field": "Data", "timeUnit": "year"}, {"type": "quantitative", "field": "Agrosservi\u00e7os"}], "x": {"type": "temporal", "field": "Data", "timeUnit": "year", "title": "Per\u00edodo"}, "y": {"type": "quantitative", "field": "Agrosservi\u00e7os", "title": "Varia\u00e7\u00e3o Percentual"}}, "height": 400, "title": "Varia\u00e7\u00e3o anual Agro Servi\u00e7os", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-f6b9b558f8a386cf4e141128c51a27cd": [{"Data": "1996-01-01T00:00:00", "Insumos_Agr\u00edcolas": 10.875330066235712, "Agropecu\u00e1ria": -9.643018359505206, "Agroind\u00fastria": -15.86836289485667, "Agrosservi\u00e7os": -15.475339819127388}, {"Data": "1997-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.754219877511411, "Agropecu\u00e1ria": -0.13479600743711018, "Agroind\u00fastria": -7.958604647675305, "Agrosservi\u00e7os": -8.112710674231682}, {"Data": "1998-01-01T00:00:00", "Insumos_Agr\u00edcolas": -3.085812239708008, "Agropecu\u00e1ria": 0.5166196772053988, "Agroind\u00fastria": -6.0195009349304, "Agrosservi\u00e7os": -5.009215997875072}, {"Data": "1999-01-01T00:00:00", "Insumos_Agr\u00edcolas": 9.465703008151728, "Agropecu\u00e1ria": 2.9578650416875574, "Agroind\u00fastria": -2.002371150677129, "Agrosservi\u00e7os": -1.6941461418374604}, {"Data": "2000-01-01T00:00:00", "Insumos_Agr\u00edcolas": 16.892166835794864, "Agropecu\u00e1ria": 1.0915825797827239, "Agroind\u00fastria": 9.353435320664216, "Agrosservi\u00e7os": 9.093966545156507}, {"Data": "2001-01-01T00:00:00", "Insumos_Agr\u00edcolas": 4.365748243615242, "Agropecu\u00e1ria": 14.916398681435394, "Agroind\u00fastria": -4.028588806487665, "Agrosservi\u00e7os": -1.4267765588479309}, {"Data": "2002-01-01T00:00:00", "Insumos_Agr\u00edcolas": 27.312526186679587, "Agropecu\u00e1ria": 18.543879037318757, "Agroind\u00fastria": -0.5045330843623241, "Agrosservi\u00e7os": 0.30240414056503795}, {"Data": "2003-01-01T00:00:00", "Insumos_Agr\u00edcolas": 24.450243990393304, "Agropecu\u00e1ria": 16.32365220843166, "Agroind\u00fastria": -2.6984871128787336, "Agrosservi\u00e7os": -0.9231320429549106}, {"Data": "2004-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.132577922368991, "Agropecu\u00e1ria": -8.445294178778706, "Agroind\u00fastria": -2.306272091148265, "Agrosservi\u00e7os": -6.557023443243715}, {"Data": "2005-01-01T00:00:00", "Insumos_Agr\u00edcolas": -21.816936251775942, "Agropecu\u00e1ria": -19.028089946881988, "Agroind\u00fastria": -2.506928061318625, "Agrosservi\u00e7os": -6.224520553180113}, {"Data": "2006-01-01T00:00:00", "Insumos_Agr\u00edcolas": -12.850573538602728, "Agropecu\u00e1ria": 12.460756375921477, "Agroind\u00fastria": -2.9678748022907264, "Agrosservi\u00e7os": -2.396946144280998}, {"Data": "2007-01-01T00:00:00", "Insumos_Agr\u00edcolas": 19.186185573452907, "Agropecu\u00e1ria": 6.520238699610648, "Agroind\u00fastria": -0.8788509051323667, "Agrosservi\u00e7os": 3.2999921348232153}, {"Data": "2008-01-01T00:00:00", "Insumos_Agr\u00edcolas": 25.068046389051357, "Agropecu\u00e1ria": 9.892314749478292, "Agroind\u00fastria": 0.40964565727605873, "Agrosservi\u00e7os": 3.794376764810603}, {"Data": "2009-01-01T00:00:00", "Insumos_Agr\u00edcolas": -18.240250477378883, "Agropecu\u00e1ria": -15.361256146369517, "Agroind\u00fastria": -0.9194736411892168, "Agrosservi\u00e7os": -2.8887824852977917}, {"Data": "2010-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3247622414724214, "Agropecu\u00e1ria": 21.734962572131032, "Agroind\u00fastria": 3.0219778785591567, "Agrosservi\u00e7os": 6.430005785807391}, {"Data": "2011-01-01T00:00:00", "Insumos_Agr\u00edcolas": 7.857161243684496, "Agropecu\u00e1ria": 14.878138846102917, "Agroind\u00fastria": -4.659269460557402, "Agrosservi\u00e7os": -2.928434069040353}, {"Data": "2012-01-01T00:00:00", "Insumos_Agr\u00edcolas": 2.932151128823546, "Agropecu\u00e1ria": -10.96984230430077, "Agroind\u00fastria": -3.491062920824095, "Agrosservi\u00e7os": -5.81306958449318}, {"Data": "2013-01-01T00:00:00", "Insumos_Agr\u00edcolas": 3.5890701968904093, "Agropecu\u00e1ria": 3.974569879422196, "Agroind\u00fastria": -0.5678518027092183, "Agrosservi\u00e7os": 1.1508126886492276}, {"Data": "2014-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.9147796304857754, "Agropecu\u00e1ria": -0.6112609215067843, "Agroind\u00fastria": -1.0817011220499606, "Agrosservi\u00e7os": 0.39575441358383756}, {"Data": "2015-01-01T00:00:00", "Insumos_Agr\u00edcolas": -2.1844181762793347, "Agropecu\u00e1ria": 0.4107529771984808, "Agroind\u00fastria": 3.6135468798321524, "Agrosservi\u00e7os": 6.617163141645377}, {"Data": "2016-01-01T00:00:00", "Insumos_Agr\u00edcolas": 1.3300814565493368, "Agropecu\u00e1ria": 12.361961303698354, "Agroind\u00fastria": 4.233885822356553, "Agrosservi\u00e7os": 6.955908247761178}, {"Data": "2017-01-01T00:00:00", "Insumos_Agr\u00edcolas": -6.25456643249046, "Agropecu\u00e1ria": -7.965249432065258, "Agroind\u00fastria": -3.869248388353652, "Agrosservi\u00e7os": -5.59079320450201}, {"Data": "2018-01-01T00:00:00", "Insumos_Agr\u00edcolas": 12.482002794611603, "Agropecu\u00e1ria": -4.131978638122735, "Agroind\u00fastria": 0.2695922692013353, "Agrosservi\u00e7os": -2.2702160742525512}, {"Data": "2019-01-01T00:00:00", "Insumos_Agr\u00edcolas": 5.840889789791537, "Agropecu\u00e1ria": 0.4157920127298542, "Agroind\u00fastria": 3.2658560375188106, "Agrosservi\u00e7os": 4.692253869269392}, {"Data": "2020-01-01T00:00:00", "Insumos_Agr\u00edcolas": 6.909182332760788, "Agropecu\u00e1ria": 56.58537300432946, "Agroind\u00fastria": 8.717328245643596, "Agrosservi\u00e7os": 20.926538122064354}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./nbs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="nb_20-VAR.html" title="previous page">Vetor Auto Regressivo</a>
+    <a class='right-next' id="next-link" href="nb_30-COMEX.html" title="next page">Balança Comercial</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Octahedron Data Experts<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
