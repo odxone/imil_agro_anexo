@@ -1,8 +1,6 @@
 # Mensurando toda a cadeia do Agronegócios
 
-Fonte: As bases de dados utilizadas neste capítulo estão disponíveis no repositório do CEPEA ESALQ/usp 
-
-https://www.cepea.esalq.usp.br/br/pib-do-agronegocio-brasileiro.aspx
+Fonte: As bases de dados utilizadas neste capítulo estão disponíveis no [repositório do CEPEA ESALQ/USP](https://www.cepea.esalq.usp.br/br/pib-do-agronegocio-brasileiro.aspx)
 
 ## Carregando bibliotecas
 

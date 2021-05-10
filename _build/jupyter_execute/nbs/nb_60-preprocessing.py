@@ -11,7 +11,7 @@ Fontes dados:
 
 [Datasus - Min Saúde](http://tabnet.datasus.gov.br/cgi/ibge/censo/cnv/ginibr.def)
 
-O mapa Interativo não disponibiliza o link para download direto. Subimos o [arquivo](https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip) (baixado no dia XX/XX/XXXX) em nosso repositório.
+O mapa Interativo não disponibiliza o link para download direto. Subimos o [arquivo](https://github.com/feliciov/agro_online/raw/main/nbs/data_gini/mun_agro.zip) que utilizamos em nosso repositório.
 
 ## Detalhamento da etapa
 

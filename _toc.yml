@@ -7,6 +7,7 @@
 - file: nbs/nb_20-VAR
 - file: nbs/nb_cadeia_agronegócio
 - file: nbs/nb_30-COMEX
+- file: nbs/nb_ranking_fao
 - file: nbs/nb_40-emprego_formal_caged
 - file: nbs/nb_50-tratamento_produtividade
 - file: covers/desigualdade
